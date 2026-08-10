@@ -2,7 +2,7 @@
     <div class="container">
         <div class="nav-bar-container">
             <a href="{{ route('home') }}" class="logo">
-                <img src="{{ asset($themeSettings->general->logo_dark) }}" alt="{{ $settings->general->site_name }}" />
+                <img src="{{ asset($themeSettings->general->logo_dark) }}" alt="{{ $settings->general->site_name }}" style="width:200px; height:auto"/>
             </a>
             <div class="nav-bar-menu">
                 <div class="overlay"></div>

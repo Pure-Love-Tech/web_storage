@@ -10,7 +10,7 @@
             "description": "Allowed types (JPG,JPEG,PNG,SVG,WEBP)",
             "path": "images\/",
             "key": "logo_dark",
-            "value": "themes\/basic\/images\/logo-dark.jpg",
+            "value": "themes\/basic\/images\/logo-dark.png",
             "accept": ".jpg,.jpeg,.png,.svg,webp",
             "rule": [
                 "nullable",
@@ -27,7 +27,7 @@
             "description": "Allowed types (JPG,JPEG,PNG,SVG,WEBP)",
             "path": "images\/",
             "key": "logo_light",
-            "value": "themes\/basic\/images\/logo-light.jpg",
+            "value": "themes\/basic\/images\/logo-light.png",
             "accept": ".jpg,.jpeg,.png,.svg,webp",
             "rule": [
                 "nullable",
@@ -44,7 +44,7 @@
             "description": "Allowed types (JPG,JPEG,PNG,ICO)",
             "path": "images\/",
             "key": "favicon",
-            "value": "themes\/basic\/images\/favicon.jpg",
+            "value": "themes\/basic\/images\/favicon.png",
             "accept": ".jpg,.jpeg,.png,.ico",
             "rule": [
                 "nullable",
@@ -60,7 +60,7 @@
             "description": "Allowed types (JPG,JPEG) size (600x316)",
             "path": "images\/",
             "key": "social_image",
-            "value": "themes\/basic\/images\/social-image.jpg",
+            "value": "themes\/basic\/images\/WCLeVZjsCkPvp4S_1786349871.jpg",
             "size": "600x316",
             "accept": ".jpg,.jpeg",
             "rule": [
@@ -75,7 +75,7 @@
             "field": "color",
             "label": "Primary Color",
             "key": "primary_color",
-            "value": "#F24950",
+            "value": "#115c82",
             "required": true,
             "rule": [
                 "required",
@@ -88,7 +88,7 @@
             "field": "color",
             "label": "Secondary Color",
             "key": "secondary_color",
-            "value": "#105B81",
+            "value": "#5ac5e7",
             "required": true,
             "rule": [
                 "required",
@@ -140,7 +140,7 @@
             "field": "color",
             "label": "Text Secondary Color",
             "key": "text_secondary_color",
-            "value": "#99C3D9",
+            "value": "#4398e6",
             "required": true,
             "rule": [
                 "required",
@@ -272,7 +272,7 @@
             "on": "Show",
             "off": "Hide",
             "required": false
-        }, 
+        },
         {
             "col": "col-lg-6",
             "field": "image",
@@ -299,7 +299,7 @@
             "description": "Supported (JPEG, JPG, PNG, SVG, WEBP) Size 600x600px.",
             "path": "images\/home-page\/",
             "key": "header_image",
-            "value": "themes\/basic\/images\/home-page\/header-image.svg",
+            "value": "themes\/basic\/images\/home-page\/E6wIU0UuzOSLP2l_1786349920.png",
             "accept": ".jpg,.jpeg,.png,.svg,.webp",
             "rule": [
                 "nullable",
