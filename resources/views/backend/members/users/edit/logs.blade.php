@@ -1,0 +1,43 @@
+@extends('backend.layouts.grid')
+@section('title', $user->name . ' | ' . admin_trans('Login logs'))
+@section('back', route('admin.members.users.index'))
+@section('content')
+    <div class="row">
+        <div class="col-lg-3">
+            @include('backend.members.users.includes.list')
+        </div>
+        <div class="col-lg-9">
+            <div class="card">
+                <div class="card-body">
+                    @if (!demoMode())
+                        @forelse ($logs as $log)
+                            <div class="logs-box justify-items-center">
+                                <div class="content ms-1 d-flex justify-content-between">
+                                    <span>
+                                        <h5>
+                                            <a
+                                                href="{{ route('admin.members.users.logsbyip', $log->ip) }}">{{ $log->ip }}</a>
+                                        </h5>
+                                        <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>{{ $log->location }}
+                                        </p>
+                                    </span>
+                                    <span>
+                                        <a href="#" data-user="{{ $user->id }}" data-log="{{ $log->id }}"
+                                            class="vironeer-getlog-btn btn btn-blue btn-sm"><i
+                                                class="fas fa-desktop"></i></a>
+                                    </span>
+                                </div>
+                            </div>
+                        @empty
+                            @include('backend.partials.empty', ['class' => 'empty-lg'])
+                        @endforelse
+                    @else
+                        <span>{{ admin_trans('Hidden in demo') }}</span>
+                    @endif
+                </div>
+            </div>
+            {{ $logs->links() }}
+        </div>
+    </div>
+    @include('backend.includes.logsmodal')
+@endsection

@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App;
+use App\Http\Controllers\Controller;
+use App\Models\Language;
+use Session;
+
+class LocalizationController extends Controller
+{
+    public function localize($code)
+    {
+        if (!settings('actions')->language_type) {
+            Session::put('previous_url', url()->previous());
+            $language = Language::where('code', $code)->firstOrFail();
+            App::setLocale($language->code);
+            Session::forget('locale');
+            Session::put('locale', $language->code);
+            return redirect(Session::get('previous_url', '/'));
+        }
+    }
+}

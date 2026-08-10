@@ -1,0 +1,50 @@
+@extends('backend.layouts.form')
+@section('section', admin_trans('Blog'))
+@section('title', $category->name)
+@section('container', 'container-max-lg')
+@section('back', route('admin.blog.categories.index'))
+@section('content')
+    <div class="mb-3">
+        <a class="btn btn-outline-secondary" href="{{ route('blog.category', $category->slug) }}" target="_blank"><i
+                class="fa fa-eye me-2"></i>{{ admin_trans('Preview') }}</a>
+    </div>
+    <form id="vironeer-submited-form" action="{{ route('admin.blog.categories.update', $category->id) }}" method="POST">
+        @csrf
+        @method('PUT')
+        <div class="card p-2 mb-3">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label class="form-label">{{ admin_trans('Language') }}</label>
+                            <select name="lang" class="form-select select2" required>
+                                <option></option>
+                                @foreach ($adminLanguages as $adminLanguage)
+                                    <option value="{{ $adminLanguage->code }}"
+                                        @if ($category->lang == $adminLanguage->code) selected @endif>
+                                        {{ $adminLanguage->name }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label class="form-label">{{ admin_trans('Category name') }}</label>
+                            <input type="text" name="name" class="form-control" value="{{ $category->name }}"
+                                required />
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">{{ admin_trans('Slug') }}</label>
+                    <div class="input-group vironeer-input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">{{ url('blog/category/') }}/</span>
+                        </div>
+                        <input type="text" name="slug" class="form-control" value="{{ $category->slug }}" required />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+@endsection
