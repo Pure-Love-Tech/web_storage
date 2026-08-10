@@ -42,7 +42,7 @@
             </div>
         </header>
     @endif
-    <x-ad alias="home_page_top" @class('ad-728x90 my-4') />
+    {{-- <x-ad alias="home_page_top" @class('ad-728x90 my-4') /> --}}
     @if ($themeSettings->home_page->features_section && $features->count() > 0)
         <div class="section section-start">
             <div class="container">
@@ -143,7 +143,7 @@
             </div>
         </div>
     @endif
-    <x-ad alias="home_page_center" @class('ad-728x90 my-4') />
+    {{-- <x-ad alias="home_page_center" @class('ad-728x90 my-4') /> --}}
     @if ($themeSettings->home_page->faqs_section && $faqs->count() > 0)
         <div class="section section-bg section-margin"
             style="background-image: url({{ asset($themeSettings->home_page->section_background_image) }});">
@@ -218,7 +218,7 @@
             </div>
         </div>
     @endif
-    <x-ad alias="home_page_bottom" @class('ad-728x90 my-4') />
+    {{-- <x-ad alias="home_page_bottom" @class('ad-728x90 my-4') /> --}}
     @if ($themeSettings->home_page->withdrawal_methods_section)
         <div class="section">
             <div class="container">

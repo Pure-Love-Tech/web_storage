@@ -1,10 +1,10 @@
 :root {
-  --primary_color: #F24950;
-  --secondary_color: #105B81;
+  --primary_color: #115c82;
+  --secondary_color: #5ac5e7;
   --background_color: #FFFFFF;
   --borders_color: #BFE8FC;
   --text_primary_color: #193D6D;
-  --text_secondary_color: #99C3D9;
+  --text_secondary_color: #4398e6;
   --elements_background_color: #F7FCFF;
   --folders_icon_color: #F49C12;
   --files_icon_color: #105B81;
