@@ -299,7 +299,7 @@
             "description": "Supported (JPEG, JPG, PNG, SVG, WEBP) Size 600x600px.",
             "path": "images\/home-page\/",
             "key": "header_image",
-            "value": "themes\/basic\/images\/home-page\/E6wIU0UuzOSLP2l_1786349920.png",
+            "value": "themes\/basic\/images\/home-page\/1XZ1SFFeWCCmtyf_1786447280.png",
             "accept": ".jpg,.jpeg,.png,.svg,.webp",
             "rule": [
                 "nullable",

@@ -32,7 +32,7 @@
                                 <div class="col-12 col-lg-7 order-1 order-lg-2">
                                     <div class="header-img" data-aos="zoom-in" data-aos-duration="1000">
                                         <img src="{{ asset($themeSettings->home_page->header_image) }}"
-                                            alt="{{ $settings->general->site_name }}" />
+                                            alt="{{ $settings->general->site_name }}" style="width: 110% !important; max-width: 1000px !important;"/>
                                     </div>
                                 </div>
                             </div>
