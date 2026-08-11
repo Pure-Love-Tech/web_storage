@@ -44,7 +44,7 @@
     @endif
     {{-- <x-ad alias="home_page_top" @class('ad-728x90 my-4') /> --}}
     @if ($themeSettings->home_page->features_section && $features->count() > 0)
-        <div class="section section-start">
+        <div class="section section-start" style="background-image: url({{ asset($themeSettings->home_page->section_background_image) }});">
             <div class="container">
                 <div class="section-inner">
                     <div class="row g-5 align-items-center">
@@ -145,7 +145,7 @@
     @endif
     {{-- <x-ad alias="home_page_center" @class('ad-728x90 my-4') /> --}}
     @if ($themeSettings->home_page->faqs_section && $faqs->count() > 0)
-        <div class="section section-bg section-margin"
+        {{-- <div class="section section-bg section-margin"
             style="background-image: url({{ asset($themeSettings->home_page->section_background_image) }});">
             <div class="container">
                 <div class="section-inner">
@@ -185,7 +185,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     @endif
     @if ($themeSettings->home_page->blog_section && $settings->actions->blog_status && $blogArticles->count() > 0)
         <div class="section">

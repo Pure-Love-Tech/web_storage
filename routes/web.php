@@ -112,6 +112,8 @@ Route::group(LocalizationRouteGroup::build(), function () {
         });
         Route::get('payout-rates', 'GlobalController@payoutRates')->name('payout-rates')->middleware('payout_rates');
         Route::get('payment-proof', 'GlobalController@paymentProof')->name('payment-proof')->middleware('payment_proof');
+        Route::get('faqs', 'GlobalController@faq')->name('faqs');
+
         Route::name('blog.')->prefix('blog')->middleware('blog')->group(function () {
             Route::get('/', 'BlogController@index')->name('index');
             Route::get('categories', 'BlogController@categories')->name('categories');
