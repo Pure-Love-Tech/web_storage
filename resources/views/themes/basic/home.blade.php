@@ -44,7 +44,25 @@
     @endif
     {{-- <x-ad alias="home_page_top" @class('ad-728x90 my-4') /> --}}
     @if ($themeSettings->home_page->features_section && $features->count() > 0)
-        <div class="section section-start" style="background-image: url({{ asset($themeSettings->home_page->section_background_image) }});">
+        <style>
+            .feature-icon {
+                display: grid;
+                place-items: center;
+            }
+
+            .feature-icon img {
+                display: block;
+                margin-left: 10px !important;
+                object-fit: contain;
+            }
+
+            .feature .feature-icon::before {
+                width: 55px;
+                height: 55px;
+            }
+        </style>
+        <div class="section section-start"
+            style="background-image: url({{ asset($themeSettings->home_page->section_background_image) }});">
             <div class="container">
                 <div class="section-inner">
                     <div class="row g-5 align-items-center">
@@ -89,7 +107,7 @@
                                 @guest
                                     <div class="d-flex justify-content-end">
                                         <a href="{{ route('register') }}"
-                                            class="btn btn-primary btn-md">{{ translate('Get Started', 'home page') }}</a>
+                                            class="btn btn-primary btn-md"><i class="fa-solid fa-chevron-right me-2"></i>{{ translate('Get Started', 'home page') }}</a>
                                     </div>
                                 @endguest
                             </div>

@@ -1,8 +1,8 @@
 <?php 
  return array (
-  'all_rights_reserved' => 'All rights reserved',
+  'all_rights_reserved' => 'Seluruh hak dilindungi undang-undang.',
   'gdpr_cookie_note' => 'We use cookies to personalize your experience. By continuing to visit this website you agree to our use of cookies',
-  'got_it' => 'Got it',
+  'got_it' => 'Mengerti',
   'more' => 'More',
   'copied_to_clipboard' => 'Copied to clipboard',
   'close' => 'Close',
