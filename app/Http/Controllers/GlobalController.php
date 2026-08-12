@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Methods\ReCaptchaValidation;
 use App\Models\Page;
+use App\Models\Faq;
 use App\Models\PayoutRate;
 use App\Models\Withdrawal;
 use App\Models\WithdrawalMethod;
@@ -49,6 +50,13 @@ class GlobalController extends Controller
         $page = Page::where([['slug', $slug], ['lang', getLocale()]])->firstOrFail();
         $page->increment('views');
         return theme_view('page', ['page' => $page]);
+    }
+
+    public function faq()
+    {
+        $faqs = Faq::where('lang', getLocale())->get();
+        // dd($faqs);
+        return theme_view('faq', ['faqs' => $faqs]);
     }
 
     public function contact()
