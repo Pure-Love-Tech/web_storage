@@ -1,0 +1,56 @@
+{
+  "name": "Cloudflare R2",
+  "alias": "cloudflare",
+  "version": "1.1",
+  "thumbnail": "vendor/addons/cloudflare/thumbnail.png",
+  "path": "addons/cloudflare",
+  "action": "settings/storage",
+  "status": null,
+  "type": "addon",
+  "item": {
+    "alias": "uptoearn_cloudflare",
+    "version": "1.1"
+  },
+  "script": {
+    "alias": "uptoearn",
+    "version": "1.3"
+  },
+  "database": {
+    "files": ["addons/cloudflare/database/data.sql"]
+  },
+  "general_files": {
+    "remove": {
+      "directories": [],
+      "files": []
+    },
+    "create": {
+      "directories": ["public/vendor/addons/cloudflare/"]
+    },
+    "copy": {
+      "directories": [],
+      "files": [
+        {
+          "root": "addons/cloudflare/thumbnail.png",
+          "destination": "public/vendor/addons/cloudflare/thumbnail.png"
+        },
+        {
+          "root": "addons/cloudflare/controllers/CloudflareController.php",
+          "destination": "app/Http/Controllers/Storage/CloudflareController.php"
+        }
+      ]
+    }
+  },
+  "theme_files": {
+    "remove": {
+      "directories": [],
+      "files": []
+    },
+    "create": {
+      "directories": []
+    },
+    "copy": {
+      "directories": [],
+      "files": []
+    }
+  }
+}
