@@ -46,4 +46,5 @@ return array (
   'generating' => 'Generating...',
   'available_until' => 'Available Until',
   'uploaded' => 'Uploaded',
+  'format' => 'Format',
 );
