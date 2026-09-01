@@ -55,7 +55,7 @@
         <nav class="nav nav-pills custom-nav-pills" id="pills-tab" role="tablist">
             <a class="nav-link active" id="pills-link-tab" data-bs-toggle="pill" href="#pills-link" role="tab"
                 aria-controls="pills-home" aria-selected="true">
-                <i class="fa fa-download me-1"></i>
+                <i class="fa fa-link me-1"></i>
                 {{ translate('Download Link', 'download pages') }}
             </a>
             <a class="nav-link" id="pills-forum-tab" data-bs-toggle="pill" href="#pills-forum" role="tab"

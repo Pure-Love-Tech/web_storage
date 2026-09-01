@@ -25,6 +25,7 @@ use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 use Validator;
+use Illuminate\Support\Facades\URL;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -56,6 +57,10 @@ class AppServiceProvider extends ServiceProvider
             $this->themeViewComposers();
 
             $this->backendViewComposers();
+        }
+
+        if (config('app.env') !== 'local') {
+            URL::forceScheme('https');
         }
     }
 

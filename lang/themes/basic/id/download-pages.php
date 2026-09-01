@@ -47,4 +47,9 @@ return array (
   'available_until' => 'Available Until',
   'uploaded' => 'Uploaded',
   'format' => 'Format',
+  'file_type' => 'File Type',
+  'file_size' => 'File Size',
+  'file_information' => 'File information',
+  'continue_to_download' => 'Continue To Download',
+  'document_url' => 'Document URL',
 );
