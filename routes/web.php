@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 |-------------------------------------------------------------------------
  */
+
 Route::group(LocalizationRouteGroup::build(), function () {
     Route::get('cookie/accept', 'GlobalController@cookie')->middleware('ajax.only');
     Route::get('popup/close', 'GlobalController@popup')->middleware('ajax.only');
@@ -93,6 +94,36 @@ Route::group(LocalizationRouteGroup::build(), function () {
         Route::get('/', 'HomeController@index')->name('home')->middleware('referral');
         Route::name('files.')->namespace('Files')->group(function () {
             Route::post('upload', 'UploadController@upload')->name('upload');
+            /*
+        |--------------------------------------------------------------------------
+        | Direct R2 Multipart Upload
+        |--------------------------------------------------------------------------
+        */
+
+            Route::post(
+                'upload/direct/initiate',
+                'UploadController@directInitiate'
+            )->name('upload.direct.initiate');
+
+
+            Route::post(
+                'upload/direct/part-url',
+                'UploadController@directPartUrl'
+            )->name('upload.direct.part-url');
+
+
+            Route::post(
+                'upload/direct/complete',
+                'UploadController@directComplete'
+            )->name('upload.direct.complete');
+
+
+            Route::post(
+                'upload/direct/abort',
+                'UploadController@directAbort'
+            )->name('upload.direct.abort');
+
+            
             Route::middleware(['files.hasNoPassword'])->group(function () {
                 Route::get('{id}/password', 'PasswordController@index')->middleware('referrer');
                 Route::post('{id}/password', 'PasswordController@unlock')->name('password');

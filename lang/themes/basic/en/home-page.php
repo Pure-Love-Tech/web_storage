@@ -4,7 +4,7 @@
   'hero_description' => 'Upload your files and share them anywhere to start earning money from downloads.',
   'upload_files' => 'Upload Files',
   'our_features' => 'Our Features',
-  'features_description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic obcaecati accusantium tempora cum ipsa excepturi voluptates, aliquam sapiente vero commodi laboriosam? Et excepturi nesciunt natus, assumenda illum quia quos ea.',
+  'features_description' => 'ArahCloud provides a simple and reliable way to store, manage, and share your files. Upload your content, organize it into folders, share files through easy-to-use links, and access your files whenever you need them. With features designed for secure storage, convenient sharing, and a seamless user experience, ArahCloud ensures your files are always within easy reach.',
   'get_started' => 'Get Started',
   'how_it_works' => 'How it Works',
   'how_it_works_description' => 'ArahCloud makes file storage and sharing simple. Upload your files, organize them in your storage, and share them with anyone using a simple link. Recipients can open the link and download the file without needing an account when guest downloads are available.

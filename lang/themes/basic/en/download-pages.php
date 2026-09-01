@@ -31,7 +31,7 @@ return array (
   'you_cannot_report_your_files' => 'You cannot report your files',
   'you_have_already_reported_this_file' => 'You have already reported this file',
   'your_report_has_been_sent_successfully_we_will_review_and_take_the_necessary_action' => 'Your report has been sent successfully, we will review and take the necessary action',
-  'download_link' => 'Download Link',
+  'download_link' => 'Document URL',
   'forum_code' => 'Forum Code',
   'html_code' => 'HTML Code',
   'adblock_detected_please_disable_it_to_continue' => 'Adblock detected! Please disable it to continue',
@@ -47,4 +47,9 @@ return array (
   'available_until' => 'Available Until',
   'uploaded' => 'Uploaded',
   'format' => 'Format',
+  'file_type' => 'File Type',
+  'file_size' => 'File Size',
+  'file_information' => 'File information',
+  'continue_to_download' => 'Continue To Download',
+  'document_url' => 'Document URL',
 );

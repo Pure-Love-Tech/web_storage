@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
 use Trustip;
 use Illuminate\Support\Facades\Http;
-use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\DB;
 
 class FileController extends Controller
 {
@@ -228,7 +228,6 @@ class FileController extends Controller
             // }
             if ($status) {
                 if (
-                    $earningSettings->security->proxy_vpn_detection &&
                     config('services.isproxyip.key')
                 ) {
                     $isIpProxy = $this->isProxyIp($ip);
@@ -292,18 +291,33 @@ class FileController extends Controller
 
     private function isProxyIp($ip)
     {
-        $cacheKey = 'security:isproxyip:' . $ip;
-
-        $cached = Cache::get($cacheKey);
-
-        if ($cached !== null) {
-            return $cached;
-        }
-
         try {
+            if (!$ip || !filter_var($ip, FILTER_VALIDATE_IP)) {
+                return 'error';
+            }
+
+            $ipRecord = DB::table('pool_ip')
+                ->where('ip', $ip)
+                ->first();
+
+            if ($ipRecord) {
+                $cacheDays = ((int) $ipRecord->proxy === 1)
+                    ? config('services.isproxyip.proxy_cache_days', 7)
+                    : config('services.isproxyip.clean_cache_days', 30);
+
+                $expiresAt = Carbon::parse($ipRecord->checked_at)
+                    ->addDays($cacheDays);
+
+                if (now()->lt($expiresAt)) {
+                    return (int) $ipRecord->proxy === 1;
+                }
+            }
+
             $apiKey = config('services.isproxyip.key');
 
             if (!$apiKey) {
+                \Log::error('IsProxyIP API key is not configured.');
+
                 return 'error';
             }
 
@@ -314,6 +328,12 @@ class FileController extends Controller
                     'ip' => $ip,
                     'format' => 'json',
                 ]);
+
+            \Log::info('IsProxyIP Response', [
+                'ip' => $ip,
+                'status' => $response->status(),
+                'response' => $response->json(),
+            ]);
 
             if (!$response->successful()) {
                 return 'error';
@@ -331,16 +351,32 @@ class FileController extends Controller
 
             $isProxy = (int) $data['proxy'] === 1;
 
-            $cacheDays = config('services.isproxyip.cache_days', 30);
+            $now = now();
 
-            Cache::put(
-                $cacheKey,
-                $isProxy,
-                now()->addDays($cacheDays)
-            );
+            if ($ipRecord) {
+                DB::table('pool_ip')
+                    ->where('id', $ipRecord->id)
+                    ->update([
+                        'proxy' => $isProxy ? 1 : 0,
+                        'checked_at' => $now,
+                    ]);
+            } else {
+                DB::table('pool_ip')
+                    ->insert([
+                        'ip' => $ip,
+                        'proxy' => $isProxy ? 1 : 0,
+                        'checked_at' => $now,
+                    ]);
+            }
 
             return $isProxy;
+
         } catch (\Throwable $e) {
+            \Log::error('IsProxyIP Exception', [
+                'ip' => $ip,
+                'message' => $e->getMessage(),
+            ]);
+
             report($e);
 
             return 'error';
