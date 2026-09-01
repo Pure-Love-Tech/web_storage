@@ -81,7 +81,7 @@ class RegisterController extends Controller
         ? ['required', 'string', 'email', 'indisposable', 'max:100', 'unique:users', 'block_patterns']
         : ['required', 'string', 'email', 'max:100', 'unique:users', 'block_patterns'];
         $rules = [
-            'username' => ['required', 'string', 'alpha_dash', 'min:6', 'max:50', 'unique:users', 'block_patterns'],
+            'username' => ['required', 'string', 'alpha_dash', 'min:5', 'max:50', 'unique:users', 'block_patterns'],
             'email' => $indisposable,
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'terms' => ['sometimes', 'required'],

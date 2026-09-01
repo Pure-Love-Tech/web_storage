@@ -60,6 +60,59 @@
             font-weight: 600;
         }
 
+        .btn-download {
+		    position: relative;
+		    overflow: hidden;
+		    border: 0;
+		    padding: 15px 24px;
+		    font-size: 1.05rem;
+		    font-weight: 800;
+		    letter-spacing: 0.2px;
+		    color: #fff;
+		    background: linear-gradient(135deg, #16a34a, #22c55e);
+		    box-shadow: 0 8px 22px rgba(34, 197, 94, 0.35);
+		    transition: transform 0.2s ease, box-shadow 0.2s ease;
+		}
+
+		.btn-download:hover {
+		    color: #fff;
+		    transform: translateY(-2px);
+		    box-shadow: 0 12px 28px rgba(34, 197, 94, 0.45);
+		}
+
+		.btn-download:active {
+		    transform: translateY(0);
+		}
+
+		/* Efek kilau */
+		.btn-download::before {
+		    content: "";
+		    position: absolute;
+		    top: 0;
+		    left: -120%;
+		    width: 70%;
+		    height: 100%;
+		    background: linear-gradient(
+		        90deg,
+		        transparent,
+		        rgba(255, 255, 255, 0.25),
+		        transparent
+		    );
+		    transform: skewX(-20deg);
+		    animation: buttonShine 3s infinite;
+		}
+
+		@keyframes buttonShine {
+		    0% {
+		        left: -120%;
+		    }
+
+		    45%,
+		    100% {
+		        left: 150%;
+		    }
+		}
+
         @media (max-width: 767px) {
             .download-file-meta {
                 grid-template-columns: 1fr;
@@ -137,8 +190,8 @@
                                             @else
                                                 <h3 class="mb-4">
                                                     {{ translate('Your download is ready', 'download pages') }} </h3>
-                                                @endif <a href="#"
-                                                    class="btn {{ $method == 'free' ? 'btn-secondary' : 'btn-primary' }} btn-md fw-500 disabled">
+                                                @endif <a href="#" id="finalDownloadButton"
+                                                    class="btn {{ $method == 'free' ? 'btn-secondary' : 'btn-primary' }} btn-download btn-lg fw-1000 w-100 disabled">
                                                     <i class="fa-solid fa-download me-1"></i>
                                                     {{ translate('Click Here to Download', 'download pages') }} </a>
                                         </div>
@@ -159,11 +212,41 @@
             </div>
         </div>
     </div>
+<script src="https://falconhoe.com/e8/e5/a2/e8e5a20fbedb5947a51dcfc27151c654.js"></script>
 
+@push('head_codes')
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+    if (typeof gtag === 'function') {
+        gtag('event', 'download_step_3', {
+            download_method: @json($method)
+        });
+    }
+
+    const button = document.getElementById('finalDownloadButton');
+
+    if (button) {
+        button.addEventListener('click', function () {
+            if (
+                !button.classList.contains('disabled') &&
+                typeof gtag === 'function'
+            ) {
+                gtag('event', 'download_click', {
+                    download_method: @json($method)
+                });
+            }
+        });
+    }
+});
+</script>
+<script src="https://falconhoe.com/20/5e/16/205e16a3db53f6a22db869a839d7e124.js"></script>
+@endpush
     @push('config')
         @include('themes.basic.files.common.config', [
             'fileEntry' => $fileEntry,
             'downloadPlan' => $downloadPlan,
         ])
     @endpush
+
 @endsection

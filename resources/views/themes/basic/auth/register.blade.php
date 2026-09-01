@@ -36,7 +36,7 @@
                             </div>
                             <input type="text" name="username" class="form-control form-control-md"
                                 value="{{ old('username') }}" placeholder="{{ translate('Username', 'forms') }}"
-                                minlength="6" maxlength="50" required>
+                                minlength="5" maxlength="50" required>
                         </div>
                     </div>
                     <div class="mb-3">

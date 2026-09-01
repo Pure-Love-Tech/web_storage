@@ -45,6 +45,7 @@ return [
     'isproxyip' => [
         'key' => env('ISPROXYIP_API_KEY'),
         'url' => 'https://api.isproxyip.com/v1/check.php',
-        'cache_days' => (int) env('ISPROXYIP_CACHE_DAYS', 30),
+        'clean_cache_days' => (int) env('ISPROXYIP_CLEAN_CACHE_DAYS', 30),
+        'proxy_cache_days' => (int) env('ISPROXYIP_PROXY_CACHE_DAYS', 7),
     ],
 ];
