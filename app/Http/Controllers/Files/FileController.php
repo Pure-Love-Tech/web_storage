@@ -18,6 +18,8 @@ use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
 use Trustip;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\DB;
 
 class FileController extends Controller
 {
@@ -210,17 +212,32 @@ class FileController extends Controller
                     $statusReason = $statusReasons[7];
                 }
             }
+            // if ($status) {
+            //     if ($earningSettings->security->proxy_vpn_detection && $earningSettings->security->trustip_api_key) {
+            //         $isIpProxy = $this->isIpProxy($ip);
+            //         if ($isIpProxy === "error") {
+            //             $status = false;
+            //             $statusReason = $statusReasons[9];
+            //         } else {
+            //             if ($isIpProxy == true) {
+            //                 $status = false;
+            //                 $statusReason = $statusReasons[8];
+            //             }
+            //         }
+            //     }
+            // }
             if ($status) {
-                if ($earningSettings->security->proxy_vpn_detection && $earningSettings->security->trustip_api_key) {
-                    $isIpProxy = $this->isIpProxy($ip);
-                    if ($isIpProxy === "error") {
+                if (
+                    config('services.isproxyip.key')
+                ) {
+                    $isIpProxy = $this->isProxyIp($ip);
+
+                    if ($isIpProxy === true) {
+                        $status = false;
+                        $statusReason = $statusReasons[8];
+                    } elseif ($isIpProxy === 'error') {
                         $status = false;
                         $statusReason = $statusReasons[9];
-                    } else {
-                        if ($isIpProxy == true) {
-                            $status = false;
-                            $statusReason = $statusReasons[8];
-                        }
                     }
                 }
             }
@@ -269,6 +286,100 @@ class FileController extends Controller
                     }
                 }
             }
+        }
+    }
+
+    private function isProxyIp($ip)
+    {
+        try {
+            if (!$ip || !filter_var($ip, FILTER_VALIDATE_IP)) {
+                return 'error';
+            }
+
+            $ipRecord = DB::table('pool_ip')
+                ->where('ip', $ip)
+                ->first();
+
+            if ($ipRecord) {
+                $cacheDays = ((int) $ipRecord->proxy === 1)
+                    ? config('services.isproxyip.proxy_cache_days', 7)
+                    : config('services.isproxyip.clean_cache_days', 30);
+
+                $expiresAt = Carbon::parse($ipRecord->checked_at)
+                    ->addDays($cacheDays);
+
+                if (now()->lt($expiresAt)) {
+                    return (int) $ipRecord->proxy === 1;
+                }
+            }
+
+            $apiKey = config('services.isproxyip.key');
+
+            if (!$apiKey) {
+                \Log::error('IsProxyIP API key is not configured.');
+
+                return 'error';
+            }
+
+            $response = Http::timeout(5)
+                ->connectTimeout(3)
+                ->get(config('services.isproxyip.url'), [
+                    'key' => $apiKey,
+                    'ip' => $ip,
+                    'format' => 'json',
+                ]);
+
+            \Log::info('IsProxyIP Response', [
+                'ip' => $ip,
+                'status' => $response->status(),
+                'response' => $response->json(),
+            ]);
+
+            if (!$response->successful()) {
+                return 'error';
+            }
+
+            $data = $response->json();
+
+            if (
+                !is_array($data) ||
+                ($data['status'] ?? null) !== 'success' ||
+                !isset($data['proxy'])
+            ) {
+                return 'error';
+            }
+
+            $isProxy = (int) $data['proxy'] === 1;
+
+            $now = now();
+
+            if ($ipRecord) {
+                DB::table('pool_ip')
+                    ->where('id', $ipRecord->id)
+                    ->update([
+                        'proxy' => $isProxy ? 1 : 0,
+                        'checked_at' => $now,
+                    ]);
+            } else {
+                DB::table('pool_ip')
+                    ->insert([
+                        'ip' => $ip,
+                        'proxy' => $isProxy ? 1 : 0,
+                        'checked_at' => $now,
+                    ]);
+            }
+
+            return $isProxy;
+
+        } catch (\Throwable $e) {
+            \Log::error('IsProxyIP Exception', [
+                'ip' => $ip,
+                'message' => $e->getMessage(),
+            ]);
+
+            report($e);
+
+            return 'error';
         }
     }
 

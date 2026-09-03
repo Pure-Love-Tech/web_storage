@@ -10,7 +10,7 @@
             "description": "Allowed types (JPG,JPEG,PNG,SVG,WEBP)",
             "path": "images\/",
             "key": "logo_dark",
-            "value": "themes\/basic\/images\/logo-dark.jpg",
+            "value": "themes\/basic\/images\/logo-dark.png",
             "accept": ".jpg,.jpeg,.png,.svg,webp",
             "rule": [
                 "nullable",
@@ -27,7 +27,7 @@
             "description": "Allowed types (JPG,JPEG,PNG,SVG,WEBP)",
             "path": "images\/",
             "key": "logo_light",
-            "value": "themes\/basic\/images\/logo-light.jpg",
+            "value": "themes\/basic\/images\/logo-light.png",
             "accept": ".jpg,.jpeg,.png,.svg,webp",
             "rule": [
                 "nullable",
@@ -44,7 +44,7 @@
             "description": "Allowed types (JPG,JPEG,PNG,ICO)",
             "path": "images\/",
             "key": "favicon",
-            "value": "themes\/basic\/images\/favicon.jpg",
+            "value": "themes\/basic\/images\/favicon.png",
             "accept": ".jpg,.jpeg,.png,.ico",
             "rule": [
                 "nullable",
@@ -60,7 +60,7 @@
             "description": "Allowed types (JPG,JPEG) size (600x316)",
             "path": "images\/",
             "key": "social_image",
-            "value": "themes\/basic\/images\/social-image.jpg",
+            "value": "themes\/basic\/images\/YZoDQHJMJGrQAtR_1787565150.jpg",
             "size": "600x316",
             "accept": ".jpg,.jpeg",
             "rule": [
@@ -75,7 +75,7 @@
             "field": "color",
             "label": "Primary Color",
             "key": "primary_color",
-            "value": "#F24950",
+            "value": "#115c82",
             "required": true,
             "rule": [
                 "required",
@@ -88,7 +88,7 @@
             "field": "color",
             "label": "Secondary Color",
             "key": "secondary_color",
-            "value": "#105B81",
+            "value": "#4194e6",
             "required": true,
             "rule": [
                 "required",
@@ -114,7 +114,7 @@
             "field": "color",
             "label": "Borders Color",
             "key": "borders_color",
-            "value": "#BFE8FC",
+            "value": "#5ecce7",
             "required": true,
             "rule": [
                 "required",
@@ -140,7 +140,7 @@
             "field": "color",
             "label": "Text Secondary Color",
             "key": "text_secondary_color",
-            "value": "#99C3D9",
+            "value": "#4398e6",
             "required": true,
             "rule": [
                 "required",
@@ -248,7 +248,7 @@
             "field": "toggle",
             "label": "FAQs Section",
             "key": "faqs_section",
-            "value": 1,
+            "value": 0,
             "on": "Show",
             "off": "Hide",
             "required": false
@@ -258,7 +258,7 @@
             "field": "toggle",
             "label": "Blog Section",
             "key": "blog_section",
-            "value": 1,
+            "value": 0,
             "on": "Show",
             "off": "Hide",
             "required": false
@@ -272,7 +272,7 @@
             "on": "Show",
             "off": "Hide",
             "required": false
-        }, 
+        },
         {
             "col": "col-lg-6",
             "field": "image",
@@ -299,7 +299,7 @@
             "description": "Supported (JPEG, JPG, PNG, SVG, WEBP) Size 600x600px.",
             "path": "images\/home-page\/",
             "key": "header_image",
-            "value": "themes\/basic\/images\/home-page\/header-image.svg",
+            "value": "themes\/basic\/images\/home-page\/1XZ1SFFeWCCmtyf_1786447280.png",
             "accept": ".jpg,.jpeg,.png,.svg,.webp",
             "rule": [
                 "nullable",
@@ -426,7 +426,7 @@
             "field": "ckeditor",
             "label": "Page 1 extra text ",
             "key": "page1_extra_text",
-            "value": "<h3 style=\"text-align:center;\"><strong>This is the first-page extra text<\/strong><\/h3><p>&nbsp;<\/p><p><strong>What is Lorem Ipsum?<\/strong><\/p><p><strong>Lorem Ipsum<\/strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<\/p><p><strong>Where does it come from?<\/strong><\/p><p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.<\/p><p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.<\/p><p><strong>Why do we use it?<\/strong><\/p><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).<\/p><p><strong>Where can I get some?<\/strong><\/p><p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.<\/p>",
+            "value": "<h2 style=\"text-align:center;\">Download Files Easily with ArahCloud<\/h2><p>ArahCloud makes it simple to access and download files shared by users. Open the file page, review the available file information, and download your file when it is ready.<\/p><p>Whether you are downloading a document, image, video, software, archive, or other supported file, ArahCloud provides a convenient way to access shared files from any device.<\/p><h3>Safe &amp; Convenient File Sharing<\/h3><p>ArahCloud is designed to make file sharing easy while maintaining a reliable and secure environment for users. Files are provided by their respective uploaders, and availability may depend on the owner's settings and our platform policies.<\/p><p>If you believe a file violates our policies or infringes your rights, you can report it using the available reporting options.<\/p><h3>Need to Share Your Own Files?<\/h3><p>You can also use ArahCloud to upload and share your own files. Store your content online, organize your files, and share them with others using a simple link.<\/p><p><strong>Upload. Store. Share. Download. \u2014 ArahCloud<\/strong><\/p>",
             "rule": [
                 "nullable",
                 "string"
@@ -437,7 +437,7 @@
             "field": "ckeditor",
             "label": "Page 2 extra text ",
             "key": "page2_extra_text",
-            "value": "<h3 style=\"text-align:center;\"><strong>This is the second-page extra text<\/strong><\/h3><p>&nbsp;<\/p><p><strong>What is Lorem Ipsum?<\/strong><\/p><p><strong>Lorem Ipsum<\/strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<\/p><p><strong>Where does it come from?<\/strong><\/p><p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.<\/p><p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.<\/p><p><strong>Why do we use it?<\/strong><\/p><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).<\/p><p><strong>Where can I get some?<\/strong><\/p><p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.<\/p>",
+            "value": "<h2 style=\"text-align:center;\">Easy &amp; Reliable File Downloads<\/h2><p>Looking for a simple way to access shared files? ArahCloud provides a convenient download experience for files shared by our users.<\/p><p>You can review the available file information before downloading and access your files from different devices. Whether you are downloading documents, images, videos, archives, software, or other supported files, ArahCloud makes file access simple and straightforward.<\/p><p>Files on ArahCloud are uploaded by individual users, so availability may vary depending on the uploader's settings and our platform policies.<\/p><p><strong>Simple access. Fast downloads. Easy file sharing.<\/strong><\/p>",
             "rule": [
                 "nullable",
                 "string"
@@ -448,7 +448,7 @@
             "field": "ckeditor",
             "label": "Page 3 extra text ",
             "key": "page3_extra_text",
-            "value": "<h3 style=\"text-align:center;\"><strong>This is the third-page extra text<\/strong><\/h3><p>&nbsp;<\/p><p><strong>What is Lorem Ipsum?<\/strong><\/p><p><strong>Lorem Ipsum<\/strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<\/p><p><strong>Where does it come from?<\/strong><\/p><p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.<\/p><p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.<\/p><p><strong>Why do we use it?<\/strong><\/p><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).<\/p><p><strong>Where can I get some?<\/strong><\/p><p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.<\/p>",
+            "value": "<h2 style=\"text-align:center;\">Access Your Files Anywhere<\/h2><p>ArahCloud helps make shared files easier to access whenever you need them. With a simple download page, you can find the file information you need and download available files directly to your device.<\/p><p>ArahCloud supports a wide range of file types and is designed to provide a convenient experience for both uploaders and downloaders.<\/p><p>Want to share your own files? Upload them to ArahCloud, organize your content, and share the generated link with anyone you want.<\/p><p><strong>Your files, your links, your cloud.<\/strong><\/p>",
             "rule": [
                 "nullable",
                 "string"
@@ -481,7 +481,7 @@
             "field": "ckeditor",
             "label": "Folder page extra text",
             "key": "folder_page_extra_text",
-            "value": "<h3 style=\"text-align:center;\"><strong>This is the folder page extra text<\/strong><\/h3><p>&nbsp;<\/p><p><strong>What is Lorem Ipsum?<\/strong><\/p><p><strong>Lorem Ipsum<\/strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<\/p><p><strong>Where does it come from?<\/strong><\/p><p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.<\/p><p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.<\/p><p><strong>Why do we use it?<\/strong><\/p><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).<\/p><p><strong>Where can I get some?<\/strong><\/p><p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.<\/p>",
+            "value": "<h2 style=\"text-align:center;\">Download Files Easily with ArahCloud<\/h2><p>ArahCloud makes it simple to access and download files shared by users. Open the file page, review the available file information, and download your file when it is ready.<\/p><p>Whether you are downloading a document, image, video, software, archive, or other supported file, ArahCloud provides a convenient way to access shared files from any device.<\/p><h3>Safe &amp; Convenient File Sharing<\/h3><p>ArahCloud is designed to make file sharing easy while maintaining a reliable and secure environment for users. Files are provided by their respective uploaders, and availability may depend on the owner's settings and our platform policies.<\/p><p>If you believe a file violates our policies or infringes your rights, you can report it using the available reporting options.<\/p><h3>Need to Share Your Own Files?<\/h3><p>You can also use ArahCloud to upload and share your own files. Store your content online, organize your files, and share them with others using a simple link.<\/p><p><strong>Upload. Store. Share. Download. \u2014 ArahCloud<\/strong><\/p>",
             "rule": [
                 "nullable",
                 "string"

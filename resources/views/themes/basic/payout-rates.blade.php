@@ -2,7 +2,7 @@
 @section('title', translate('Payout Rates', 'payout rates'))
 @section('content')
     <div class="section">
-        <x-ad alias="other_pages_top" @class('ad-728x90 mb-5') />
+        {{-- <x-ad alias="other_pages_top" @class('ad-728x90 mb-5') /> --}}
         <div class="container">
             <div class="section-inner">
                 <div class="section-body">
@@ -221,7 +221,7 @@
                 </div>
             </div>
         </div>
-        <x-ad alias="other_pages_bottom" @class('ad-728x90 mt-5') />
+        {{-- <x-ad alias="other_pages_bottom" @class('ad-728x90 mt-5') /> --}}
     </div>
     @if ($themeSettings->payout_rates_page->withdrawal_methods_section && $withdrawalMethods->count() > 0)
         <div class="section">

@@ -1,0 +1,3 @@
+DELETE FROM `storage_providers` WHERE `alias` = "cloudflare";
+INSERT INTO `storage_providers` (`name`, `alias`, `handler`, `logo`, `credentials`, `instructions`, `status`, `created_at`, `updated_at`) VALUES
+('Cloudflare R2', 'cloudflare', 'App\\Http\\Controllers\\Storage\\CloudflareController', 'vendor/addons/cloudflare/thumbnail.png', '{\"access_key_id\":null,\"secret_access_key\":null,\"bucket\":null,\"endpoint\":null}', '<ul class=\"mb-0\"> \n<li class=\"mb-2\">Endpoint is coming with  <strong>/bucket</strong> at the end, you must remove that</li>\n</ul>', 0, '2022-05-17 23:23:27', '2023-05-11 17:57:04');

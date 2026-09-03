@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 |-------------------------------------------------------------------------
  */
+
 Route::group(LocalizationRouteGroup::build(), function () {
     Route::get('cookie/accept', 'GlobalController@cookie')->middleware('ajax.only');
     Route::get('popup/close', 'GlobalController@popup')->middleware('ajax.only');
@@ -93,6 +94,36 @@ Route::group(LocalizationRouteGroup::build(), function () {
         Route::get('/', 'HomeController@index')->name('home')->middleware('referral');
         Route::name('files.')->namespace('Files')->group(function () {
             Route::post('upload', 'UploadController@upload')->name('upload');
+            /*
+        |--------------------------------------------------------------------------
+        | Direct R2 Multipart Upload
+        |--------------------------------------------------------------------------
+        */
+
+            Route::post(
+                'upload/direct/initiate',
+                'UploadController@directInitiate'
+            )->name('upload.direct.initiate');
+
+
+            Route::post(
+                'upload/direct/part-url',
+                'UploadController@directPartUrl'
+            )->name('upload.direct.part-url');
+
+
+            Route::post(
+                'upload/direct/complete',
+                'UploadController@directComplete'
+            )->name('upload.direct.complete');
+
+
+            Route::post(
+                'upload/direct/abort',
+                'UploadController@directAbort'
+            )->name('upload.direct.abort');
+
+            
             Route::middleware(['files.hasNoPassword'])->group(function () {
                 Route::get('{id}/password', 'PasswordController@index')->middleware('referrer');
                 Route::post('{id}/password', 'PasswordController@unlock')->name('password');
@@ -112,6 +143,8 @@ Route::group(LocalizationRouteGroup::build(), function () {
         });
         Route::get('payout-rates', 'GlobalController@payoutRates')->name('payout-rates')->middleware('payout_rates');
         Route::get('payment-proof', 'GlobalController@paymentProof')->name('payment-proof')->middleware('payment_proof');
+        Route::get('faqs', 'GlobalController@faq')->name('faqs');
+
         Route::name('blog.')->prefix('blog')->middleware('blog')->group(function () {
             Route::get('/', 'BlogController@index')->name('index');
             Route::get('categories', 'BlogController@categories')->name('categories');

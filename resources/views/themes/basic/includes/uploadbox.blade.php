@@ -68,10 +68,96 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="dz-progress">
+                                    <div class="dz-progress mt-5">
+                                        <div class="dz-upload-status">
+                                            <b>Preparing Upload...</b>
+                                        </div>
+
                                         <span class="dz-upload" data-dz-uploadprogress></span>
+
                                         <span class="dz-upload-precent"></span>
+                                       
                                     </div>
+                                    <style>
+                                        .dz-preview-container {
+                                            position: relative;
+                                        }
+
+                                        /* Isi card dibuat blur ketika processing */
+                                        .dz-preview-container.processing > .dz-details,
+                                        .dz-preview-container.processing > .dz-progress {
+                                            filter: blur(4px);
+                                            pointer-events: none;
+                                        }
+
+                                        /* Overlay seluruh card */
+                                        .upload-processing-overlay {
+                                            position: absolute;
+                                            inset: 0;
+
+                                            z-index: 100;
+
+                                            display: none;
+                                            align-items: center;
+                                            justify-content: center;
+
+                                            background: rgba(255, 255, 255, 0.55);
+                                            backdrop-filter: blur(2px);
+
+                                            border-radius: inherit;
+                                        }
+
+                                        /* Muncul hanya ketika aktif */
+                                        .upload-processing-overlay.active {
+                                            display: flex;
+                                        }
+
+                                        /* Isi overlay TIDAK ikut blur */
+                                        .upload-processing-content {
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: center;
+                                            justify-content: center;
+
+                                            text-align: center;
+
+                                            filter: none;
+                                        }
+
+                                        .upload-processing-content .spinner-border {
+                                            width: 2rem;
+                                            height: 2rem;
+                                        }
+
+                                        /* Progress */
+                                        .dz-progress {
+                                            position: relative !important;
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: center;
+                                        }
+
+                                        .dz-upload-status {
+                                            position: relative;
+                                            z-index: 2;
+
+                                            margin-bottom: 0 !important;
+
+                                            text-align: center;
+                                        }
+
+                                        .dz-upload-status b {
+                                            color: grey !important;
+                                        }
+
+                                        .dz-upload-precent {
+                                            position: relative;
+                                            z-index: 2;
+
+                                            margin-bottom: 25px;
+                                        }
+                                    </style>
+                                   
                                     <div class="dz-file-edit">
                                         <div class="overlay"></div>
                                         <div class="dz-file-edit-box">
@@ -118,6 +204,13 @@
                                             </div>
                                         </div>
                                     </div>
+                                     <div class="upload-processing-overlay">
+                                            <div class="upload-processing-content">
+                                                <div class="spinner-border" role="status"></div>
+                                                <div class="mt-3"><b>Processing upload...</b></div>
+                                                <small>Please wait, your file is being saved.</small>
+                                            </div>
+                                        </div>
                                 </div>
                             </div>
                         </div>

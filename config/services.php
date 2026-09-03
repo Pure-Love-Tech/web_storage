@@ -41,4 +41,11 @@ return [
         'client_secret' => env('GOOGLE_CLIENT_SECRET'),
         'redirect' => env('APP_URL') . '/oauth/google/callback',
     ],
+
+    'isproxyip' => [
+        'key' => env('ISPROXYIP_API_KEY'),
+        'url' => 'https://api.isproxyip.com/v1/check.php',
+        'clean_cache_days' => (int) env('ISPROXYIP_CLEAN_CACHE_DAYS', 30),
+        'proxy_cache_days' => (int) env('ISPROXYIP_PROXY_CACHE_DAYS', 7),
+    ],
 ];

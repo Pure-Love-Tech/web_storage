@@ -32,7 +32,7 @@
                                 <div class="col-12 col-lg-7 order-1 order-lg-2">
                                     <div class="header-img" data-aos="zoom-in" data-aos-duration="1000">
                                         <img src="{{ asset($themeSettings->home_page->header_image) }}"
-                                            alt="{{ $settings->general->site_name }}" />
+                                            alt="{{ $settings->general->site_name }}" style="width: 110% !important; max-width: 1000px !important;"/>
                                     </div>
                                 </div>
                             </div>
@@ -42,9 +42,27 @@
             </div>
         </header>
     @endif
-    <x-ad alias="home_page_top" @class('ad-728x90 my-4') />
+    {{-- <x-ad alias="home_page_top" @class('ad-728x90 my-4') /> --}}
     @if ($themeSettings->home_page->features_section && $features->count() > 0)
-        <div class="section section-start">
+        <style>
+            .feature-icon {
+                display: grid;
+                place-items: center;
+            }
+
+            .feature-icon img {
+                display: block;
+                margin-left: 10px !important;
+                object-fit: contain;
+            }
+
+            .feature .feature-icon::before {
+                width: 55px;
+                height: 55px;
+            }
+        </style>
+        <div class="section section-start"
+            style="background-image: url({{ asset($themeSettings->home_page->section_background_image) }});">
             <div class="container">
                 <div class="section-inner">
                     <div class="row g-5 align-items-center">
@@ -89,7 +107,7 @@
                                 @guest
                                     <div class="d-flex justify-content-end">
                                         <a href="{{ route('register') }}"
-                                            class="btn btn-primary btn-md">{{ translate('Get Started', 'home page') }}</a>
+                                            class="btn btn-primary btn-md"><i class="fa-solid fa-chevron-right me-2"></i>{{ translate('Get Started', 'home page') }}</a>
                                     </div>
                                 @endguest
                             </div>
@@ -143,9 +161,9 @@
             </div>
         </div>
     @endif
-    <x-ad alias="home_page_center" @class('ad-728x90 my-4') />
+    {{-- <x-ad alias="home_page_center" @class('ad-728x90 my-4') /> --}}
     @if ($themeSettings->home_page->faqs_section && $faqs->count() > 0)
-        <div class="section section-bg section-margin"
+        {{-- <div class="section section-bg section-margin"
             style="background-image: url({{ asset($themeSettings->home_page->section_background_image) }});">
             <div class="container">
                 <div class="section-inner">
@@ -185,7 +203,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     @endif
     @if ($themeSettings->home_page->blog_section && $settings->actions->blog_status && $blogArticles->count() > 0)
         <div class="section">
@@ -218,7 +236,7 @@
             </div>
         </div>
     @endif
-    <x-ad alias="home_page_bottom" @class('ad-728x90 my-4') />
+    {{-- <x-ad alias="home_page_bottom" @class('ad-728x90 my-4') /> --}}
     @if ($themeSettings->home_page->withdrawal_methods_section)
         <div class="section">
             <div class="container">
