@@ -66,6 +66,7 @@
                             <tr class="bg-light">
                                 <th>{{ admin_trans('ID') }}</th>
                                 <th class="tb-w-20x">{{ admin_trans('User') }}</th>
+                                <th>Plan</th>
                                 <th>{{ admin_trans('Status') }}</th>
                                 <th>{{ admin_trans('Expiry Date') }}</th>
                                 <th>{{ admin_trans('Subscription Date') }}</th>
@@ -86,6 +87,7 @@
                                             ({{ $subscription->user->email }})
                                         </a>
                                     </td>
+                                    <td>{{ $subscription->subscription_plan?->name ?? '-' }}</td>
                                     <td>
                                         @if ($subscription->isExpired())
                                             <span class="badge bg-red">{{ admin_trans('Expired') }}</span>

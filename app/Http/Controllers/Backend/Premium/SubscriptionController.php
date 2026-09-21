@@ -25,7 +25,10 @@ class SubscriptionController extends Controller
         $counters['expired'] = Subscription::expired()->count();
         $users = User::all();
         $plans = Plan::all();
-        $subscriptions = Subscription::query();
+        $subscriptions = Subscription::with([
+            'user',
+            'subscription_plan',
+        ]);
         if (request()->filled('search')) {
             $searchTerm = '%' . request('search') . '%';
             $subscriptions->where(function ($query) use ($searchTerm) {

@@ -180,7 +180,7 @@
                 </li>
             </ul>
         </div>
-        @if ($plan->isPremium())
+       @if ($plan->isSubscriptionPlan())
             <div class="mb-4">
                 <button id="add-premium-price" type="button" class="btn btn-success btn-lg">
                     <i class="fa-solid fa-plus me-2"></i>
@@ -260,7 +260,7 @@
                 }
             });
         </script>
-        @if ($plan->isPremium())
+       @if ($plan->isSubscriptionPlan())
             <script>
                 "use strict";
 

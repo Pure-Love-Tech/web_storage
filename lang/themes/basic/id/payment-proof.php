@@ -1,12 +1,12 @@
 <?php
 
-return array (
-  'payment_proof' => 'Payment Proof',
-  'total_requests' => 'Total Requests',
-  'total_paid_amount' => 'Total Paid Amount',
-  'date' => 'Date',
+return array(
+  'payment_proof' => 'Bukti Pembayaran',
+  'total_requests' => 'Total Permintaan',
+  'total_paid_amount' => 'Total Pembayaran',
+  'date' => 'Tanggal',
   'username' => 'Username',
-  'amount' => 'Amount',
-  'method' => 'Method',
-  'no_payment_proofs_available' => 'No payment proofs available',
+  'amount' => 'Jumlah',
+  'method' => 'Metode',
+  'no_payment_proofs_available' => 'Belum ada bukti pembayaran.',
 );

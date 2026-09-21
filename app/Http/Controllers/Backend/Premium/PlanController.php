@@ -88,7 +88,7 @@ class PlanController extends Controller
         $request->advertisements = ($request->has('advertisements')) ? 1 : 0;
         $request->download_captcha = ($request->has('download_captcha')) ? 1 : 0;
 
-        if ($plan->isPremium()) {
+        if ($plan->isSubscriptionPlan()) {
             if (!$request->has('premium_plans') || count($request->premium_plans) < 1) {
                 toastr()->error(admin_trans('The premium plan should include at least one price'));
                 return back();

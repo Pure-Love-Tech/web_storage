@@ -53,6 +53,22 @@ class Plan extends Model
         return $this->alias == self::PREMIUM_PLAN;
     }
 
+    public function scopeSubscriptionPlans($query)
+    {
+        return $query->whereNotIn('alias', [
+            self::VISITORS_PLAN,
+            self::USERS_PLAN,
+        ]);
+    }
+
+    public function isSubscriptionPlan()
+    {
+        return !in_array($this->alias, [
+            self::VISITORS_PLAN,
+            self::USERS_PLAN,
+        ]);
+    }
+
     protected $fillable = [
         'name',
         'short_description',
