@@ -108,6 +108,7 @@
                             <tr class="bg-light">
                                 <th>{{ admin_trans('ID') }}</th>
                                 <th>{{ admin_trans('User') }}</th>
+                                <th>Plan</th>
                                 <th>{{ admin_trans('Interval') }}</th>
                                 <th>{{ admin_trans('Price') }}</th>
                                 <th>{{ admin_trans('Payment Method') }}</th>
@@ -118,16 +119,18 @@
                         </thead>
                         <tbody>
                             @foreach ($transactions as $trx)
+                            {{-- {{ $trx }} --}}
                                 <tr>
                                     <td><a href="{{ route('admin.premium.transactions.edit', $trx->id) }}"><i
                                                 class="fa-solid fa-receipt me-2"></i>#{{ $trx->id }}</a>
                                     </td>
                                     <td>
                                         <a href="{{ route('admin.members.users.edit', $trx->user->id) }}"
-                                            class="text-dark"><i class="fa fa-user me-2"></i>{{ $trx->user->name }}
+                                            class="text-dark"><i class="fa fa-user me-2"></i>{{ $trx->user->name }}<br>
                                             ({{ $trx->user->email }})
                                         </a>
                                     </td>
+                                    <td>{{ $trx->plan?->name ?? '-' }}</td>
                                     <td>
                                         {{ $trx->interval }}
                                         @if ($trx->interval == 1)

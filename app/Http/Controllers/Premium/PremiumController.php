@@ -16,8 +16,14 @@ class PremiumController extends Controller
 {
     public function index()
     {
-        $plans = Plan::uploadActive()->orderBy('sort_id', 'asc')->get();
-        $premiumPlans = Plan::premium()->first()->premium_plans;
+        $plans = Plan::where('alias', '!=', Plan::VISITORS_PLAN)
+            ->with('premium_plans')
+            ->orderBy('sort_id', 'asc')
+            ->get();
+        // $premiumPlans = Plan::premium()->first()->premium_plans;
+
+        $premiumPlans = $plans->pluck('premium_plans')->flatten();
+
         $paymentGateways = PaymentGateway::orderBy('sort_id', 'asc')->active()->get();
         return theme_view('premium.index', [
             'plans' => $plans,
@@ -28,8 +34,11 @@ class PremiumController extends Controller
 
     public function subscribe(Request $request)
     {
+
+    // dd($request->all());
         $validator = Validator::make($request->all(), [
-            'plan_id' => ['required', 'integer', 'exists:premium_plans,id'],
+            'plan_id' => ['required', 'integer', 'exists:plans,id'],
+            'premium_id' => ['required', 'integer', 'exists:premium_plans,id'],
             'payment_method' => ['sometimes', 'integer', 'exists:payment_gateways,id'],
         ]);
 
@@ -45,8 +54,9 @@ class PremiumController extends Controller
             return redirect()->route('login');
         }
 
-        $premiumPlan = PremiumPlan::findOrFail($request->plan_id);
+        $premiumPlan = PremiumPlan::findOrFail($request->premium_id);
         $paymentGateway = PaymentGateway::where('id', $request->payment_method)->active()->firstOrFail();
+        
         if ($paymentGateway->isBalance()) {
             if ($user->balance() < $premiumPlan->price) {
                 toastr()->error(translate('The Account balance is insufficient', 'premium'));
@@ -64,6 +74,7 @@ class PremiumController extends Controller
 
         $transaction = Transaction::create([
             'user_id' => $user->id,
+            'plan_id' => $request->plan_id,
             'price' => $premiumPlan->price,
             'interval' => $premiumPlan->interval,
             'payment_gateway_id' => $paymentGateway->id,
@@ -72,6 +83,8 @@ class PremiumController extends Controller
         if ($transaction) {
             $paymentHandler = $paymentGateway->handler;
             $paymentData = $paymentHandler::process($transaction);
+            // dd($paymentData);
+            // dd(view()->exists('premium.gateways.balance'));
             $paymentData = json_decode($paymentData);
             if (isset($paymentData->error)) {
                 toastr()->error($paymentData->msg);
@@ -80,7 +93,7 @@ class PremiumController extends Controller
             if (isset($paymentData->redirect_url)) {
                 return redirect($paymentData->redirect_url);
             }
-            return $this->view($paymentData->view, ['data' => $paymentData, 'trx' => $transaction]);
+            return theme_view($paymentData->view, ['data' => $paymentData, 'trx' => $transaction]);
         }
     }
 
@@ -88,6 +101,8 @@ class PremiumController extends Controller
     {
         $user = $transaction->user;
         $interval = $transaction->interval;
+        $planId = $transaction->plan_id;
+
         if ($user->isSubscribed()) {
             $subscription = $user->subscription;
             if ($subscription->isExpired()) {
@@ -96,6 +111,7 @@ class PremiumController extends Controller
                 $expiryAt = Carbon::parse($subscription->expiry_at)->addDays($interval);
             }
             $subscription->user_id = $user->id;
+            $subscription->plan_id = $planId;
             $subscription->expiry_at = $expiryAt;
             $subscription->expire_notification = false;
             $subscription->update();
@@ -103,6 +119,7 @@ class PremiumController extends Controller
             $expiryAt = Carbon::now()->addDays($interval);
             $subscription = new Subscription();
             $subscription->user_id = $user->id;
+            $subscription->plan_id = $planId;
             $subscription->expiry_at = $expiryAt;
             $subscription->save();
         }

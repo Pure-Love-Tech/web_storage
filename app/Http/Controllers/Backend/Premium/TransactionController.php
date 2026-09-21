@@ -20,7 +20,11 @@ class TransactionController extends Controller
         $users = User::all();
         $plans = Plan::all();
         $paymentGateways = PaymentGateway::orderBy('sort_id', 'asc')->get();
-        $transactions = Transaction::query();
+        $transactions = Transaction::with([
+            'user',
+            'plan',
+            'paymentGateway',
+        ]);
         if (request()->filled('search')) {
             $searchTerm = '%' . request('search') . '%';
             $transactions->where(function ($query) use ($searchTerm) {
