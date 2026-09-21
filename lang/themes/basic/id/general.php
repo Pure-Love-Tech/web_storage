@@ -1,16 +1,16 @@
 <?php
 
-return array (
-  'all_rights_reserved' => 'Seluruh hak dilindungi undang-undang.',
-  'gdpr_cookie_note' => 'We use cookies to personalize your experience. By continuing to visit this website you agree to our use of cookies',
+return array(
+  'all_rights_reserved' => 'Seluruh hak dilindungi.',
+  'gdpr_cookie_note' => 'Kami menggunakan cookie untuk meningkatkan dan menyesuaikan pengalaman Anda. Dengan melanjutkan penggunaan website ini, Anda menyetujui penggunaan cookie.',
   'got_it' => 'Mengerti',
-  'more' => 'More',
-  'copied_to_clipboard' => 'Copied to clipboard',
-  'close' => 'Close',
-  'are_you_sure' => 'Are you sure?',
-  'adblock_detected' => 'Adblock Detected!',
-  'please_disable_adblock_to_continue_browsing' => 'Please disable AdBlock to continue browsing',
-  'refresh' => 'Refresh',
-  'back' => 'Back',
-  'continue_to_download' => 'Continue To Download',
+  'more' => 'Selengkapnya',
+  'copied_to_clipboard' => 'Berhasil disalin ke clipboard',
+  'close' => 'Tutup',
+  'are_you_sure' => 'Apakah Anda yakin?',
+  'adblock_detected' => 'AdBlock Terdeteksi!',
+  'please_disable_adblock_to_continue_browsing' => 'Silakan nonaktifkan AdBlock untuk melanjutkan.',
+  'refresh' => 'Muat Ulang',
+  'back' => 'Kembali',
+  'continue_to_download' => 'Lanjutkan ke Download',
 );
