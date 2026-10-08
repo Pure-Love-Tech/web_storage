@@ -1,0 +1,519 @@
+{
+    "general": [
+        {
+            "col": "col-lg-6",
+            "field": "image",
+            "box_type": "regular",
+            "box_bg": "bg-light",
+            "label": "Logo dark",
+            "name": "logo-dark",
+            "description": "Allowed types (JPG,JPEG,PNG,SVG,WEBP)",
+            "path": "images\/",
+            "key": "logo_dark",
+            "value": "themes\/basic\/images\/logo-dark.png",
+            "accept": ".jpg,.jpeg,.png,.svg,webp",
+            "rule": [
+                "nullable",
+                "mimes:jpg,jpeg,png,svg,webp"
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "image",
+            "box_type": "regular",
+            "box_bg": "bg-dark",
+            "label": "Logo light",
+            "name": "logo-light",
+            "description": "Allowed types (JPG,JPEG,PNG,SVG,WEBP)",
+            "path": "images\/",
+            "key": "logo_light",
+            "value": "themes\/basic\/images\/logo-light.png",
+            "accept": ".jpg,.jpeg,.png,.svg,webp",
+            "rule": [
+                "nullable",
+                "mimes:jpg,jpeg,png,svg,webp"
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "image",
+            "box_type": "regular",
+            "box_bg": "bg-light",
+            "label": "Favicon",
+            "name": "favicon",
+            "description": "Allowed types (JPG,JPEG,PNG,ICO)",
+            "path": "images\/",
+            "key": "favicon",
+            "value": "themes\/basic\/images\/favicon.png",
+            "accept": ".jpg,.jpeg,.png,.ico",
+            "rule": [
+                "nullable",
+                "mimes:png,jpg,jpeg,ico"
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "image",
+            "box_type": "regular",
+            "box_bg": "bg-light",
+            "label": "Social Image",
+            "description": "Allowed types (JPG,JPEG) size (600x316)",
+            "path": "images\/",
+            "key": "social_image",
+            "value": "themes\/basic\/images\/YZoDQHJMJGrQAtR_1787565150.jpg",
+            "size": "600x316",
+            "accept": ".jpg,.jpeg",
+            "rule": [
+                "nullable",
+                "mimes:jpg,jpeg"
+            ]
+        }
+    ],
+    "colors": [
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Primary Color",
+            "key": "primary_color",
+            "value": "#115c82",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Secondary Color",
+            "key": "secondary_color",
+            "value": "#4194e6",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Background Color",
+            "key": "background_color",
+            "value": "#FFFFFF",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Borders Color",
+            "key": "borders_color",
+            "value": "#5ecce7",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Text Primary Color",
+            "key": "text_primary_color",
+            "value": "#193D6D",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Text Secondary Color",
+            "key": "text_secondary_color",
+            "value": "#4398e6",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Elements Background Color",
+            "key": "elements_background_color",
+            "value": "#F7FCFF",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Folders Icon Color",
+            "key": "folders_icon_color",
+            "value": "#F49C12",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Files Icon Color",
+            "key": "files_icon_color",
+            "value": "#105B81",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "col": "col-lg-4",
+            "field": "toggle",
+            "label": "Preloader",
+            "key": "preloader",
+            "value": 1,
+            "on": "Enable",
+            "off": "Disable",
+            "required": false
+        }
+    ],
+    "pages": [
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Header Section",
+            "key": "header_section",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "required": false
+        }
+    ],
+    "home_page": [
+        {
+            "col": "col-lg-4",
+            "field": "toggle",
+            "label": "Header Section",
+            "key": "header_section",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "required": false
+        },
+        {
+            "col": "col-lg-4",
+            "field": "toggle",
+            "label": "Features Section",
+            "key": "features_section",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "required": false
+        },
+        {
+            "col": "col-lg-4",
+            "field": "toggle",
+            "label": "How it works Section",
+            "key": "steps_section",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "required": false
+        },
+        {
+            "col": "col-lg-4",
+            "field": "toggle",
+            "label": "FAQs Section",
+            "key": "faqs_section",
+            "value": 0,
+            "on": "Show",
+            "off": "Hide",
+            "required": false
+        },
+        {
+            "col": "col-lg-4",
+            "field": "toggle",
+            "label": "Blog Section",
+            "key": "blog_section",
+            "value": 0,
+            "on": "Show",
+            "off": "Hide",
+            "required": false
+        },
+        {
+            "col": "col-lg-4",
+            "field": "toggle",
+            "label": "Withdrawal Methods Section",
+            "key": "withdrawal_methods_section",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "required": false
+        },
+        {
+            "col": "col-lg-6",
+            "field": "image",
+            "box_type": "square-large",
+            "box_bg": "bg-light",
+            "label": "Header Background",
+            "description": "Supported (JPEG, JPG, PNG, SVG, WEBP) Size 4000x2000px.",
+            "path": "images\/home-page\/",
+            "key": "header_background",
+            "value": "themes\/basic\/images\/home-page\/header-background.png",
+            "accept": ".jpg,.jpeg,.png,.svg,.webp",
+            "rule": [
+                "nullable",
+                "mimes:jpg,jpeg,png,svg,webp",
+                "max:4096"
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "image",
+            "box_type": "square-large",
+            "box_bg": "bg-light",
+            "label": "Header Image",
+            "description": "Supported (JPEG, JPG, PNG, SVG, WEBP) Size 600x600px.",
+            "path": "images\/home-page\/",
+            "key": "header_image",
+            "value": "themes\/basic\/images\/home-page\/1XZ1SFFeWCCmtyf_1786447280.png",
+            "accept": ".jpg,.jpeg,.png,.svg,.webp",
+            "rule": [
+                "nullable",
+                "mimes:jpg,jpeg,png,svg,webp",
+                "max:4096"
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "image",
+            "box_type": "square-large",
+            "box_bg": "bg-light",
+            "label": "Section Background Image",
+            "description": "Supported (JPEG, JPG, PNG, SVG, WEBP) Size 1926x1347px.",
+            "path": "images\/home-page\/",
+            "key": "section_background_image",
+            "value": "themes\/basic\/images\/home-page\/section-bg-image.svg",
+            "accept": ".jpg,.jpeg,.png,.svg,.webp",
+            "rule": [
+                "nullable",
+                "mimes:jpg,jpeg,png,svg,webp",
+                "max:4096"
+            ]
+        }
+    ],
+    "payout_rates_page": [
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Features",
+            "key": "features",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "required": false
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Withdrawal Methods Section",
+            "key": "withdrawal_methods_section",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "required": false
+        }
+    ],
+    "authentication": [
+        {
+            "col": "col-lg-6",
+            "field": "image",
+            "box_type": "square-large",
+            "box_bg": "bg-light",
+            "label": "Sign in page image",
+            "description": "Supported (JPEG, JPG, PNG, SVG, WEBP) Size 600x600px.",
+            "path": "images\/authentication\/",
+            "key": "signin_page_image",
+            "value": "themes\/basic\/images\/authentication\/signin-page-image.svg",
+            "accept": ".jpg,.jpeg,.png,.svg,.webp",
+            "rule": [
+                "nullable",
+                "mimes:jpg,jpeg,png,svg,webp",
+                "max:4096"
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "image",
+            "box_type": "square-large",
+            "box_bg": "bg-light",
+            "label": "Sign up page image",
+            "description": "Supported (JPEG, JPG, PNG, SVG, WEBP) Size 600x600px.",
+            "path": "images\/authentication\/",
+            "key": "signup_page_image",
+            "value": "themes\/basic\/images\/authentication\/signup-page-image.svg",
+            "accept": ".jpg,.jpeg,.png,.svg,.webp",
+            "rule": [
+                "nullable",
+                "mimes:jpg,jpeg,png,svg,webp",
+                "max:4096"
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "image",
+            "box_type": "square-large",
+            "box_bg": "bg-light",
+            "label": "Reset password page image",
+            "description": "Supported (JPEG, JPG, PNG, SVG, WEBP) Size 600x600px.",
+            "path": "images\/authentication\/",
+            "key": "reset_password_page_image",
+            "value": "themes\/basic\/images\/authentication\/reset-password-page-image.svg",
+            "accept": ".jpg,.jpeg,.png,.svg,.webp",
+            "rule": [
+                "nullable",
+                "mimes:jpg,jpeg,png,svg,webp",
+                "max:4096"
+            ]
+        }
+    ],
+    "download_pages": [
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "File about",
+            "key": "file_about",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "required": false
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Extra text Sections",
+            "key": "extra_text_sections",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "required": false
+        },
+        {
+            "col": "col-12",
+            "field": "ckeditor",
+            "label": "Page 1 extra text ",
+            "key": "page1_extra_text",
+            "value": "<h2 style=\"text-align:center;\">Download Files Easily with ArahCloud<\/h2><p>ArahCloud makes it simple to access and download files shared by users. Open the file page, review the available file information, and download your file when it is ready.<\/p><p>Whether you are downloading a document, image, video, software, archive, or other supported file, ArahCloud provides a convenient way to access shared files from any device.<\/p><h3>Safe &amp; Convenient File Sharing<\/h3><p>ArahCloud is designed to make file sharing easy while maintaining a reliable and secure environment for users. Files are provided by their respective uploaders, and availability may depend on the owner's settings and our platform policies.<\/p><p>If you believe a file violates our policies or infringes your rights, you can report it using the available reporting options.<\/p><h3>Need to Share Your Own Files?<\/h3><p>You can also use ArahCloud to upload and share your own files. Store your content online, organize your files, and share them with others using a simple link.<\/p><p><strong>Upload. Store. Share. Download. \u2014 ArahCloud<\/strong><\/p>",
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "col": "col-12",
+            "field": "ckeditor",
+            "label": "Page 2 extra text ",
+            "key": "page2_extra_text",
+            "value": "<h2 style=\"text-align:center;\">Easy &amp; Reliable File Downloads<\/h2><p>Looking for a simple way to access shared files? ArahCloud provides a convenient download experience for files shared by our users.<\/p><p>You can review the available file information before downloading and access your files from different devices. Whether you are downloading documents, images, videos, archives, software, or other supported files, ArahCloud makes file access simple and straightforward.<\/p><p>Files on ArahCloud are uploaded by individual users, so availability may vary depending on the uploader's settings and our platform policies.<\/p><p><strong>Simple access. Fast downloads. Easy file sharing.<\/strong><\/p>",
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "col": "col-12",
+            "field": "ckeditor",
+            "label": "Page 3 extra text ",
+            "key": "page3_extra_text",
+            "value": "<h2 style=\"text-align:center;\">Access Your Files Anywhere<\/h2><p>ArahCloud helps make shared files easier to access whenever you need them. With a simple download page, you can find the file information you need and download available files directly to your device.<\/p><p>ArahCloud supports a wide range of file types and is designed to provide a convenient experience for both uploaders and downloaders.<\/p><p>Want to share your own files? Upload them to ArahCloud, organize your content, and share the generated link with anyone you want.<\/p><p><strong>Your files, your links, your cloud.<\/strong><\/p>",
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        }
+    ],
+    "folder_page": [
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Folder about",
+            "key": "folder_about",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "required": false
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Extra text Section",
+            "key": "extra_text_section",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "required": false
+        },
+        {
+            "col": "col-12",
+            "field": "ckeditor",
+            "label": "Folder page extra text",
+            "key": "folder_page_extra_text",
+            "value": "<h2 style=\"text-align:center;\">Download Files Easily with ArahCloud<\/h2><p>ArahCloud makes it simple to access and download files shared by users. Open the file page, review the available file information, and download your file when it is ready.<\/p><p>Whether you are downloading a document, image, video, software, archive, or other supported file, ArahCloud provides a convenient way to access shared files from any device.<\/p><h3>Safe &amp; Convenient File Sharing<\/h3><p>ArahCloud is designed to make file sharing easy while maintaining a reliable and secure environment for users. Files are provided by their respective uploaders, and availability may depend on the owner's settings and our platform policies.<\/p><p>If you believe a file violates our policies or infringes your rights, you can report it using the available reporting options.<\/p><h3>Need to Share Your Own Files?<\/h3><p>You can also use ArahCloud to upload and share your own files. Store your content online, organize your files, and share them with others using a simple link.<\/p><p><strong>Upload. Store. Share. Download. \u2014 ArahCloud<\/strong><\/p>",
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        }
+    ],
+    "extra_codes": [
+        {
+            "col": "col-12",
+            "field": "textarea",
+            "label": "Head Code",
+            "key": "head_code",
+            "value": null,
+            "rows": 10,
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "col": "col-12",
+            "field": "textarea",
+            "label": "Footer Code",
+            "key": "footer_code",
+            "value": null,
+            "rows": 10,
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        }
+    ]
+}
