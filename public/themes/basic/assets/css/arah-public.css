@@ -68,35 +68,104 @@
   display:flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;
 }
 
-/* Keep configured header visibility, but replace the dated wave with a soft sky scene. */
-.arah-public .header { height:auto !important; background:#e7f6ff; overflow:hidden; }
+/*
+ * Public-page hero v2: editorial cloud atmosphere.
+ * Only pages using .arah-public inherit these changes.
+ * Visibility and title remain governed by their original Blade layouts.
+ */
+.arah-public { padding-top: 0 !important; }
+.arah-public .header {
+  position: relative;
+  height: auto !important;
+  min-height: 0;
+  overflow: hidden;
+  isolation: isolate;
+  background: #eaf7ff;
+}
 .arah-public .header .wrapper.wrapper-page {
-  position:relative;
-  padding: 72px 0 98px;
-  min-height: 280px !important;
-  color:#113b68;
-  background: linear-gradient(112deg,#f5fcff 0%,#dcf3ff 55%,#94cffa 100%);
+  position: relative;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 365px !important;
+  padding: 143px 0 110px;
+  color: #123d6d;
+  background:
+    radial-gradient(ellipse 40% 65% at 9% 65%, rgba(255,255,255,.96) 0%, rgba(255,255,255,0) 100%),
+    radial-gradient(ellipse 50% 80% at 83% 18%, rgba(120,199,252,.42) 0%, rgba(120,199,252,0) 100%),
+    linear-gradient(105deg,#f7fcff 0%,#e7f7ff 47%,#a6dafa 100%);
 }
 .arah-public .header .wrapper.wrapper-page::before {
-  content:"";position:absolute;inset:0;pointer-events:none;
-  background:url("../images/arah-refresh/hero-cloudscape.svg") center 40%/cover no-repeat;opacity:.43;
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  background:
+    url("../images/arah-refresh/hero-cloudscape.svg") center 53% / cover no-repeat,
+    url("../images/arah-refresh/sky-atmosphere.svg") center / cover no-repeat;
+  opacity:.68;
 }
 .arah-public .header .wrapper.wrapper-page::after {
-  content:"";position:absolute;z-index:1;left:0;right:0;bottom:-1px;height:65px;
+  content:"";
+  position:absolute;
+  z-index:2;
+  left:-1px;
+  right:-1px;
+  bottom:-1px;
+  height:clamp(54px,7.5vw,115px);
   background:#fff;
-  clip-path:polygon(0 68%,18% 86%,40% 66%,60% 82%,79% 65%,100% 75%,100% 100%,0 100%);
+  clip-path:polygon(0 64%,8% 71%,17% 80%,26% 77%,36% 61%,48% 59%,58% 73%,70% 83%,82% 75%,92% 60%,100% 68%,100% 100%,0 100%);
+  pointer-events:none;
 }
-.arah-public .header .wrapper.wrapper-page .wrapper-content { position:relative;z-index:2; }
+.arah-public .header .wrapper.wrapper-page > .container {
+  position:relative;
+  z-index:3;
+  width:min(100% - 36px,1180px);
+}
+.arah-public .header .wrapper.wrapper-page .wrapper-content {
+  position:relative;
+  width:100%;
+  z-index:3;
+}
+.arah-public .header .wrapper.wrapper-page .wrapper-container {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  min-height:95px;
+}
 .arah-public .header .wrapper.wrapper-page .page-title {
-  color:#0e467e; font-size:clamp(30px,3.3vw,45px);font-weight:800;
-  line-height:1.15;letter-spacing:-.035em;max-width:90%;text-align:center;
+  position:relative;
+  display:inline-flex;
+  flex-direction:column;
+  align-items:center;
+  max-width:90%;
   margin:0 auto;
+  font-size:clamp(35px,4.15vw,56px);
+  line-height:1.12;
+  letter-spacing:-.046em;
+  font-weight:800;
+  text-align:center;
+  text-wrap:balance;
+  color:#104478;
+  background:linear-gradient(105deg,#0a3669,#0c62ac 72%,#168bd4);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
 }
 .arah-public .header .wrapper.wrapper-page .page-title::after {
-  width:52px;height:4px;border-radius:4px;margin-top:15px;
-  background:linear-gradient(90deg,#086ec7,#40c3fa);
+  content:"";
+  flex:0 0 auto;
+  width:62px;
+  height:4px;
+  margin-top:20px;
+  background:linear-gradient(90deg,#0b77cd,#5dcaff);
+  border-radius:999px;
 }
-.arah-public .header .header-wave { display:none !important; }
+.arah-public .header .header-wave {display:none !important;}
+
 .arah-public .section { padding-top:65px;padding-bottom:80px; }
 .arah-public .section .section-header { margin-bottom:32px; }
 .arah-public .section .section-title {
@@ -261,7 +330,13 @@
 .arah-proof .pagination .page-link {border-radius:12px !important;}
 
 /* Auth: a polished accessible sign-in / registration composition. */
-.arah-auth .header .wrapper.wrapper-page {min-height:215px !important;padding:50px 0 85px;}
+.arah-auth .header .wrapper.wrapper-page {
+  min-height: 285px !important;
+  padding: 124px 0 87px;
+}
+.arah-auth .header .wrapper.wrapper-page .page-title { font-size: clamp(34px,3.6vw,48px); }
+.arah-auth .section.section-start { isolation:isolate; }
+
 .arah-auth .section.section-start {padding:60px 0 110px;background:linear-gradient(180deg,#fff,#f2faff);}
 .arah-auth .section.section-start .section-inner > .row {
   display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);
@@ -282,20 +357,71 @@
   align-items:flex-start;text-align:left;margin:0 0 19px;
   font-size:clamp(27px,3vw,37px);text-transform:none;
 }
+/*
+ * Dynamic artwork stays fully configurable from admin:
+ * signin_page_image and signup_page_image are never replaced.
+ * The visual depth is drawn around the original image, not over it.
+ */
 .arah-auth .section.section-start .section-inner > .row > .col:last-child {
-  display:flex;align-items:center;justify-content:center;
-  min-height:540px;padding:30px;
-  border-radius:32px;overflow:hidden;
+  position:relative;
+  isolation:isolate;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:570px;
+  padding:44px;
+  overflow:hidden;
+  border:1px solid rgba(156,211,247,.65);
+  border-radius:36px;
   background:
-    url("../images/arah-refresh/hero-halo.svg") center/contain no-repeat,
-    linear-gradient(145deg,#e5f7ff,#c5e8ff);
-  border:1px solid #e0f2ff;
+    radial-gradient(circle at 48% 42%,rgba(255,255,255,.96) 0%,rgba(255,255,255,.42) 24%,rgba(255,255,255,0) 63%),
+    radial-gradient(ellipse at 88% 87%,rgba(23,132,215,.25),transparent 52%),
+    linear-gradient(143deg,#e8f8ff 0%,#b7e2fc 59%,#90c9f2 100%);
+  box-shadow:0 22px 50px rgba(30,124,197,.11),inset 0 1px 0 rgba(255,255,255,.9);
 }
-.arah-auth .sign-img {display:flex;align-items:center;justify-content:center;width:100%;}
+.arah-auth .section.section-start .section-inner > .row > .col:last-child::before {
+  content:"";
+  position:absolute;
+  z-index:-1;
+  inset:-6%;
+  opacity:.74;
+  background:
+    url("../images/arah-refresh/hero-halo.svg") center / 116% auto no-repeat,
+    url("../images/arah-refresh/features-mist.svg") center / cover no-repeat;
+  pointer-events:none;
+}
+.arah-auth .section.section-start .section-inner > .row > .col:last-child::after {
+  content:"";
+  position:absolute;
+  z-index:-1;
+  width:74%;
+  aspect-ratio:1;
+  left:12%;
+  top:9%;
+  border-radius:50%;
+  border:1px solid rgba(255,255,255,.71);
+  box-shadow:0 0 0 29px rgba(255,255,255,.075),0 0 0 61px rgba(255,255,255,.045);
+  pointer-events:none;
+}
+.arah-auth .sign-img {
+  position:relative;
+  z-index:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  max-width:100%;
+  min-width:0;
+}
 .arah-auth .sign-img img {
-  width:100%;max-width:500px;max-height:570px;
-  height:auto;object-fit:contain;
-  filter:drop-shadow(0 24px 24px rgba(20,100,172,.11));
+  display:block;
+  width:100%;
+  max-width:520px;
+  max-height:480px;
+  height:auto;
+  object-fit:contain;
+  object-position:center;
+  filter:drop-shadow(0 27px 23px rgba(15,100,168,.14));
 }
 .arah-auth .form-label {display:block;margin-bottom:9px;color:#214c77;font-size:14px;font-weight:700;}
 .arah-auth .form-icon {position:relative;}
@@ -340,7 +466,8 @@
   .arah-public .rates .rate .rate-prices {margin-left:auto;}
 }
 @media (max-width:991.98px) {
-  .arah-public .header .wrapper.wrapper-page {padding:55px 0 85px;min-height:235px !important;}
+  .arah-auth .header .wrapper.wrapper-page { min-height:285px !important;padding:110px 0 89px; }
+  .arah-public .header .wrapper.wrapper-page {padding:125px 0 105px;min-height:320px !important;}
   .arah-public .section {padding:55px 0 70px;}
   .arah-rates .rates > .row {grid-template-columns:1fr;}
   .arah-rates .rates .rate {max-width:750px;width:100%;margin-inline:auto;}
@@ -351,17 +478,19 @@
     max-width:660px;width:100%;margin-inline:auto;order:1;
   }
   .arah-auth .section.section-start .section-inner > .row > .col:last-child {
-    order:2;min-height:290px;max-width:660px;width:100%;margin-inline:auto;
+    order:2;min-height:365px;max-width:660px;width:100%;margin-inline:auto;padding:28px;
   }
-  .arah-auth .sign-img img {max-height:310px;}
+  .arah-auth .sign-img img {max-height:340px;max-width:420px;}
 }
 @media (max-width:767.98px) {
+  .arah-auth .header .wrapper.wrapper-page {min-height:245px !important;padding:105px 0 77px;}
+  .arah-auth .header .wrapper.wrapper-page .page-title {font-size:clamp(32px,7.5vw,42px);}
   .arah-public .nav-bar {top:10px;width:calc(100% - 20px);}
   .arah-public .nav-bar .nav-bar-container {height:60px;padding:0 13px;}
   .arah-public .nav-bar .logo img {width:145px !important;}
-  .arah-public .header .wrapper.wrapper-page {padding:48px 0 70px;min-height:202px !important;}
-  .arah-public .header .wrapper.wrapper-page .page-title {font-size:clamp(27px,7vw,36px);}
-  .arah-public .header .wrapper.wrapper-page::after {height:42px;}
+  .arah-public .header .wrapper.wrapper-page {padding:110px 0 82px;min-height:270px !important;}
+  .arah-public .header .wrapper.wrapper-page .page-title {font-size:clamp(32px,7.5vw,43px);max-width:100%;}
+  .arah-public .header .wrapper.wrapper-page::after {height:63px;}
   .arah-public .section {padding:46px 0 65px;}
   .arah-public .section .section-title {font-size:27px;}
   .arah-rates .payout .card-v {min-height:250px;padding:25px 19px;}
@@ -382,8 +511,8 @@
   .arah-proof .payout-table .table {min-width:620px;}
   .arah-auth .section.section-start {padding:35px 0 70px;}
   .arah-auth .section.section-start .section-inner > .row > .col:first-child {padding:25px 20px;border-radius:22px;}
-  .arah-auth .section.section-start .section-inner > .row > .col:last-child {min-height:210px;padding:17px;border-radius:22px;}
-  .arah-auth .sign-img img {max-height:230px;}
+  .arah-auth .section.section-start .section-inner > .row > .col:last-child {min-height:290px;padding:24px;border-radius:24px;}
+  .arah-auth .sign-img img {max-height:270px;max-width:335px;}
   .arah-public .footer {
     background:linear-gradient(180deg,transparent 0 95px,#0b6bc4 95px,#07519f 68%,#06417f 100%);
   }
@@ -393,11 +522,12 @@
   .arah-public .footer .footer-links .footer-link {font-size:13px;}
 }
 @media (max-width:420px) {
+  .arah-auth .header .wrapper.wrapper-page {min-height:228px !important;padding:102px 0 68px;}
   .arah-public .container {width:calc(100% - 30px);}
   .arah-rates .rates .rate .rate-prices {width:100%;margin:10px 0 0 50px;}
   .arah-rates .rates .rate .rate-price {width:100%;}
   .arah-rates .rates .rate .rate-info {min-width:0;}
-  .arah-auth .section.section-start .section-inner > .row > .col:last-child {min-height:175px;}
+  .arah-auth .section.section-start .section-inner > .row > .col:last-child {min-height:230px;}
   .arah-public .footer .footer-content {min-height:400px;padding:175px 0 54px;}
 }
 @media (prefers-reduced-motion:reduce) {
