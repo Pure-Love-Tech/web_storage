@@ -216,7 +216,12 @@ class SettingsController extends Controller
 
     public function subscription()
     {
-        $transactions = Transaction::where('user_id', auth()->user()->id)->whereIn('status', [1, 2, 3])->orderbyDesc('id')->paginate(20);
+        $transactions = Transaction::with(['plan', 'paymentGateway'])
+            ->where('user_id', auth()->user()->id)
+            ->whereIn('status', [1, 2, 3])
+            ->orderByDesc('id')
+            ->paginate(20);
+            
         return theme_view('user.settings.subscription', ['user' => $this->user(), 'transactions' => $transactions]);
     }
 

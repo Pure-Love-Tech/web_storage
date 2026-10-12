@@ -1,0 +1,437 @@
+[2026-10-08 00:03:24] production.INFO: IsProxyIP Response {"ip":"103.155.197.225","status":200,"response":{"status":"success","ip":"103.155.197.225","proxy":0}} 
+[2026-10-08 00:06:11] production.INFO: IsProxyIP Response {"ip":"36.80.211.48","status":200,"response":{"status":"success","ip":"36.80.211.48","proxy":0}} 
+[2026-10-08 00:08:33] production.INFO: IsProxyIP Response {"ip":"103.187.162.108","status":200,"response":{"status":"success","ip":"103.187.162.108","proxy":0}} 
+[2026-10-08 00:08:52] production.INFO: IsProxyIP Response {"ip":"2402:8780:1037:30bd:58c6:863e:1850:7d31","status":200,"response":{"status":"success","ip":"2402:8780:1037:30bd:58c6:863e:1850:7d31","proxy":0}} 
+[2026-10-08 00:11:08] production.INFO: IsProxyIP Response {"ip":"114.10.100.28","status":200,"response":{"status":"success","ip":"114.10.100.28","proxy":0}} 
+[2026-10-08 00:15:13] production.INFO: IsProxyIP Response {"ip":"157.20.91.155","status":200,"response":{"status":"success","ip":"157.20.91.155","proxy":0}} 
+[2026-10-08 00:17:02] production.INFO: IsProxyIP Response {"ip":"2402:5680:9b1f:452a::1","status":200,"response":{"status":"success","ip":"2402:5680:9b1f:452a::1","proxy":0}} 
+[2026-10-08 00:18:15] production.INFO: IsProxyIP Response {"ip":"2402:8780:101d:565:a0b4:83ca:e8e1:ef79","status":200,"response":{"status":"success","ip":"2402:8780:101d:565:a0b4:83ca:e8e1:ef79","proxy":0}} 
+[2026-10-08 00:22:17] production.INFO: IsProxyIP Response {"ip":"2400:9800:9b2:bb7f:8c73:5cff:fe25:1949","status":200,"response":{"status":"success","ip":"2400:9800:9b2:bb7f:8c73:5cff:fe25:1949","proxy":0}} 
+[2026-10-08 00:28:14] production.ERROR: IsProxyIP Exception {"ip":"103.129.49.69","message":"cURL error 28: Operation timed out after 5001 milliseconds with 0 bytes received (see https://curl.se/libcurl/c/libcurl-errors.html) for https://api.isproxyip.com/v1/check.php?key=Qbm9r7hdzhUGbcP2zoTdOZrRhZaOYg9Seg7PxrxrKb58VTryje&ip=103.129.49.69&format=json"} 
+[2026-10-08 00:28:14] production.ERROR: cURL error 28: Operation timed out after 5001 milliseconds with 0 bytes received (see https://curl.se/libcurl/c/libcurl-errors.html) for https://api.isproxyip.com/v1/check.php?key=Qbm9r7hdzhUGbcP2zoTdOZrRhZaOYg9Seg7PxrxrKb58VTryje&ip=103.129.49.69&format=json {"exception":"[object] (Illuminate\\Http\\Client\\ConnectionException(code: 0): cURL error 28: Operation timed out after 5001 milliseconds with 0 bytes received (see https://curl.se/libcurl/c/libcurl-errors.html) for https://api.isproxyip.com/v1/check.php?key=Qbm9r7hdzhUGbcP2zoTdOZrRhZaOYg9Seg7PxrxrKb58VTryje&ip=103.129.49.69&format=json at /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php:855)
+[stacktrace]
+#0 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Support/helpers.php(260): Illuminate\\Http\\Client\\PendingRequest->Illuminate\\Http\\Client\\{closure}()
+#1 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php(821): retry()
+#2 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php(699): Illuminate\\Http\\Client\\PendingRequest->send()
+#3 /var/www/html/arahcloud/app/Http/Controllers/Files/FileController.php(326): Illuminate\\Http\\Client\\PendingRequest->get()
+#4 /var/www/html/arahcloud/app/Http/Controllers/Files/FileController.php(233): App\\Http\\Controllers\\Files\\FileController->isProxyIp()
+#5 /var/www/html/arahcloud/app/Http/Controllers/Files/FileController.php(150): App\\Http\\Controllers\\Files\\FileController->earningCalculating()
+#6 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\Files\\FileController->download()
+#7 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction()
+#8 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Route.php(259): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#9 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\\Routing\\Route->runController()
+#10 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Router.php(798): Illuminate\\Routing\\Route->run()
+#11 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#12 /var/www/html/arahcloud/app/Http/Middleware/UserTowFactorVerify.php(24): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#13 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\UserTowFactorVerify->handle()
+#14 /var/www/html/arahcloud/app/Http/Middleware/EnsureEmailIsVerified.php(32): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#15 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\EnsureEmailIsVerified->handle()
+#16 /var/www/html/arahcloud/app/Http/Middleware/Localization.php(24): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#17 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\Localization->handle()
+#18 /var/www/html/arahcloud/vironeer/Installer/app/Http/Middleware/NotInstalledMiddleware.php(14): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#19 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Vironeer\\Installer\\App\\Http\\Middleware\\NotInstalledMiddleware->handle()
+#20 /var/www/html/arahcloud/app/Http/Middleware/UserStatusCheck.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#21 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\UserStatusCheck->handle()
+#22 /var/www/html/arahcloud/app/Http/Middleware/SwitchDemoType.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#23 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\SwitchDemoType->handle()
+#24 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#26 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#27 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle()
+#28 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#29 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle()
+#30 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest()
+#32 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle()
+#33 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#34 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle()
+#35 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#36 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle()
+#37 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#38 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Router.php(797): Illuminate\\Pipeline\\Pipeline->then()
+#39 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack()
+#40 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Router.php(740): Illuminate\\Routing\\Router->runRoute()
+#41 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute()
+#42 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(190): Illuminate\\Routing\\Router->dispatch()
+#43 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#44 /var/www/html/arahcloud/vendor/livewire/livewire/src/DisableBrowserCache.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#45 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Livewire\\DisableBrowserCache->handle()
+#46 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#47 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#48 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#49 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#51 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#52 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#53 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#54 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#55 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#56 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#57 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#58 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#59 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#60 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#61 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then()
+#62 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#63 /var/www/html/arahcloud/public/index.php(61): Illuminate\\Foundation\\Http\\Kernel->handle()
+#64 {main}
+
+[previous exception] [object] (GuzzleHttp\\Exception\\ConnectException(code: 0): cURL error 28: Operation timed out after 5001 milliseconds with 0 bytes received (see https://curl.se/libcurl/c/libcurl-errors.html) for https://api.isproxyip.com/v1/check.php?key=Qbm9r7hdzhUGbcP2zoTdOZrRhZaOYg9Seg7PxrxrKb58VTryje&ip=103.129.49.69&format=json at /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php:1140)
+[stacktrace]
+#0 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php(1077): GuzzleHttp\\Handler\\CurlFactory::createRejection()
+#1 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php(1014): GuzzleHttp\\Handler\\CurlFactory::finishError()
+#2 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Handler/CurlHandler.php(88): GuzzleHttp\\Handler\\CurlFactory::finish()
+#3 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Handler/Proxy.php(28): GuzzleHttp\\Handler\\CurlHandler->__invoke()
+#4 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Handler/Proxy.php(68): GuzzleHttp\\Handler\\Proxy::GuzzleHttp\\Handler\\{closure}()
+#5 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Handler/Proxy.php(48): GuzzleHttp\\Handler\\Proxy::GuzzleHttp\\Handler\\{closure}()
+#6 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php(1150): GuzzleHttp\\Handler\\Proxy::GuzzleHttp\\Handler\\{closure}()
+#7 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php(1116): Illuminate\\Http\\Client\\PendingRequest->Illuminate\\Http\\Client\\{closure}()
+#8 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php(1102): Illuminate\\Http\\Client\\PendingRequest->Illuminate\\Http\\Client\\{closure}()
+#9 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/PrepareBodyMiddleware.php(35): Illuminate\\Http\\Client\\PendingRequest->Illuminate\\Http\\Client\\{closure}()
+#10 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Middleware.php(38): GuzzleHttp\\PrepareBodyMiddleware->__invoke()
+#11 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php(72): GuzzleHttp\\Middleware::GuzzleHttp\\{closure}()
+#12 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Middleware.php(63): GuzzleHttp\\RedirectMiddleware->__invoke()
+#13 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/HandlerStack.php(75): GuzzleHttp\\Middleware::GuzzleHttp\\{closure}()
+#14 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Client.php(1109): GuzzleHttp\\HandlerStack->__invoke()
+#15 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Client.php(243): GuzzleHttp\\Client->transfer()
+#16 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Client.php(273): GuzzleHttp\\Client->requestAsync()
+#17 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php(961): GuzzleHttp\\Client->request()
+#18 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php(823): Illuminate\\Http\\Client\\PendingRequest->sendRequest()
+#19 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Support/helpers.php(260): Illuminate\\Http\\Client\\PendingRequest->Illuminate\\Http\\Client\\{closure}()
+#20 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php(821): retry()
+#21 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php(699): Illuminate\\Http\\Client\\PendingRequest->send()
+#22 /var/www/html/arahcloud/app/Http/Controllers/Files/FileController.php(326): Illuminate\\Http\\Client\\PendingRequest->get()
+#23 /var/www/html/arahcloud/app/Http/Controllers/Files/FileController.php(233): App\\Http\\Controllers\\Files\\FileController->isProxyIp()
+#24 /var/www/html/arahcloud/app/Http/Controllers/Files/FileController.php(150): App\\Http\\Controllers\\Files\\FileController->earningCalculating()
+#25 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\Files\\FileController->download()
+#26 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction()
+#27 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Route.php(259): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#28 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\\Routing\\Route->runController()
+#29 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Router.php(798): Illuminate\\Routing\\Route->run()
+#30 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#31 /var/www/html/arahcloud/app/Http/Middleware/UserTowFactorVerify.php(24): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#32 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\UserTowFactorVerify->handle()
+#33 /var/www/html/arahcloud/app/Http/Middleware/EnsureEmailIsVerified.php(32): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#34 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\EnsureEmailIsVerified->handle()
+#35 /var/www/html/arahcloud/app/Http/Middleware/Localization.php(24): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#36 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\Localization->handle()
+#37 /var/www/html/arahcloud/vironeer/Installer/app/Http/Middleware/NotInstalledMiddleware.php(14): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#38 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Vironeer\\Installer\\App\\Http\\Middleware\\NotInstalledMiddleware->handle()
+#39 /var/www/html/arahcloud/app/Http/Middleware/UserStatusCheck.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#40 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\UserStatusCheck->handle()
+#41 /var/www/html/arahcloud/app/Http/Middleware/SwitchDemoType.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#42 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\SwitchDemoType->handle()
+#43 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#44 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#45 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#46 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle()
+#47 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#48 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle()
+#49 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest()
+#51 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle()
+#52 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#53 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle()
+#54 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#55 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle()
+#56 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#57 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Router.php(797): Illuminate\\Pipeline\\Pipeline->then()
+#58 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack()
+#59 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Router.php(740): Illuminate\\Routing\\Router->runRoute()
+#60 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute()
+#61 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(190): Illuminate\\Routing\\Router->dispatch()
+#62 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#63 /var/www/html/arahcloud/vendor/livewire/livewire/src/DisableBrowserCache.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#64 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Livewire\\DisableBrowserCache->handle()
+#65 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#66 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#67 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#68 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#69 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#70 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#71 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#72 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#73 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#74 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#75 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#76 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#77 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#78 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#79 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#80 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then()
+#81 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#82 /var/www/html/arahcloud/public/index.php(61): Illuminate\\Foundation\\Http\\Kernel->handle()
+#83 {main}
+"} 
+[2026-10-08 00:36:15] production.INFO: IsProxyIP Response {"ip":"202.154.45.193","status":200,"response":{"status":"success","ip":"202.154.45.193","proxy":0}} 
+[2026-10-08 00:36:56] production.INFO: IsProxyIP Response {"ip":"157.85.218.68","status":200,"response":{"status":"success","ip":"157.85.218.68","proxy":0}} 
+[2026-10-08 00:42:18] production.ERROR: IsProxyIP Exception {"ip":"202.154.45.196","message":"cURL error 28: Operation timed out after 5001 milliseconds with 0 bytes received (see https://curl.se/libcurl/c/libcurl-errors.html) for https://api.isproxyip.com/v1/check.php?key=Qbm9r7hdzhUGbcP2zoTdOZrRhZaOYg9Seg7PxrxrKb58VTryje&ip=202.154.45.196&format=json"} 
+[2026-10-08 00:42:18] production.ERROR: cURL error 28: Operation timed out after 5001 milliseconds with 0 bytes received (see https://curl.se/libcurl/c/libcurl-errors.html) for https://api.isproxyip.com/v1/check.php?key=Qbm9r7hdzhUGbcP2zoTdOZrRhZaOYg9Seg7PxrxrKb58VTryje&ip=202.154.45.196&format=json {"exception":"[object] (Illuminate\\Http\\Client\\ConnectionException(code: 0): cURL error 28: Operation timed out after 5001 milliseconds with 0 bytes received (see https://curl.se/libcurl/c/libcurl-errors.html) for https://api.isproxyip.com/v1/check.php?key=Qbm9r7hdzhUGbcP2zoTdOZrRhZaOYg9Seg7PxrxrKb58VTryje&ip=202.154.45.196&format=json at /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php:855)
+[stacktrace]
+#0 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Support/helpers.php(260): Illuminate\\Http\\Client\\PendingRequest->Illuminate\\Http\\Client\\{closure}()
+#1 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php(821): retry()
+#2 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php(699): Illuminate\\Http\\Client\\PendingRequest->send()
+#3 /var/www/html/arahcloud/app/Http/Controllers/Files/FileController.php(326): Illuminate\\Http\\Client\\PendingRequest->get()
+#4 /var/www/html/arahcloud/app/Http/Controllers/Files/FileController.php(233): App\\Http\\Controllers\\Files\\FileController->isProxyIp()
+#5 /var/www/html/arahcloud/app/Http/Controllers/Files/FileController.php(150): App\\Http\\Controllers\\Files\\FileController->earningCalculating()
+#6 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\Files\\FileController->download()
+#7 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction()
+#8 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Route.php(259): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#9 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\\Routing\\Route->runController()
+#10 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Router.php(798): Illuminate\\Routing\\Route->run()
+#11 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#12 /var/www/html/arahcloud/app/Http/Middleware/UserTowFactorVerify.php(24): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#13 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\UserTowFactorVerify->handle()
+#14 /var/www/html/arahcloud/app/Http/Middleware/EnsureEmailIsVerified.php(32): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#15 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\EnsureEmailIsVerified->handle()
+#16 /var/www/html/arahcloud/app/Http/Middleware/Localization.php(24): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#17 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\Localization->handle()
+#18 /var/www/html/arahcloud/vironeer/Installer/app/Http/Middleware/NotInstalledMiddleware.php(14): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#19 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Vironeer\\Installer\\App\\Http\\Middleware\\NotInstalledMiddleware->handle()
+#20 /var/www/html/arahcloud/app/Http/Middleware/UserStatusCheck.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#21 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\UserStatusCheck->handle()
+#22 /var/www/html/arahcloud/app/Http/Middleware/SwitchDemoType.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#23 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\SwitchDemoType->handle()
+#24 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#26 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#27 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle()
+#28 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#29 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle()
+#30 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest()
+#32 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle()
+#33 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#34 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle()
+#35 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#36 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle()
+#37 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#38 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Router.php(797): Illuminate\\Pipeline\\Pipeline->then()
+#39 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack()
+#40 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Router.php(740): Illuminate\\Routing\\Router->runRoute()
+#41 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute()
+#42 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(190): Illuminate\\Routing\\Router->dispatch()
+#43 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#44 /var/www/html/arahcloud/vendor/livewire/livewire/src/DisableBrowserCache.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#45 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Livewire\\DisableBrowserCache->handle()
+#46 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#47 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#48 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#49 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#51 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#52 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#53 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#54 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#55 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#56 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#57 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#58 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#59 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#60 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#61 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then()
+#62 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#63 /var/www/html/arahcloud/public/index.php(61): Illuminate\\Foundation\\Http\\Kernel->handle()
+#64 {main}
+
+[previous exception] [object] (GuzzleHttp\\Exception\\ConnectException(code: 0): cURL error 28: Operation timed out after 5001 milliseconds with 0 bytes received (see https://curl.se/libcurl/c/libcurl-errors.html) for https://api.isproxyip.com/v1/check.php?key=Qbm9r7hdzhUGbcP2zoTdOZrRhZaOYg9Seg7PxrxrKb58VTryje&ip=202.154.45.196&format=json at /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php:1140)
+[stacktrace]
+#0 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php(1077): GuzzleHttp\\Handler\\CurlFactory::createRejection()
+#1 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php(1014): GuzzleHttp\\Handler\\CurlFactory::finishError()
+#2 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Handler/CurlHandler.php(88): GuzzleHttp\\Handler\\CurlFactory::finish()
+#3 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Handler/Proxy.php(28): GuzzleHttp\\Handler\\CurlHandler->__invoke()
+#4 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Handler/Proxy.php(68): GuzzleHttp\\Handler\\Proxy::GuzzleHttp\\Handler\\{closure}()
+#5 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Handler/Proxy.php(48): GuzzleHttp\\Handler\\Proxy::GuzzleHttp\\Handler\\{closure}()
+#6 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php(1150): GuzzleHttp\\Handler\\Proxy::GuzzleHttp\\Handler\\{closure}()
+#7 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php(1116): Illuminate\\Http\\Client\\PendingRequest->Illuminate\\Http\\Client\\{closure}()
+#8 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php(1102): Illuminate\\Http\\Client\\PendingRequest->Illuminate\\Http\\Client\\{closure}()
+#9 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/PrepareBodyMiddleware.php(35): Illuminate\\Http\\Client\\PendingRequest->Illuminate\\Http\\Client\\{closure}()
+#10 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Middleware.php(38): GuzzleHttp\\PrepareBodyMiddleware->__invoke()
+#11 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php(72): GuzzleHttp\\Middleware::GuzzleHttp\\{closure}()
+#12 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Middleware.php(63): GuzzleHttp\\RedirectMiddleware->__invoke()
+#13 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/HandlerStack.php(75): GuzzleHttp\\Middleware::GuzzleHttp\\{closure}()
+#14 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Client.php(1109): GuzzleHttp\\HandlerStack->__invoke()
+#15 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Client.php(243): GuzzleHttp\\Client->transfer()
+#16 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Client.php(273): GuzzleHttp\\Client->requestAsync()
+#17 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php(961): GuzzleHttp\\Client->request()
+#18 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php(823): Illuminate\\Http\\Client\\PendingRequest->sendRequest()
+#19 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Support/helpers.php(260): Illuminate\\Http\\Client\\PendingRequest->Illuminate\\Http\\Client\\{closure}()
+#20 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php(821): retry()
+#21 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php(699): Illuminate\\Http\\Client\\PendingRequest->send()
+#22 /var/www/html/arahcloud/app/Http/Controllers/Files/FileController.php(326): Illuminate\\Http\\Client\\PendingRequest->get()
+#23 /var/www/html/arahcloud/app/Http/Controllers/Files/FileController.php(233): App\\Http\\Controllers\\Files\\FileController->isProxyIp()
+#24 /var/www/html/arahcloud/app/Http/Controllers/Files/FileController.php(150): App\\Http\\Controllers\\Files\\FileController->earningCalculating()
+#25 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\Files\\FileController->download()
+#26 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction()
+#27 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Route.php(259): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#28 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\\Routing\\Route->runController()
+#29 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Router.php(798): Illuminate\\Routing\\Route->run()
+#30 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#31 /var/www/html/arahcloud/app/Http/Middleware/UserTowFactorVerify.php(24): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#32 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\UserTowFactorVerify->handle()
+#33 /var/www/html/arahcloud/app/Http/Middleware/EnsureEmailIsVerified.php(32): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#34 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\EnsureEmailIsVerified->handle()
+#35 /var/www/html/arahcloud/app/Http/Middleware/Localization.php(24): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#36 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\Localization->handle()
+#37 /var/www/html/arahcloud/vironeer/Installer/app/Http/Middleware/NotInstalledMiddleware.php(14): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#38 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Vironeer\\Installer\\App\\Http\\Middleware\\NotInstalledMiddleware->handle()
+#39 /var/www/html/arahcloud/app/Http/Middleware/UserStatusCheck.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#40 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\UserStatusCheck->handle()
+#41 /var/www/html/arahcloud/app/Http/Middleware/SwitchDemoType.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#42 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\SwitchDemoType->handle()
+#43 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#44 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#45 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#46 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle()
+#47 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#48 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle()
+#49 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest()
+#51 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle()
+#52 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#53 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle()
+#54 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#55 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle()
+#56 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#57 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Router.php(797): Illuminate\\Pipeline\\Pipeline->then()
+#58 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack()
+#59 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Router.php(740): Illuminate\\Routing\\Router->runRoute()
+#60 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute()
+#61 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(190): Illuminate\\Routing\\Router->dispatch()
+#62 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#63 /var/www/html/arahcloud/vendor/livewire/livewire/src/DisableBrowserCache.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#64 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Livewire\\DisableBrowserCache->handle()
+#65 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#66 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#67 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#68 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#69 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#70 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#71 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#72 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#73 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#74 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#75 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#76 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#77 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#78 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#79 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#80 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then()
+#81 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#82 /var/www/html/arahcloud/public/index.php(61): Illuminate\\Foundation\\Http\\Kernel->handle()
+#83 {main}
+"} 
+[2026-10-08 00:42:19] production.INFO: IsProxyIP Response {"ip":"202.154.45.196","status":200,"response":{"status":"success","ip":"202.154.45.196","proxy":0}} 
+[2026-10-08 00:42:19] production.INFO: IsProxyIP Response {"ip":"202.154.45.196","status":200,"response":{"status":"success","ip":"202.154.45.196","proxy":0}} 
+[2026-10-08 00:54:26] production.INFO: IsProxyIP Response {"ip":"2404:c0:b602:b837:adf5:4701:539d:e7af","status":200,"response":{"status":"success","ip":"2404:c0:b602:b837:adf5:4701:539d:e7af","proxy":0}} 
+[2026-10-08 01:11:30] production.INFO: IsProxyIP Response {"ip":"103.122.64.157","status":200,"response":{"status":"success","ip":"103.122.64.157","proxy":0}} 
+[2026-10-08 01:13:21] production.INFO: IsProxyIP Response {"ip":"2404:c0:b201:52ec:fed5:dc39:5e63:a60a","status":200,"response":{"status":"success","ip":"2404:c0:b201:52ec:fed5:dc39:5e63:a60a","proxy":0}} 
+[2026-10-08 01:13:36] production.INFO: IsProxyIP Response {"ip":"118.99.125.12","status":200,"response":{"status":"success","ip":"118.99.125.12","proxy":0}} 
+[2026-10-08 01:15:41] production.INFO: IsProxyIP Response {"ip":"103.102.12.60","status":200,"response":{"status":"success","ip":"103.102.12.60","proxy":0}} 
+[2026-10-08 01:19:42] production.INFO: IsProxyIP Response {"ip":"36.74.222.232","status":200,"response":{"status":"success","ip":"36.74.222.232","proxy":0}} 
+[2026-10-08 01:21:51] production.INFO: IsProxyIP Response {"ip":"114.10.78.159","status":200,"response":{"status":"success","ip":"114.10.78.159","proxy":0}} 
+[2026-10-08 01:34:00] production.INFO: IsProxyIP Response {"ip":"103.162.112.254","status":200,"response":{"status":"success","ip":"103.162.112.254","proxy":0}} 
+[2026-10-08 01:36:17] production.INFO: IsProxyIP Response {"ip":"2001:448a:20a2:8b7:3de6:8e3e:375c:737d","status":200,"response":{"status":"success","ip":"2001:448a:20a2:8b7:3de6:8e3e:375c:737d","proxy":0}} 
+[2026-10-08 01:37:13] production.INFO: IsProxyIP Response {"ip":"140.213.159.97","status":200,"response":{"status":"success","ip":"140.213.159.97","proxy":0}} 
+[2026-10-08 01:51:15] production.INFO: IsProxyIP Response {"ip":"121.101.133.31","status":200,"response":{"status":"success","ip":"121.101.133.31","proxy":0}} 
+[2026-10-08 01:56:01] production.INFO: DIRECT_UPLOAD_INIT {"token":"bc1ea649-c7d8-40a1-bb1b-2978d0148297","user_id":13,"file_name":"IDM.6.43.Build.14.zip","file_size":17788608,"part_size":52428800,"total_parts":1,"path":"uploads/users/O9QWmpXmEB64/b3b9903a-9cb7-4a99-b17b-08a22057c405.zip"} 
+[2026-10-08 01:56:23] production.INFO: DIRECT_UPLOAD_FINISH {"token":"bc1ea649-c7d8-40a1-bb1b-2978d0148297","file_entry_id":339,"file_size":17788608,"path":"uploads/users/O9QWmpXmEB64/b3b9903a-9cb7-4a99-b17b-08a22057c405.zip"} 
+[2026-10-08 01:59:42] production.INFO: IsProxyIP Response {"ip":"182.4.72.71","status":200,"response":{"status":"success","ip":"182.4.72.71","proxy":0}} 
+[2026-10-08 02:04:54] production.INFO: IsProxyIP Response {"ip":"103.22.99.1","status":200,"response":{"status":"success","ip":"103.22.99.1","proxy":0}} 
+[2026-10-08 02:05:04] production.INFO: IsProxyIP Response {"ip":"103.55.22.245","status":200,"response":{"status":"success","ip":"103.55.22.245","proxy":0}} 
+[2026-10-08 02:06:48] production.INFO: IsProxyIP Response {"ip":"2404:c0:20ba:92f8:18dc:1b3f:250d:214e","status":200,"response":{"status":"success","ip":"2404:c0:20ba:92f8:18dc:1b3f:250d:214e","proxy":0}} 
+[2026-10-08 02:10:28] production.INFO: IsProxyIP Response {"ip":"107.155.57.236","status":200,"response":{"status":"success","ip":"107.155.57.236","proxy":1}} 
+[2026-10-08 02:11:41] production.INFO: IsProxyIP Response {"ip":"114.122.105.6","status":200,"response":{"status":"success","ip":"114.122.105.6","proxy":0}} 
+[2026-10-08 02:25:27] production.INFO: IsProxyIP Response {"ip":"45.243.90.69","status":200,"response":{"status":"success","ip":"45.243.90.69","proxy":0}} 
+[2026-10-08 02:43:53] production.INFO: IsProxyIP Response {"ip":"103.247.23.17","status":200,"response":{"status":"success","ip":"103.247.23.17","proxy":0}} 
+[2026-10-08 03:02:28] production.INFO: IsProxyIP Response {"ip":"2001:448a:4085:2904:63d4:be66:873c:e533","status":200,"response":{"status":"success","ip":"2001:448a:4085:2904:63d4:be66:873c:e533","proxy":0}} 
+[2026-10-08 03:15:37] production.INFO: DIRECT_UPLOAD_INIT {"token":"307068b2-5da2-4ee3-a227-1ae491a71246","user_id":13,"file_name":"Revo.Uninstaller.Pro.5.5.4.zip","file_size":18251730,"part_size":52428800,"total_parts":1,"path":"uploads/users/O9QWmpXmEB64/65209b5d-c857-4294-a306-7623dc0b1a38.zip"} 
+[2026-10-08 03:16:09] production.INFO: DIRECT_UPLOAD_FINISH {"token":"307068b2-5da2-4ee3-a227-1ae491a71246","file_entry_id":341,"file_size":18251730,"path":"uploads/users/O9QWmpXmEB64/65209b5d-c857-4294-a306-7623dc0b1a38.zip"} 
+[2026-10-08 03:26:47] production.INFO: IsProxyIP Response {"ip":"202.46.68.102","status":200,"response":{"status":"success","ip":"202.46.68.102","proxy":0}} 
+[2026-10-08 03:28:49] production.INFO: IsProxyIP Response {"ip":"203.78.121.88","status":200,"response":{"status":"success","ip":"203.78.121.88","proxy":0}} 
+[2026-10-08 03:35:16] production.INFO: IsProxyIP Response {"ip":"2001:448a:5110:5049:b6fd:a2ea:5c1c:a9ed","status":200,"response":{"status":"success","ip":"2001:448a:5110:5049:b6fd:a2ea:5c1c:a9ed","proxy":0}} 
+[2026-10-08 03:44:17] production.INFO: IsProxyIP Response {"ip":"204.51.36.51","status":200,"response":{"status":"success","ip":"204.51.36.51","proxy":0}} 
+[2026-10-08 03:45:12] production.INFO: IsProxyIP Response {"ip":"2404:c0:960a:2c4a:8c6b:d77b:bcf9:c3a0","status":200,"response":{"status":"success","ip":"2404:c0:960a:2c4a:8c6b:d77b:bcf9:c3a0","proxy":0}} 
+[2026-10-08 03:51:09] production.INFO: IsProxyIP Response {"ip":"118.99.116.250","status":200,"response":{"status":"success","ip":"118.99.116.250","proxy":0}} 
+[2026-10-08 04:02:56] production.INFO: IsProxyIP Response {"ip":"103.154.25.200","status":200,"response":{"status":"success","ip":"103.154.25.200","proxy":0}} 
+[2026-10-08 04:16:21] production.INFO: IsProxyIP Response {"ip":"140.213.17.65","status":200,"response":{"status":"success","ip":"140.213.17.65","proxy":0}} 
+[2026-10-08 04:21:08] production.INFO: IsProxyIP Response {"ip":"103.47.132.6","status":200,"response":{"status":"success","ip":"103.47.132.6","proxy":0}} 
+[2026-10-08 04:21:13] production.INFO: IsProxyIP Response {"ip":"153.60.129.146","status":200,"response":{"status":"success","ip":"153.60.129.146","proxy":1}} 
+[2026-10-08 04:24:17] production.INFO: IsProxyIP Response {"ip":"103.38.104.53","status":200,"response":{"status":"success","ip":"103.38.104.53","proxy":0}} 
+[2026-10-08 04:24:46] production.INFO: IsProxyIP Response {"ip":"114.10.145.203","status":200,"response":{"status":"success","ip":"114.10.145.203","proxy":0}} 
+[2026-10-08 04:30:38] production.INFO: IsProxyIP Response {"ip":"157.66.170.26","status":200,"response":{"status":"success","ip":"157.66.170.26","proxy":0}} 
+[2026-10-08 04:39:19] production.INFO: IsProxyIP Response {"ip":"210.87.92.224","status":200,"response":{"status":"success","ip":"210.87.92.224","proxy":0}} 
+[2026-10-08 04:54:10] production.INFO: IsProxyIP Response {"ip":"125.164.38.119","status":200,"response":{"status":"success","ip":"125.164.38.119","proxy":0}} 
+[2026-10-08 05:02:28] production.INFO: IsProxyIP Response {"ip":"153.76.67.4","status":200,"response":{"status":"success","ip":"153.76.67.4","proxy":0}} 
+[2026-10-08 05:10:17] production.INFO: IsProxyIP Response {"ip":"103.156.165.79","status":200,"response":{"status":"success","ip":"103.156.165.79","proxy":1}} 
+[2026-10-08 05:26:15] production.INFO: IsProxyIP Response {"ip":"103.47.132.24","status":200,"response":{"status":"success","ip":"103.47.132.24","proxy":0}} 
+[2026-10-08 05:28:52] production.INFO: IsProxyIP Response {"ip":"150.107.246.25","status":200,"response":{"status":"success","ip":"150.107.246.25","proxy":0}} 
+[2026-10-08 05:34:49] production.INFO: IsProxyIP Response {"ip":"119.82.244.146","status":200,"response":{"status":"success","ip":"119.82.244.146","proxy":0}} 
+[2026-10-08 05:35:33] production.INFO: IsProxyIP Response {"ip":"114.10.152.200","status":200,"response":{"status":"success","ip":"114.10.152.200","proxy":0}} 
+[2026-10-08 05:57:25] production.INFO: IsProxyIP Response {"ip":"2400:9800:a0:b3ab:1:0:54ea:3fe5","status":200,"response":{"status":"success","ip":"2400:9800:a0:b3ab:1:0:54ea:3fe5","proxy":0}} 
+[2026-10-08 05:57:35] production.INFO: IsProxyIP Response {"ip":"124.40.251.160","status":200,"response":{"status":"success","ip":"124.40.251.160","proxy":0}} 
+[2026-10-08 06:06:56] production.INFO: IsProxyIP Response {"ip":"103.75.84.212","status":200,"response":{"status":"success","ip":"103.75.84.212","proxy":1}} 
+[2026-10-08 06:09:28] production.INFO: IsProxyIP Response {"ip":"2402:5680:89c6:dbf4:60f9:8dfd:6496:e573","status":200,"response":{"status":"success","ip":"2402:5680:89c6:dbf4:60f9:8dfd:6496:e573","proxy":0}} 
+[2026-10-08 06:22:10] production.INFO: IsProxyIP Response {"ip":"103.67.91.116","status":200,"response":{"status":"success","ip":"103.67.91.116","proxy":0}} 
+[2026-10-08 06:27:33] production.INFO: IsProxyIP Response {"ip":"2402:8780:1001:5582:bf04:6678:37d9:1df8","status":200,"response":{"status":"success","ip":"2402:8780:1001:5582:bf04:6678:37d9:1df8","proxy":0}} 
+[2026-10-08 06:37:48] production.INFO: IsProxyIP Response {"ip":"103.184.19.167","status":500,"response":{"status":"error","message":"SERVER ERROR"}} 
+[2026-10-08 06:38:43] production.INFO: IsProxyIP Response {"ip":"210.87.86.141","status":200,"response":{"status":"success","ip":"210.87.86.141","proxy":0}} 
+[2026-10-08 06:40:14] production.INFO: IsProxyIP Response {"ip":"2404:c0:4260::1:8e1b:52e1","status":200,"response":{"status":"success","ip":"2404:c0:4260::1:8e1b:52e1","proxy":0}} 
+[2026-10-08 06:48:56] production.INFO: IsProxyIP Response {"ip":"114.122.104.201","status":200,"response":{"status":"success","ip":"114.122.104.201","proxy":0}} 
+[2026-10-08 06:51:29] production.INFO: IsProxyIP Response {"ip":"179.65.209.55","status":200,"response":{"status":"success","ip":"179.65.209.55","proxy":0}} 
+[2026-10-08 07:03:42] production.INFO: IsProxyIP Response {"ip":"114.8.219.46","status":200,"response":{"status":"success","ip":"114.8.219.46","proxy":0}} 
+[2026-10-08 07:05:40] production.INFO: IsProxyIP Response {"ip":"2404:c0:c204:3b9c:99d0:77:39dd:930d","status":200,"response":{"status":"success","ip":"2404:c0:c204:3b9c:99d0:77:39dd:930d","proxy":0}} 
+[2026-10-08 07:14:04] production.INFO: IsProxyIP Response {"ip":"180.94.23.12","status":200,"response":{"status":"success","ip":"180.94.23.12","proxy":0}} 
+[2026-10-08 07:23:13] production.INFO: IsProxyIP Response {"ip":"157.66.236.131","status":200,"response":{"status":"success","ip":"157.66.236.131","proxy":0}} 
+[2026-10-08 07:34:01] production.INFO: IsProxyIP Response {"ip":"182.10.168.9","status":200,"response":{"status":"success","ip":"182.10.168.9","proxy":0}} 
+[2026-10-08 07:34:06] production.INFO: IsProxyIP Response {"ip":"182.5.199.101","status":200,"response":{"status":"success","ip":"182.5.199.101","proxy":0}} 
+[2026-10-08 07:35:27] production.INFO: IsProxyIP Response {"ip":"114.10.78.210","status":200,"response":{"status":"success","ip":"114.10.78.210","proxy":0}} 
+[2026-10-08 07:45:04] production.INFO: IsProxyIP Response {"ip":"36.71.166.196","status":200,"response":{"status":"success","ip":"36.71.166.196","proxy":0}} 
+[2026-10-08 07:45:47] production.INFO: IsProxyIP Response {"ip":"103.108.31.96","status":200,"response":{"status":"success","ip":"103.108.31.96","proxy":0}} 
+[2026-10-08 07:52:50] production.INFO: IsProxyIP Response {"ip":"36.71.173.39","status":200,"response":{"status":"success","ip":"36.71.173.39","proxy":0}} 
+[2026-10-08 07:58:12] production.INFO: IsProxyIP Response {"ip":"36.71.175.232","status":200,"response":{"status":"success","ip":"36.71.175.232","proxy":0}} 
+[2026-10-08 07:58:46] production.INFO: IsProxyIP Response {"ip":"2001:448a:2050:b102:a120:4d3d:baaf:b542","status":200,"response":{"status":"success","ip":"2001:448a:2050:b102:a120:4d3d:baaf:b542","proxy":0}} 
+[2026-10-08 08:01:23] production.INFO: IsProxyIP Response {"ip":"2400:9800:3a8:2ac0:4824:1bff:fed5:8379","status":200,"response":{"status":"success","ip":"2400:9800:3a8:2ac0:4824:1bff:fed5:8379","proxy":0}} 
+[2026-10-08 08:04:53] production.INFO: IsProxyIP Response {"ip":"129.45.79.38","status":200,"response":{"status":"success","ip":"129.45.79.38","proxy":0}} 
+[2026-10-08 08:09:10] production.INFO: IsProxyIP Response {"ip":"140.213.40.46","status":200,"response":{"status":"success","ip":"140.213.40.46","proxy":0}} 
+[2026-10-08 08:17:29] production.INFO: IsProxyIP Response {"ip":"202.65.225.188","status":200,"response":{"status":"success","ip":"202.65.225.188","proxy":0}} 
+[2026-10-08 08:19:55] production.INFO: IsProxyIP Response {"ip":"103.231.236.129","status":200,"response":{"status":"success","ip":"103.231.236.129","proxy":0}} 
+[2026-10-08 08:29:54] production.INFO: IsProxyIP Response {"ip":"168.235.203.253","status":200,"response":{"status":"success","ip":"168.235.203.253","proxy":1}} 
+[2026-10-08 08:30:23] production.INFO: IsProxyIP Response {"ip":"2404:c0:3193:c24d:18dc:68fc:2f47:ea3a","status":200,"response":{"status":"success","ip":"2404:c0:3193:c24d:18dc:68fc:2f47:ea3a","proxy":0}} 
+[2026-10-08 08:30:34] production.INFO: IsProxyIP Response {"ip":"114.10.129.160","status":200,"response":{"status":"success","ip":"114.10.129.160","proxy":0}} 
+[2026-10-08 08:33:20] production.INFO: IsProxyIP Response {"ip":"2806:10a6:6:fad7:17f:6e9c:ac5a:259","status":200,"response":{"status":"success","ip":"2806:10a6:6:fad7:17f:6e9c:ac5a:259","proxy":0}} 
+[2026-10-08 08:33:29] production.INFO: IsProxyIP Response {"ip":"2404:c0:20e0::469:e6da","status":200,"response":{"status":"success","ip":"2404:c0:20e0::469:e6da","proxy":0}} 
+[2026-10-08 08:37:21] production.INFO: IsProxyIP Response {"ip":"114.10.10.124","status":200,"response":{"status":"success","ip":"114.10.10.124","proxy":0}} 
+[2026-10-08 08:39:56] production.INFO: IsProxyIP Response {"ip":"125.165.56.64","status":200,"response":{"status":"success","ip":"125.165.56.64","proxy":0}} 
+[2026-10-08 08:46:03] production.INFO: IsProxyIP Response {"ip":"112.215.237.63","status":200,"response":{"status":"success","ip":"112.215.237.63","proxy":0}} 
+[2026-10-08 08:48:56] production.INFO: IsProxyIP Response {"ip":"114.122.210.26","status":200,"response":{"status":"success","ip":"114.122.210.26","proxy":0}} 
+[2026-10-08 08:51:19] production.INFO: IsProxyIP Response {"ip":"140.213.7.53","status":200,"response":{"status":"success","ip":"140.213.7.53","proxy":0}} 
+[2026-10-08 08:51:21] production.INFO: IsProxyIP Response {"ip":"125.165.104.107","status":200,"response":{"status":"success","ip":"125.165.104.107","proxy":0}} 
+[2026-10-08 08:57:26] production.INFO: IsProxyIP Response {"ip":"112.215.65.162","status":200,"response":{"status":"success","ip":"112.215.65.162","proxy":0}} 
+[2026-10-08 09:06:56] production.INFO: IsProxyIP Response {"ip":"192.135.210.34","status":200,"response":{"status":"success","ip":"192.135.210.34","proxy":0}} 
+[2026-10-08 09:09:12] production.INFO: IsProxyIP Response {"ip":"182.1.232.133","status":200,"response":{"status":"success","ip":"182.1.232.133","proxy":0}} 
+[2026-10-08 09:14:55] production.INFO: IsProxyIP Response {"ip":"2400:9800:370:da58:7a3a:94af:988d:b333","status":200,"response":{"status":"success","ip":"2400:9800:370:da58:7a3a:94af:988d:b333","proxy":0}} 
+[2026-10-08 09:16:51] production.INFO: IsProxyIP Response {"ip":"2404:c0:bb01:686:9c12:da41:e29:4e44","status":200,"response":{"status":"success","ip":"2404:c0:bb01:686:9c12:da41:e29:4e44","proxy":0}} 
+[2026-10-08 09:25:50] production.INFO: IsProxyIP Response {"ip":"2402:8780:1085:1163:2065:33c2:a08c:a9e3","status":200,"response":{"status":"success","ip":"2402:8780:1085:1163:2065:33c2:a08c:a9e3","proxy":0}} 
+[2026-10-08 09:27:49] production.INFO: IsProxyIP Response {"ip":"36.71.174.190","status":200,"response":{"status":"success","ip":"36.71.174.190","proxy":0}} 
+[2026-10-08 09:28:39] production.INFO: IsProxyIP Response {"ip":"114.12.3.233","status":200,"response":{"status":"success","ip":"114.12.3.233","proxy":0}} 
+[2026-10-08 09:30:12] production.INFO: IsProxyIP Response {"ip":"2001:448a:e090:83c:4583:8173:9dba:6a27","status":200,"response":{"status":"success","ip":"2001:448a:e090:83c:4583:8173:9dba:6a27","proxy":0}} 
+[2026-10-08 09:33:12] production.INFO: IsProxyIP Response {"ip":"157.20.220.234","status":200,"response":{"status":"success","ip":"157.20.220.234","proxy":0}} 
+[2026-10-08 09:33:58] production.INFO: IsProxyIP Response {"ip":"203.190.44.141","status":200,"response":{"status":"success","ip":"203.190.44.141","proxy":0}} 
+[2026-10-08 09:34:39] production.INFO: IsProxyIP Response {"ip":"180.252.118.19","status":200,"response":{"status":"success","ip":"180.252.118.19","proxy":0}} 
+[2026-10-08 09:35:20] production.INFO: IsProxyIP Response {"ip":"114.10.157.173","status":200,"response":{"status":"success","ip":"114.10.157.173","proxy":0}} 
+[2026-10-08 09:38:41] production.INFO: IsProxyIP Response {"ip":"114.8.225.183","status":200,"response":{"status":"success","ip":"114.8.225.183","proxy":0}} 
+[2026-10-08 09:42:58] production.INFO: IsProxyIP Response {"ip":"2400:9800:214:57a9:18dc:6a64:e673:cd78","status":200,"response":{"status":"success","ip":"2400:9800:214:57a9:18dc:6a64:e673:cd78","proxy":0}} 
+[2026-10-08 09:52:18] production.INFO: IsProxyIP Response {"ip":"2001:448a:e0c0:312:a41d:415:2b7d:7181","status":200,"response":{"status":"success","ip":"2001:448a:e0c0:312:a41d:415:2b7d:7181","proxy":0}} 
+[2026-10-08 09:52:51] production.INFO: IsProxyIP Response {"ip":"2402:8780:1001:3ed2:2089:f657:636:d1d4","status":200,"response":{"status":"success","ip":"2402:8780:1001:3ed2:2089:f657:636:d1d4","proxy":0}} 
+[2026-10-08 09:55:34] production.INFO: IsProxyIP Response {"ip":"202.58.78.100","status":200,"response":{"status":"success","ip":"202.58.78.100","proxy":1}} 
+[2026-10-08 09:55:44] production.INFO: IsProxyIP Response {"ip":"114.8.217.43","status":200,"response":{"status":"success","ip":"114.8.217.43","proxy":0}} 
+[2026-10-08 09:59:53] production.INFO: IsProxyIP Response {"ip":"112.215.230.188","status":200,"response":{"status":"success","ip":"112.215.230.188","proxy":0}} 
+[2026-10-08 10:05:26] production.INFO: IsProxyIP Response {"ip":"114.8.208.7","status":200,"response":{"status":"success","ip":"114.8.208.7","proxy":0}} 
+[2026-10-08 10:15:40] production.INFO: IsProxyIP Response {"ip":"2402:8780:1085:1163:1028:71d2:cd18:aee3","status":200,"response":{"status":"success","ip":"2402:8780:1085:1163:1028:71d2:cd18:aee3","proxy":0}} 
+[2026-10-08 10:18:08] production.INFO: IsProxyIP Response {"ip":"110.139.135.236","status":200,"response":{"status":"success","ip":"110.139.135.236","proxy":0}} 
+[2026-10-08 10:22:45] production.INFO: IsProxyIP Response {"ip":"2001:448a:e070:d64:147a:4746:70c6:f3ba","status":200,"response":{"status":"success","ip":"2001:448a:e070:d64:147a:4746:70c6:f3ba","proxy":0}} 
+[2026-10-08 10:30:43] production.INFO: IsProxyIP Response {"ip":"2402:8780:20c1:c3fd:1c79:2f2b:d7d5:58a9","status":200,"response":{"status":"success","ip":"2402:8780:20c1:c3fd:1c79:2f2b:d7d5:58a9","proxy":0}} 
+[2026-10-08 10:34:31] production.INFO: IsProxyIP Response {"ip":"140.213.16.149","status":200,"response":{"status":"success","ip":"140.213.16.149","proxy":0}} 
+[2026-10-08 10:38:24] production.INFO: IsProxyIP Response {"ip":"114.4.212.235","status":200,"response":{"status":"success","ip":"114.4.212.235","proxy":0}} 
+[2026-10-08 10:38:29] production.INFO: IsProxyIP Response {"ip":"125.163.212.104","status":200,"response":{"status":"success","ip":"125.163.212.104","proxy":0}} 

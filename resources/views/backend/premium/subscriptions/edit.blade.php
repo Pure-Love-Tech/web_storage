@@ -25,6 +25,10 @@
             </div>
             <div class="card-body">
                 <div class="mb-2">
+                    <label class="form-label" for="">Plan Name</label>
+                    <p>{{ $subscription->subscription_plan?->name ?? '-' }}</p>
+                </div>
+                <div class="mb-2">
                     <label class="form-label">{{ admin_trans('Expiry at') }}</label>
                     <input type="datetime-local" step="any" name="expiry_at" class="form-control"
                         value="{{ app(\Carbon\Carbon::class)->parse($subscription->expiry_at)->format('Y-m-d\TH:i:s') }}"

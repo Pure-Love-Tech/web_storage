@@ -74,7 +74,7 @@ class EarningStatistic extends Model
             6 => translate('Missing payout rate', 'earnings'),
             7 => translate('Daily limit reached', 'earnings'),
             8 => translate('Proxy detected', 'earnings'),
-            9 => translate('Trustip API error', 'earnings'),
+            9 => translate('IsProxyIP API error', 'earnings'),
         ];
     }
 

@@ -14,6 +14,77 @@ use Illuminate\Support\Facades\Route;
 |
 |-------------------------------------------------------------------------
  */
+
+Route::get('/debug/ip', function () {
+    return response()->json([
+        'REMOTE_ADDR' => $_SERVER['REMOTE_ADDR'] ?? null,
+        'HTTP_CF_CONNECTING_IP' => $_SERVER['HTTP_CF_CONNECTING_IP'] ?? null,
+        'HTTP_X_FORWARDED_FOR' => $_SERVER['HTTP_X_FORWARDED_FOR'] ?? null,
+        'request_ip' => request()->ip(),
+    ]);
+});
+
+Route::get('/debug/upload-middleware', function () {
+    return response()->json([
+        'status' => 'middleware-ok',
+        'user_id' => auth()->id(),
+    ]);
+})->middleware([
+            'user.status',
+            'notInstalled',
+            'app.localize',
+            'verified',
+            'user.2fa',
+        ]);
+
+Route::get('/debug/upload-session-model', function () {
+    error_log('M1');
+
+    $model = new \App\Models\UploadSession();
+
+    error_log('M2');
+
+    return response()->json([
+        'class' => get_class($model),
+        'table' => $model->getTable(),
+        'connection' => $model->getConnectionName(),
+    ]);
+});
+
+Route::get('/debug/upload-session-query', function () {
+    error_log('US1');
+
+    $query = \App\Models\UploadSession::query();
+
+    error_log('US2');
+
+    return response()->json([
+        'ok' => true,
+    ]);
+});
+
+Route::get('/debug/upload-session-sum', function () {
+
+    error_log('SUM1');
+
+    $reserved = \App\Models\UploadSession::query()
+        ->whereIn('status', [
+            \App\Models\UploadSession::STATUS_INITIATED,
+            \App\Models\UploadSession::STATUS_UPLOADING,
+            \App\Models\UploadSession::STATUS_COMPLETING,
+        ])
+        ->where('expires_at', '>', now())
+        ->where('user_id', 1)
+        ->sum('size');
+
+    error_log('SUM2 ' . $reserved);
+
+    return response()->json([
+        'ok' => true,
+        'reserved' => $reserved,
+    ]);
+});
+
 Route::group(LocalizationRouteGroup::build(), function () {
     Route::get('cookie/accept', 'GlobalController@cookie')->middleware('ajax.only');
     Route::get('popup/close', 'GlobalController@popup')->middleware('ajax.only');
@@ -93,6 +164,36 @@ Route::group(LocalizationRouteGroup::build(), function () {
         Route::get('/', 'HomeController@index')->name('home')->middleware('referral');
         Route::name('files.')->namespace('Files')->group(function () {
             Route::post('upload', 'UploadController@upload')->name('upload');
+            /*
+        |--------------------------------------------------------------------------
+        | Direct R2 Multipart Upload
+        |--------------------------------------------------------------------------
+        */
+
+            Route::post(
+                'upload/direct/initiate',
+                'UploadController@directInitiate'
+            )->name('upload.direct.initiate');
+
+
+            Route::post(
+                'upload/direct/part-url',
+                'UploadController@directPartUrl'
+            )->name('upload.direct.part-url');
+
+
+            Route::post(
+                'upload/direct/complete',
+                'UploadController@directComplete'
+            )->name('upload.direct.complete');
+
+
+            Route::post(
+                'upload/direct/abort',
+                'UploadController@directAbort'
+            )->name('upload.direct.abort');
+
+            
             Route::middleware(['files.hasNoPassword'])->group(function () {
                 Route::get('{id}/password', 'PasswordController@index')->middleware('referrer');
                 Route::post('{id}/password', 'PasswordController@unlock')->name('password');
@@ -112,6 +213,8 @@ Route::group(LocalizationRouteGroup::build(), function () {
         });
         Route::get('payout-rates', 'GlobalController@payoutRates')->name('payout-rates')->middleware('payout_rates');
         Route::get('payment-proof', 'GlobalController@paymentProof')->name('payment-proof')->middleware('payment_proof');
+        Route::get('faqs', 'GlobalController@faq')->name('faqs');
+
         Route::name('blog.')->prefix('blog')->middleware('blog')->group(function () {
             Route::get('/', 'BlogController@index')->name('index');
             Route::get('categories', 'BlogController@categories')->name('categories');

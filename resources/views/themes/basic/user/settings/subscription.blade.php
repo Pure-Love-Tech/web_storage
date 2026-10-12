@@ -167,6 +167,7 @@
                         <thead>
                             <tr>
                                 <th>{{ translate('ID', 'settings') }}</th>
+                                <th>Plan</th>
                                 <th>{{ translate('Price', 'settings') }}</th>
                                 <th>{{ translate('Interval', 'settings') }}</th>
                                 <th>{{ translate('Payment Method', 'settings') }}</th>
@@ -176,8 +177,10 @@
                         </thead>
                         <tbody class="text-muted">
                             @foreach ($transactions as $transaction)
+                            {{-- {{ $transaction }} --}}
                                 <tr>
                                     <td>#{{ $transaction->id }}</td>
+                                    <td>{{ $transaction->plan?->name ?? '-' }}</td>
                                     <td>
                                         {{ priceSymbol($transaction->price) }}
                                     </td>
