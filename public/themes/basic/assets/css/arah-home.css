@@ -4,8 +4,8 @@
  * Admin-managed artwork, text, feature count, navigation, and payment methods remain dynamic.
  */
 .arah-home {
-  --arah-ink: #103d70;
-  --arah-blue: #0879df;
+  --arah-ink: var(--text_primary_color, #103d70);
+  --arah-blue: var(--secondary_color, #0879df);
   --arah-sky: #55c6fc;
   --arah-cloud: #edf8ff;
   --arah-border: rgba(58, 146, 216, .15);
@@ -304,8 +304,8 @@
   .arah-home .arah-hero .btn-primary { font-size: 14px; padding: 13px 24px; }
   .arah-home .arah-features { padding-top: 75px; padding-bottom: 70px; }
   .arah-home .arah-features .section-body > .row > .col-12 { width: 100%; }
-  .arah-home .arah-features .section-body > .row > .col-12 > .row { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 13px; }
-  .arah-home .arah-features .section-body > .row > .col-12 > .row > .col { width: auto; padding: 0; }
+  .arah-home .arah-features .section-body > .row > .col > .row { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 13px; margin: 0; }
+  .arah-home .arah-features .section-body > .row > .col > .row > .col { width: auto; padding: 0; }
   .arah-home .arah-features .feature { border-radius: 16px; padding: 18px 15px; min-height: 0; }
   .arah-home .arah-features .feature-icon { width: 44px; height: 44px; }
   .arah-home .arah-features .feature .feature-icon img { width: 31px; height: 31px; }
