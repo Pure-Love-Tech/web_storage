@@ -38,7 +38,7 @@
 
 /* Navbar: glass capsule without breaking fixed-position mobile drawer. */
 .arah-home .nav-bar {
-  position: fixed; top: 14px; left: 50%; transform: translateX(-50%);
+  position: fixed; top: 14px; left: 0; right: 0; margin-inline: auto; transform: none;
   width: min(calc(100% - 32px), 1210px);
   background: rgba(255,255,255,.97); color: var(--arah-navy);
   border: 1px solid #e6f2fb; border-radius: 80px;
@@ -365,6 +365,8 @@
   .arah-home .nav-bar .nav-bar-menu .nav-bar-links .link {
     display:flex;width:100%;margin:0 0 4px;
   }
+  .arah-home .nav-bar .nav-bar-menu.show .nav-bar-links { right:0; }
+  .arah-home .nav-bar .nav-bar-menu .nav-bar-links .link:not(:last-child) { margin-right:0; }
   .arah-home .nav-bar .nav-bar-menu .nav-bar-links .drop-down { width:100%;margin-right:0 !important; }
   .arah-home .nav-bar .nav-bar-menu .nav-bar-links .link-btn { width:100%;margin:0 0 8px; }
   .arah-home .nav-bar .nav-bar-menu .nav-bar-links .link-btn .btn { width:100%; }
