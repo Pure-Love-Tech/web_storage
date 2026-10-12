@@ -295,7 +295,7 @@
 .arah-home .footer .footer-inner {position:relative;width:100%;z-index:1;}
 .arah-home .footer .footer-content {
   display:flex;justify-content:center;align-items:center;
-  min-height:405px;width:100%;margin:0;padding:176px 0 52px;background:transparent;
+  min-height:525px;width:100%;margin:0;padding:254px 0 78px;background:transparent;
 }
 .arah-home .footer .footer-content > .container {flex:0 1 1200px;}
 .arah-home .footer .footer-title {
@@ -448,7 +448,7 @@
   .arah-home .arah-withdrawals .brand img { max-height:47px; }
   .arah-home .footer { background:linear-gradient(180deg,transparent 0 95px,#0b6bc4 95px,#07519f 67%,#06417f 100%); }
   .arah-home .footer .footer-bg { height:170px; }
-  .arah-home .footer .footer-content { min-height:350px;padding:140px 0 52px; }
+  .arah-home .footer .footer-content { min-height:430px;padding:197px 0 65px; }
   .arah-home .footer .footer-title { font-size:16px; }
   .arah-home .footer .footer-links .footer-link { font-size:13px; }
   .arah-home .uploadbox { padding:8px; }
@@ -471,7 +471,7 @@
   .arah-home .arah-hero .header-text { font-size:14px; }
   .arah-home .arah-upload-cta { min-width:182px; }
   .arah-home .arah-feature-grid .feature { padding:19px; }
-  .arah-home .footer .footer-content { min-height:340px;padding:132px 0 45px; }
+  .arah-home .footer .footer-content { min-height:400px;padding:180px 0 60px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .arah-home *, .arah-home *::before, .arah-home *::after { scroll-behavior:auto !important;animation:none !important;transition:none !important; }

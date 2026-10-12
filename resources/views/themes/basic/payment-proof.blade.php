@@ -1,5 +1,6 @@
 @extends('themes.basic.layouts.single')
 @section('title', translate('Payment Proof', 'payment proof'))
+@section('body_class', 'arah-public arah-proof')
 @section('content')
     <div class="section section-start">
         {{-- <x-ad alias="other_pages_top" @class('ad-728x90 mb-5') /> --}}
@@ -77,4 +78,7 @@
         </div>
         {{-- <x-ad alias="other_pages_bottom" @class('ad-728x90 mt-5') /> --}}
     </div>
+    @push('styles')
+        <link rel="stylesheet" href="{{ asset('themes/basic/assets/css/arah-public.css') }}?v={{ filemtime(public_path('themes/basic/assets/css/arah-public.css')) }}">
+    @endpush
 @endsection
