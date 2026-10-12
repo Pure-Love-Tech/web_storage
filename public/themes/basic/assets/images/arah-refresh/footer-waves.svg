@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 235" preserveAspectRatio="none" fill="none"><defs><linearGradient id="water" x1="0" y1="0" x2="1600" y2="90"><stop stop-color="#1375d5"/><stop offset=".5" stop-color="#27b5f9"/><stop offset="1" stop-color="#0463be"/></linearGradient></defs>
+<path d="M0 135C195 20 384 222 606 113C821 6 1005 197 1214 123C1399 56 1515 71 1600 98V235H0Z" fill="#d8f0ff" opacity=".8"/>
+<path d="M0 155C221 45 412 222 634 128C858 39 1016 199 1240 113C1395 53 1488 89 1600 120V235H0Z" fill="#6ad2ff" opacity=".8"/>
+<path d="M0 182C236 83 397 232 636 147C875 61 1008 209 1261 139C1422 92 1502 129 1600 143V235H0Z" fill="url(#water)"/>
+<path d="M0 208C235 123 432 250 676 184C909 110 1092 231 1310 178C1437 141 1525 156 1600 167V235H0Z" fill="#0d5cad"/></svg>
