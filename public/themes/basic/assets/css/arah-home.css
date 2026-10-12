@@ -1,0 +1,328 @@
+/*
+ * ArahCloud homepage visual refresh
+ * Scoped to .arah-home to avoid changing dashboard, auth, downloads, or other pages.
+ * Admin-managed artwork, text, feature count, navigation, and payment methods remain dynamic.
+ */
+.arah-home {
+  --arah-ink: #103d70;
+  --arah-blue: #0879df;
+  --arah-sky: #55c6fc;
+  --arah-cloud: #edf8ff;
+  --arah-border: rgba(58, 146, 216, .15);
+  --arah-shadow: 0 20px 48px rgba(14, 79, 144, .10), 0 4px 14px rgba(19, 91, 157, .045);
+  color: var(--arah-ink);
+  background: #fff;
+  overflow-x: clip;
+}
+
+.arah-home .container { max-width: 1200px; }
+.arah-home .header, .arah-home .section { isolation: isolate; }
+.arah-home .btn { transition: transform .25s ease, box-shadow .25s ease, background .25s ease; }
+.arah-home .btn:focus-visible,
+.arah-home a:focus-visible { outline: 3px solid #66c7fc; outline-offset: 4px; }
+
+/* Floating navigation. Navigation labels and account actions are still rendered by Blade. */
+.arah-home .nav-bar {
+  top: 16px;
+  left: max(16px, calc((100vw - 1240px) / 2));
+  width: min(1240px, calc(100% - 32px));
+  border: 1px solid rgba(221, 241, 255, .93);
+  border-radius: 100px;
+  background: rgba(255, 255, 255, .95);
+  box-shadow: 0 14px 50px rgba(34, 123, 197, .12), inset 0 1px rgba(255,255,255,.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  font-size: 14px;
+}
+.arah-home .nav-bar.scrolling,
+.arah-home .nav-bar.active { box-shadow: 0 16px 46px rgba(11, 91, 168, .16); }
+.arah-home .nav-bar > .container { max-width: none; }
+.arah-home .nav-bar .nav-bar-container { height: 68px; padding: 0 23px; }
+.arah-home .nav-bar .logo { flex-shrink: 0; }
+.arah-home .nav-bar .logo img { width: 175px !important; max-width: 100%; height: auto; }
+.arah-home .nav-bar .nav-bar-menu .nav-bar-links .link { color: #526d8b; font-weight: 500; }
+.arah-home .nav-bar .nav-bar-menu .nav-bar-links .link:hover { color: var(--arah-blue); }
+.arah-home .nav-bar .nav-bar-menu .nav-bar-links .link:not(:last-child),
+.arah-home .nav-bar .nav-bar-menu .nav-bar-links .drop-down:not(:last-child) { margin-right: 18px; }
+.arah-home .nav-bar .nav-bar-menu .nav-bar-links .link-btn .btn {
+  padding: 10px 18px; font-size: 13px; font-weight: 700; border-radius: 30px;
+}
+.arah-home .nav-bar .nav-bar-menu .nav-bar-links .link-btn .btn-primary { background: #0b5795; border-color: #0b5795; color: white; }
+.arah-home .nav-bar .nav-bar-menu .nav-bar-links .link-btn .btn-secondary { background: #f5fbff; border: 1px solid #86c9f9; color: #0874d3; }
+
+/* Hero has an admin-configurable image in .header-img. Decorative halo is a separate layer. */
+.arah-home .arah-hero {
+  background: linear-gradient(114deg, #f7fcff 0%, #e9f7ff 51%, #a7d9fc 100%);
+  min-height: 620px;
+}
+.arah-home .arah-hero::before {
+  content: ""; position: absolute; top: 0; inset-inline: 0; bottom: 0;
+  background: url("../images/arah-refresh/sky-atmosphere.svg") center/cover no-repeat;
+  opacity: .44; pointer-events: none; z-index: 0;
+}
+.arah-home .arah-hero::after {
+  content: ""; position: absolute; width: 125%; height: 165px; bottom: -93px; left: -12%;
+  background: #f3faff; border-radius: 50% 50% 0 0 / 75% 75% 0 0;
+  transform: rotate(-2deg); pointer-events: none; z-index: 1;
+}
+.arah-home .arah-hero .wrapper {
+  min-height: 670px;
+  padding-top: 165px;
+  padding-bottom: 130px;
+  overflow: visible;
+}
+.arah-home .arah-hero .wrapper .header-bg {
+  opacity: .09;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+.arah-home .arah-hero .wrapper > .container { position: relative; z-index: 2; }
+.arah-home .arah-hero .wrapper-content .row { position: relative; }
+.arah-home .arah-hero .header-title {
+  max-width: 590px; margin-bottom: 24px;
+  font-weight: 800; font-size: clamp(40px, 4.7vw, 68px);
+  line-height: 1.07; letter-spacing: -.035em;
+  color: #0b315d; background: linear-gradient(115deg, #123b6d 8%, #0968ba 56%, #087de9 100%);
+  -webkit-background-clip: text; background-clip: text;
+}
+.arah-home .arah-hero .header-text {
+  max-width: 490px; margin-bottom: 34px;
+  font-size: clamp(16px, 1.55vw, 19px); font-weight: 400; line-height: 1.7;
+  color: #557595 !important;
+}
+.arah-home .arah-hero .btn-primary {
+  background: linear-gradient(110deg, #075aa9, #0b90ed);
+  border: 1px solid rgba(255,255,255,.6);
+  padding: 15px 31px; border-radius: 999px; font-weight: 700;
+  font-size: 15px; box-shadow: 0 13px 27px rgba(17, 117, 214, .24);
+}
+.arah-home .arah-hero .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 19px 35px rgba(17,117,214,.3); }
+.arah-home .arah-hero .header-img { position: relative; z-index: 0; transform: translateY(4px); }
+.arah-home .arah-hero .header-img::before {
+  content: ""; position: absolute; inset: -17% -18%; z-index: -1;
+  background: url("../images/arah-refresh/hero-halo.svg") center / contain no-repeat;
+  opacity: .92; pointer-events: none;
+}
+.arah-home .arah-hero .header-img img {
+  max-width: 750px !important;
+  width: 110% !important;
+  height: auto !important;
+  object-fit: contain;
+  filter: drop-shadow(0 26px 24px rgba(8, 89, 167, .14));
+}
+
+/* Features: staggered but fully data-driven cards, same title, descriptions, and icons. */
+.arah-home .arah-features {
+  position: relative;
+  padding: 115px 0 130px;
+  background-size: cover;
+  background-position: center;
+  background-color: #f3faff;
+}
+.arah-home .arah-features::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(110deg, rgba(237,248,255,.58), rgba(255,255,255,.77) 55%, rgba(231,246,255,.67));
+  z-index: 0;
+}
+.arah-home .arah-features::after {
+  content: ""; position: absolute; right: -40px; bottom: -16px; width: min(480px,42vw);
+  height: 360px; background: url("../images/arah-refresh/server-cluster.svg") bottom right / contain no-repeat;
+  opacity: .36; z-index: 0; pointer-events: none;
+}
+.arah-home .arah-features .container { position: relative; z-index: 1; }
+.arah-home .arah-features .section-body > .row { gap: 0; }
+.arah-home .arah-features .feature {
+  padding: 24px 23px 26px;
+  border-radius: 20px;
+  height: 100%; min-height: 190px;
+  background: rgba(255,255,255,.96);
+  border: 1px solid rgba(145,203,246,.26);
+  box-shadow: var(--arah-shadow);
+}
+.arah-home .arah-features .feature:hover { transform: translateY(-5px); box-shadow: 0 26px 60px rgba(24,112,193,.17); }
+.arah-home .arah-features .feature-icon {
+  width: 56px; height: 56px; display: grid; place-items: center;
+  margin: 0 0 15px; border-radius: 16px;
+  background: linear-gradient(135deg,#e5f6ff,#f2fbff);
+}
+.arah-home .arah-features .feature-icon::before { width: 0; height: 0; }
+.arah-home .arah-features .feature .feature-icon img {
+  width: 38px; height: 38px; margin: 0 !important; object-fit: contain;
+}
+.arah-home .arah-features .feature-title {
+  margin: 0 0 9px; color: #103b6c; font-size: 18px; font-weight: 750;
+}
+.arah-home .arah-features .feature-text {
+  color: #577493 !important; font-size: 14px; line-height: 1.65;
+}
+.arah-home .arah-features .section-header { padding-left: clamp(5px,3vw,35px); }
+.arah-home .section .section-title {
+  font-weight: 800; font-size: clamp(28px, 3vw, 40px);
+  letter-spacing: -.025em; line-height: 1.18;
+  color: #0b3d75;
+  background: linear-gradient(95deg,#123b6a,#0589e9);
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.arah-home .section .section-title::after {
+  width: 57px; height: 4px; margin-top: 13px; border-radius: 30px;
+  background: linear-gradient(90deg,#0964c1,#57d6ff);
+}
+.arah-home .section .section-text {
+  font-size: 16px; line-height: 1.8; color: #5a7696 !important;
+}
+.arah-home .arah-features .section .section-text,
+.arah-home .arah-features .section-text { max-width: 540px; margin: 8px 0 24px; }
+.arah-home .arah-features .btn-primary,
+.arah-home .arah-features .btn-secondary {
+  border-radius: 50px; padding: 13px 28px; font-weight: 700;
+  box-shadow: 0 12px 25px rgba(16,96,178,.16);
+}
+.arah-home .arah-features .btn-primary { background: linear-gradient(110deg,#075aa3,#0b92ed); border-color:transparent; }
+
+/* Three-step storytelling path (items and descriptions still come from $steps). */
+.arah-home .arah-journey {
+  position: relative; background: linear-gradient(180deg, #fff 0%, #fafdff 100%);
+  padding: 125px 0 115px;
+}
+.arah-home .arah-journey::before {
+  content: ""; position: absolute; inset: 0; opacity: .09;
+  background: radial-gradient(#57b7f8 1px,transparent 1px) 0 0/17px 17px;
+  mask-image: linear-gradient(to bottom,transparent,#000 40%,transparent);
+  pointer-events:none;
+}
+.arah-home .arah-journey .section-header { margin-bottom: 65px; }
+.arah-home .arah-journey .section-text { max-width: 760px; }
+.arah-home .arah-journey .steps { width: 100%; }
+.arah-home .arah-journey .steps::before {
+  content: ""; position: absolute; top: -5px; left: -13%; width: 126%; height: 225px;
+  background: url("../images/arah-refresh/journey-path.svg") center/100% 100% no-repeat;
+  pointer-events: none; z-index: -1;
+}
+.arah-home .arah-journey .steps-border { display: none; }
+.arah-home .arah-journey .steps > .row { width: 100%; }
+.arah-home .arah-journey .step { padding: 15px; }
+.arah-home .arah-journey .step.step-margin { margin-top: 57px; }
+.arah-home .arah-journey .step-number {
+  width: 102px; height: 102px; border-radius: 50%;
+  background: linear-gradient(140deg, #e4f9ff, #acdfff);
+  border: 7px solid rgba(255,255,255,.93);
+  box-shadow: 0 12px 28px rgba(48,147,225,.16),0 0 0 1px rgba(84,175,240,.2);
+  color: #075eb2; font-size: 35px; font-weight: 800;
+  margin-bottom: 26px;
+}
+.arah-home .arah-journey .step.step-primary .step-number {
+  background: linear-gradient(140deg,#dcfff5,#acf2d8); color: #12866c;
+}
+.arah-home .arah-journey .step-title {
+  color: #124477; margin: 0 0 11px; font-size: 21px; font-weight: 750;
+}
+.arah-home .arah-journey .step-text { color: #55718f; max-width: 315px; line-height: 1.75; font-size: 15px; }
+
+/* Payment brands still driven by the withdrawalMethods collection and Swiper. */
+.arah-home .arah-withdrawals {
+  position: relative; padding: 45px 0 120px;
+  background: linear-gradient(180deg,#fafdff,#eff9ff);
+}
+.arah-home .arah-withdrawals .section-header { margin-bottom: 36px; }
+.arah-home .arah-withdrawals .swiper-container { padding-top: 7px; padding-bottom: 20px; }
+.arah-home .arah-withdrawals .brand {
+  height: 104px; border-radius: 18px; padding: 22px;
+  border: 1px solid rgba(115,186,237,.21);
+  box-shadow: 0 12px 30px rgba(38,113,180,.085);
+  cursor: default;
+}
+.arah-home .arah-withdrawals .brand img {
+  display: block; height: 55px; max-width: 100%; width: auto; margin: auto;
+  object-fit: contain;
+}
+
+/* Only homepage footer skin changes; database-driven footer groups are untouched. */
+.arah-home .footer { background: linear-gradient(180deg, transparent 0 155px,#126cb9 155px,#075095 100%); }
+.arah-home .footer .footer-bg {
+  top: 0; left: 0; width: 100%; height: 235px;
+  background: url("../images/arah-refresh/footer-waves.svg") center bottom/100% 100% no-repeat;
+  z-index: -1; pointer-events:none;
+}
+.arah-home .footer .footer-bg svg { display: none; }
+.arah-home .footer .footer-inner { width: 100%; }
+.arah-home .footer .footer-content {
+  margin-top: 0; padding-top: 233px; padding-bottom: 70px;
+  background: transparent;
+}
+.arah-home .footer .footer-title { color: #fff; font-size: 18px; font-weight: 700; margin-bottom: 21px; }
+.arah-home .footer .footer-title::after { width: 32px; height: 2px; border-radius: 12px; margin-top: 9px; background-color: #77d1ff; }
+.arah-home .footer .footer-links .footer-link { color: #e5f4ff; font-size: 14px; line-height: 1.5; }
+.arah-home .footer .footer-links .footer-link::before { width: 5px; height: 5px; margin-right: 12px; background: #89d4ff; }
+.arah-home .footer .footer-copyright { background: rgba(5,66,125,.2); border-top: 1px solid rgba(255,255,255,.13); color:#d8edff; font-size:13px; padding:21px 0; }
+
+@media (max-width: 1199.98px) {
+  .arah-home .nav-bar { backdrop-filter: none; -webkit-backdrop-filter: none; }
+  .arah-home .nav-bar .nav-bar-menu .nav-bar-links { border-radius: 0; }
+  .arah-home .nav-bar .nav-bar-menu .nav-bar-links .link:not(:last-child),
+  .arah-home .nav-bar .nav-bar-menu .nav-bar-links .drop-down:not(:last-child) { margin-right: 0; }
+  .arah-home .nav-bar .nav-bar-menu .nav-bar-links .link-btn .btn { width: 100%; }
+  .arah-home .arah-hero .wrapper { min-height: 590px; padding-top: 145px; padding-bottom: 95px; }
+  .arah-home .arah-hero .header-img img { max-width: 620px !important; }
+  .arah-home .arah-features { padding: 100px 0 110px; }
+  .arah-home .arah-features .feature { padding: 22px 18px; min-height: 172px; }
+}
+
+@media (max-width: 991.98px) {
+  .arah-home .nav-bar { top: 10px; width: calc(100% - 20px); left: 10px; }
+  .arah-home .nav-bar .nav-bar-container { height: 64px; padding: 0 13px; }
+  .arah-home .nav-bar .logo img { width: 145px !important; }
+  .arah-home .arah-hero .wrapper { min-height: 0; padding: 118px 0 105px; }
+  .arah-home .arah-hero .wrapper .wrapper-content { text-align: center; }
+  .arah-home .arah-hero .header-title { margin: 0 auto 18px; font-size: clamp(34px,5.4vw,49px); }
+  .arah-home .arah-hero .header-text { margin: 0 auto 27px; }
+  .arah-home .arah-hero .header-img { max-width: 600px; margin: 0 auto 15px; }
+  .arah-home .arah-hero .header-img img { width: 100% !important; max-width: 560px !important; }
+  .arah-home .arah-hero::after { bottom: -120px; }
+  .arah-home .arah-features { padding: 85px 0 95px; }
+  .arah-home .arah-features .section-header { text-align: center !important; padding-left: 0; margin-bottom: 30px; }
+  .arah-home .arah-features .section-title { align-items: center !important; }
+  .arah-home .arah-features .section-text { margin-inline: auto; }
+  .arah-home .arah-features .section-header .d-flex { justify-content: center !important; }
+  .arah-home .arah-features .section-body > .row { row-gap: 30px; }
+  .arah-home .arah-features::after { opacity: .14; }
+  .arah-home .arah-journey { padding: 85px 0 90px; }
+  .arah-home .arah-journey .steps::before { display: none; }
+  .arah-home .arah-journey .step.step-margin { margin-top: 0; }
+  .arah-home .arah-journey .step-number { width: 86px; height: 86px; font-size: 30px; }
+  .arah-home .arah-withdrawals { padding: 35px 0 80px; }
+  .arah-home .footer .footer-content { padding-top: 185px; }
+  .arah-home .footer .footer-bg { height: 190px; }
+  .arah-home .footer { background: linear-gradient(180deg,transparent 0 126px,#126bb8 126px,#075095 100%); }
+}
+@media (max-width: 575.98px) {
+  .arah-home .arah-hero .wrapper { padding-top: 110px; padding-bottom: 85px; }
+  .arah-home .arah-hero .header-title { font-size: 36px; letter-spacing: -.028em; }
+  .arah-home .arah-hero .header-text { font-size: 15px; }
+  .arah-home .arah-hero .header-img img { max-width: 360px !important; }
+  .arah-home .arah-hero .btn-primary { font-size: 14px; padding: 13px 24px; }
+  .arah-home .arah-features { padding-top: 75px; padding-bottom: 70px; }
+  .arah-home .arah-features .section-body > .row > .col-12 { width: 100%; }
+  .arah-home .arah-features .section-body > .row > .col-12 > .row { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 13px; }
+  .arah-home .arah-features .section-body > .row > .col-12 > .row > .col { width: auto; padding: 0; }
+  .arah-home .arah-features .feature { border-radius: 16px; padding: 18px 15px; min-height: 0; }
+  .arah-home .arah-features .feature-icon { width: 44px; height: 44px; }
+  .arah-home .arah-features .feature .feature-icon img { width: 31px; height: 31px; }
+  .arah-home .arah-features .feature-title { font-size: 15px; }
+  .arah-home .arah-features .feature-text { font-size: 12px; line-height: 1.6; }
+  .arah-home .arah-journey { padding: 75px 0 70px; }
+  .arah-home .arah-journey .section-header { margin-bottom: 24px; }
+  .arah-home .arah-journey .step { padding: 15px 6px; }
+  .arah-home .arah-journey .step-title { font-size: 18px; }
+  .arah-home .arah-journey .step-text { font-size: 14px; }
+  .arah-home .arah-withdrawals .brand { height: 88px; padding: 16px; }
+  .arah-home .arah-withdrawals .brand img { height: 47px; }
+  .arah-home .footer .footer-content { padding-top: 155px; padding-bottom: 43px; }
+  .arah-home .footer .footer-bg { height: 160px; }
+  .arah-home .footer { background: linear-gradient(180deg,transparent 0 105px,#126bb8 105px,#075095 100%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .arah-home .feature, .arah-home .btn { transition: none !important; }
+  .arah-home .feature:hover, .arah-home .btn:hover { transform: none !important; }
+}

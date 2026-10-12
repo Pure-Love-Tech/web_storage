@@ -1,8 +1,9 @@
 @extends('themes.basic.layouts.front')
 @section('title', $seoConfiguration->title ?? '')
+@section('body_class', 'arah-home')
 @section('content')
     @if ($themeSettings->home_page->header_section)
-        <header class="header">
+        <header class="header arah-hero">
             <div class="wrapper">
                 <div class="header-bg"
                     style="background-image: url({{ asset($themeSettings->home_page->header_background) }});">
@@ -61,7 +62,7 @@
                 height: 55px;
             }
         </style>
-        <div class="section section-start"
+        <div class="section section-start arah-features"
             style="background-image: url({{ asset($themeSettings->home_page->section_background_image) }});">
             <div class="container">
                 <div class="section-inner">
@@ -118,7 +119,7 @@
         </div>
     @endif
     @if ($themeSettings->home_page->steps_section && $steps->count() > 0)
-        <div class="section">
+        <div class="section arah-journey">
             <div class="container">
                 <div class="section-inner">
                     <div class="section-header">
@@ -238,7 +239,7 @@
     @endif
     {{-- <x-ad alias="home_page_bottom" @class('ad-728x90 my-4') /> --}}
     @if ($themeSettings->home_page->withdrawal_methods_section)
-        <div class="section">
+        <div class="section arah-withdrawals">
             <div class="container">
                 <div class="section-inner">
                     <div class="section-header">
@@ -269,6 +270,9 @@
         </div>
     @endif
     @include('themes.basic.includes.uploadbox')
+    @push('styles')
+        <link rel="stylesheet" href="{{ asset('themes/basic/assets/css/arah-home.css') }}?v={{ filemtime(public_path('themes/basic/assets/css/arah-home.css')) }}">
+    @endpush
     @push('styles_libs')
         <link rel="stylesheet" href="{{ asset('vendor/libs/aos/aos.min.css') }}">
         <link rel="stylesheet" href="{{ asset('vendor/libs/swiper/swiper-bundle.min.css') }}">
