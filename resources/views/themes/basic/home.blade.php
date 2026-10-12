@@ -11,8 +11,8 @@
                 <div class="container">
                     <div class="wrapper-content">
                         <div class="wrapper-container">
-                            <div class="row row-cols-2 align-items-center g-4">
-                                <div class="col-12 col-lg-5 order-2 order-lg-1">
+                            <div class="row row-cols-2 align-items-center g-4 arah-hero-grid">
+                                <div class="col-12 col-lg-6 order-2 order-lg-1">
                                     <h1 class="header-title" data-aos="fade-right" data-aos-duration="1000">
                                         {{ translate('Upload Files & Earn Money', 'home page') }}
                                     </h1>
@@ -21,16 +21,16 @@
                                     </p>
                                     <div data-aos="fade-up" data-aos-duration="1000">
                                         @if (subscription()->plan->upload_status)
-                                            <button class="btn btn-primary btn-lg" data-upload-btn><i
+                                            <button type="button" class="btn btn-primary btn-lg arah-upload-cta" data-upload-btn aria-haspopup="dialog" aria-controls="arah-upload-dialog" aria-expanded="false"><i
                                                     class="fa-solid fa-arrow-up-from-bracket me-2"></i>{{ translate('Upload Files', 'home page') }}</button>
                                         @else
                                             <a href="{{ auth()->user() ? route('user.settings.subscription') : route('login') }}"
-                                                class="btn btn-primary btn-lg"><i
+                                                class="btn btn-primary btn-lg arah-upload-cta"><i
                                                     class="fa-solid fa-arrow-up-from-bracket me-2"></i>{{ translate('Upload Files', 'home page') }}</a>
                                         @endif
                                     </div>
                                 </div>
-                                <div class="col-12 col-lg-7 order-1 order-lg-2">
+                                <div class="col-12 col-lg-6 order-1 order-lg-2">
                                     <div class="header-img" data-aos="zoom-in" data-aos-duration="1000">
                                         <img src="{{ asset($themeSettings->home_page->header_image) }}"
                                             alt="{{ $settings->general->site_name }}" style="width: 110% !important; max-width: 1000px !important;"/>
@@ -108,7 +108,7 @@
                                 @guest
                                     <div class="d-flex justify-content-end">
                                         <a href="{{ route('register') }}"
-                                            class="btn btn-primary btn-md"><i class="fa-solid fa-chevron-right me-2"></i>{{ translate('Get Started', 'home page') }}</a>
+                                            class="btn btn-primary btn-md arah-get-started"><i class="fa-solid fa-chevron-right me-2"></i>{{ translate('Get Started', 'home page') }}</a>
                                     </div>
                                 @endguest
                             </div>
@@ -272,6 +272,9 @@
     @include('themes.basic.includes.uploadbox')
     @push('styles')
         <link rel="stylesheet" href="{{ asset('themes/basic/assets/css/arah-home.css') }}?v={{ filemtime(public_path('themes/basic/assets/css/arah-home.css')) }}">
+    @endpush
+    @push('scripts')
+        <script src="{{ asset('themes/basic/assets/js/arah-home-ux.js') }}?v={{ filemtime(public_path('themes/basic/assets/js/arah-home-ux.js')) }}" defer></script>
     @endpush
     @push('styles_libs')
         <link rel="stylesheet" href="{{ asset('vendor/libs/aos/aos.min.css') }}">

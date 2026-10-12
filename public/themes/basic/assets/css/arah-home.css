@@ -326,3 +326,171 @@
   .arah-home .feature, .arah-home .btn { transition: none !important; }
   .arah-home .feature:hover, .arah-home .btn:hover { transform: none !important; }
 }
+
+
+
+/* UX refinement: homepage only; server-driven copy and data are unchanged. */
+.arah-home .arah-hero .wrapper { padding-top: clamp(130px, 13vw, 190px); }
+.arah-home .arah-hero .header-title {
+  max-width: 630px;
+  font-size: clamp(40px, 4.25vw, 61px);
+  line-height: 1.12;
+  text-wrap: balance;
+}
+.arah-home .arah-hero .header-text { font-size: clamp(16px, 1.48vw, 19px); line-height: 1.78; }
+.arah-home .arah-upload-cta {
+  display: inline-flex; justify-content: center; align-items: center;
+  min-width: 180px; min-height: 52px; gap: 4px;
+  letter-spacing: .01em; touch-action: manipulation;
+}
+.arah-home .arah-upload-cta:active,
+.arah-home .arah-features .btn:active { transform: scale(.98); }
+.arah-home .arah-hero .header-img { transform: translateY(0); }
+.arah-home .arah-hero .header-img img { max-width: 680px !important; }
+.arah-home .section { scroll-margin-top: 95px; }
+.arah-home .arah-features .feature {
+  min-height: 205px; padding: 28px 25px;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.arah-home .arah-features .feature-title { font-size: 18px; line-height: 1.4; }
+.arah-home .arah-features .feature-text { font-size: 15px; line-height: 1.75; }
+.arah-home .arah-features .section-text { line-height: 1.85; }
+.arah-home .arah-features .arah-get-started { min-height: 48px; display: inline-flex; align-items: center; }
+.arah-home .arah-journey .step { min-height: 225px; }
+.arah-home .arah-journey .step-title { line-height: 1.35; }
+.arah-home .arah-journey .step-text { font-size: 15px; line-height: 1.8; }
+.arah-home .arah-journey .step-number { flex: 0 0 auto; }
+.arah-home .nav-bar .nav-bar-menu-btn,
+.arah-home .nav-bar .nav-bar-menu-close {
+  min-width: 44px; min-height: 44px;
+  display: inline-flex; align-items: center; justify-content: center;
+  cursor: pointer; border-radius: 12px;
+}
+.arah-home .nav-bar .nav-bar-menu-btn { display: none; }
+.arah-home .nav-bar .nav-bar-menu-btn:focus-visible,
+.arah-home .nav-bar .nav-bar-menu-close:focus-visible,
+.arah-home .nav-bar .drop-down-btn:focus-visible,
+.arah-home .uploadbox [data-dz-click]:focus-visible,
+.arah-home .uploadbox button:focus-visible,
+.arah-home .uploadbox a:focus-visible {
+  outline: 3px solid #1395e9;
+  outline-offset: 3px;
+}
+.arah-home .nav-bar .drop-down-btn { cursor: pointer; border-radius: 8px; }
+.arah-home .nav-bar .nav-bar-menu .nav-bar-links .link-btn .btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 44px;
+}
+.arah-home .nav-bar .nav-bar-menu .nav-bar-links .link {
+  min-height: 44px; display: inline-flex; align-items: center;
+}
+.arah-home .nav-bar .nav-bar-menu .nav-bar-links .drop-down-btn {
+  min-height: 44px; display: flex; align-items: center;
+}
+
+/* Modal: preserve existing Dropzone / R2 event handlers and backend flow. */
+.arah-home .uploadbox { z-index: 1100; padding: 18px; }
+.arah-home .uploadbox .overlay {
+  background: rgba(10, 36, 76, .61);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.arah-home .uploadbox .uploadbox-content {
+  width: min(1020px, 100%);
+  margin: auto;
+  max-height: calc(100dvh - 36px);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 40px 100px rgba(5, 35, 75, .28);
+  transition: transform .3s ease;
+}
+.arah-home .uploadbox .uploadbox-header {
+  padding: 20px clamp(18px, 3vw, 34px);
+  background: linear-gradient(120deg, #f5fbff, #eaf7ff);
+  border-bottom: 1px solid #dceefb;
+}
+.arah-home .uploadbox .uploadbox-header .h5 { font-weight: 800; color: #113d70; }
+.arah-home .uploadbox .uploadbox-header .btn-close {
+  min-width: 44px; min-height: 44px; border-radius: 50%;
+  background-size: 13px;
+}
+.arah-home .uploadbox .uploadbox-body { padding: clamp(18px, 3vw, 30px); }
+.arah-home .uploadbox .uploadbox-body .uploadbox-body-content .uploadbox-drag {
+  min-height: 330px; height: auto; margin: 0; padding: 26px 18px;
+  border: 2px dashed rgba(38, 151, 226, .43);
+  border-radius: 20px;
+  background: radial-gradient(circle at top, #f9fdff 0, #eaf8ff 100%);
+  transition: border-color .2s ease, background .2s ease;
+  cursor: pointer;
+}
+.arah-home .uploadbox .uploadbox-body .uploadbox-body-content .uploadbox-drag:hover,
+.arah-home .uploadbox .uploadbox-body .uploadbox-body-content .uploadbox-drag:focus-visible {
+  border-color: #168ae3; background: #e7f6ff;
+}
+.arah-home .uploadbox .uploadbox-drag-inner i { font-size: 72px !important; }
+.arah-home .uploadbox .uploadbox-drag-inner h3 { font-size: clamp(18px, 2.3vw, 24px); line-height: 1.5; }
+.arah-home .uploadbox #upload-files-btn { min-height: 48px; min-width: 165px; font-weight: 700; border-radius: 999px !important; }
+.arah-home .uploadbox #upload-files-btn[disabled] { cursor: progress; opacity: .8; }
+.arah-home .uploadbox .direct-upload-progress .progress { height: 12px !important; border-radius: 100px !important; }
+.arah-home .uploadbox .direct-upload-progress .progress-bar { transition: width .2s linear; }
+.arah-home .uploadbox .upload-more-btn,
+.arah-home .uploadbox [data-dz-reset] { display: inline-flex; min-height: 44px; align-items: center; cursor: pointer; }
+.arah-home .uploadbox .dz-preview-container { border-radius: 16px; }
+.arah-home .uploadbox .dz-name { overflow-wrap: anywhere; }
+.arah-home .arah-ux-sr {
+  position: absolute !important; width: 1px !important; height: 1px !important;
+  padding: 0 !important; margin: -1px !important; overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important;
+  border: 0 !important;
+}
+
+@media (max-width: 1199.98px) {
+  .arah-home .nav-bar .nav-bar-menu-btn { display: inline-flex; }
+  .arah-home .nav-bar .nav-bar-menu .overlay {
+    background: rgba(13, 44, 79, .45);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+  }
+  .arah-home .nav-bar .nav-bar-menu .nav-bar-links {
+    width: min(360px, 90vw); right: -390px;
+    padding: 22px 23px; gap: 5px;
+    box-shadow: -18px 0 50px rgba(22, 83, 147, .14);
+  }
+  .arah-home .nav-bar .nav-bar-menu .nav-bar-links .link-btn .btn { width: 100%; }
+  .arah-home .nav-bar .nav-bar-menu .nav-bar-links .link { display: flex; }
+  .arah-home .nav-bar .nav-bar-menu .nav-bar-links .drop-down { margin-bottom: 5px; }
+  .arah-home .nav-bar .nav-bar-menu .nav-bar-links .link:not(:last-child) { margin-bottom: 3px; }
+  .arah-home .nav-bar .nav-bar-menu .nav-bar-links .link-btn:not(:last-child) { margin-bottom: 8px; }
+}
+@media (max-width: 991.98px) {
+  .arah-home .arah-hero .wrapper { padding-top: 128px; }
+  .arah-home .arah-hero .header-title { font-size: clamp(35px, 5vw, 48px); }
+  .arah-home .arah-features .feature { min-height: 0; }
+  .arah-home .arah-journey .step { min-height: 0; }
+}
+@media (max-width: 767.98px) {
+  .arah-home .uploadbox { padding: 8px; }
+  .arah-home .uploadbox .uploadbox-content {
+    width: 100%; height: auto; max-height: calc(100dvh - 16px);
+    margin: auto; border-radius: 17px;
+  }
+  .arah-home .uploadbox .uploadbox-body { max-height: calc(100dvh - 84px); }
+  .arah-home .uploadbox .uploadbox-body .uploadbox-body-content .uploadbox-drag { min-height: 260px; padding: 22px 12px; }
+  .arah-home .uploadbox .uploadbox-header { padding: 12px 16px; }
+  .arah-home .arah-journey .section-text { line-height: 1.7; }
+}
+@media (max-width: 575.98px) {
+  .arah-home .arah-hero .header-title { font-size: clamp(34px, 9vw, 43px); }
+  .arah-home .arah-features .feature { padding: 20px 17px; }
+  .arah-home .arah-features .feature-text { font-size: 13.5px; }
+  .arah-home .arah-journey .step-text { font-size: 14.5px; }
+  .arah-home .arah-withdrawals .brand { height: 95px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .arah-home *,
+  .arah-home *::before,
+  .arah-home *::after { scroll-behavior: auto !important; }
+  .arah-home [data-aos] { opacity: 1 !important; transform: none !important; transition: none !important; }
+  .arah-home .uploadbox .uploadbox-content,
+  .arah-home .uploadbox .direct-upload-progress .progress-bar { transition: none !important; }
+}
