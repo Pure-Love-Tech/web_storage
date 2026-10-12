@@ -107,10 +107,10 @@ return [
             'driver' => 's3',
             'key' => env('CR2_ACCESS_KEY_ID'),
             'secret' => env('CR2_SECRET_ACCESS_KEY'),
-            'region' => "",
+            'region' => 'auto',
             'bucket' => env('CR2_BUCKET'),
             'endpoint' => env('CR2_ENDPOINT'),
-            'use_path_style_endpoint' => env('CR2_USE_PATH_STYLE_ENDPOINT', true),
+            'use_path_style_endpoint' => env('CR2_USE_PATH_STYLE_ENDPOINT', false),
         ],
 
         'contabo' => [

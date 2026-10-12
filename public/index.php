@@ -5,6 +5,16 @@ use Illuminate\Http\Request;
 
 define('LARAVEL_START', microtime(true));
 
+if (($_SERVER['REQUEST_URI'] ?? '') === '/upload/direct/initiate') {
+    error_log('DIRECT_UPLOAD_ENTRY ' . json_encode([
+        'method' => $_SERVER['REQUEST_METHOD'] ?? null,
+        'uri' => $_SERVER['REQUEST_URI'] ?? null,
+        'remote_addr' => $_SERVER['REMOTE_ADDR'] ?? null,
+        'cf_connecting_ip' => $_SERVER['HTTP_CF_CONNECTING_IP'] ?? null,
+        'x_forwarded_for' => $_SERVER['HTTP_X_FORWARDED_FOR'] ?? null,
+    ]));
+}
+
 /*
 |--------------------------------------------------------------------------
 | Check If The Application Is Under Maintenance

@@ -1,0 +1,727 @@
+[2026-10-01 00:01:11] production.INFO: IsProxyIP Response {"ip":"210.87.84.57","status":200,"response":{"status":"success","ip":"210.87.84.57","proxy":0}} 
+[2026-10-01 00:01:14] production.INFO: IsProxyIP Response {"ip":"180.241.39.253","status":200,"response":{"status":"success","ip":"180.241.39.253","proxy":0}} 
+[2026-10-01 00:07:46] production.INFO: IsProxyIP Response {"ip":"175.158.51.93","status":200,"response":{"status":"success","ip":"175.158.51.93","proxy":0}} 
+[2026-10-01 00:12:21] production.INFO: IsProxyIP Response {"ip":"36.83.135.124","status":200,"response":{"status":"success","ip":"36.83.135.124","proxy":0}} 
+[2026-10-01 00:18:59] production.INFO: IsProxyIP Response {"ip":"161.248.117.254","status":200,"response":{"status":"success","ip":"161.248.117.254","proxy":0}} 
+[2026-10-01 00:20:39] production.INFO: IsProxyIP Response {"ip":"157.15.63.77","status":200,"response":{"status":"success","ip":"157.15.63.77","proxy":0}} 
+[2026-10-01 00:28:15] production.INFO: IsProxyIP Response {"ip":"103.165.151.99","status":200,"response":{"status":"success","ip":"103.165.151.99","proxy":0}} 
+[2026-10-01 00:35:07] production.INFO: IsProxyIP Response {"ip":"2400:9800:553:edf2:8cfe:88ff:feab:dd6b","status":200,"response":{"status":"success","ip":"2400:9800:553:edf2:8cfe:88ff:feab:dd6b","proxy":0}} 
+[2026-10-01 00:35:23] production.INFO: IsProxyIP Response {"ip":"157.66.128.187","status":200,"response":{"status":"success","ip":"157.66.128.187","proxy":0}} 
+[2026-10-01 00:43:41] production.INFO: IsProxyIP Response {"ip":"114.10.76.107","status":200,"response":{"status":"success","ip":"114.10.76.107","proxy":0}} 
+[2026-10-01 00:47:01] production.INFO: IsProxyIP Response {"ip":"2404:c0:9601:3962:f186:505b:53b6:8709","status":200,"response":{"status":"success","ip":"2404:c0:9601:3962:f186:505b:53b6:8709","proxy":0}} 
+[2026-10-01 00:47:21] production.INFO: IsProxyIP Response {"ip":"2001:448a:20a0:21d:cda1:b743:9625:426c","status":200,"response":{"status":"success","ip":"2001:448a:20a0:21d:cda1:b743:9625:426c","proxy":0}} 
+[2026-10-01 00:48:17] production.INFO: IsProxyIP Response {"ip":"140.213.116.70","status":200,"response":{"status":"success","ip":"140.213.116.70","proxy":0}} 
+[2026-10-01 00:51:37] production.INFO: IsProxyIP Response {"ip":"180.246.207.1","status":200,"response":{"status":"success","ip":"180.246.207.1","proxy":0}} 
+[2026-10-01 00:53:11] production.INFO: IsProxyIP Response {"ip":"2404:c0:b604:66cd:44c7:3b72:b788:8f15","status":200,"response":{"status":"success","ip":"2404:c0:b604:66cd:44c7:3b72:b788:8f15","proxy":0}} 
+[2026-10-01 01:04:25] production.INFO: IsProxyIP Response {"ip":"160.19.145.157","status":200,"response":{"status":"success","ip":"160.19.145.157","proxy":0}} 
+[2026-10-01 01:07:16] production.INFO: IsProxyIP Response {"ip":"103.111.94.177","status":200,"response":{"status":"success","ip":"103.111.94.177","proxy":1}} 
+[2026-10-01 01:07:41] production.INFO: IsProxyIP Response {"ip":"2001:448a:2075:51d9:651:2fb9:5615:b0cc","status":200,"response":{"status":"success","ip":"2001:448a:2075:51d9:651:2fb9:5615:b0cc","proxy":0}} 
+[2026-10-01 01:11:52] production.INFO: IsProxyIP Response {"ip":"216.243.114.65","status":200,"response":{"status":"success","ip":"216.243.114.65","proxy":1}} 
+[2026-10-01 01:22:44] production.INFO: IsProxyIP Response {"ip":"45.198.10.234","status":200,"response":{"status":"success","ip":"45.198.10.234","proxy":0}} 
+[2026-10-01 01:27:04] production.INFO: IsProxyIP Response {"ip":"103.175.49.244","status":200,"response":{"status":"success","ip":"103.175.49.244","proxy":0}} 
+[2026-10-01 01:28:50] production.INFO: IsProxyIP Response {"ip":"140.213.9.214","status":200,"response":{"status":"success","ip":"140.213.9.214","proxy":0}} 
+[2026-10-01 01:45:55] production.INFO: IsProxyIP Response {"ip":"203.215.178.67","status":200,"response":{"status":"success","ip":"203.215.178.67","proxy":0}} 
+[2026-10-01 01:48:28] production.INFO: IsProxyIP Response {"ip":"103.189.207.232","status":200,"response":{"status":"success","ip":"103.189.207.232","proxy":1}} 
+[2026-10-01 01:50:17] production.INFO: IsProxyIP Response {"ip":"61.5.20.89","status":200,"response":{"status":"success","ip":"61.5.20.89","proxy":0}} 
+[2026-10-01 01:50:48] production.INFO: IsProxyIP Response {"ip":"39.194.0.24","status":200,"response":{"status":"success","ip":"39.194.0.24","proxy":0}} 
+[2026-10-01 01:52:50] production.INFO: IsProxyIP Response {"ip":"103.26.188.10","status":200,"response":{"status":"success","ip":"103.26.188.10","proxy":0}} 
+[2026-10-01 01:53:27] production.INFO: IsProxyIP Response {"ip":"158.140.180.99","status":200,"response":{"status":"success","ip":"158.140.180.99","proxy":0}} 
+[2026-10-01 01:54:31] production.INFO: IsProxyIP Response {"ip":"158.140.162.224","status":200,"response":{"status":"success","ip":"158.140.162.224","proxy":0}} 
+[2026-10-01 02:03:33] production.INFO: IsProxyIP Response {"ip":"165.99.57.118","status":200,"response":{"status":"success","ip":"165.99.57.118","proxy":0}} 
+[2026-10-01 02:16:28] production.INFO: IsProxyIP Response {"ip":"113.192.12.37","status":200,"response":{"status":"success","ip":"113.192.12.37","proxy":1}} 
+[2026-10-01 02:26:40] production.INFO: IsProxyIP Response {"ip":"117.18.20.140","status":200,"response":{"status":"success","ip":"117.18.20.140","proxy":1}} 
+[2026-10-01 02:34:12] production.INFO: IsProxyIP Response {"ip":"160.191.130.155","status":200,"response":{"status":"success","ip":"160.191.130.155","proxy":0}} 
+[2026-10-01 02:40:02] production.INFO: IsProxyIP Response {"ip":"165.99.57.117","status":200,"response":{"status":"success","ip":"165.99.57.117","proxy":0}} 
+[2026-10-01 03:01:15] production.INFO: IsProxyIP Response {"ip":"110.76.144.77","status":200,"response":{"status":"success","ip":"110.76.144.77","proxy":0}} 
+[2026-10-01 03:08:22] production.INFO: IsProxyIP Response {"ip":"37.111.148.100","status":200,"response":{"status":"success","ip":"37.111.148.100","proxy":0}} 
+[2026-10-01 03:08:33] production.INFO: IsProxyIP Response {"ip":"140.213.9.16","status":200,"response":{"status":"success","ip":"140.213.9.16","proxy":0}} 
+[2026-10-01 03:09:56] production.INFO: IsProxyIP Response {"ip":"2404:c0:d001:1e92:77c5:8859:3042:a27f","status":200,"response":{"status":"success","ip":"2404:c0:d001:1e92:77c5:8859:3042:a27f","proxy":0}} 
+[2026-10-01 03:25:11] production.INFO: IsProxyIP Response {"ip":"103.191.129.50","status":200,"response":{"status":"success","ip":"103.191.129.50","proxy":0}} 
+[2026-10-01 03:34:41] production.INFO: IsProxyIP Response {"ip":"178.83.181.208","status":200,"response":{"status":"success","ip":"178.83.181.208","proxy":1}} 
+[2026-10-01 03:42:17] production.INFO: IsProxyIP Response {"ip":"2400:9800:9b0:8467:f838:affb:16b0:c1a","status":200,"response":{"status":"success","ip":"2400:9800:9b0:8467:f838:affb:16b0:c1a","proxy":0}} 
+[2026-10-01 03:51:30] production.INFO: IsProxyIP Response {"ip":"2404:c0:ab01:8245:6042:a6ae:2e55:f73d","status":200,"response":{"status":"success","ip":"2404:c0:ab01:8245:6042:a6ae:2e55:f73d","proxy":0}} 
+[2026-10-01 03:55:22] production.INFO: IsProxyIP Response {"ip":"38.183.146.87","status":200,"response":{"status":"success","ip":"38.183.146.87","proxy":1}} 
+[2026-10-01 04:06:58] production.INFO: IsProxyIP Response {"ip":"2402:8780:100c:1426:ccc0:9ed4:105b:1f30","status":200,"response":{"status":"success","ip":"2402:8780:100c:1426:ccc0:9ed4:105b:1f30","proxy":0}} 
+[2026-10-01 04:29:05] production.INFO: IsProxyIP Response {"ip":"203.175.103.51","status":200,"response":{"status":"success","ip":"203.175.103.51","proxy":0}} 
+[2026-10-01 04:42:27] production.INFO: IsProxyIP Response {"ip":"103.141.255.201","status":200,"response":{"status":"success","ip":"103.141.255.201","proxy":0}} 
+[2026-10-01 04:51:03] production.INFO: IsProxyIP Response {"ip":"103.247.21.100","status":200,"response":{"status":"success","ip":"103.247.21.100","proxy":0}} 
+[2026-10-01 04:51:48] production.INFO: IsProxyIP Response {"ip":"114.10.135.175","status":200,"response":{"status":"success","ip":"114.10.135.175","proxy":0}} 
+[2026-10-01 04:57:47] production.INFO: IsProxyIP Response {"ip":"157.66.242.101","status":200,"response":{"status":"success","ip":"157.66.242.101","proxy":0}} 
+[2026-10-01 05:18:20] production.INFO: IsProxyIP Response {"ip":"210.87.84.30","status":200,"response":{"status":"success","ip":"210.87.84.30","proxy":0}} 
+[2026-10-01 05:20:20] production.INFO: IsProxyIP Response {"ip":"112.215.241.253","status":200,"response":{"status":"success","ip":"112.215.241.253","proxy":0}} 
+[2026-10-01 05:28:50] production.INFO: IsProxyIP Response {"ip":"2001:448a:5050:1e84:a1ee:7d06:3c48:40e6","status":200,"response":{"status":"success","ip":"2001:448a:5050:1e84:a1ee:7d06:3c48:40e6","proxy":0}} 
+[2026-10-01 05:29:06] production.INFO: IsProxyIP Response {"ip":"114.10.79.200","status":200,"response":{"status":"success","ip":"114.10.79.200","proxy":0}} 
+[2026-10-01 05:30:02] production.INFO: IsProxyIP Response {"ip":"114.10.143.31","status":200,"response":{"status":"success","ip":"114.10.143.31","proxy":0}} 
+[2026-10-01 05:30:39] production.INFO: IsProxyIP Response {"ip":"103.76.108.222","status":200,"response":{"status":"success","ip":"103.76.108.222","proxy":0}} 
+[2026-10-01 05:37:46] production.INFO: IsProxyIP Response {"ip":"216.243.112.50","status":200,"response":{"status":"success","ip":"216.243.112.50","proxy":1}} 
+[2026-10-01 05:49:47] production.INFO: IsProxyIP Response {"ip":"153.60.133.134","status":200,"response":{"status":"success","ip":"153.60.133.134","proxy":1}} 
+[2026-10-01 05:50:57] production.INFO: IsProxyIP Response {"ip":"36.50.219.46","status":200,"response":{"status":"success","ip":"36.50.219.46","proxy":0}} 
+[2026-10-01 06:03:53] production.INFO: IsProxyIP Response {"ip":"2404:c0:b601:fec8:5de3:9a0d:ea27:9302","status":200,"response":{"status":"success","ip":"2404:c0:b601:fec8:5de3:9a0d:ea27:9302","proxy":0}} 
+[2026-10-01 06:06:35] production.INFO: IsProxyIP Response {"ip":"182.253.50.141","status":200,"response":{"status":"success","ip":"182.253.50.141","proxy":0}} 
+[2026-10-01 06:20:23] production.INFO: IsProxyIP Response {"ip":"182.10.161.97","status":200,"response":{"status":"success","ip":"182.10.161.97","proxy":0}} 
+[2026-10-01 06:21:30] production.INFO: IsProxyIP Response {"ip":"125.163.113.83","status":200,"response":{"status":"success","ip":"125.163.113.83","proxy":0}} 
+[2026-10-01 06:24:27] production.INFO: IsProxyIP Response {"ip":"210.87.83.5","status":200,"response":{"status":"success","ip":"210.87.83.5","proxy":0}} 
+[2026-10-01 06:26:00] production.INFO: IsProxyIP Response {"ip":"103.247.23.71","status":200,"response":{"status":"success","ip":"103.247.23.71","proxy":0}} 
+[2026-10-01 06:31:56] production.INFO: IsProxyIP Response {"ip":"114.10.135.61","status":200,"response":{"status":"success","ip":"114.10.135.61","proxy":0}} 
+[2026-10-01 06:38:31] production.INFO: IsProxyIP Response {"ip":"36.75.37.5","status":200,"response":{"status":"success","ip":"36.75.37.5","proxy":0}} 
+[2026-10-01 06:39:51] production.INFO: IsProxyIP Response {"ip":"223.24.163.160","status":200,"response":{"status":"success","ip":"223.24.163.160","proxy":0}} 
+[2026-10-01 06:48:20] production.INFO: IsProxyIP Response {"ip":"140.213.1.63","status":200,"response":{"status":"success","ip":"140.213.1.63","proxy":0}} 
+[2026-10-01 06:50:58] production.INFO: IsProxyIP Response {"ip":"2400:9800:2b7:6239:18da:3d76:6e2d:aaaa","status":200,"response":{"status":"success","ip":"2400:9800:2b7:6239:18da:3d76:6e2d:aaaa","proxy":0}} 
+[2026-10-01 07:07:09] production.INFO: IsProxyIP Response {"ip":"2404:c0:761f:1c93:cc80:98ff:fe67:4df9","status":200,"response":{"status":"success","ip":"2404:c0:761f:1c93:cc80:98ff:fe67:4df9","proxy":0}} 
+[2026-10-01 07:10:18] production.INFO: IsProxyIP Response {"ip":"2404:c0:b302:8eb6:803f:8b68:4dbb:f476","status":200,"response":{"status":"success","ip":"2404:c0:b302:8eb6:803f:8b68:4dbb:f476","proxy":0}} 
+[2026-10-01 07:14:14] production.INFO: IsProxyIP Response {"ip":"140.213.219.138","status":200,"response":{"status":"success","ip":"140.213.219.138","proxy":0}} 
+[2026-10-01 07:18:54] production.INFO: IsProxyIP Response {"ip":"103.87.149.130","status":200,"response":{"status":"success","ip":"103.87.149.130","proxy":0}} 
+[2026-10-01 07:23:08] production.INFO: IsProxyIP Response {"ip":"114.10.77.174","status":200,"response":{"status":"success","ip":"114.10.77.174","proxy":0}} 
+[2026-10-01 07:25:39] production.INFO: IsProxyIP Response {"ip":"114.79.6.11","status":200,"response":{"status":"success","ip":"114.79.6.11","proxy":0}} 
+[2026-10-01 07:28:08] production.INFO: IsProxyIP Response {"ip":"103.154.221.60","status":200,"response":{"status":"success","ip":"103.154.221.60","proxy":0}} 
+[2026-10-01 07:29:27] production.INFO: IsProxyIP Response {"ip":"180.248.37.212","status":200,"response":{"status":"success","ip":"180.248.37.212","proxy":0}} 
+[2026-10-01 07:35:17] production.INFO: IsProxyIP Response {"ip":"140.213.48.177","status":200,"response":{"status":"success","ip":"140.213.48.177","proxy":0}} 
+[2026-10-01 07:44:26] production.INFO: IsProxyIP Response {"ip":"180.244.197.211","status":200,"response":{"status":"success","ip":"180.244.197.211","proxy":0}} 
+[2026-10-01 07:46:41] production.INFO: IsProxyIP Response {"ip":"2404:c0:c202:931a:75ef:896d:b9df:f131","status":200,"response":{"status":"success","ip":"2404:c0:c202:931a:75ef:896d:b9df:f131","proxy":0}} 
+[2026-10-01 07:48:32] production.INFO: IsProxyIP Response {"ip":"114.5.222.206","status":200,"response":{"status":"success","ip":"114.5.222.206","proxy":0}} 
+[2026-10-01 07:49:50] production.INFO: IsProxyIP Response {"ip":"36.69.53.172","status":200,"response":{"status":"success","ip":"36.69.53.172","proxy":0}} 
+[2026-10-01 07:56:46] production.INFO: IsProxyIP Response {"ip":"49.125.218.242","status":200,"response":{"status":"success","ip":"49.125.218.242","proxy":0}} 
+[2026-10-01 08:02:03] production.INFO: IsProxyIP Response {"ip":"103.68.232.14","status":200,"response":{"status":"success","ip":"103.68.232.14","proxy":0}} 
+[2026-10-01 08:07:34] production.INFO: IsProxyIP Response {"ip":"111.92.165.89","status":200,"response":{"status":"success","ip":"111.92.165.89","proxy":0}} 
+[2026-10-01 08:08:14] production.INFO: IsProxyIP Response {"ip":"182.8.122.38","status":200,"response":{"status":"success","ip":"182.8.122.38","proxy":0}} 
+[2026-10-01 08:09:47] production.INFO: IsProxyIP Response {"ip":"2001:448a:70b0:ca43:21fc:177c:6f29:91e3","status":200,"response":{"status":"success","ip":"2001:448a:70b0:ca43:21fc:177c:6f29:91e3","proxy":0}} 
+[2026-10-01 08:10:54] production.INFO: IsProxyIP Response {"ip":"182.253.171.217","status":200,"response":{"status":"success","ip":"182.253.171.217","proxy":0}} 
+[2026-10-01 08:11:08] production.INFO: IsProxyIP Response {"ip":"36.82.94.17","status":200,"response":{"status":"success","ip":"36.82.94.17","proxy":0}} 
+[2026-10-01 08:12:56] production.INFO: IsProxyIP Response {"ip":"2001:448a:2070:1b06:e1f9:644c:a79f:8b3a","status":200,"response":{"status":"success","ip":"2001:448a:2070:1b06:e1f9:644c:a79f:8b3a","proxy":0}} 
+[2026-10-01 08:13:03] production.INFO: IsProxyIP Response {"ip":"114.12.34.56","status":200,"response":{"status":"success","ip":"114.12.34.56","proxy":0}} 
+[2026-10-01 08:15:10] production.INFO: IsProxyIP Response {"ip":"168.235.203.232","status":200,"response":{"status":"success","ip":"168.235.203.232","proxy":1}} 
+[2026-10-01 08:15:30] production.INFO: IsProxyIP Response {"ip":"2400:9800:924:645:4dbe:9728:8d43:1c0e","status":200,"response":{"status":"success","ip":"2400:9800:924:645:4dbe:9728:8d43:1c0e","proxy":0}} 
+[2026-10-01 08:28:24] production.INFO: IsProxyIP Response {"ip":"114.10.158.85","status":200,"response":{"status":"success","ip":"114.10.158.85","proxy":0}} 
+[2026-10-01 08:28:41] production.INFO: IsProxyIP Response {"ip":"114.79.47.138","status":200,"response":{"status":"success","ip":"114.79.47.138","proxy":0}} 
+[2026-10-01 08:31:59] production.INFO: IsProxyIP Response {"ip":"36.65.88.146","status":200,"response":{"status":"success","ip":"36.65.88.146","proxy":0}} 
+[2026-10-01 08:35:58] production.INFO: IsProxyIP Response {"ip":"114.5.251.3","status":200,"response":{"status":"success","ip":"114.5.251.3","proxy":0}} 
+[2026-10-01 08:37:44] production.INFO: IsProxyIP Response {"ip":"182.1.160.140","status":200,"response":{"status":"success","ip":"182.1.160.140","proxy":0}} 
+[2026-10-01 08:39:24] production.INFO: IsProxyIP Response {"ip":"103.125.119.10","status":200,"response":{"status":"success","ip":"103.125.119.10","proxy":0}} 
+[2026-10-01 08:41:30] production.INFO: IsProxyIP Response {"ip":"114.10.155.147","status":200,"response":{"status":"success","ip":"114.10.155.147","proxy":0}} 
+[2026-10-01 08:42:05] production.INFO: IsProxyIP Response {"ip":"114.10.4.210","status":200,"response":{"status":"success","ip":"114.10.4.210","proxy":0}} 
+[2026-10-01 08:42:45] production.INFO: IsProxyIP Response {"ip":"2402:8780:100d:832c:dd97:f07a:35a3:496a","status":200,"response":{"status":"success","ip":"2402:8780:100d:832c:dd97:f07a:35a3:496a","proxy":0}} 
+[2026-10-01 08:47:49] production.INFO: IsProxyIP Response {"ip":"115.178.238.203","status":200,"response":{"status":"success","ip":"115.178.238.203","proxy":0}} 
+[2026-10-01 08:47:52] production.INFO: IsProxyIP Response {"ip":"103.248.9.229","status":200,"response":{"status":"success","ip":"103.248.9.229","proxy":0}} 
+[2026-10-01 08:48:39] production.INFO: IsProxyIP Response {"ip":"157.20.176.58","status":200,"response":{"status":"success","ip":"157.20.176.58","proxy":0}} 
+[2026-10-01 08:51:19] production.INFO: IsProxyIP Response {"ip":"180.246.25.253","status":200,"response":{"status":"success","ip":"180.246.25.253","proxy":0}} 
+[2026-10-01 09:02:43] production.INFO: IsProxyIP Response {"ip":"36.74.218.91","status":200,"response":{"status":"success","ip":"36.74.218.91","proxy":0}} 
+[2026-10-01 09:16:33] production.INFO: IsProxyIP Response {"ip":"180.242.79.30","status":200,"response":{"status":"success","ip":"180.242.79.30","proxy":0}} 
+[2026-10-01 09:16:51] production.INFO: IsProxyIP Response {"ip":"114.122.102.214","status":200,"response":{"status":"success","ip":"114.122.102.214","proxy":0}} 
+[2026-10-01 09:16:52] production.INFO: IsProxyIP Response {"ip":"49.146.61.31","status":200,"response":{"status":"success","ip":"49.146.61.31","proxy":0}} 
+[2026-10-01 09:29:16] production.INFO: IsProxyIP Response {"ip":"2001:448a:2002:a531:8907:17b6:d50e:8ab2","status":200,"response":{"status":"success","ip":"2001:448a:2002:a531:8907:17b6:d50e:8ab2","proxy":0}} 
+[2026-10-01 09:34:01] production.INFO: IsProxyIP Response {"ip":"216.236.3.135","status":200,"response":{"status":"success","ip":"216.236.3.135","proxy":1}} 
+[2026-10-01 09:34:37] production.INFO: IsProxyIP Response {"ip":"103.154.152.18","status":200,"response":{"status":"success","ip":"103.154.152.18","proxy":0}} 
+[2026-10-01 09:34:45] production.INFO: IsProxyIP Response {"ip":"2404:c0:ab02:5247:4922:c7f2:95fd:89fd","status":200,"response":{"status":"success","ip":"2404:c0:ab02:5247:4922:c7f2:95fd:89fd","proxy":0}} 
+[2026-10-01 09:40:06] production.INFO: IsProxyIP Response {"ip":"114.10.121.176","status":200,"response":{"status":"success","ip":"114.10.121.176","proxy":0}} 
+[2026-10-01 09:40:49] production.INFO: IsProxyIP Response {"ip":"121.101.133.51","status":200,"response":{"status":"success","ip":"121.101.133.51","proxy":0}} 
+[2026-10-01 09:44:39] production.INFO: IsProxyIP Response {"ip":"140.213.167.196","status":200,"response":{"status":"success","ip":"140.213.167.196","proxy":0}} 
+[2026-10-01 09:47:54] production.INFO: IsProxyIP Response {"ip":"114.10.153.218","status":200,"response":{"status":"success","ip":"114.10.153.218","proxy":0}} 
+[2026-10-01 09:49:22] production.INFO: IsProxyIP Response {"ip":"210.87.86.139","status":200,"response":{"status":"success","ip":"210.87.86.139","proxy":0}} 
+[2026-10-01 09:52:57] production.INFO: IsProxyIP Response {"ip":"125.163.62.12","status":200,"response":{"status":"success","ip":"125.163.62.12","proxy":0}} 
+[2026-10-01 09:54:50] production.INFO: IsProxyIP Response {"ip":"2001:448a:7070:99dc:8eb0:214f:1730:dd87","status":200,"response":{"status":"success","ip":"2001:448a:7070:99dc:8eb0:214f:1730:dd87","proxy":0}} 
+[2026-10-01 09:55:28] production.INFO: IsProxyIP Response {"ip":"2001:448a:2061:f4d:4446:4262:dcbf:5df9","status":200,"response":{"status":"success","ip":"2001:448a:2061:f4d:4446:4262:dcbf:5df9","proxy":0}} 
+[2026-10-01 09:56:49] production.INFO: IsProxyIP Response {"ip":"114.4.78.100","status":200,"response":{"status":"success","ip":"114.4.78.100","proxy":0}} 
+[2026-10-01 09:59:24] production.INFO: IsProxyIP Response {"ip":"157.15.41.162","status":200,"response":{"status":"success","ip":"157.15.41.162","proxy":1}} 
+[2026-10-01 10:03:58] production.INFO: IsProxyIP Response {"ip":"2404:c0:ab02:a0f3:8d72:6c85:a1c7:d089","status":200,"response":{"status":"success","ip":"2404:c0:ab02:a0f3:8d72:6c85:a1c7:d089","proxy":0}} 
+[2026-10-01 10:04:09] production.INFO: IsProxyIP Response {"ip":"2404:c0:c202:4832:83b2:d9c9:b630:f47d","status":200,"response":{"status":"success","ip":"2404:c0:c202:4832:83b2:d9c9:b630:f47d","proxy":0}} 
+[2026-10-01 10:04:36] production.INFO: IsProxyIP Response {"ip":"140.213.170.55","status":200,"response":{"status":"success","ip":"140.213.170.55","proxy":0}} 
+[2026-10-01 10:14:58] production.INFO: IsProxyIP Response {"ip":"2001:448a:2062:210e:91e6:a74d:50f6:3698","status":200,"response":{"status":"success","ip":"2001:448a:2062:210e:91e6:a74d:50f6:3698","proxy":0}} 
+[2026-10-01 10:20:03] production.INFO: IsProxyIP Response {"ip":"103.210.119.135","status":200,"response":{"status":"success","ip":"103.210.119.135","proxy":0}} 
+[2026-10-01 10:20:28] production.INFO: IsProxyIP Response {"ip":"114.10.119.6","status":200,"response":{"status":"success","ip":"114.10.119.6","proxy":0}} 
+[2026-10-01 10:21:58] production.INFO: IsProxyIP Response {"ip":"114.79.19.152","status":200,"response":{"status":"success","ip":"114.79.19.152","proxy":0}} 
+[2026-10-01 10:22:18] production.INFO: IsProxyIP Response {"ip":"2404:c0:1560::fdf4:3c81","status":200,"response":{"status":"success","ip":"2404:c0:1560::fdf4:3c81","proxy":0}} 
+[2026-10-01 10:22:55] production.INFO: IsProxyIP Response {"ip":"2400:9800:970:d491:90f5:ffff:fea5:65b9","status":200,"response":{"status":"success","ip":"2400:9800:970:d491:90f5:ffff:fea5:65b9","proxy":0}} 
+[2026-10-01 10:23:06] production.INFO: IsProxyIP Response {"ip":"103.130.81.33","status":200,"response":{"status":"success","ip":"103.130.81.33","proxy":0}} 
+[2026-10-01 10:23:51] production.INFO: IsProxyIP Response {"ip":"2400:9800:3b0:85c9:18da:43a2:1846:d867","status":200,"response":{"status":"success","ip":"2400:9800:3b0:85c9:18da:43a2:1846:d867","proxy":0}} 
+[2026-10-01 10:24:34] production.INFO: IsProxyIP Response {"ip":"103.175.81.250","status":200,"response":{"status":"success","ip":"103.175.81.250","proxy":1}} 
+[2026-10-01 10:27:52] production.INFO: IsProxyIP Response {"ip":"114.5.241.197","status":200,"response":{"status":"success","ip":"114.5.241.197","proxy":0}} 
+[2026-10-01 10:27:54] production.INFO: IsProxyIP Response {"ip":"114.5.212.85","status":200,"response":{"status":"success","ip":"114.5.212.85","proxy":0}} 
+[2026-10-01 10:33:26] production.INFO: IsProxyIP Response {"ip":"114.10.121.245","status":200,"response":{"status":"success","ip":"114.10.121.245","proxy":0}} 
+[2026-10-01 10:38:40] production.INFO: IsProxyIP Response {"ip":"103.181.255.55","status":200,"response":{"status":"success","ip":"103.181.255.55","proxy":1}} 
+[2026-10-01 10:43:03] production.INFO: IsProxyIP Response {"ip":"103.171.183.42","status":200,"response":{"status":"success","ip":"103.171.183.42","proxy":0}} 
+[2026-10-01 10:43:40] production.INFO: IsProxyIP Response {"ip":"111.90.198.210","status":200,"response":{"status":"success","ip":"111.90.198.210","proxy":0}} 
+[2026-10-01 10:45:43] production.INFO: IsProxyIP Response {"ip":"36.80.118.35","status":200,"response":{"status":"success","ip":"36.80.118.35","proxy":0}} 
+[2026-10-01 10:46:03] production.INFO: IsProxyIP Response {"ip":"114.79.4.23","status":200,"response":{"status":"success","ip":"114.79.4.23","proxy":0}} 
+[2026-10-01 10:48:05] production.INFO: IsProxyIP Response {"ip":"103.248.9.190","status":200,"response":{"status":"success","ip":"103.248.9.190","proxy":0}} 
+[2026-10-01 10:50:43] production.INFO: IsProxyIP Response {"ip":"103.139.10.222","status":200,"response":{"status":"success","ip":"103.139.10.222","proxy":0}} 
+[2026-10-01 10:53:44] production.INFO: IsProxyIP Response {"ip":"202.70.132.133","status":200,"response":{"status":"success","ip":"202.70.132.133","proxy":1}} 
+[2026-10-01 10:55:07] production.INFO: IsProxyIP Response {"ip":"114.10.79.183","status":200,"response":{"status":"success","ip":"114.10.79.183","proxy":0}} 
+[2026-10-01 11:02:29] production.INFO: IsProxyIP Response {"ip":"2404:c0:b603:42ef:1d84:8207:5209:46d2","status":200,"response":{"status":"success","ip":"2404:c0:b603:42ef:1d84:8207:5209:46d2","proxy":0}} 
+[2026-10-01 11:03:11] production.INFO: IsProxyIP Response {"ip":"179.65.221.63","status":200,"response":{"status":"success","ip":"179.65.221.63","proxy":0}} 
+[2026-10-01 11:05:15] production.INFO: IsProxyIP Response {"ip":"2400:9800:303:896c:18da:45c7:8d16:c1f4","status":200,"response":{"status":"success","ip":"2400:9800:303:896c:18da:45c7:8d16:c1f4","proxy":0}} 
+[2026-10-01 11:15:22] production.INFO: IsProxyIP Response {"ip":"157.85.208.106","status":200,"response":{"status":"success","ip":"157.85.208.106","proxy":0}} 
+[2026-10-01 11:15:53] production.INFO: IsProxyIP Response {"ip":"202.154.4.50","status":200,"response":{"status":"success","ip":"202.154.4.50","proxy":0}} 
+[2026-10-01 11:17:40] production.INFO: IsProxyIP Response {"ip":"2404:c0:a702:ec62:7014:59b4:292f:b59","status":200,"response":{"status":"success","ip":"2404:c0:a702:ec62:7014:59b4:292f:b59","proxy":0}} 
+[2026-10-01 11:29:38] production.INFO: IsProxyIP Response {"ip":"103.249.18.98","status":200,"response":{"status":"success","ip":"103.249.18.98","proxy":0}} 
+[2026-10-01 11:32:11] production.INFO: IsProxyIP Response {"ip":"114.10.100.117","status":200,"response":{"status":"success","ip":"114.10.100.117","proxy":0}} 
+[2026-10-01 11:34:57] production.INFO: IsProxyIP Response {"ip":"103.177.92.29","status":200,"response":{"status":"success","ip":"103.177.92.29","proxy":0}} 
+[2026-10-01 11:38:24] production.INFO: IsProxyIP Response {"ip":"157.66.138.34","status":200,"response":{"status":"success","ip":"157.66.138.34","proxy":0}} 
+[2026-10-01 11:41:17] production.INFO: IsProxyIP Response {"ip":"103.159.194.169","status":200,"response":{"status":"success","ip":"103.159.194.169","proxy":0}} 
+[2026-10-01 11:42:48] production.INFO: IsProxyIP Response {"ip":"175.158.51.2","status":200,"response":{"status":"success","ip":"175.158.51.2","proxy":0}} 
+[2026-10-01 11:51:03] production.INFO: IsProxyIP Response {"ip":"2400:9800:a01:350:befa:7cba:c188:2ed7","status":200,"response":{"status":"success","ip":"2400:9800:a01:350:befa:7cba:c188:2ed7","proxy":0}} 
+[2026-10-01 12:02:26] production.INFO: IsProxyIP Response {"ip":"2400:9800:590:55f0:1:0:f789:33c5","status":200,"response":{"status":"success","ip":"2400:9800:590:55f0:1:0:f789:33c5","proxy":0}} 
+[2026-10-01 12:09:14] production.INFO: IsProxyIP Response {"ip":"2400:9800:fb:b5ec:2c5b:add2:d3e7:bfa4","status":200,"response":{"status":"success","ip":"2400:9800:fb:b5ec:2c5b:add2:d3e7:bfa4","proxy":0}} 
+[2026-10-01 12:14:12] production.INFO: IsProxyIP Response {"ip":"103.200.34.66","status":200,"response":{"status":"success","ip":"103.200.34.66","proxy":0}} 
+[2026-10-01 12:19:26] production.INFO: IsProxyIP Response {"ip":"114.10.44.210","status":200,"response":{"status":"success","ip":"114.10.44.210","proxy":0}} 
+[2026-10-01 12:20:25] production.INFO: IsProxyIP Response {"ip":"2404:c0:2b10::5986:5479","status":200,"response":{"status":"success","ip":"2404:c0:2b10::5986:5479","proxy":0}} 
+[2026-10-01 12:21:38] production.INFO: IsProxyIP Response {"ip":"103.179.248.171","status":200,"response":{"status":"success","ip":"103.179.248.171","proxy":0}} 
+[2026-10-01 12:26:14] production.INFO: IsProxyIP Response {"ip":"182.9.49.203","status":200,"response":{"status":"success","ip":"182.9.49.203","proxy":0}} 
+[2026-10-01 12:27:06] production.INFO: IsProxyIP Response {"ip":"9.154.36.187","status":200,"response":{"status":"success","ip":"9.154.36.187","proxy":0}} 
+[2026-10-01 12:27:23] production.INFO: IsProxyIP Response {"ip":"114.10.78.128","status":200,"response":{"status":"success","ip":"114.10.78.128","proxy":0}} 
+[2026-10-01 12:28:34] production.INFO: IsProxyIP Response {"ip":"2404:c0:960a:4184:3d47:17d7:dc4d:4c68","status":200,"response":{"status":"success","ip":"2404:c0:960a:4184:3d47:17d7:dc4d:4c68","proxy":0}} 
+[2026-10-01 12:32:40] production.INFO: IsProxyIP Response {"ip":"114.5.146.191","status":200,"response":{"status":"success","ip":"114.5.146.191","proxy":0}} 
+[2026-10-01 12:33:33] production.INFO: IsProxyIP Response {"ip":"182.8.68.223","status":200,"response":{"status":"success","ip":"182.8.68.223","proxy":0}} 
+[2026-10-01 12:34:33] production.INFO: IsProxyIP Response {"ip":"103.147.134.81","status":200,"response":{"status":"success","ip":"103.147.134.81","proxy":0}} 
+[2026-10-01 12:39:03] production.INFO: IsProxyIP Response {"ip":"2001:448a:5040:34ed:6580:165:41c7:d93a","status":200,"response":{"status":"success","ip":"2001:448a:5040:34ed:6580:165:41c7:d93a","proxy":0}} 
+[2026-10-01 12:40:33] production.INFO: IsProxyIP Response {"ip":"103.119.66.33","status":200,"response":{"status":"success","ip":"103.119.66.33","proxy":0}} 
+[2026-10-01 12:48:23] production.INFO: IsProxyIP Response {"ip":"2402:8780:2081:9f28:c5a5:f91a:e268:a5b5","status":200,"response":{"status":"success","ip":"2402:8780:2081:9f28:c5a5:f91a:e268:a5b5","proxy":0}} 
+[2026-10-01 12:49:24] production.INFO: IsProxyIP Response {"ip":"202.58.64.61","status":200,"response":{"status":"success","ip":"202.58.64.61","proxy":1}} 
+[2026-10-01 12:50:35] production.INFO: IsProxyIP Response {"ip":"103.126.173.152","status":200,"response":{"status":"success","ip":"103.126.173.152","proxy":0}} 
+[2026-10-01 12:51:11] production.INFO: IsProxyIP Response {"ip":"36.74.27.248","status":200,"response":{"status":"success","ip":"36.74.27.248","proxy":0}} 
+[2026-10-01 12:52:54] production.INFO: IsProxyIP Response {"ip":"2404:c0:d002:154a:5178:50fe:83ab:80f4","status":200,"response":{"status":"success","ip":"2404:c0:d002:154a:5178:50fe:83ab:80f4","proxy":0}} 
+[2026-10-01 12:52:57] production.INFO: IsProxyIP Response {"ip":"114.122.8.9","status":200,"response":{"status":"success","ip":"114.122.8.9","proxy":0}} 
+[2026-10-01 12:53:17] production.INFO: IsProxyIP Response {"ip":"140.213.200.201","status":200,"response":{"status":"success","ip":"140.213.200.201","proxy":0}} 
+[2026-10-01 12:59:56] production.INFO: IsProxyIP Response {"ip":"2404:c0:ab07:d4d:7dbd:3866:4b46:4832","status":200,"response":{"status":"success","ip":"2404:c0:ab07:d4d:7dbd:3866:4b46:4832","proxy":0}} 
+[2026-10-01 13:02:40] production.INFO: IsProxyIP Response {"ip":"103.148.28.200","status":200,"response":{"status":"success","ip":"103.148.28.200","proxy":0}} 
+[2026-10-01 13:06:52] production.INFO: IsProxyIP Response {"ip":"110.136.89.107","status":200,"response":{"status":"success","ip":"110.136.89.107","proxy":0}} 
+[2026-10-01 13:06:59] production.INFO: IsProxyIP Response {"ip":"2400:9800:554:f7d:1:0:cc74:8f72","status":200,"response":{"status":"success","ip":"2400:9800:554:f7d:1:0:cc74:8f72","proxy":0}} 
+[2026-10-01 13:07:56] production.INFO: IsProxyIP Response {"ip":"103.119.66.63","status":200,"response":{"status":"success","ip":"103.119.66.63","proxy":0}} 
+[2026-10-01 13:08:42] production.INFO: IsProxyIP Response {"ip":"114.10.45.160","status":200,"response":{"status":"success","ip":"114.10.45.160","proxy":0}} 
+[2026-10-01 13:09:12] production.INFO: IsProxyIP Response {"ip":"110.136.89.211","status":200,"response":{"status":"success","ip":"110.136.89.211","proxy":0}} 
+[2026-10-01 13:09:29] production.INFO: IsProxyIP Response {"ip":"180.252.242.106","status":200,"response":{"status":"success","ip":"180.252.242.106","proxy":0}} 
+[2026-10-01 13:09:54] production.INFO: IsProxyIP Response {"ip":"115.178.236.99","status":200,"response":{"status":"success","ip":"115.178.236.99","proxy":0}} 
+[2026-10-01 13:10:51] production.INFO: IsProxyIP Response {"ip":"2001:448a:1000:306d:f0c1:2199:bf50:f59","status":200,"response":{"status":"success","ip":"2001:448a:1000:306d:f0c1:2199:bf50:f59","proxy":0}} 
+[2026-10-01 13:13:22] production.INFO: IsProxyIP Response {"ip":"114.122.233.255","status":200,"response":{"status":"success","ip":"114.122.233.255","proxy":0}} 
+[2026-10-01 13:13:36] production.INFO: IsProxyIP Response {"ip":"103.168.186.166","status":200,"response":{"status":"success","ip":"103.168.186.166","proxy":0}} 
+[2026-10-01 13:14:04] production.INFO: IsProxyIP Response {"ip":"103.140.79.62","status":200,"response":{"status":"success","ip":"103.140.79.62","proxy":0}} 
+[2026-10-01 13:14:55] production.INFO: IsProxyIP Response {"ip":"2404:c0:5651:7708:96d8:567a:812f:c084","status":200,"response":{"status":"success","ip":"2404:c0:5651:7708:96d8:567a:812f:c084","proxy":0}} 
+[2026-10-01 13:18:43] production.INFO: IsProxyIP Response {"ip":"36.83.95.196","status":200,"response":{"status":"success","ip":"36.83.95.196","proxy":0}} 
+[2026-10-01 13:22:09] production.INFO: IsProxyIP Response {"ip":"2400:9800:764:8974:40ae:b512:a7d5:52c6","status":200,"response":{"status":"success","ip":"2400:9800:764:8974:40ae:b512:a7d5:52c6","proxy":0}} 
+[2026-10-01 13:22:29] production.INFO: IsProxyIP Response {"ip":"114.10.44.35","status":200,"response":{"status":"success","ip":"114.10.44.35","proxy":0}} 
+[2026-10-01 13:26:13] production.INFO: IsProxyIP Response {"ip":"180.247.181.237","status":200,"response":{"status":"success","ip":"180.247.181.237","proxy":0}} 
+[2026-10-01 13:29:18] production.INFO: IsProxyIP Response {"ip":"103.172.24.178","status":200,"response":{"status":"success","ip":"103.172.24.178","proxy":1}} 
+[2026-10-01 13:32:03] production.INFO: IsProxyIP Response {"ip":"180.247.241.72","status":200,"response":{"status":"success","ip":"180.247.241.72","proxy":0}} 
+[2026-10-01 13:32:44] production.INFO: IsProxyIP Response {"ip":"114.122.110.36","status":200,"response":{"status":"success","ip":"114.122.110.36","proxy":0}} 
+[2026-10-01 13:33:47] production.INFO: IsProxyIP Response {"ip":"182.23.114.34","status":200,"response":{"status":"success","ip":"182.23.114.34","proxy":0}} 
+[2026-10-01 13:35:12] production.INFO: IsProxyIP Response {"ip":"114.5.147.206","status":200,"response":{"status":"success","ip":"114.5.147.206","proxy":0}} 
+[2026-10-01 13:36:50] production.INFO: IsProxyIP Response {"ip":"140.213.64.224","status":200,"response":{"status":"success","ip":"140.213.64.224","proxy":0}} 
+[2026-10-01 13:38:44] production.INFO: IsProxyIP Response {"ip":"180.246.27.211","status":200,"response":{"status":"success","ip":"180.246.27.211","proxy":0}} 
+[2026-10-01 13:41:58] production.INFO: IsProxyIP Response {"ip":"2400:9800:a01:75a1:f77f:8d68:cf82:2992","status":200,"response":{"status":"success","ip":"2400:9800:a01:75a1:f77f:8d68:cf82:2992","proxy":0}} 
+[2026-10-01 13:42:00] production.INFO: IsProxyIP Response {"ip":"182.5.9.16","status":200,"response":{"status":"success","ip":"182.5.9.16","proxy":0}} 
+[2026-10-01 13:42:26] production.INFO: IsProxyIP Response {"ip":"103.176.96.236","status":200,"response":{"status":"success","ip":"103.176.96.236","proxy":0}} 
+[2026-10-01 13:43:59] production.INFO: IsProxyIP Response {"ip":"114.10.159.100","status":200,"response":{"status":"success","ip":"114.10.159.100","proxy":0}} 
+[2026-10-01 13:49:56] production.INFO: IsProxyIP Response {"ip":"114.10.78.49","status":200,"response":{"status":"success","ip":"114.10.78.49","proxy":0}} 
+[2026-10-01 13:50:06] production.INFO: IsProxyIP Response {"ip":"103.164.228.18","status":200,"response":{"status":"success","ip":"103.164.228.18","proxy":0}} 
+[2026-10-01 13:50:23] production.INFO: IsProxyIP Response {"ip":"114.10.43.103","status":200,"response":{"status":"success","ip":"114.10.43.103","proxy":0}} 
+[2026-10-01 13:50:35] production.INFO: IsProxyIP Response {"ip":"114.79.47.158","status":200,"response":{"status":"success","ip":"114.79.47.158","proxy":0}} 
+[2026-10-01 13:51:59] production.INFO: IsProxyIP Response {"ip":"45.198.11.115","status":200,"response":{"status":"success","ip":"45.198.11.115","proxy":0}} 
+[2026-10-01 13:53:55] production.INFO: IsProxyIP Response {"ip":"103.188.168.125","status":200,"response":{"status":"success","ip":"103.188.168.125","proxy":0}} 
+[2026-10-01 13:55:42] production.INFO: IsProxyIP Response {"ip":"103.97.225.250","status":200,"response":{"status":"success","ip":"103.97.225.250","proxy":0}} 
+[2026-10-01 13:57:52] production.INFO: IsProxyIP Response {"ip":"103.169.188.150","status":200,"response":{"status":"success","ip":"103.169.188.150","proxy":0}} 
+[2026-10-01 13:57:52] production.INFO: IsProxyIP Response {"ip":"2400:9800:1a6:a027:c497:78cb:6a7a:1c78","status":200,"response":{"status":"success","ip":"2400:9800:1a6:a027:c497:78cb:6a7a:1c78","proxy":0}} 
+[2026-10-01 14:00:29] production.INFO: IsProxyIP Response {"ip":"36.93.154.93","status":200,"response":{"status":"success","ip":"36.93.154.93","proxy":0}} 
+[2026-10-01 14:01:00] production.INFO: IsProxyIP Response {"ip":"114.8.217.121","status":200,"response":{"status":"success","ip":"114.8.217.121","proxy":0}} 
+[2026-10-01 14:02:21] production.INFO: IsProxyIP Response {"ip":"125.164.40.215","status":200,"response":{"status":"success","ip":"125.164.40.215","proxy":0}} 
+[2026-10-01 14:02:36] production.INFO: IsProxyIP Response {"ip":"103.82.246.217","status":200,"response":{"status":"success","ip":"103.82.246.217","proxy":0}} 
+[2026-10-01 14:04:42] production.INFO: IsProxyIP Response {"ip":"110.136.10.187","status":200,"response":{"status":"success","ip":"110.136.10.187","proxy":0}} 
+[2026-10-01 14:06:15] production.INFO: IsProxyIP Response {"ip":"114.10.20.106","status":200,"response":{"status":"success","ip":"114.10.20.106","proxy":0}} 
+[2026-10-01 14:07:45] production.INFO: IsProxyIP Response {"ip":"103.20.88.106","status":200,"response":{"status":"success","ip":"103.20.88.106","proxy":0}} 
+[2026-10-01 14:11:12] production.INFO: IsProxyIP Response {"ip":"165.99.239.10","status":200,"response":{"status":"success","ip":"165.99.239.10","proxy":0}} 
+[2026-10-01 14:18:24] production.INFO: IsProxyIP Response {"ip":"103.116.49.145","status":200,"response":{"status":"success","ip":"103.116.49.145","proxy":0}} 
+[2026-10-01 14:21:09] production.INFO: IsProxyIP Response {"ip":"36.70.41.12","status":200,"response":{"status":"success","ip":"36.70.41.12","proxy":0}} 
+[2026-10-01 14:25:58] production.INFO: IsProxyIP Response {"ip":"103.105.76.5","status":200,"response":{"status":"success","ip":"103.105.76.5","proxy":0}} 
+[2026-10-01 14:26:35] production.INFO: IsProxyIP Response {"ip":"103.71.162.208","status":200,"response":{"status":"success","ip":"103.71.162.208","proxy":0}} 
+[2026-10-01 14:28:08] production.INFO: IsProxyIP Response {"ip":"114.124.174.34","status":200,"response":{"status":"success","ip":"114.124.174.34","proxy":0}} 
+[2026-10-01 14:29:17] production.INFO: IsProxyIP Response {"ip":"2402:8780:1085:bc00:995f:7a6:b1e4:25f4","status":200,"response":{"status":"success","ip":"2402:8780:1085:bc00:995f:7a6:b1e4:25f4","proxy":0}} 
+[2026-10-01 14:41:15] production.INFO: IsProxyIP Response {"ip":"114.10.137.22","status":200,"response":{"status":"success","ip":"114.10.137.22","proxy":0}} 
+[2026-10-01 14:42:05] production.INFO: IsProxyIP Response {"ip":"103.49.228.98","status":200,"response":{"status":"success","ip":"103.49.228.98","proxy":0}} 
+[2026-10-01 14:42:45] production.INFO: IsProxyIP Response {"ip":"140.213.2.137","status":200,"response":{"status":"success","ip":"140.213.2.137","proxy":0}} 
+[2026-10-01 14:45:37] production.INFO: IsProxyIP Response {"ip":"36.73.222.223","status":200,"response":{"status":"success","ip":"36.73.222.223","proxy":0}} 
+[2026-10-01 14:46:00] production.INFO: IsProxyIP Response {"ip":"2400:9800:702:425b:681d:88ff:fe00:ced8","status":200,"response":{"status":"success","ip":"2400:9800:702:425b:681d:88ff:fe00:ced8","proxy":0}} 
+[2026-10-01 14:46:21] production.INFO: IsProxyIP Response {"ip":"36.77.218.130","status":200,"response":{"status":"success","ip":"36.77.218.130","proxy":0}} 
+[2026-10-01 14:53:08] production.INFO: IsProxyIP Response {"ip":"182.9.8.8","status":200,"response":{"status":"success","ip":"182.9.8.8","proxy":0}} 
+[2026-10-01 14:53:56] production.INFO: IsProxyIP Response {"ip":"36.73.65.94","status":200,"response":{"status":"success","ip":"36.73.65.94","proxy":0}} 
+[2026-10-01 14:55:00] production.INFO: IsProxyIP Response {"ip":"103.177.106.137","status":200,"response":{"status":"success","ip":"103.177.106.137","proxy":1}} 
+[2026-10-01 14:58:50] production.INFO: IsProxyIP Response {"ip":"182.8.255.70","status":200,"response":{"status":"success","ip":"182.8.255.70","proxy":0}} 
+[2026-10-01 15:04:42] production.INFO: IsProxyIP Response {"ip":"103.156.17.245","status":200,"response":{"status":"success","ip":"103.156.17.245","proxy":0}} 
+[2026-10-01 15:08:47] production.INFO: IsProxyIP Response {"ip":"112.215.154.24","status":200,"response":{"status":"success","ip":"112.215.154.24","proxy":0}} 
+[2026-10-01 15:12:19] production.INFO: IsProxyIP Response {"ip":"103.3.221.239","status":200,"response":{"status":"success","ip":"103.3.221.239","proxy":0}} 
+[2026-10-01 15:13:25] production.INFO: IsProxyIP Response {"ip":"202.58.78.116","status":200,"response":{"status":"success","ip":"202.58.78.116","proxy":1}} 
+[2026-10-01 15:15:08] production.INFO: IsProxyIP Response {"ip":"182.8.255.152","status":200,"response":{"status":"success","ip":"182.8.255.152","proxy":0}} 
+[2026-10-01 15:19:27] production.INFO: IsProxyIP Response {"ip":"2404:c0:416a:8622::1","status":200,"response":{"status":"success","ip":"2404:c0:416a:8622::1","proxy":0}} 
+[2026-10-01 15:23:08] production.INFO: IsProxyIP Response {"ip":"182.10.131.110","status":200,"response":{"status":"success","ip":"182.10.131.110","proxy":0}} 
+[2026-10-01 15:29:59] production.INFO: IsProxyIP Response {"ip":"125.166.8.62","status":200,"response":{"status":"success","ip":"125.166.8.62","proxy":0}} 
+[2026-10-01 15:31:18] production.INFO: IsProxyIP Response {"ip":"158.140.191.91","status":200,"response":{"status":"success","ip":"158.140.191.91","proxy":0}} 
+[2026-10-01 15:34:56] production.INFO: IsProxyIP Response {"ip":"103.28.113.253","status":200,"response":{"status":"success","ip":"103.28.113.253","proxy":0}} 
+[2026-10-01 15:35:37] production.INFO: IsProxyIP Response {"ip":"103.238.232.106","status":200,"response":{"status":"success","ip":"103.238.232.106","proxy":0}} 
+[2026-10-01 15:41:40] production.INFO: IsProxyIP Response {"ip":"158.140.166.126","status":200,"response":{"status":"success","ip":"158.140.166.126","proxy":0}} 
+[2026-10-01 15:42:30] production.INFO: IsProxyIP Response {"ip":"103.177.106.140","status":200,"response":{"status":"success","ip":"103.177.106.140","proxy":1}} 
+[2026-10-01 15:42:51] production.INFO: IsProxyIP Response {"ip":"103.90.27.58","status":200,"response":{"status":"success","ip":"103.90.27.58","proxy":0}} 
+[2026-10-01 15:46:02] production.INFO: IsProxyIP Response {"ip":"202.65.229.5","status":200,"response":{"status":"success","ip":"202.65.229.5","proxy":0}} 
+[2026-10-01 15:46:29] production.INFO: IsProxyIP Response {"ip":"175.111.96.5","status":200,"response":{"status":"success","ip":"175.111.96.5","proxy":0}} 
+[2026-10-01 15:48:18] production.INFO: IsProxyIP Response {"ip":"103.160.68.131","status":200,"response":{"status":"success","ip":"103.160.68.131","proxy":0}} 
+[2026-10-01 15:48:44] production.INFO: IsProxyIP Response {"ip":"114.125.57.69","status":200,"response":{"status":"success","ip":"114.125.57.69","proxy":0}} 
+[2026-10-01 15:49:11] production.INFO: IsProxyIP Response {"ip":"180.241.29.61","status":200,"response":{"status":"success","ip":"180.241.29.61","proxy":0}} 
+[2026-10-01 15:52:41] production.INFO: IsProxyIP Response {"ip":"114.10.120.77","status":200,"response":{"status":"success","ip":"114.10.120.77","proxy":0}} 
+[2026-10-01 16:03:19] production.INFO: IsProxyIP Response {"ip":"114.122.231.239","status":200,"response":{"status":"success","ip":"114.122.231.239","proxy":0}} 
+[2026-10-01 16:05:45] production.INFO: IsProxyIP Response {"ip":"103.189.207.138","status":200,"response":{"status":"success","ip":"103.189.207.138","proxy":1}} 
+[2026-10-01 16:10:18] production.INFO: IsProxyIP Response {"ip":"182.5.201.2","status":200,"response":{"status":"success","ip":"182.5.201.2","proxy":0}} 
+[2026-10-01 16:11:11] production.INFO: IsProxyIP Response {"ip":"36.82.35.141","status":200,"response":{"status":"success","ip":"36.82.35.141","proxy":0}} 
+[2026-10-01 16:12:08] production.INFO: IsProxyIP Response {"ip":"36.78.221.219","status":200,"response":{"status":"success","ip":"36.78.221.219","proxy":0}} 
+[2026-10-01 16:14:29] production.INFO: IsProxyIP Response {"ip":"114.10.77.139","status":200,"response":{"status":"success","ip":"114.10.77.139","proxy":0}} 
+[2026-10-01 16:15:31] production.INFO: IsProxyIP Response {"ip":"182.9.195.129","status":200,"response":{"status":"success","ip":"182.9.195.129","proxy":0}} 
+[2026-10-01 16:19:13] production.INFO: IsProxyIP Response {"ip":"125.165.251.31","status":200,"response":{"status":"success","ip":"125.165.251.31","proxy":0}} 
+[2026-10-01 16:24:17] production.INFO: IsProxyIP Response {"ip":"112.215.237.47","status":200,"response":{"status":"success","ip":"112.215.237.47","proxy":0}} 
+[2026-10-01 16:28:52] production.INFO: IsProxyIP Response {"ip":"202.6.192.11","status":200,"response":{"status":"success","ip":"202.6.192.11","proxy":0}} 
+[2026-10-01 16:29:27] production.INFO: IsProxyIP Response {"ip":"114.122.233.27","status":200,"response":{"status":"success","ip":"114.122.233.27","proxy":0}} 
+[2026-10-01 16:33:51] production.INFO: IsProxyIP Response {"ip":"2400:9800:6f4:21af:1:0:d619:2aad","status":200,"response":{"status":"success","ip":"2400:9800:6f4:21af:1:0:d619:2aad","proxy":0}} 
+[2026-10-01 16:34:19] production.INFO: IsProxyIP Response {"ip":"38.188.63.70","status":200,"response":{"status":"success","ip":"38.188.63.70","proxy":0}} 
+[2026-10-01 16:36:23] production.INFO: IsProxyIP Response {"ip":"2402:8780:1068:af6:e958:df9d:4b21:9226","status":200,"response":{"status":"success","ip":"2402:8780:1068:af6:e958:df9d:4b21:9226","proxy":0}} 
+[2026-10-01 16:37:40] production.INFO: IsProxyIP Response {"ip":"202.70.133.51","status":200,"response":{"status":"success","ip":"202.70.133.51","proxy":1}} 
+[2026-10-01 16:39:37] production.INFO: IsProxyIP Response {"ip":"182.2.186.251","status":200,"response":{"status":"success","ip":"182.2.186.251","proxy":0}} 
+[2026-10-01 16:41:02] production.INFO: IsProxyIP Response {"ip":"110.137.17.99","status":200,"response":{"status":"success","ip":"110.137.17.99","proxy":0}} 
+[2026-10-01 16:41:11] production.INFO: IsProxyIP Response {"ip":"125.165.108.207","status":200,"response":{"status":"success","ip":"125.165.108.207","proxy":0}} 
+[2026-10-01 16:42:57] production.INFO: IsProxyIP Response {"ip":"125.163.79.151","status":200,"response":{"status":"success","ip":"125.163.79.151","proxy":0}} 
+[2026-10-01 16:50:02] production.INFO: IsProxyIP Response {"ip":"82.158.129.66","status":200,"response":{"status":"success","ip":"82.158.129.66","proxy":0}} 
+[2026-10-01 16:53:21] production.INFO: IsProxyIP Response {"ip":"110.137.130.166","status":200,"response":{"status":"success","ip":"110.137.130.166","proxy":0}} 
+[2026-10-01 16:55:39] production.INFO: IsProxyIP Response {"ip":"125.166.0.113","status":200,"response":{"status":"success","ip":"125.166.0.113","proxy":0}} 
+[2026-10-01 17:02:25] production.INFO: IsProxyIP Response {"ip":"114.198.244.146","status":200,"response":{"status":"success","ip":"114.198.244.146","proxy":0}} 
+[2026-10-01 17:04:33] production.INFO: IsProxyIP Response {"ip":"175.158.55.165","status":200,"response":{"status":"success","ip":"175.158.55.165","proxy":0}} 
+[2026-10-01 17:09:01] production.INFO: IsProxyIP Response {"ip":"103.161.110.185","status":200,"response":{"status":"success","ip":"103.161.110.185","proxy":0}} 
+[2026-10-01 17:11:37] production.INFO: IsProxyIP Response {"ip":"182.4.68.46","status":200,"response":{"status":"success","ip":"182.4.68.46","proxy":0}} 
+[2026-10-01 17:14:35] production.INFO: IsProxyIP Response {"ip":"157.15.46.176","status":200,"response":{"status":"success","ip":"157.15.46.176","proxy":0}} 
+[2026-10-01 17:15:36] production.INFO: IsProxyIP Response {"ip":"157.20.207.90","status":200,"response":{"status":"success","ip":"157.20.207.90","proxy":0}} 
+[2026-10-01 17:15:51] production.INFO: IsProxyIP Response {"ip":"180.248.189.149","status":200,"response":{"status":"success","ip":"180.248.189.149","proxy":0}} 
+[2026-10-01 17:19:04] production.INFO: IsProxyIP Response {"ip":"114.141.56.242","status":200,"response":{"status":"success","ip":"114.141.56.242","proxy":0}} 
+[2026-10-01 17:20:19] production.INFO: IsProxyIP Response {"ip":"103.154.148.114","status":200,"response":{"status":"success","ip":"103.154.148.114","proxy":0}} 
+[2026-10-01 17:22:54] production.INFO: IsProxyIP Response {"ip":"36.80.22.27","status":200,"response":{"status":"success","ip":"36.80.22.27","proxy":0}} 
+[2026-10-01 17:22:58] production.INFO: IsProxyIP Response {"ip":"114.125.23.219","status":200,"response":{"status":"success","ip":"114.125.23.219","proxy":0}} 
+[2026-10-01 17:23:05] production.INFO: IsProxyIP Response {"ip":"182.9.34.221","status":200,"response":{"status":"success","ip":"182.9.34.221","proxy":0}} 
+[2026-10-01 17:26:50] production.INFO: IsProxyIP Response {"ip":"203.83.40.25","status":200,"response":{"status":"success","ip":"203.83.40.25","proxy":0}} 
+[2026-10-01 17:27:41] production.INFO: IsProxyIP Response {"ip":"82.158.132.248","status":200,"response":{"status":"success","ip":"82.158.132.248","proxy":0}} 
+[2026-10-01 17:32:37] production.INFO: IsProxyIP Response {"ip":"158.140.173.53","status":200,"response":{"status":"success","ip":"158.140.173.53","proxy":0}} 
+[2026-10-01 17:33:10] production.INFO: IsProxyIP Response {"ip":"2a09:bac1:34e0:18::279:32","status":200,"response":{"status":"success","ip":"2a09:bac1:34e0:18::279:32","proxy":1}} 
+[2026-10-01 17:34:17] production.INFO: IsProxyIP Response {"ip":"179.65.209.253","status":200,"response":{"status":"success","ip":"179.65.209.253","proxy":0}} 
+[2026-10-01 17:34:26] production.INFO: IsProxyIP Response {"ip":"182.8.225.38","status":200,"response":{"status":"success","ip":"182.8.225.38","proxy":0}} 
+[2026-10-01 17:37:22] production.INFO: IsProxyIP Response {"ip":"157.20.207.29","status":200,"response":{"status":"success","ip":"157.20.207.29","proxy":1}} 
+[2026-10-01 17:45:17] production.INFO: IsProxyIP Response {"ip":"2402:8780:1071:54bc:f909:b7c5:a07d:96b4","status":200,"response":{"status":"success","ip":"2402:8780:1071:54bc:f909:b7c5:a07d:96b4","proxy":0}} 
+[2026-10-01 17:48:06] production.INFO: IsProxyIP Response {"ip":"2001:448a:2014:16b:5be:194a:c936:1a93","status":200,"response":{"status":"success","ip":"2001:448a:2014:16b:5be:194a:c936:1a93","proxy":0}} 
+[2026-10-01 17:49:59] production.INFO: IsProxyIP Response {"ip":"2402:8780:103c:2dfe:9100:2130:d735:ea18","status":200,"response":{"status":"success","ip":"2402:8780:103c:2dfe:9100:2130:d735:ea18","proxy":0}} 
+[2026-10-01 17:50:31] production.INFO: IsProxyIP Response {"ip":"114.125.50.76","status":200,"response":{"status":"success","ip":"114.125.50.76","proxy":0}} 
+[2026-10-01 17:52:25] production.INFO: IsProxyIP Response {"ip":"36.82.242.135","status":200,"response":{"status":"success","ip":"36.82.242.135","proxy":0}} 
+[2026-10-01 17:52:40] production.INFO: IsProxyIP Response {"ip":"103.184.18.75","status":200,"response":{"status":"success","ip":"103.184.18.75","proxy":0}} 
+[2026-10-01 17:53:26] production.INFO: IsProxyIP Response {"ip":"2407:0:3f6a:42cc:10b0:bd3d:91ef:5ca7","status":200,"response":{"status":"success","ip":"2407:0:3f6a:42cc:10b0:bd3d:91ef:5ca7","proxy":0}} 
+[2026-10-01 17:53:57] production.INFO: IsProxyIP Response {"ip":"103.224.67.163","status":200,"response":{"status":"success","ip":"103.224.67.163","proxy":0}} 
+[2026-10-01 17:54:52] production.INFO: IsProxyIP Response {"ip":"138.252.95.26","status":200,"response":{"status":"success","ip":"138.252.95.26","proxy":0}} 
+[2026-10-01 17:55:48] production.INFO: IsProxyIP Response {"ip":"180.246.71.39","status":200,"response":{"status":"success","ip":"180.246.71.39","proxy":0}} 
+[2026-10-01 17:58:40] production.INFO: IsProxyIP Response {"ip":"157.66.236.84","status":200,"response":{"status":"success","ip":"157.66.236.84","proxy":0}} 
+[2026-10-01 17:59:43] production.INFO: IsProxyIP Response {"ip":"31.56.199.42","status":200,"response":{"status":"success","ip":"31.56.199.42","proxy":1}} 
+[2026-10-01 17:59:55] production.INFO: IsProxyIP Response {"ip":"36.73.32.24","status":200,"response":{"status":"success","ip":"36.73.32.24","proxy":0}} 
+[2026-10-01 18:00:11] production.INFO: IsProxyIP Response {"ip":"202.145.5.251","status":200,"response":{"status":"success","ip":"202.145.5.251","proxy":0}} 
+[2026-10-01 18:02:59] production.INFO: IsProxyIP Response {"ip":"182.1.135.113","status":200,"response":{"status":"success","ip":"182.1.135.113","proxy":0}} 
+[2026-10-01 18:03:10] production.INFO: IsProxyIP Response {"ip":"114.79.54.118","status":200,"response":{"status":"success","ip":"114.79.54.118","proxy":0}} 
+[2026-10-01 18:04:03] production.INFO: IsProxyIP Response {"ip":"202.65.233.204","status":200,"response":{"status":"success","ip":"202.65.233.204","proxy":0}} 
+[2026-10-01 18:05:54] production.INFO: IsProxyIP Response {"ip":"161.248.158.154","status":200,"response":{"status":"success","ip":"161.248.158.154","proxy":0}} 
+[2026-10-01 18:12:08] production.INFO: IsProxyIP Response {"ip":"114.10.100.113","status":200,"response":{"status":"success","ip":"114.10.100.113","proxy":0}} 
+[2026-10-01 18:12:29] production.INFO: DIRECT_UPLOAD_INIT {"token":"8a0b33f3-d06a-4842-9b2a-60cc326caeff","user_id":61,"file_name":"GAME DASHBORD OPTIMIZER V10.0 (MAGISK-KSU).zip","file_size":63309,"part_size":52428800,"total_parts":1,"path":"uploads/users/v1RgzRVvzbpB/3b1c4e92-aed1-4706-8891-5a1e594bbbb4.zip"} 
+[2026-10-01 18:12:29] production.INFO: DIRECT_UPLOAD_INIT {"token":"a70dcf37-1c88-42a9-9fae-6d3496c042c2","user_id":61,"file_name":"Game-Dashbord-OptimizerV10.0(Vexiro).zip","file_size":24983,"part_size":52428800,"total_parts":1,"path":"uploads/users/v1RgzRVvzbpB/df93af67-2510-4d2c-8e5d-e0e63c2641fc.zip"} 
+[2026-10-01 18:12:29] production.INFO: DIRECT_UPLOAD_INIT {"token":"1860d25a-eb4f-4835-9fd4-6d96ba5f9807","user_id":61,"file_name":"Game-Dashbord-OptimizerV10.0(MAGIC-TUNER).zip","file_size":66270,"part_size":52428800,"total_parts":1,"path":"uploads/users/v1RgzRVvzbpB/fc1c018a-8a98-42b3-b272-f03bd95a7daf.zip"} 
+[2026-10-01 18:12:31] production.INFO: DIRECT_UPLOAD_FINISH {"token":"a70dcf37-1c88-42a9-9fae-6d3496c042c2","file_entry_id":308,"file_size":24983,"path":"uploads/users/v1RgzRVvzbpB/df93af67-2510-4d2c-8e5d-e0e63c2641fc.zip"} 
+[2026-10-01 18:12:31] production.INFO: DIRECT_UPLOAD_FINISH {"token":"8a0b33f3-d06a-4842-9b2a-60cc326caeff","file_entry_id":309,"file_size":63309,"path":"uploads/users/v1RgzRVvzbpB/3b1c4e92-aed1-4706-8891-5a1e594bbbb4.zip"} 
+[2026-10-01 18:12:31] production.INFO: DIRECT_UPLOAD_FINISH {"token":"1860d25a-eb4f-4835-9fd4-6d96ba5f9807","file_entry_id":310,"file_size":66270,"path":"uploads/users/v1RgzRVvzbpB/fc1c018a-8a98-42b3-b272-f03bd95a7daf.zip"} 
+[2026-10-01 18:12:31] production.INFO: DIRECT_UPLOAD_INIT {"token":"db7e9157-b6ac-4001-bab3-c0f9d72fa516","user_id":61,"file_name":"Game-Dashbord-OptimizerV10.0(AxM-SHELL DLL).zip","file_size":84453,"part_size":52428800,"total_parts":1,"path":"uploads/users/v1RgzRVvzbpB/21ed4350-9d6a-4bc0-aaf8-fdabbd74cd57.zip"} 
+[2026-10-01 18:12:32] production.INFO: DIRECT_UPLOAD_FINISH {"token":"db7e9157-b6ac-4001-bab3-c0f9d72fa516","file_entry_id":311,"file_size":84453,"path":"uploads/users/v1RgzRVvzbpB/21ed4350-9d6a-4bc0-aaf8-fdabbd74cd57.zip"} 
+[2026-10-01 18:13:35] production.INFO: IsProxyIP Response {"ip":"103.142.255.122","status":200,"response":{"status":"success","ip":"103.142.255.122","proxy":1}} 
+[2026-10-01 18:22:26] production.INFO: IsProxyIP Response {"ip":"2001:448a:2076:3455:9194:784:94c0:ac97","status":200,"response":{"status":"success","ip":"2001:448a:2076:3455:9194:784:94c0:ac97","proxy":0}} 
+[2026-10-01 18:23:47] production.INFO: IsProxyIP Response {"ip":"38.183.144.36","status":200,"response":{"status":"success","ip":"38.183.144.36","proxy":1}} 
+[2026-10-01 18:24:02] production.INFO: IsProxyIP Response {"ip":"36.69.159.52","status":200,"response":{"status":"success","ip":"36.69.159.52","proxy":0}} 
+[2026-10-01 18:24:45] production.INFO: IsProxyIP Response {"ip":"36.85.92.73","status":200,"response":{"status":"success","ip":"36.85.92.73","proxy":0}} 
+[2026-10-01 18:28:03] production.INFO: IsProxyIP Response {"ip":"2400:9800:580:256f:1:0:f8af:c2fd","status":200,"response":{"status":"success","ip":"2400:9800:580:256f:1:0:f8af:c2fd","proxy":0}} 
+[2026-10-01 18:29:31] production.INFO: IsProxyIP Response {"ip":"163.223.117.207","status":200,"response":{"status":"success","ip":"163.223.117.207","proxy":0}} 
+[2026-10-01 18:30:01] production.INFO: IsProxyIP Response {"ip":"103.247.15.148","status":200,"response":{"status":"success","ip":"103.247.15.148","proxy":0}} 
+[2026-10-01 18:32:14] production.INFO: IsProxyIP Response {"ip":"114.10.152.197","status":200,"response":{"status":"success","ip":"114.10.152.197","proxy":0}} 
+[2026-10-01 18:33:47] production.INFO: IsProxyIP Response {"ip":"140.213.164.194","status":200,"response":{"status":"success","ip":"140.213.164.194","proxy":0}} 
+[2026-10-01 18:34:04] production.INFO: IsProxyIP Response {"ip":"103.186.35.24","status":200,"response":{"status":"success","ip":"103.186.35.24","proxy":0}} 
+[2026-10-01 18:36:36] production.INFO: IsProxyIP Response {"ip":"2402:8780:101e:2a1a:27a0:1660:bdcb:39d9","status":200,"response":{"status":"success","ip":"2402:8780:101e:2a1a:27a0:1660:bdcb:39d9","proxy":0}} 
+[2026-10-01 18:37:41] production.INFO: IsProxyIP Response {"ip":"82.158.133.88","status":200,"response":{"status":"success","ip":"82.158.133.88","proxy":0}} 
+[2026-10-01 18:39:20] production.INFO: IsProxyIP Response {"ip":"2401:e320:491:f608:9c9d:5365:9502:ffec","status":200,"response":{"status":"success","ip":"2401:e320:491:f608:9c9d:5365:9502:ffec","proxy":0}} 
+[2026-10-01 18:39:53] production.INFO: IsProxyIP Response {"ip":"114.12.30.12","status":200,"response":{"status":"success","ip":"114.12.30.12","proxy":0}} 
+[2026-10-01 18:40:15] production.INFO: IsProxyIP Response {"ip":"112.215.245.65","status":200,"response":{"status":"success","ip":"112.215.245.65","proxy":0}} 
+[2026-10-01 18:41:08] production.INFO: IsProxyIP Response {"ip":"103.157.58.216","status":200,"response":{"status":"success","ip":"103.157.58.216","proxy":1}} 
+[2026-10-01 18:41:50] production.INFO: IsProxyIP Response {"ip":"114.10.151.36","status":200,"response":{"status":"success","ip":"114.10.151.36","proxy":0}} 
+[2026-10-01 18:43:01] production.INFO: IsProxyIP Response {"ip":"2404:c0:5a13:3a1e:8c3e:b8ff:feb0:6929","status":200,"response":{"status":"success","ip":"2404:c0:5a13:3a1e:8c3e:b8ff:feb0:6929","proxy":0}} 
+[2026-10-01 18:44:07] production.INFO: IsProxyIP Response {"ip":"103.190.171.221","status":200,"response":{"status":"success","ip":"103.190.171.221","proxy":1}} 
+[2026-10-01 18:44:27] production.INFO: IsProxyIP Response {"ip":"36.68.251.131","status":200,"response":{"status":"success","ip":"36.68.251.131","proxy":0}} 
+[2026-10-01 18:44:50] production.INFO: IsProxyIP Response {"ip":"103.108.30.108","status":200,"response":{"status":"success","ip":"103.108.30.108","proxy":0}} 
+[2026-10-01 18:45:52] production.INFO: IsProxyIP Response {"ip":"2001:fb1:13a:4872:e5ae:631f:4d84:cd4c","status":200,"response":{"status":"success","ip":"2001:fb1:13a:4872:e5ae:631f:4d84:cd4c","proxy":0}} 
+[2026-10-01 18:46:09] production.INFO: IsProxyIP Response {"ip":"2404:c0:9a2e:7521:1:0:525c:6316","status":200,"response":{"status":"success","ip":"2404:c0:9a2e:7521:1:0:525c:6316","proxy":0}} 
+[2026-10-01 18:47:15] production.INFO: IsProxyIP Response {"ip":"2400:9800:20e:b050:dceb:a7ff:fe18:a0eb","status":200,"response":{"status":"success","ip":"2400:9800:20e:b050:dceb:a7ff:fe18:a0eb","proxy":0}} 
+[2026-10-01 18:48:08] production.INFO: IsProxyIP Response {"ip":"2402:8780:1029:8ab5:47a9:76e6:8276:3e6f","status":200,"response":{"status":"success","ip":"2402:8780:1029:8ab5:47a9:76e6:8276:3e6f","proxy":0}} 
+[2026-10-01 18:48:41] production.INFO: IsProxyIP Response {"ip":"2402:8780:1006:45f9:51c8:a2f2:c078:78bb","status":200,"response":{"status":"success","ip":"2402:8780:1006:45f9:51c8:a2f2:c078:78bb","proxy":0}} 
+[2026-10-01 18:48:56] production.INFO: IsProxyIP Response {"ip":"103.155.190.166","status":200,"response":{"status":"success","ip":"103.155.190.166","proxy":0}} 
+[2026-10-01 18:49:08] production.INFO: IsProxyIP Response {"ip":"110.54.134.85","status":200,"response":{"status":"success","ip":"110.54.134.85","proxy":0}} 
+[2026-10-01 18:54:29] production.INFO: IsProxyIP Response {"ip":"160.22.134.53","status":200,"response":{"status":"success","ip":"160.22.134.53","proxy":0}} 
+[2026-10-01 18:56:59] production.INFO: IsProxyIP Response {"ip":"182.5.247.123","status":200,"response":{"status":"success","ip":"182.5.247.123","proxy":0}} 
+[2026-10-01 18:58:26] production.INFO: IsProxyIP Response {"ip":"2001:448a:70c0:8c40:7157:1732:90a:8cd8","status":200,"response":{"status":"success","ip":"2001:448a:70c0:8c40:7157:1732:90a:8cd8","proxy":0}} 
+[2026-10-01 18:58:51] production.INFO: IsProxyIP Response {"ip":"182.1.56.92","status":200,"response":{"status":"success","ip":"182.1.56.92","proxy":0}} 
+[2026-10-01 19:00:48] production.INFO: IsProxyIP Response {"ip":"203.83.40.18","status":200,"response":{"status":"success","ip":"203.83.40.18","proxy":0}} 
+[2026-10-01 19:00:54] production.INFO: IsProxyIP Response {"ip":"2400:9800:220:38f2:f74a:f672:2516:624b","status":200,"response":{"status":"success","ip":"2400:9800:220:38f2:f74a:f672:2516:624b","proxy":0}} 
+[2026-10-01 19:01:38] production.INFO: IsProxyIP Response {"ip":"2404:c0:1c61:1193:a478:deff:fee4:b161","status":200,"response":{"status":"success","ip":"2404:c0:1c61:1193:a478:deff:fee4:b161","proxy":0}} 
+[2026-10-01 19:01:44] production.INFO: IsProxyIP Response {"ip":"36.83.245.71","status":200,"response":{"status":"success","ip":"36.83.245.71","proxy":0}} 
+[2026-10-01 19:02:16] production.INFO: IsProxyIP Response {"ip":"103.75.85.106","status":200,"response":{"status":"success","ip":"103.75.85.106","proxy":1}} 
+[2026-10-01 19:03:59] production.INFO: IsProxyIP Response {"ip":"36.75.9.90","status":200,"response":{"status":"success","ip":"36.75.9.90","proxy":0}} 
+[2026-10-01 19:05:14] production.INFO: IsProxyIP Response {"ip":"2402:8780:1071:4e1a:7869:5162:4b39:d0c4","status":200,"response":{"status":"success","ip":"2402:8780:1071:4e1a:7869:5162:4b39:d0c4","proxy":0}} 
+[2026-10-01 19:05:26] production.INFO: IsProxyIP Response {"ip":"2404:c0:a701:ac13:4d03:d8f:70f6:f3e2","status":200,"response":{"status":"success","ip":"2404:c0:a701:ac13:4d03:d8f:70f6:f3e2","proxy":0}} 
+[2026-10-01 19:05:30] production.INFO: IsProxyIP Response {"ip":"103.4.83.56","status":200,"response":{"status":"success","ip":"103.4.83.56","proxy":0}} 
+[2026-10-01 19:10:15] production.INFO: IsProxyIP Response {"ip":"113.192.12.27","status":200,"response":{"status":"success","ip":"113.192.12.27","proxy":1}} 
+[2026-10-01 19:10:25] production.INFO: IsProxyIP Response {"ip":"103.78.158.238","status":200,"response":{"status":"success","ip":"103.78.158.238","proxy":0}} 
+[2026-10-01 19:10:47] production.INFO: IsProxyIP Response {"ip":"45.127.207.30","status":200,"response":{"status":"success","ip":"45.127.207.30","proxy":0}} 
+[2026-10-01 19:10:52] production.INFO: IsProxyIP Response {"ip":"204.51.34.115","status":200,"response":{"status":"success","ip":"204.51.34.115","proxy":0}} 
+[2026-10-01 19:12:13] production.INFO: IsProxyIP Response {"ip":"182.6.84.199","status":200,"response":{"status":"success","ip":"182.6.84.199","proxy":0}} 
+[2026-10-01 19:12:38] production.INFO: IsProxyIP Response {"ip":"2400:9800:320:48c8:18da:650a:9d9d:cdc6","status":200,"response":{"status":"success","ip":"2400:9800:320:48c8:18da:650a:9d9d:cdc6","proxy":0}} 
+[2026-10-01 19:14:55] production.INFO: IsProxyIP Response {"ip":"202.59.207.183","status":200,"response":{"status":"success","ip":"202.59.207.183","proxy":1}} 
+[2026-10-01 19:15:51] production.INFO: IsProxyIP Response {"ip":"2404:c0:3841:2fb9:18da:65fe:9092:49e6","status":200,"response":{"status":"success","ip":"2404:c0:3841:2fb9:18da:65fe:9092:49e6","proxy":0}} 
+[2026-10-01 19:16:45] production.INFO: IsProxyIP Response {"ip":"2404:c0:5654:6881:d159:c9d:c6ab:8cc8","status":200,"response":{"status":"success","ip":"2404:c0:5654:6881:d159:c9d:c6ab:8cc8","proxy":0}} 
+[2026-10-01 19:16:57] production.INFO: IsProxyIP Response {"ip":"101.255.211.174","status":200,"response":{"status":"success","ip":"101.255.211.174","proxy":0}} 
+[2026-10-01 19:17:53] production.INFO: IsProxyIP Response {"ip":"2400:9800:640:9d6:1:0:33df:4f59","status":200,"response":{"status":"success","ip":"2400:9800:640:9d6:1:0:33df:4f59","proxy":0}} 
+[2026-10-01 19:17:54] production.INFO: IsProxyIP Response {"ip":"2402:8780:1063:5614:6158:8864:d2de:8895","status":200,"response":{"status":"success","ip":"2402:8780:1063:5614:6158:8864:d2de:8895","proxy":0}} 
+[2026-10-01 19:18:51] production.INFO: IsProxyIP Response {"ip":"2402:8780:1016:803e:480e:125d:dc0:d91e","status":200,"response":{"status":"success","ip":"2402:8780:1016:803e:480e:125d:dc0:d91e","proxy":0}} 
+[2026-10-01 19:19:56] production.INFO: IsProxyIP Response {"ip":"103.134.223.10","status":200,"response":{"status":"success","ip":"103.134.223.10","proxy":1}} 
+[2026-10-01 19:20:45] production.INFO: IsProxyIP Response {"ip":"216.243.112.53","status":200,"response":{"status":"success","ip":"216.243.112.53","proxy":1}} 
+[2026-10-01 19:25:18] production.INFO: IsProxyIP Response {"ip":"182.4.101.236","status":200,"response":{"status":"success","ip":"182.4.101.236","proxy":0}} 
+[2026-10-01 19:26:33] production.INFO: IsProxyIP Response {"ip":"182.1.193.190","status":200,"response":{"status":"success","ip":"182.1.193.190","proxy":0}} 
+[2026-10-01 19:26:34] production.INFO: IsProxyIP Response {"ip":"210.87.93.59","status":200,"response":{"status":"success","ip":"210.87.93.59","proxy":0}} 
+[2026-10-01 19:29:39] production.INFO: IsProxyIP Response {"ip":"103.156.58.197","status":200,"response":{"status":"success","ip":"103.156.58.197","proxy":0}} 
+[2026-10-01 19:30:44] production.INFO: IsProxyIP Response {"ip":"36.69.18.184","status":200,"response":{"status":"success","ip":"36.69.18.184","proxy":0}} 
+[2026-10-01 19:31:28] production.INFO: IsProxyIP Response {"ip":"154.18.255.237","status":200,"response":{"status":"success","ip":"154.18.255.237","proxy":0}} 
+[2026-10-01 19:31:54] production.INFO: IsProxyIP Response {"ip":"2404:c0:dc03:1e87:96f:85fc:6d5a:137","status":200,"response":{"status":"success","ip":"2404:c0:dc03:1e87:96f:85fc:6d5a:137","proxy":0}} 
+[2026-10-01 19:32:20] production.INFO: IsProxyIP Response {"ip":"66.96.233.183","status":200,"response":{"status":"success","ip":"66.96.233.183","proxy":0}} 
+[2026-10-01 19:32:39] production.INFO: IsProxyIP Response {"ip":"2400:9800:8c0:f6b5:39d2:d45e:6f6b:8d14","status":200,"response":{"status":"success","ip":"2400:9800:8c0:f6b5:39d2:d45e:6f6b:8d14","proxy":0}} 
+[2026-10-01 19:33:12] production.INFO: IsProxyIP Response {"ip":"114.10.8.129","status":200,"response":{"status":"success","ip":"114.10.8.129","proxy":0}} 
+[2026-10-01 19:33:14] production.INFO: IsProxyIP Response {"ip":"36.72.9.165","status":200,"response":{"status":"success","ip":"36.72.9.165","proxy":0}} 
+[2026-10-01 19:36:42] production.INFO: IsProxyIP Response {"ip":"2404:c0:9602:1348:adc5:bc1a:c315:c1ce","status":200,"response":{"status":"success","ip":"2404:c0:9602:1348:adc5:bc1a:c315:c1ce","proxy":0}} 
+[2026-10-01 19:41:52] production.INFO: IsProxyIP Response {"ip":"160.22.205.251","status":200,"response":{"status":"success","ip":"160.22.205.251","proxy":0}} 
+[2026-10-01 19:44:32] production.INFO: IsProxyIP Response {"ip":"117.18.20.188","status":200,"response":{"status":"success","ip":"117.18.20.188","proxy":1}} 
+[2026-10-01 19:44:51] production.INFO: IsProxyIP Response {"ip":"114.12.18.206","status":200,"response":{"status":"success","ip":"114.12.18.206","proxy":0}} 
+[2026-10-01 19:47:19] production.INFO: IsProxyIP Response {"ip":"202.65.238.126","status":200,"response":{"status":"success","ip":"202.65.238.126","proxy":0}} 
+[2026-10-01 19:47:24] production.INFO: IsProxyIP Response {"ip":"103.28.116.241","status":200,"response":{"status":"success","ip":"103.28.116.241","proxy":0}} 
+[2026-10-01 19:49:03] production.INFO: IsProxyIP Response {"ip":"2001:4451:a3f:d400:7812:4981:bfba:32b7","status":200,"response":{"status":"success","ip":"2001:4451:a3f:d400:7812:4981:bfba:32b7","proxy":0}} 
+[2026-10-01 19:49:09] production.INFO: IsProxyIP Response {"ip":"2400:9800:153:ddf1:7c78:f0ff:fe4d:b739","status":200,"response":{"status":"success","ip":"2400:9800:153:ddf1:7c78:f0ff:fe4d:b739","proxy":0}} 
+[2026-10-01 19:49:23] production.INFO: IsProxyIP Response {"ip":"101.255.211.241","status":200,"response":{"status":"success","ip":"101.255.211.241","proxy":0}} 
+[2026-10-01 19:52:58] production.INFO: IsProxyIP Response {"ip":"182.3.105.225","status":200,"response":{"status":"success","ip":"182.3.105.225","proxy":0}} 
+[2026-10-01 19:53:03] production.INFO: IsProxyIP Response {"ip":"2404:c0:c601:a01e:e49d:c0a7:92b:af98","status":200,"response":{"status":"success","ip":"2404:c0:c601:a01e:e49d:c0a7:92b:af98","proxy":0}} 
+[2026-10-01 19:54:05] production.INFO: IsProxyIP Response {"ip":"103.154.178.46","status":200,"response":{"status":"success","ip":"103.154.178.46","proxy":0}} 
+[2026-10-01 19:59:06] production.INFO: IsProxyIP Response {"ip":"157.10.184.93","status":200,"response":{"status":"success","ip":"157.10.184.93","proxy":0}} 
+[2026-10-01 20:01:08] production.INFO: IsProxyIP Response {"ip":"103.80.82.3","status":200,"response":{"status":"success","ip":"103.80.82.3","proxy":0}} 
+[2026-10-01 20:01:48] production.INFO: IsProxyIP Response {"ip":"2404:c0:ab07:bbc0:20bb:ddf7:2864:3b5d","status":200,"response":{"status":"success","ip":"2404:c0:ab07:bbc0:20bb:ddf7:2864:3b5d","proxy":0}} 
+[2026-10-01 20:03:26] production.INFO: IsProxyIP Response {"ip":"36.68.157.208","status":200,"response":{"status":"success","ip":"36.68.157.208","proxy":0}} 
+[2026-10-01 20:04:20] production.INFO: IsProxyIP Response {"ip":"125.166.9.129","status":200,"response":{"status":"success","ip":"125.166.9.129","proxy":0}} 
+[2026-10-01 20:06:04] production.INFO: IsProxyIP Response {"ip":"180.252.198.247","status":200,"response":{"status":"success","ip":"180.252.198.247","proxy":0}} 
+[2026-10-01 20:10:22] production.INFO: IsProxyIP Response {"ip":"114.10.28.53","status":200,"response":{"status":"success","ip":"114.10.28.53","proxy":0}} 
+[2026-10-01 20:11:15] production.INFO: IsProxyIP Response {"ip":"2404:c0:ab02:aa7b:b86c:1dad:c56e:36a","status":200,"response":{"status":"success","ip":"2404:c0:ab02:aa7b:b86c:1dad:c56e:36a","proxy":0}} 
+[2026-10-01 20:12:10] production.INFO: IsProxyIP Response {"ip":"103.47.134.32","status":200,"response":{"status":"success","ip":"103.47.134.32","proxy":0}} 
+[2026-10-01 20:12:25] production.INFO: IsProxyIP Response {"ip":"165.101.230.222","status":200,"response":{"status":"success","ip":"165.101.230.222","proxy":0}} 
+[2026-10-01 20:12:47] production.INFO: IsProxyIP Response {"ip":"114.10.135.74","status":200,"response":{"status":"success","ip":"114.10.135.74","proxy":0}} 
+[2026-10-01 20:12:49] production.INFO: IsProxyIP Response {"ip":"2404:c0:ab01:3ad3:12d4:f9ce:a0fd:2051","status":200,"response":{"status":"success","ip":"2404:c0:ab01:3ad3:12d4:f9ce:a0fd:2051","proxy":0}} 
+[2026-10-01 20:13:36] production.INFO: IsProxyIP Response {"ip":"36.73.76.68","status":200,"response":{"status":"success","ip":"36.73.76.68","proxy":0}} 
+[2026-10-01 20:13:51] production.INFO: IsProxyIP Response {"ip":"202.51.207.115","status":200,"response":{"status":"success","ip":"202.51.207.115","proxy":0}} 
+[2026-10-01 20:17:22] production.INFO: IsProxyIP Response {"ip":"2400:9800:860:a569:12a4:77da:2dfe:d73d","status":200,"response":{"status":"success","ip":"2400:9800:860:a569:12a4:77da:2dfe:d73d","proxy":0}} 
+[2026-10-01 20:17:38] production.INFO: IsProxyIP Response {"ip":"9.154.233.192","status":200,"response":{"status":"success","ip":"9.154.233.192","proxy":0}} 
+[2026-10-01 20:18:29] production.INFO: IsProxyIP Response {"ip":"2404:c0:be01:e142:5159:e809:669a:629","status":200,"response":{"status":"success","ip":"2404:c0:be01:e142:5159:e809:669a:629","proxy":0}} 
+[2026-10-01 20:20:47] production.INFO: IsProxyIP Response {"ip":"9.154.246.90","status":200,"response":{"status":"success","ip":"9.154.246.90","proxy":0}} 
+[2026-10-01 20:20:51] production.INFO: IsProxyIP Response {"ip":"2404:c0:c201:f2ce:bfff:a561:599c:7d50","status":200,"response":{"status":"success","ip":"2404:c0:c201:f2ce:bfff:a561:599c:7d50","proxy":0}} 
+[2026-10-01 20:20:54] production.INFO: IsProxyIP Response {"ip":"114.10.100.243","status":200,"response":{"status":"success","ip":"114.10.100.243","proxy":0}} 
+[2026-10-01 20:21:08] production.INFO: IsProxyIP Response {"ip":"103.157.48.41","status":200,"response":{"status":"success","ip":"103.157.48.41","proxy":1}} 
+[2026-10-01 20:22:00] production.INFO: IsProxyIP Response {"ip":"103.148.130.78","status":200,"response":{"status":"success","ip":"103.148.130.78","proxy":1}} 
+[2026-10-01 20:25:39] production.INFO: IsProxyIP Response {"ip":"182.1.232.189","status":200,"response":{"status":"success","ip":"182.1.232.189","proxy":0}} 
+[2026-10-01 20:25:48] production.INFO: IsProxyIP Response {"ip":"82.158.130.68","status":200,"response":{"status":"success","ip":"82.158.130.68","proxy":0}} 
+[2026-10-01 20:27:26] production.INFO: IsProxyIP Response {"ip":"2404:c0:202f:5e68:ab0b:f0a9:133f:f2f1","status":200,"response":{"status":"success","ip":"2404:c0:202f:5e68:ab0b:f0a9:133f:f2f1","proxy":0}} 
+[2026-10-01 20:27:28] production.INFO: IsProxyIP Response {"ip":"103.158.252.78","status":200,"response":{"status":"success","ip":"103.158.252.78","proxy":0}} 
+[2026-10-01 20:28:43] production.INFO: IsProxyIP Response {"ip":"49.156.23.92","status":200,"response":{"status":"success","ip":"49.156.23.92","proxy":0}} 
+[2026-10-01 20:29:03] production.INFO: IsProxyIP Response {"ip":"182.10.168.139","status":200,"response":{"status":"success","ip":"182.10.168.139","proxy":0}} 
+[2026-10-01 20:29:15] production.INFO: IsProxyIP Response {"ip":"125.164.37.15","status":200,"response":{"status":"success","ip":"125.164.37.15","proxy":0}} 
+[2026-10-01 20:29:32] production.INFO: IsProxyIP Response {"ip":"2404:c0:b204:30df:2a21:7b03:8175:f6da","status":200,"response":{"status":"success","ip":"2404:c0:b204:30df:2a21:7b03:8175:f6da","proxy":0}} 
+[2026-10-01 20:33:51] production.INFO: IsProxyIP Response {"ip":"103.108.32.89","status":200,"response":{"status":"success","ip":"103.108.32.89","proxy":0}} 
+[2026-10-01 20:34:05] production.INFO: IsProxyIP Response {"ip":"103.171.165.62","status":200,"response":{"status":"success","ip":"103.171.165.62","proxy":0}} 
+[2026-10-01 20:36:00] production.INFO: IsProxyIP Response {"ip":"2404:c0:c201:2b11:bdfe:78b4:9020:5a20","status":200,"response":{"status":"success","ip":"2404:c0:c201:2b11:bdfe:78b4:9020:5a20","proxy":0}} 
+[2026-10-01 20:36:56] production.INFO: IsProxyIP Response {"ip":"36.72.214.145","status":200,"response":{"status":"success","ip":"36.72.214.145","proxy":0}} 
+[2026-10-01 20:37:01] production.INFO: IsProxyIP Response {"ip":"2402:8780:106a:71b6:c6a2:1fc6:c4a2:fca6","status":200,"response":{"status":"success","ip":"2402:8780:106a:71b6:c6a2:1fc6:c4a2:fca6","proxy":0}} 
+[2026-10-01 20:38:48] production.INFO: IsProxyIP Response {"ip":"112.208.65.18","status":200,"response":{"status":"success","ip":"112.208.65.18","proxy":0}} 
+[2026-10-01 20:38:51] production.INFO: IsProxyIP Response {"ip":"2404:c0:c601:9878:c537:4892:27f3:9947","status":200,"response":{"status":"success","ip":"2404:c0:c601:9878:c537:4892:27f3:9947","proxy":0}} 
+[2026-10-01 20:40:43] production.INFO: IsProxyIP Response {"ip":"110.138.95.248","status":200,"response":{"status":"success","ip":"110.138.95.248","proxy":0}} 
+[2026-10-01 20:43:21] production.INFO: IsProxyIP Response {"ip":"2405:8180:303:e70:512f:ece:7277:8611","status":200,"response":{"status":"success","ip":"2405:8180:303:e70:512f:ece:7277:8611","proxy":0}} 
+[2026-10-01 20:45:58] production.INFO: IsProxyIP Response {"ip":"114.122.229.99","status":200,"response":{"status":"success","ip":"114.122.229.99","proxy":0}} 
+[2026-10-01 20:47:12] production.INFO: IsProxyIP Response {"ip":"2405:8180:a03:de9e:bc4c:1009:babe:5daa","status":200,"response":{"status":"success","ip":"2405:8180:a03:de9e:bc4c:1009:babe:5daa","proxy":0}} 
+[2026-10-01 20:49:16] production.INFO: IsProxyIP Response {"ip":"103.189.207.152","status":200,"response":{"status":"success","ip":"103.189.207.152","proxy":1}} 
+[2026-10-01 20:50:20] production.INFO: IsProxyIP Response {"ip":"140.213.147.224","status":200,"response":{"status":"success","ip":"140.213.147.224","proxy":0}} 
+[2026-10-01 20:50:38] production.INFO: IsProxyIP Response {"ip":"36.69.50.25","status":200,"response":{"status":"success","ip":"36.69.50.25","proxy":0}} 
+[2026-10-01 20:52:13] production.INFO: IsProxyIP Response {"ip":"180.253.188.116","status":200,"response":{"status":"success","ip":"180.253.188.116","proxy":0}} 
+[2026-10-01 20:52:25] production.INFO: IsProxyIP Response {"ip":"103.160.201.111","status":200,"response":{"status":"success","ip":"103.160.201.111","proxy":0}} 
+[2026-10-01 20:52:29] production.INFO: IsProxyIP Response {"ip":"2001:448a:70e0:6bab:dc28:b39a:25ed:4a71","status":200,"response":{"status":"success","ip":"2001:448a:70e0:6bab:dc28:b39a:25ed:4a71","proxy":0}} 
+[2026-10-01 20:54:32] production.INFO: IsProxyIP Response {"ip":"180.252.112.2","status":200,"response":{"status":"success","ip":"180.252.112.2","proxy":0}} 
+[2026-10-01 20:54:39] production.INFO: IsProxyIP Response {"ip":"125.160.46.173","status":200,"response":{"status":"success","ip":"125.160.46.173","proxy":0}} 
+[2026-10-01 20:55:34] production.INFO: IsProxyIP Response {"ip":"2404:8000:1048:383:a8d9:58fd:b0db:b4d3","status":200,"response":{"status":"success","ip":"2404:8000:1048:383:a8d9:58fd:b0db:b4d3","proxy":0}} 
+[2026-10-01 20:57:29] production.INFO: IsProxyIP Response {"ip":"154.18.255.17","status":200,"response":{"status":"success","ip":"154.18.255.17","proxy":0}} 
+[2026-10-01 20:57:33] production.INFO: IsProxyIP Response {"ip":"125.164.211.250","status":200,"response":{"status":"success","ip":"125.164.211.250","proxy":0}} 
+[2026-10-01 21:02:13] production.INFO: IsProxyIP Response {"ip":"103.184.21.91","status":200,"response":{"status":"success","ip":"103.184.21.91","proxy":0}} 
+[2026-10-01 21:02:44] production.INFO: IsProxyIP Response {"ip":"140.213.69.7","status":200,"response":{"status":"success","ip":"140.213.69.7","proxy":0}} 
+[2026-10-01 21:04:18] production.INFO: IsProxyIP Response {"ip":"2402:8780:1028:227c:5c32:16db:2970:b41a","status":200,"response":{"status":"success","ip":"2402:8780:1028:227c:5c32:16db:2970:b41a","proxy":0}} 
+[2026-10-01 21:05:23] production.INFO: IsProxyIP Response {"ip":"103.103.193.127","status":200,"response":{"status":"success","ip":"103.103.193.127","proxy":1}} 
+[2026-10-01 21:06:26] production.INFO: IsProxyIP Response {"ip":"157.85.212.47","status":200,"response":{"status":"success","ip":"157.85.212.47","proxy":0}} 
+[2026-10-01 21:07:01] production.INFO: IsProxyIP Response {"ip":"2400:9800:5a0:78cb:1:0:f961:1d19","status":200,"response":{"status":"success","ip":"2400:9800:5a0:78cb:1:0:f961:1d19","proxy":0}} 
+[2026-10-01 21:07:57] production.INFO: IsProxyIP Response {"ip":"103.141.170.33","status":200,"response":{"status":"success","ip":"103.141.170.33","proxy":0}} 
+[2026-10-01 21:08:45] production.INFO: IsProxyIP Response {"ip":"114.12.19.44","status":200,"response":{"status":"success","ip":"114.12.19.44","proxy":0}} 
+[2026-10-01 21:10:53] production.INFO: IsProxyIP Response {"ip":"197.59.242.123","status":200,"response":{"status":"success","ip":"197.59.242.123","proxy":0}} 
+[2026-10-01 21:12:54] production.INFO: IsProxyIP Response {"ip":"2400:9800:581:6d06:9d0e:59b:9144:cb6b","status":200,"response":{"status":"success","ip":"2400:9800:581:6d06:9d0e:59b:9144:cb6b","proxy":0}} 
+[2026-10-01 21:13:06] production.INFO: IsProxyIP Response {"ip":"2404:c0:dc03:a87:f177:d3df:615f:6430","status":200,"response":{"status":"success","ip":"2404:c0:dc03:a87:f177:d3df:615f:6430","proxy":0}} 
+[2026-10-01 21:14:59] production.INFO: IsProxyIP Response {"ip":"54.179.152.210","status":200,"response":{"status":"success","ip":"54.179.152.210","proxy":1}} 
+[2026-10-01 21:22:38] production.INFO: IsProxyIP Response {"ip":"165.99.71.196","status":200,"response":{"status":"success","ip":"165.99.71.196","proxy":0}} 
+[2026-10-01 21:26:08] production.INFO: IsProxyIP Response {"ip":"210.79.142.123","status":200,"response":{"status":"success","ip":"210.79.142.123","proxy":0}} 
+[2026-10-01 21:27:52] production.INFO: IsProxyIP Response {"ip":"136.158.67.45","status":200,"response":{"status":"success","ip":"136.158.67.45","proxy":0}} 
+[2026-10-01 21:34:42] production.INFO: IsProxyIP Response {"ip":"2001:448a:2022:365d:ecc5:9657:7b90:e1f7","status":200,"response":{"status":"success","ip":"2001:448a:2022:365d:ecc5:9657:7b90:e1f7","proxy":0}} 
+[2026-10-01 21:34:52] production.INFO: IsProxyIP Response {"ip":"2400:9800:bc4:1939:6d11:75a8:c864:1c5b","status":200,"response":{"status":"success","ip":"2400:9800:bc4:1939:6d11:75a8:c864:1c5b","proxy":0}} 
+[2026-10-01 21:36:44] production.INFO: IsProxyIP Response {"ip":"103.171.83.113","status":200,"response":{"status":"success","ip":"103.171.83.113","proxy":1}} 
+[2026-10-01 21:37:31] production.INFO: IsProxyIP Response {"ip":"2001:448a:4090:b1fa:24fe:edb8:126c:1307","status":200,"response":{"status":"success","ip":"2001:448a:4090:b1fa:24fe:edb8:126c:1307","proxy":0}} 
+[2026-10-01 21:38:59] production.INFO: IsProxyIP Response {"ip":"2001:448a:5040:1443:63e0:5d71:4994:2d84","status":200,"response":{"status":"success","ip":"2001:448a:5040:1443:63e0:5d71:4994:2d84","proxy":0}} 
+[2026-10-01 21:41:07] production.INFO: IsProxyIP Response {"ip":"103.190.46.15","status":200,"response":{"status":"success","ip":"103.190.46.15","proxy":0}} 
+[2026-10-01 21:42:40] production.INFO: IsProxyIP Response {"ip":"182.10.183.44","status":200,"response":{"status":"success","ip":"182.10.183.44","proxy":0}} 
+[2026-10-01 21:43:40] production.INFO: IsProxyIP Response {"ip":"140.213.20.83","status":200,"response":{"status":"success","ip":"140.213.20.83","proxy":0}} 
+[2026-10-01 21:44:28] production.INFO: IsProxyIP Response {"ip":"103.126.173.47","status":200,"response":{"status":"success","ip":"103.126.173.47","proxy":0}} 
+[2026-10-01 21:44:33] production.INFO: IsProxyIP Response {"ip":"103.203.234.167","status":200,"response":{"status":"success","ip":"103.203.234.167","proxy":0}} 
+[2026-10-01 21:44:54] production.INFO: IsProxyIP Response {"ip":"2402:8780:1003:9a6:3d86:80f:b30c:485d","status":200,"response":{"status":"success","ip":"2402:8780:1003:9a6:3d86:80f:b30c:485d","proxy":0}} 
+[2026-10-01 21:45:11] production.INFO: IsProxyIP Response {"ip":"180.241.52.89","status":200,"response":{"status":"success","ip":"180.241.52.89","proxy":0}} 
+[2026-10-01 21:50:12] production.INFO: IsProxyIP Response {"ip":"157.66.171.1","status":200,"response":{"status":"success","ip":"157.66.171.1","proxy":0}} 
+[2026-10-01 21:50:41] production.INFO: IsProxyIP Response {"ip":"103.168.186.206","status":200,"response":{"status":"success","ip":"103.168.186.206","proxy":0}} 
+[2026-10-01 21:51:42] production.INFO: IsProxyIP Response {"ip":"202.145.5.250","status":200,"response":{"status":"success","ip":"202.145.5.250","proxy":0}} 
+[2026-10-01 21:55:39] production.INFO: IsProxyIP Response {"ip":"2402:5680:9316:2c29::1","status":200,"response":{"status":"success","ip":"2402:5680:9316:2c29::1","proxy":0}} 
+[2026-10-01 21:57:06] production.INFO: IsProxyIP Response {"ip":"103.190.47.35","status":200,"response":{"status":"success","ip":"103.190.47.35","proxy":0}} 
+[2026-10-01 21:57:50] production.ERROR: IsProxyIP Exception {"ip":"2001:448a:5142:6e34:7507:ea4d:389b:c7df","message":"cURL error 28: Operation timed out after 5001 milliseconds with 0 bytes received (see https://curl.se/libcurl/c/libcurl-errors.html) for https://api.isproxyip.com/v1/check.php?key=Qbm9r7hdzhUGbcP2zoTdOZrRhZaOYg9Seg7PxrxrKb58VTryje&ip=2001%3A448a%3A5142%3A6e34%3A7507%3Aea4d%3A389b%3Ac7df&format=json"} 
+[2026-10-01 21:57:50] production.ERROR: cURL error 28: Operation timed out after 5001 milliseconds with 0 bytes received (see https://curl.se/libcurl/c/libcurl-errors.html) for https://api.isproxyip.com/v1/check.php?key=Qbm9r7hdzhUGbcP2zoTdOZrRhZaOYg9Seg7PxrxrKb58VTryje&ip=2001%3A448a%3A5142%3A6e34%3A7507%3Aea4d%3A389b%3Ac7df&format=json {"exception":"[object] (Illuminate\\Http\\Client\\ConnectionException(code: 0): cURL error 28: Operation timed out after 5001 milliseconds with 0 bytes received (see https://curl.se/libcurl/c/libcurl-errors.html) for https://api.isproxyip.com/v1/check.php?key=Qbm9r7hdzhUGbcP2zoTdOZrRhZaOYg9Seg7PxrxrKb58VTryje&ip=2001%3A448a%3A5142%3A6e34%3A7507%3Aea4d%3A389b%3Ac7df&format=json at /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php:855)
+[stacktrace]
+#0 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Support/helpers.php(260): Illuminate\\Http\\Client\\PendingRequest->Illuminate\\Http\\Client\\{closure}()
+#1 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php(821): retry()
+#2 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php(699): Illuminate\\Http\\Client\\PendingRequest->send()
+#3 /var/www/html/arahcloud/app/Http/Controllers/Files/FileController.php(326): Illuminate\\Http\\Client\\PendingRequest->get()
+#4 /var/www/html/arahcloud/app/Http/Controllers/Files/FileController.php(233): App\\Http\\Controllers\\Files\\FileController->isProxyIp()
+#5 /var/www/html/arahcloud/app/Http/Controllers/Files/FileController.php(150): App\\Http\\Controllers\\Files\\FileController->earningCalculating()
+#6 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\Files\\FileController->download()
+#7 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction()
+#8 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Route.php(259): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#9 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\\Routing\\Route->runController()
+#10 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Router.php(798): Illuminate\\Routing\\Route->run()
+#11 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#12 /var/www/html/arahcloud/app/Http/Middleware/UserTowFactorVerify.php(24): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#13 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\UserTowFactorVerify->handle()
+#14 /var/www/html/arahcloud/app/Http/Middleware/EnsureEmailIsVerified.php(32): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#15 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\EnsureEmailIsVerified->handle()
+#16 /var/www/html/arahcloud/app/Http/Middleware/Localization.php(24): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#17 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\Localization->handle()
+#18 /var/www/html/arahcloud/vironeer/Installer/app/Http/Middleware/NotInstalledMiddleware.php(14): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#19 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Vironeer\\Installer\\App\\Http\\Middleware\\NotInstalledMiddleware->handle()
+#20 /var/www/html/arahcloud/app/Http/Middleware/UserStatusCheck.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#21 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\UserStatusCheck->handle()
+#22 /var/www/html/arahcloud/app/Http/Middleware/SwitchDemoType.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#23 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\SwitchDemoType->handle()
+#24 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#26 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#27 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle()
+#28 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#29 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle()
+#30 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest()
+#32 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle()
+#33 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#34 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle()
+#35 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#36 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle()
+#37 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#38 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Router.php(797): Illuminate\\Pipeline\\Pipeline->then()
+#39 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack()
+#40 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Router.php(740): Illuminate\\Routing\\Router->runRoute()
+#41 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute()
+#42 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(190): Illuminate\\Routing\\Router->dispatch()
+#43 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#44 /var/www/html/arahcloud/vendor/livewire/livewire/src/DisableBrowserCache.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#45 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Livewire\\DisableBrowserCache->handle()
+#46 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#47 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#48 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#49 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#51 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#52 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#53 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#54 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#55 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#56 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#57 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#58 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#59 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#60 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#61 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then()
+#62 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#63 /var/www/html/arahcloud/public/index.php(61): Illuminate\\Foundation\\Http\\Kernel->handle()
+#64 {main}
+
+[previous exception] [object] (GuzzleHttp\\Exception\\ConnectException(code: 0): cURL error 28: Operation timed out after 5001 milliseconds with 0 bytes received (see https://curl.se/libcurl/c/libcurl-errors.html) for https://api.isproxyip.com/v1/check.php?key=Qbm9r7hdzhUGbcP2zoTdOZrRhZaOYg9Seg7PxrxrKb58VTryje&ip=2001%3A448a%3A5142%3A6e34%3A7507%3Aea4d%3A389b%3Ac7df&format=json at /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php:1140)
+[stacktrace]
+#0 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php(1077): GuzzleHttp\\Handler\\CurlFactory::createRejection()
+#1 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php(1014): GuzzleHttp\\Handler\\CurlFactory::finishError()
+#2 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Handler/CurlHandler.php(88): GuzzleHttp\\Handler\\CurlFactory::finish()
+#3 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Handler/Proxy.php(28): GuzzleHttp\\Handler\\CurlHandler->__invoke()
+#4 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Handler/Proxy.php(68): GuzzleHttp\\Handler\\Proxy::GuzzleHttp\\Handler\\{closure}()
+#5 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Handler/Proxy.php(48): GuzzleHttp\\Handler\\Proxy::GuzzleHttp\\Handler\\{closure}()
+#6 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php(1150): GuzzleHttp\\Handler\\Proxy::GuzzleHttp\\Handler\\{closure}()
+#7 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php(1116): Illuminate\\Http\\Client\\PendingRequest->Illuminate\\Http\\Client\\{closure}()
+#8 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php(1102): Illuminate\\Http\\Client\\PendingRequest->Illuminate\\Http\\Client\\{closure}()
+#9 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/PrepareBodyMiddleware.php(35): Illuminate\\Http\\Client\\PendingRequest->Illuminate\\Http\\Client\\{closure}()
+#10 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Middleware.php(38): GuzzleHttp\\PrepareBodyMiddleware->__invoke()
+#11 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/RedirectMiddleware.php(72): GuzzleHttp\\Middleware::GuzzleHttp\\{closure}()
+#12 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Middleware.php(63): GuzzleHttp\\RedirectMiddleware->__invoke()
+#13 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/HandlerStack.php(75): GuzzleHttp\\Middleware::GuzzleHttp\\{closure}()
+#14 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Client.php(1109): GuzzleHttp\\HandlerStack->__invoke()
+#15 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Client.php(243): GuzzleHttp\\Client->transfer()
+#16 /var/www/html/arahcloud/vendor/guzzlehttp/guzzle/src/Client.php(273): GuzzleHttp\\Client->requestAsync()
+#17 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php(961): GuzzleHttp\\Client->request()
+#18 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php(823): Illuminate\\Http\\Client\\PendingRequest->sendRequest()
+#19 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Support/helpers.php(260): Illuminate\\Http\\Client\\PendingRequest->Illuminate\\Http\\Client\\{closure}()
+#20 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php(821): retry()
+#21 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Client/PendingRequest.php(699): Illuminate\\Http\\Client\\PendingRequest->send()
+#22 /var/www/html/arahcloud/app/Http/Controllers/Files/FileController.php(326): Illuminate\\Http\\Client\\PendingRequest->get()
+#23 /var/www/html/arahcloud/app/Http/Controllers/Files/FileController.php(233): App\\Http\\Controllers\\Files\\FileController->isProxyIp()
+#24 /var/www/html/arahcloud/app/Http/Controllers/Files/FileController.php(150): App\\Http\\Controllers\\Files\\FileController->earningCalculating()
+#25 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\\Http\\Controllers\\Files\\FileController->download()
+#26 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction()
+#27 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Route.php(259): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#28 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\\Routing\\Route->runController()
+#29 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Router.php(798): Illuminate\\Routing\\Route->run()
+#30 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#31 /var/www/html/arahcloud/app/Http/Middleware/UserTowFactorVerify.php(24): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#32 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\UserTowFactorVerify->handle()
+#33 /var/www/html/arahcloud/app/Http/Middleware/EnsureEmailIsVerified.php(32): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#34 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\EnsureEmailIsVerified->handle()
+#35 /var/www/html/arahcloud/app/Http/Middleware/Localization.php(24): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#36 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\Localization->handle()
+#37 /var/www/html/arahcloud/vironeer/Installer/app/Http/Middleware/NotInstalledMiddleware.php(14): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#38 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Vironeer\\Installer\\App\\Http\\Middleware\\NotInstalledMiddleware->handle()
+#39 /var/www/html/arahcloud/app/Http/Middleware/UserStatusCheck.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#40 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\UserStatusCheck->handle()
+#41 /var/www/html/arahcloud/app/Http/Middleware/SwitchDemoType.php(25): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#42 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): App\\Http\\Middleware\\SwitchDemoType->handle()
+#43 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#44 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#45 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#46 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle()
+#47 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#48 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle()
+#49 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(121): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php(64): Illuminate\\Session\\Middleware\\StartSession->handleStatefulRequest()
+#51 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Session\\Middleware\\StartSession->handle()
+#52 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#53 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle()
+#54 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#55 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle()
+#56 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#57 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Router.php(797): Illuminate\\Pipeline\\Pipeline->then()
+#58 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Router.php(776): Illuminate\\Routing\\Router->runRouteWithinStack()
+#59 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Router.php(740): Illuminate\\Routing\\Router->runRoute()
+#60 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Routing/Router.php(729): Illuminate\\Routing\\Router->dispatchToRoute()
+#61 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(190): Illuminate\\Routing\\Router->dispatch()
+#62 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(141): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#63 /var/www/html/arahcloud/vendor/livewire/livewire/src/DisableBrowserCache.php(19): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#64 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Livewire\\DisableBrowserCache->handle()
+#65 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#66 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#67 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#68 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#69 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#70 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#71 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#72 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#73 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#74 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#75 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#76 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\HandleCors->handle()
+#77 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#78 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate\\Http\\Middleware\\TrustProxies->handle()
+#79 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(116): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#80 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(165): Illuminate\\Pipeline\\Pipeline->then()
+#81 /var/www/html/arahcloud/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#82 /var/www/html/arahcloud/public/index.php(61): Illuminate\\Foundation\\Http\\Kernel->handle()
+#83 {main}
+"} 
+[2026-10-01 21:59:33] production.INFO: IsProxyIP Response {"ip":"160.236.2.103","status":200,"response":{"status":"success","ip":"160.236.2.103","proxy":0}} 
+[2026-10-01 21:59:49] production.INFO: IsProxyIP Response {"ip":"103.24.213.186","status":200,"response":{"status":"success","ip":"103.24.213.186","proxy":0}} 
+[2026-10-01 22:02:10] production.INFO: IsProxyIP Response {"ip":"118.99.65.4","status":200,"response":{"status":"success","ip":"118.99.65.4","proxy":0}} 
+[2026-10-01 22:05:52] production.INFO: IsProxyIP Response {"ip":"2404:c0:8c22:9f9b:c0cf:1bff:febe:b6fa","status":200,"response":{"status":"success","ip":"2404:c0:8c22:9f9b:c0cf:1bff:febe:b6fa","proxy":0}} 
+[2026-10-01 22:06:14] production.INFO: IsProxyIP Response {"ip":"114.122.28.9","status":200,"response":{"status":"success","ip":"114.122.28.9","proxy":0}} 
+[2026-10-01 22:07:50] production.INFO: IsProxyIP Response {"ip":"2400:9800:5a0:9f5:1:0:f9a6:3500","status":200,"response":{"status":"success","ip":"2400:9800:5a0:9f5:1:0:f9a6:3500","proxy":0}} 
+[2026-10-01 22:08:19] production.INFO: IsProxyIP Response {"ip":"2404:c0:a702:4466:8f0d:6f6c:9253:304a","status":200,"response":{"status":"success","ip":"2404:c0:a702:4466:8f0d:6f6c:9253:304a","proxy":0}} 
+[2026-10-01 22:08:48] production.INFO: IsProxyIP Response {"ip":"2404:8000:1024:1670:956e:7dc2:f1d:c6a1","status":200,"response":{"status":"success","ip":"2404:8000:1024:1670:956e:7dc2:f1d:c6a1","proxy":0}} 
+[2026-10-01 22:10:01] production.INFO: IsProxyIP Response {"ip":"112.215.245.54","status":200,"response":{"status":"success","ip":"112.215.245.54","proxy":0}} 
+[2026-10-01 22:11:36] production.INFO: IsProxyIP Response {"ip":"36.50.92.165","status":200,"response":{"status":"success","ip":"36.50.92.165","proxy":0}} 
+[2026-10-01 22:11:45] production.INFO: IsProxyIP Response {"ip":"36.70.107.228","status":200,"response":{"status":"success","ip":"36.70.107.228","proxy":0}} 
+[2026-10-01 22:12:06] production.INFO: IsProxyIP Response {"ip":"103.61.5.131","status":200,"response":{"status":"success","ip":"103.61.5.131","proxy":0}} 
+[2026-10-01 22:13:22] production.INFO: IsProxyIP Response {"ip":"103.244.218.183","status":200,"response":{"status":"success","ip":"103.244.218.183","proxy":0}} 
+[2026-10-01 22:20:37] production.INFO: IsProxyIP Response {"ip":"180.245.113.169","status":200,"response":{"status":"success","ip":"180.245.113.169","proxy":0}} 
+[2026-10-01 22:22:14] production.INFO: IsProxyIP Response {"ip":"2404:c0:ba03:edd1:81bd:da80:18c5:248e","status":200,"response":{"status":"success","ip":"2404:c0:ba03:edd1:81bd:da80:18c5:248e","proxy":0}} 
+[2026-10-01 22:24:44] production.INFO: IsProxyIP Response {"ip":"103.148.45.191","status":200,"response":{"status":"success","ip":"103.148.45.191","proxy":0}} 
+[2026-10-01 22:28:34] production.INFO: IsProxyIP Response {"ip":"103.184.18.76","status":200,"response":{"status":"success","ip":"103.184.18.76","proxy":0}} 
+[2026-10-01 22:29:04] production.INFO: IsProxyIP Response {"ip":"202.58.78.96","status":200,"response":{"status":"success","ip":"202.58.78.96","proxy":1}} 
+[2026-10-01 22:30:41] production.INFO: IsProxyIP Response {"ip":"2404:c0:ba02:2ef8:b476:2740:712c:a3b2","status":200,"response":{"status":"success","ip":"2404:c0:ba02:2ef8:b476:2740:712c:a3b2","proxy":0}} 
+[2026-10-01 22:33:43] production.INFO: IsProxyIP Response {"ip":"2400:d1e0:8001:3fe9:bbfc:fe66:b36a:fc4a","status":200,"response":{"status":"success","ip":"2400:d1e0:8001:3fe9:bbfc:fe66:b36a:fc4a","proxy":0}} 
+[2026-10-01 22:33:51] production.INFO: IsProxyIP Response {"ip":"2404:c0:c600:c770:b5ef:13d8:7d5e:1a41","status":200,"response":{"status":"success","ip":"2404:c0:c600:c770:b5ef:13d8:7d5e:1a41","proxy":0}} 
+[2026-10-01 22:34:15] production.INFO: IsProxyIP Response {"ip":"182.5.135.232","status":200,"response":{"status":"success","ip":"182.5.135.232","proxy":0}} 
+[2026-10-01 22:34:44] production.INFO: IsProxyIP Response {"ip":"103.172.121.5","status":200,"response":{"status":"success","ip":"103.172.121.5","proxy":0}} 
+[2026-10-01 22:36:30] production.INFO: IsProxyIP Response {"ip":"114.12.34.95","status":200,"response":{"status":"success","ip":"114.12.34.95","proxy":0}} 
+[2026-10-01 22:37:01] production.INFO: IsProxyIP Response {"ip":"153.60.129.158","status":200,"response":{"status":"success","ip":"153.60.129.158","proxy":1}} 
+[2026-10-01 22:39:03] production.INFO: IsProxyIP Response {"ip":"2404:c0:b203:9b06:8b16:6044:415:6d0","status":200,"response":{"status":"success","ip":"2404:c0:b203:9b06:8b16:6044:415:6d0","proxy":0}} 
+[2026-10-01 22:41:33] production.INFO: IsProxyIP Response {"ip":"157.20.176.26","status":200,"response":{"status":"success","ip":"157.20.176.26","proxy":0}} 
+[2026-10-01 22:42:23] production.INFO: IsProxyIP Response {"ip":"103.67.46.249","status":200,"response":{"status":"success","ip":"103.67.46.249","proxy":0}} 
+[2026-10-01 22:43:33] production.INFO: IsProxyIP Response {"ip":"2404:c0:9f01:9989:593d:ebbf:83fa:1704","status":200,"response":{"status":"success","ip":"2404:c0:9f01:9989:593d:ebbf:83fa:1704","proxy":0}} 
+[2026-10-01 22:45:08] production.INFO: IsProxyIP Response {"ip":"103.102.13.57","status":200,"response":{"status":"success","ip":"103.102.13.57","proxy":0}} 
+[2026-10-01 22:47:08] production.INFO: IsProxyIP Response {"ip":"198.15.30.22","status":200,"response":{"status":"success","ip":"198.15.30.22","proxy":0}} 
+[2026-10-01 22:47:36] production.INFO: IsProxyIP Response {"ip":"182.9.49.34","status":200,"response":{"status":"success","ip":"182.9.49.34","proxy":0}} 
+[2026-10-01 22:48:18] production.INFO: IsProxyIP Response {"ip":"121.101.133.229","status":200,"response":{"status":"success","ip":"121.101.133.229","proxy":0}} 
+[2026-10-01 22:49:25] production.INFO: IsProxyIP Response {"ip":"114.79.4.50","status":200,"response":{"status":"success","ip":"114.79.4.50","proxy":0}} 
+[2026-10-01 22:52:25] production.INFO: IsProxyIP Response {"ip":"157.10.8.183","status":200,"response":{"status":"success","ip":"157.10.8.183","proxy":1}} 
+[2026-10-01 22:52:56] production.INFO: IsProxyIP Response {"ip":"144.79.241.244","status":200,"response":{"status":"success","ip":"144.79.241.244","proxy":0}} 
+[2026-10-01 22:52:59] production.INFO: IsProxyIP Response {"ip":"2400:9800:540:e30c:1:0:3489:ab86","status":200,"response":{"status":"success","ip":"2400:9800:540:e30c:1:0:3489:ab86","proxy":0}} 
+[2026-10-01 22:53:13] production.INFO: IsProxyIP Response {"ip":"103.130.18.9","status":200,"response":{"status":"success","ip":"103.130.18.9","proxy":0}} 
+[2026-10-01 22:54:57] production.INFO: IsProxyIP Response {"ip":"182.8.122.169","status":200,"response":{"status":"success","ip":"182.8.122.169","proxy":0}} 
+[2026-10-01 22:58:15] production.INFO: IsProxyIP Response {"ip":"103.76.108.137","status":200,"response":{"status":"success","ip":"103.76.108.137","proxy":0}} 
+[2026-10-01 23:00:30] production.INFO: IsProxyIP Response {"ip":"114.10.44.70","status":200,"response":{"status":"success","ip":"114.10.44.70","proxy":0}} 
+[2026-10-01 23:02:33] production.INFO: IsProxyIP Response {"ip":"36.85.218.245","status":200,"response":{"status":"success","ip":"36.85.218.245","proxy":0}} 
+[2026-10-01 23:04:43] production.INFO: IsProxyIP Response {"ip":"103.151.226.8","status":200,"response":{"status":"success","ip":"103.151.226.8","proxy":0}} 
+[2026-10-01 23:04:55] production.INFO: IsProxyIP Response {"ip":"103.28.113.35","status":200,"response":{"status":"success","ip":"103.28.113.35","proxy":0}} 
+[2026-10-01 23:10:20] production.INFO: IsProxyIP Response {"ip":"140.213.40.66","status":200,"response":{"status":"success","ip":"140.213.40.66","proxy":0}} 
+[2026-10-01 23:11:19] production.INFO: IsProxyIP Response {"ip":"103.211.106.2","status":200,"response":{"status":"success","ip":"103.211.106.2","proxy":0}} 
+[2026-10-01 23:11:19] production.INFO: IsProxyIP Response {"ip":"114.5.102.254","status":200,"response":{"status":"success","ip":"114.5.102.254","proxy":0}} 
+[2026-10-01 23:14:16] production.INFO: IsProxyIP Response {"ip":"2402:8780:1052:439f:1007:e657:326f:e0e1","status":200,"response":{"status":"success","ip":"2402:8780:1052:439f:1007:e657:326f:e0e1","proxy":0}} 
+[2026-10-01 23:16:10] production.INFO: IsProxyIP Response {"ip":"182.253.50.117","status":200,"response":{"status":"success","ip":"182.253.50.117","proxy":0}} 
+[2026-10-01 23:17:47] production.INFO: IsProxyIP Response {"ip":"103.132.52.139","status":200,"response":{"status":"success","ip":"103.132.52.139","proxy":0}} 
+[2026-10-01 23:18:30] production.INFO: IsProxyIP Response {"ip":"103.160.150.138","status":200,"response":{"status":"success","ip":"103.160.150.138","proxy":0}} 
+[2026-10-01 23:20:07] production.INFO: IsProxyIP Response {"ip":"112.215.219.73","status":200,"response":{"status":"success","ip":"112.215.219.73","proxy":0}} 
+[2026-10-01 23:23:48] production.INFO: IsProxyIP Response {"ip":"103.222.255.184","status":200,"response":{"status":"success","ip":"103.222.255.184","proxy":0}} 
+[2026-10-01 23:23:58] production.INFO: IsProxyIP Response {"ip":"157.66.170.164","status":200,"response":{"status":"success","ip":"157.66.170.164","proxy":0}} 
+[2026-10-01 23:29:58] production.INFO: IsProxyIP Response {"ip":"103.78.115.134","status":200,"response":{"status":"success","ip":"103.78.115.134","proxy":0}} 
+[2026-10-01 23:30:59] production.INFO: IsProxyIP Response {"ip":"103.169.130.150","status":200,"response":{"status":"success","ip":"103.169.130.150","proxy":0}} 
+[2026-10-01 23:33:49] production.INFO: IsProxyIP Response {"ip":"2404:c0:c601:a01e:7810:dd5d:f032:761f","status":200,"response":{"status":"success","ip":"2404:c0:c601:a01e:7810:dd5d:f032:761f","proxy":0}} 
+[2026-10-01 23:34:06] production.INFO: IsProxyIP Response {"ip":"202.65.225.118","status":200,"response":{"status":"success","ip":"202.65.225.118","proxy":0}} 
+[2026-10-01 23:34:09] production.INFO: IsProxyIP Response {"ip":"2400:9800:317:f980:18da:6efc:d107:6ea3","status":200,"response":{"status":"success","ip":"2400:9800:317:f980:18da:6efc:d107:6ea3","proxy":0}} 
+[2026-10-01 23:36:22] production.INFO: IsProxyIP Response {"ip":"103.163.111.64","status":200,"response":{"status":"success","ip":"103.163.111.64","proxy":0}} 
+[2026-10-01 23:37:22] production.INFO: IsProxyIP Response {"ip":"2001:448a:40b0:ef52:7409:2ed3:9ef1:f781","status":200,"response":{"status":"success","ip":"2001:448a:40b0:ef52:7409:2ed3:9ef1:f781","proxy":0}} 
+[2026-10-01 23:37:48] production.INFO: IsProxyIP Response {"ip":"114.10.153.101","status":200,"response":{"status":"success","ip":"114.10.153.101","proxy":0}} 
+[2026-10-01 23:39:39] production.INFO: IsProxyIP Response {"ip":"140.213.43.181","status":200,"response":{"status":"success","ip":"140.213.43.181","proxy":0}} 
+[2026-10-01 23:40:04] production.INFO: IsProxyIP Response {"ip":"103.26.176.67","status":200,"response":{"status":"success","ip":"103.26.176.67","proxy":0}} 
+[2026-10-01 23:45:02] production.INFO: IsProxyIP Response {"ip":"114.8.215.224","status":200,"response":{"status":"success","ip":"114.8.215.224","proxy":0}} 
+[2026-10-01 23:45:36] production.INFO: IsProxyIP Response {"ip":"103.136.56.199","status":200,"response":{"status":"success","ip":"103.136.56.199","proxy":0}} 
+[2026-10-01 23:47:14] production.INFO: IsProxyIP Response {"ip":"103.178.171.105","status":200,"response":{"status":"success","ip":"103.178.171.105","proxy":1}} 
+[2026-10-01 23:49:13] production.INFO: IsProxyIP Response {"ip":"182.4.73.117","status":200,"response":{"status":"success","ip":"182.4.73.117","proxy":0}} 
+[2026-10-01 23:50:29] production.INFO: IsProxyIP Response {"ip":"103.172.120.225","status":200,"response":{"status":"success","ip":"103.172.120.225","proxy":0}} 
+[2026-10-01 23:55:41] production.INFO: IsProxyIP Response {"ip":"38.156.95.22","status":200,"response":{"status":"success","ip":"38.156.95.22","proxy":0}} 
+[2026-10-01 23:55:44] production.INFO: IsProxyIP Response {"ip":"138.252.183.13","status":200,"response":{"status":"success","ip":"138.252.183.13","proxy":0}} 
+[2026-10-01 23:56:32] production.INFO: IsProxyIP Response {"ip":"114.10.145.169","status":200,"response":{"status":"success","ip":"114.10.145.169","proxy":0}} 
+[2026-10-01 23:56:44] production.INFO: IsProxyIP Response {"ip":"114.10.79.159","status":200,"response":{"status":"success","ip":"114.10.79.159","proxy":0}} 
+[2026-10-01 23:57:00] production.INFO: IsProxyIP Response {"ip":"103.148.130.213","status":200,"response":{"status":"success","ip":"103.148.130.213","proxy":1}} 

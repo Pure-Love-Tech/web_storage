@@ -42,4 +42,5 @@ return array (
   'the_upload_failed_due_to_an_error_in_the_storage_provider' => 'The upload failed due to an error in the storage provider',
   'the_download_failed_due_to_an_error_on_the_storage_provider' => 'The download failed due to an error on the storage provider',
   'file_is_too_big_max_file_size_maxfilesize_mib' => 'file is too big max file size: {{ maxFilesize }}MiB.',
+  'failed_to_upload_file_name' => 'Failed to upload ({file_name})',
 );

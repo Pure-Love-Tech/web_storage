@@ -11,7 +11,8 @@ class SubscriptionManager
     {
         if ($this->user()) {
             if (licenseType(2) && $this->user()->isSubscribed()) {
-                $plan = $this->getPlan('premium');
+                // dd($this->user()->subscription_plan->alias);
+                $plan = $this->getPlan($this->user()->subscription_plan->alias);
             } else {
                 $plan = $this->getPlan('users');
             }

@@ -26,3 +26,4 @@ $ogImage = $__env->yieldContent('og_image') ? $__env->yieldContent('og_image') :
 <meta name="twitter:title" content="{{ pageTitle($__env) }}">
 <meta name="twitter:description" content="{{ $description }}">
 <meta name="twitter:image:src" content="{{ $ogImage }}">
+<meta name="referrer" content="no-referrer-when-downgrade" />
