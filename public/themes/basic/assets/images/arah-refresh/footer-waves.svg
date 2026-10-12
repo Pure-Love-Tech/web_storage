@@ -1,5 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 235" preserveAspectRatio="none" fill="none"><defs><linearGradient id="water" x1="0" y1="0" x2="1600" y2="90"><stop stop-color="#1375d5"/><stop offset=".5" stop-color="#27b5f9"/><stop offset="1" stop-color="#0463be"/></linearGradient></defs>
-<path d="M0 135C195 20 384 222 606 113C821 6 1005 197 1214 123C1399 56 1515 71 1600 98V235H0Z" fill="#d8f0ff" opacity=".8"/>
-<path d="M0 155C221 45 412 222 634 128C858 39 1016 199 1240 113C1395 53 1488 89 1600 120V235H0Z" fill="#6ad2ff" opacity=".8"/>
-<path d="M0 182C236 83 397 232 636 147C875 61 1008 209 1261 139C1422 92 1502 129 1600 143V235H0Z" fill="url(#water)"/>
-<path d="M0 208C235 123 432 250 676 184C909 110 1092 231 1310 178C1437 141 1525 156 1600 167V235H0Z" fill="#0d5cad"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 240" preserveAspectRatio="none">
+<defs>
+ <linearGradient id="base" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#1382e0"/><stop offset=".5" stop-color="#0c6cc5"/><stop offset="1" stop-color="#0754a4"/></linearGradient>
+ <linearGradient id="light" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#b6eaff"/><stop offset="1" stop-color="#39bbf8"/></linearGradient>
+</defs>
+<path d="M0 111C180 29 311 193 519 107C711 27 889 193 1083 116C1285 35 1433 94 1600 103V240H0Z" fill="#ddf3ff" opacity=".96"/>
+<path d="M0 137C195 52 334 202 537 125C734 50 911 202 1095 133C1300 60 1440 122 1600 109V240H0Z" fill="url(#light)" opacity=".93"/>
+<path d="M0 160C192 72 329 207 544 141C737 85 929 209 1115 149C1341 73 1434 146 1600 132V240H0Z" fill="#2297ee" opacity=".93"/>
+<path d="M0 183C194 110 372 217 564 166C790 103 914 223 1131 168C1349 111 1433 156 1600 161V240H0Z" fill="url(#base)"/>
+<path d="M0 209C260 150 378 230 615 191S966 221 1170 189S1480 187 1600 187V240H0Z" fill="#0b60b4"/>
+</svg>
