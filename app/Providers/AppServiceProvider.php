@@ -59,9 +59,9 @@ class AppServiceProvider extends ServiceProvider
             $this->backendViewComposers();
         }
 
-        if (config('app.env') !== 'local') {
-            URL::forceScheme('https');
-        }
+        // if (config('app.env') !== 'local') {
+        //     URL::forceScheme('https');
+        // }
     }
 
     public function themeViewComposers()

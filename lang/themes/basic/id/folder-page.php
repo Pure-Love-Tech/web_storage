@@ -2,11 +2,11 @@
 
 return array(
     'folder' => 'Folder',
-    'you_have_requested' => 'You have requested',
-    'this_folder_is_empty' => 'This folder is empty',
-    'about_folder_name' => 'About {folder_name}',
-    'folder_description' => '{website_name} is a service that allows you to easily upload and share your files with others and earn money. the requested folder called "{folder_name}/", which can viewed and download its files easily. With {website_name}, you can upload your files without needing an account. However, if you create an account by clicking on the sign-up button, you will be able to upload and manage your files and folder more easily and also earn money from your referrals and the downloads of your files. {website_name} supports a wide range of file formats, so you can upload files in various formats and share them anywhere, anytime. Whether you need to share a large file with a colleague or simply want to keep your personal files and folders safe and secure, {website_name} has got you covered.',
-    'share_link' => 'Share Link',
-    'forum_code' => 'Forum Code',
-    'html_code' => 'HTML Code',
+    'you_have_requested' => 'Anda membuka',
+    'this_folder_is_empty' => 'Folder ini kosong',
+    'about_folder_name' => 'Tentang {folder_name}',
+    'folder_description' => '{website_name} adalah layanan untuk mengupload, menyimpan, dan membagikan file dengan mudah. Folder yang sedang Anda buka bernama "{folder_name}/" dan berisi file yang dapat dilihat atau didownload sesuai pengaturan pemiliknya. Dengan {website_name}, Anda dapat mengupload file tanpa harus memiliki akun. Namun, dengan membuat akun, Anda dapat mengelola file dan folder dengan lebih mudah serta memperoleh penghasilan dari referral dan download file. {website_name} mendukung berbagai format file sehingga Anda dapat membagikan file kapan saja dengan lebih praktis.',
+    'share_link' => 'Tautan Berbagi',
+    'forum_code' => 'Kode Forum',
+    'html_code' => 'Kode HTML',
 );

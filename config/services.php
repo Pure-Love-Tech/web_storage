@@ -48,4 +48,8 @@ return [
         'clean_cache_days' => (int) env('ISPROXYIP_CLEAN_CACHE_DAYS', 30),
         'proxy_cache_days' => (int) env('ISPROXYIP_PROXY_CACHE_DAYS', 7),
     ],
+
+    'payout' => [
+        'weekend_discount' => (int) env('PAYOUT_WEEKEND_DISCOUNT', 2000),
+    ],
 ];

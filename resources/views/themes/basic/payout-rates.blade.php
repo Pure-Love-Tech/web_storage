@@ -103,9 +103,9 @@
                                                     <g id="map-location">
                                                         <path class="st0"
                                                             d="M18.3,4.4C17.4,1.8,14.9,0,12,0C8.8,0,6.1,2.3,5.4,5.3L0,3v17.2l8,3.4l8-3l8,3.4V6.8L18.3,4.4z M9,14.4
-                                                                        c1.2,1.4,2.3,2.2,2.4,2.3l0.7,0.6l0.6-0.6c0.3-0.3,0.7-0.7,1.1-1c0.4-0.4,0.8-0.8,1.2-1.2v4.3l-6,2.3V14.4z M12,2
-                                                                        c2.6,0,4.8,2.1,4.8,4.8c0,1.9-0.8,3.4-1.8,4.7l0,0l0,0c-0.8,1-1.7,1.9-2.6,2.7c-0.1,0.1-0.3,0.3-0.4,0.4c-1.8-1.6-4.8-5-4.8-7.8
-                                                                        C7.2,4.1,9.4,2,12,2z M2,6l3.3,1.4c0.2,1.5,0.9,3,1.7,4.4V21l-5-2.1V6z M22,21l-5-2.1v-6.7c1-1.5,1.8-3.2,1.8-5.4L22,8.2V21z" />
+                                                                                c1.2,1.4,2.3,2.2,2.4,2.3l0.7,0.6l0.6-0.6c0.3-0.3,0.7-0.7,1.1-1c0.4-0.4,0.8-0.8,1.2-1.2v4.3l-6,2.3V14.4z M12,2
+                                                                                c2.6,0,4.8,2.1,4.8,4.8c0,1.9-0.8,3.4-1.8,4.7l0,0l0,0c-0.8,1-1.7,1.9-2.6,2.7c-0.1,0.1-0.3,0.3-0.4,0.4c-1.8-1.6-4.8-5-4.8-7.8
+                                                                                C7.2,4.1,9.4,2,12,2z M2,6l3.3,1.4c0.2,1.5,0.9,3,1.7,4.4V21l-5-2.1V6z M22,21l-5-2.1v-6.7c1-1.5,1.8-3.2,1.8-5.4L22,8.2V21z" />
                                                         <circle class="st0" cx="12" cy="7" r="2" />
                                                     </g>
                                                 </svg>
@@ -171,52 +171,56 @@
                         </div>
                     @endif
                     <div class="rates">
-                        @foreach ($payoutRates as $payoutRate)
-                            <div class="rate">
-                                <img src="{{ asset($payoutRate->flag) }}"
-                                    alt="{{ $payoutRate->country ? $payoutRate->country->name : translate('All Other Countries', 'payout rates') }}"
-                                    class="rate-img">
-                                <div class="rate-info">
-                                    <h4>{{ $payoutRate->country ? $payoutRate->country->name : translate('All Other Countries', 'payout rates') }}
-                                    </h4>
-                                    <p class="mb-0">
-                                        {{ translate('per 1000 downloads', 'payout rates') }}
-                                    </p>
-                                </div>
-                                <div class="rate-prices">
-                                    <div class="rate-price">
-                                        <svg fill="url(#linear-gradient)" height="800px" width="800px" version="1.1"
-                                            id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 396 396"
-                                            xml:space="preserve">
-                                            <defs>
-                                                <linearGradient id="linear-gradient" x1="0.5" x2="0.5"
-                                                    y2="1" gradientUnits="objectBoundingBox">
-                                                    <stop offset="0" stop-color="var(--primary_color)" />
-                                                    <stop offset="1" stop-color="var(--secondary_color)" />
-                                                </linearGradient>
-                                            </defs>
-                                            <path
-                                                d="M390,190.762h-47.635v-48.824c0-4.142-3.357-7.5-7.5-7.5h-16.932V46.346c0-5.523-4.478-10-10-10H10c-5.523,0-10,4.477-10,10
-                                 v191.182c0,5.523,4.477,10,10,10h103.467c-1.99,11.434-6.269,30.326-14.881,49.079c-1.422,3.096-1.169,6.703,0.67,9.571
-                                 c1.839,2.868,5.011,4.603,8.418,4.603h70.528v26.272c0,4.142,3.357,7.5,7.5,7.5h107.975v9.101c0,3.313,2.687,6,6,6H390
-                                 c3.314,0,6-2.687,6-6V196.762C396,193.448,393.314,190.762,390,190.762z M178.202,141.938v85.591H20V56.346h277.934v78.091H185.702
-                                 C181.56,134.438,178.202,137.795,178.202,141.938z M293.677,329.553H193.202v-8.709h59.583v0.704c0,4.143,3.357,7.5,7.5,7.5
-                                 c4.143,0,7.5-3.357,7.5-7.5v-0.704h25.892V329.553z M293.677,196.762v109.082H193.202V149.438h134.163v41.324h-27.688
-                                 C296.363,190.762,293.677,193.448,293.677,196.762z M384,347.654h-78.323v-7.065h33.162v0.597c0,3.314,2.686,6,6,6
-                                 c3.313,0,6-2.686,6-6v-0.597H384V347.654z M384,328.588h-78.323V221.827H384V328.588z M384,209.827h-78.323v-7.065H384V209.827z" />
-                                        </svg>
+                        <div class="row">
 
-                                        <div>
-                                            <div class="text-secondary">
-                                                <span>{{ priceSymbol($payoutRate->amount) }}</span>
+                            @foreach ($payoutRates as $payoutRate)
+                                {{-- {{ $payoutRates }} --}}
+                                <div class="rate col-md-6">
+                                    <img src="{{ asset($payoutRate->flag) }}"
+                                        alt="{{ $payoutRate->country ? $payoutRate->country->name : translate('All Other Countries', 'payout rates') }}"
+                                        class="rate-img">
+                                    <div class="rate-info">
+                                        <h4>{{ $payoutRate->country ? $payoutRate->country->name : translate('All Other Countries', 'payout rates') }}
+                                        </h4>
+                                        <p class="mb-0">
+                                            {{ translate('per 1000 downloads', 'payout rates') }}
+                                        </p>
+                                    </div>
+                                    <div class="rate-prices">
+                                        <div class="rate-price">
+                                            <svg fill="url(#linear-gradient)" height="800px" width="800px"
+                                                version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 396 396"
+                                                xml:space="preserve">
+                                                <defs>
+                                                    <linearGradient id="linear-gradient" x1="0.5" x2="0.5"
+                                                        y2="1" gradientUnits="objectBoundingBox">
+                                                        <stop offset="0" stop-color="var(--primary_color)" />
+                                                        <stop offset="1" stop-color="var(--secondary_color)" />
+                                                    </linearGradient>
+                                                </defs>
+                                                <path
+                                                    d="M390,190.762h-47.635v-48.824c0-4.142-3.357-7.5-7.5-7.5h-16.932V46.346c0-5.523-4.478-10-10-10H10c-5.523,0-10,4.477-10,10
+                                         v191.182c0,5.523,4.477,10,10,10h103.467c-1.99,11.434-6.269,30.326-14.881,49.079c-1.422,3.096-1.169,6.703,0.67,9.571
+                                         c1.839,2.868,5.011,4.603,8.418,4.603h70.528v26.272c0,4.142,3.357,7.5,7.5,7.5h107.975v9.101c0,3.313,2.687,6,6,6H390
+                                         c3.314,0,6-2.687,6-6V196.762C396,193.448,393.314,190.762,390,190.762z M178.202,141.938v85.591H20V56.346h277.934v78.091H185.702
+                                         C181.56,134.438,178.202,137.795,178.202,141.938z M293.677,329.553H193.202v-8.709h59.583v0.704c0,4.143,3.357,7.5,7.5,7.5
+                                         c4.143,0,7.5-3.357,7.5-7.5v-0.704h25.892V329.553z M293.677,196.762v109.082H193.202V149.438h134.163v41.324h-27.688
+                                         C296.363,190.762,293.677,193.448,293.677,196.762z M384,347.654h-78.323v-7.065h33.162v0.597c0,3.314,2.686,6,6,6
+                                         c3.313,0,6-2.686,6-6v-0.597H384V347.654z M384,328.588h-78.323V221.827H384V328.588z M384,209.827h-78.323v-7.065H384V209.827z" />
+                                            </svg>
+
+                                            <div>
+                                                <div class="text-secondary">
+                                                    <span>{{ priceSymbol($payoutRate->amount_default) }}</span>
+                                                </div>
+                                                <p class="mb-0">{{ translate('for All Devices', 'payout rates') }}</p>
                                             </div>
-                                            <p class="mb-0">{{ translate('for All Devices', 'payout rates') }}</p>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        @endforeach
+                            @endforeach
+                        </div>
                     </div>
                 </div>
             </div>

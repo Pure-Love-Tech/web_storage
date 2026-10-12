@@ -1,14 +1,14 @@
 <?php
 
-return array (
+return array(
   'dashboard' => 'Dashboard',
-  'downloads' => 'Downloads',
-  'earnings' => 'Earnings',
-  'average_cpm' => 'Average CPM',
-  'referral_earnings' => 'Referral Earnings',
-  'statistics' => 'Statistics',
-  'date' => 'Date',
-  'downloads_earnings' => 'Downloads Earnings',
-  'referrals_earnings' => 'Referrals Earnings',
-  'daily_cpm' => 'Daily CPM',
+  'downloads' => 'Download',
+  'earnings' => 'Penghasilan',
+  'average_cpm' => 'Rata-rata CPM',
+  'referral_earnings' => 'Penghasilan Referral',
+  'statistics' => 'Statistik',
+  'date' => 'Tanggal',
+  'downloads_earnings' => 'Penghasilan Download',
+  'referrals_earnings' => 'Penghasilan Referral',
+  'daily_cpm' => 'CPM Harian',
 );

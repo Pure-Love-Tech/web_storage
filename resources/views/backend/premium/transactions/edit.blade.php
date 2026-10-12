@@ -23,6 +23,14 @@
                         </td>
                     </tr>
                     <tr>
+                        <th>Plan</th>
+                        <td>
+                            {{-- <a href="{{ route('admin.premium.plans') }}"><i
+                                    class="fa fa-file me-2"></i>{{ $trx->plan->name }}</a> --}}
+                            {{ $trx->plan->name }}
+                        </td>
+                    </tr>
+                    <tr>
                         <th>{{ admin_trans('Interval') }}</th>
                         <td>
                             {{ $trx->interval }}
