@@ -12,7 +12,7 @@
 @stack('head_codes')
 
 
-<body>
+<body class="@yield('body_class')">
     @include('themes.basic.partials.preloader')
     @include('themes.basic.includes.navbar')
     <header class="header">

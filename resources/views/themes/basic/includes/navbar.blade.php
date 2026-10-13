@@ -4,13 +4,13 @@
             <a href="{{ route('home') }}" class="logo">
                 <img src="{{ asset($themeSettings->general->logo_dark) }}" alt="{{ $settings->general->site_name }}" style="width:200px; height:auto"/>
             </a>
-            <div class="nav-bar-menu">
+            <div class="nav-bar-menu" id="arah-mobile-menu">
                 <div class="overlay"></div>
                 <div class="nav-bar-links">
                     <div class="nav-bar-menu-header">
-                        <a class="nav-bar-menu-close ms-auto">
+                        <button type="button" class="nav-bar-menu-close ms-auto" aria-label="Close navigation menu">
                             <i class="fa fa-times"></i>
-                        </a>
+                        </button>
                     </div>
                     @foreach ($navbarMenuLinks as $navbarMenuLink)
                         @if ($navbarMenuLink->children->count() > 0)
@@ -52,9 +52,9 @@
                 @auth
                     @include('themes.basic.partials.user-menu')
                 @endauth
-                <div class="nav-bar-menu-btn">
+                <button type="button" class="nav-bar-menu-btn" aria-controls="arah-mobile-menu" aria-label="Open navigation menu">
                     <i class="fa-solid fa-bars fa-lg"></i>
-                </div>
+                </button>
             </div>
         </div>
     </div>

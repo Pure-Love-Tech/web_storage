@@ -1,5 +1,6 @@
 @extends('themes.basic.layouts.auth')
 @section('title', translate('Sign Up', 'auth'))
+@section('body_class', 'arah-public arah-auth arah-register')
 @section('content')
     <div class="row row-cols-1 row-cols-lg-2 align-items-center g-5">
         <div class="col">
@@ -153,4 +154,7 @@
             </div>
         </div>
     </div>
+    @push('styles')
+        <link rel="stylesheet" href="{{ asset('themes/basic/assets/css/arah-public.css') }}?v={{ filemtime(public_path('themes/basic/assets/css/arah-public.css')) }}">
+    @endpush
 @endsection
