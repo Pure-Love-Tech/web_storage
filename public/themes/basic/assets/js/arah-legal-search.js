@@ -10,7 +10,16 @@
  prev=document.querySelector("[data-legal-prev]"),
  next=document.querySelector("[data-legal-next]");
  if (![content,input,clear,nav,count,prev,next].every(Boolean)) return;
+ const card=input.closest(".arah-document-tools");
+ if (!card) return;
  let marks=[],index=-1;
+ // Sticky while an input or toolbar control is focused or a query exists.
+ function syncFloating() {
+  card.classList.toggle("is-search-active",
+   Boolean(input.value.trim()) || card.contains(document.activeElement));
+ }
+ card.addEventListener("focusin",syncFloating);
+ card.addEventListener("focusout",()=>queueMicrotask(syncFloating));
  function reset() {
   const parents=new Set();
   content.querySelectorAll("mark.arah-legal-mark").forEach(mark=>{
@@ -27,15 +36,24 @@
   count.textContent=index>=0?String(index+1)+" / "+String(marks.length):
     input.value.trim()?(count.dataset.noMatch||"No matches"):"";
   prev.disabled=!marks.length;next.disabled=!marks.length;
-  if (scroll && index>=0) marks[index].scrollIntoView({
-   behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",
-   block:"center"
-  });
+  if (scroll && index>=0) {
+   // Leave enough room for the fixed navbar and floating search card.
+   const stickyTop=parseFloat(getComputedStyle(card).top)||94;
+   const safeTop=stickyTop+card.getBoundingClientRect().height+18;
+   const space=Math.max(0,window.innerHeight-safeTop-28);
+   const offset=Math.min(75,space*.25);
+   const target=Math.max(0,window.scrollY+marks[index].getBoundingClientRect().top-safeTop-offset);
+   window.scrollTo({
+    top:target,
+    behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"
+   });
+  }
  }
  function search() {
   reset();
   const query=input.value.trim();
   clear.hidden=!query;nav.hidden=!query;
+  syncFloating();
   if (!query){refresh(false);return;}
   const walker=document.createTreeWalker(content,NodeFilter.SHOW_TEXT),nodes=[];
   while (walker.nextNode()) {
@@ -77,4 +95,6 @@
   if (event.key==="Escape" && input.value){event.preventDefault();clear.click();}
   else if (event.key==="Enter"){event.preventDefault();jump(event.shiftKey?-1:1);}
  });
+ if (input.value.trim()) search();
+ else syncFloating();
 })();
