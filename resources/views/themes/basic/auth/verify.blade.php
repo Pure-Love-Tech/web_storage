@@ -1,4 +1,5 @@
 @extends('themes.basic.layouts.auth')
+@section('body_class', 'arah-public arah-system-auth')
 @section('title', translate('Verify Your Email Address', 'auth'))
 @section('content')
     <div class="row my-4">

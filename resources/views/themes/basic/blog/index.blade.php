@@ -1,4 +1,5 @@
 @extends('themes.basic.layouts.single')
+@section('body_class', 'arah-public arah-blog')
 @section('title', translate('Blog', 'blog'))
 @section('content')
     <div class="section section-start">

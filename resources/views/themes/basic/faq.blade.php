@@ -1,4 +1,5 @@
 @extends('themes.basic.layouts.single')
+@section('body_class', 'arah-public arah-faq')
 @section('title', 'FAQs')
 {{-- @section('description', $faqs->short_description)  --}}
 @section('content')
@@ -16,9 +17,10 @@
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="heading{{ $faqs->id }}">
                                             <button class="accordion-button {{ !$loop->first ? 'collapsed' : '' }}"
-                                                type="button" data-bs-toggle="collapse" style="border : 1px solid #4194e6"
-                                                data-bs-target="#collapse{{ $faqs->id }}" aria-expanded="false"
-                                                aria-controls="flush-collapseOne">
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapse{{ $faqs->id }}"
+                                                aria-expanded="{{ $loop->first ? 'true' : 'false' }}"
+                                                aria-controls="collapse{{ $faqs->id }}">
                                                 {{ $faqs->title }}
                                                 <div class="accordion-button-icon">
                                                     <i class="fa-solid fa-chevron-down"></i>
@@ -28,7 +30,7 @@
                                         <div id="collapse{{ $faqs->id }}"
                                             class="accordion-collapse collapse {{ $loop->first ? 'show' : '' }}"
                                             aria-labelledby="heading{{ $faqs->id }}" data-bs-parent="#accordion">
-                                            <div class="accordion-body" style="background: #d9e9fa !important">
+                                            <div class="accordion-body">
                                                 {!! $faqs->body !!}
                                             </div>
                                         </div>
