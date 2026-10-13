@@ -189,9 +189,46 @@
   min-width:0;
 }
 .arah-home .arah-feature-copy .section-header {
-  max-width:790px;
-  margin:0 auto;
-  text-align:center !important;
+  max-width:none;
+  width:100%;
+  margin:0;
+  text-align:left !important;
+}
+.arah-home .arah-feature-copy .arah-feature-header-card {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:clamp(26px,4vw,60px);
+  min-height:175px;
+  padding:clamp(27px,3.2vw,42px) clamp(26px,3.6vw,50px);
+  border:1px solid #d9eaf6;
+  border-radius:25px;
+  background:rgba(255,255,255,.97);
+  box-shadow:0 15px 42px rgba(17,95,163,.09),0 3px 10px rgba(17,95,163,.035),inset 0 1px rgba(255,255,255,1);
+  -webkit-backdrop-filter:blur(14px) saturate(115%);
+  backdrop-filter:blur(14px) saturate(115%);
+}
+.arah-home .arah-feature-header-main {
+  min-width:0;
+  flex:1 1 auto;
+  max-width:920px;
+}
+.arah-home .arah-feature-header-card .arah-feature-action {
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  flex:0 0 auto;
+  margin-left:auto;
+}
+.arah-home .arah-feature-header-card .arah-get-started {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:52px;
+  padding:12px 25px;
+  border-radius:999px;
+  white-space:nowrap;
+  box-shadow:0 9px 20px rgba(10,112,203,.16);
 }
 .arah-home .arah-feature-grid {
   display:grid;
@@ -236,28 +273,18 @@
   height:100%;
   margin:0;
   padding:clamp(20px,1.8vw,27px) clamp(18px,1.6vw,25px);
-  border:1px solid rgba(179,220,246,.75);
-  border-top-color:rgba(255,255,255,.98);
+  border:1px solid #d9eaf6;
   border-radius:23px;
-  background:linear-gradient(155deg,rgba(255,255,255,.91),rgba(242,250,255,.72) 78%,rgba(222,244,255,.70));
-  -webkit-backdrop-filter:blur(18px) saturate(130%);
-  backdrop-filter:blur(18px) saturate(130%);
+  background:#ffffff;
   box-shadow:
     0 16px 34px rgba(20,93,161,.10),
-    0 2px 8px rgba(11,91,160,.045),
-    inset 0 1px rgba(255,255,255,.95);
+    0 3px 10px rgba(11,91,160,.045);
   scroll-snap-align:start;
   transition:transform .24s ease,box-shadow .24s ease,border-color .24s ease;
 }
 .arah-home .arah-feature-grid .feature::before {
-  content:"";
-  position:absolute;
-  inset:0;
-  z-index:0;
-  pointer-events:none;
-  background:
-    radial-gradient(circle at 97% 0%,rgba(142,212,255,.33),transparent 46%),
-    linear-gradient(145deg,rgba(255,255,255,.28),transparent 65%);
+  /* Keep the content surface opaque white even above a blue section background. */
+  content:none;
 }
 .arah-home .arah-feature-grid .feature > * {position:relative;z-index:1;}
 .arah-home .arah-feature-grid .feature:hover {
@@ -314,14 +341,22 @@
   border-radius:99px; background:linear-gradient(90deg,#0875d5,#52c8ff);
 }
 .arah-home .arah-feature-copy .section-title {
-  text-align:center; align-items:center;
+  text-align:left;
+  align-items:flex-start;
+  margin-bottom:14px;
 }
 .arah-home .section .section-text {
   color:#587692 !important; font-size:clamp(14px,1.15vw,16px);
   line-height:1.8; overflow-wrap:break-word;
 }
-.arah-home .arah-feature-copy .section-text {max-width:730px;margin:0 auto 25px;}
-.arah-home .arah-feature-action {display:flex;justify-content:center;}
+.arah-home .arah-feature-copy .section-text {
+  max-width:840px;
+  margin:0;
+}
+.arah-home .arah-feature-action {
+  display:flex;
+  justify-content:flex-end;
+}
 .arah-home .arah-get-started { min-height:49px; padding-inline:24px; font-size:14px; }
 
 /* How It Works: path from center of badge 1 to center of badge 3. */
@@ -501,7 +536,11 @@
   .arah-home .arah-hero .header-img img { width:100%;max-width:600px;max-height:395px; }
   .arah-home .arah-features {padding:80px 0 86px;}
   .arah-home .arah-feature-layout {gap:30px;}
-  .arah-home .arah-feature-copy .section-text {max-width:680px;}
+  .arah-home .arah-feature-copy .section-text {max-width:760px;}
+  .arah-home .arah-feature-header-card {
+    padding:26px 28px;
+    gap:23px;
+  }
   .arah-home .arah-feature-grid {
     gap:15px;
     grid-template-columns:none;
@@ -532,6 +571,21 @@
   .arah-home .arah-features {padding:66px 0 72px;}
   .arah-home .arah-features > .container {width:calc(100% - 32px);}
   .arah-home .arah-feature-layout {gap:25px;}
+  .arah-home .arah-feature-copy .arah-feature-header-card {
+    flex-direction:column;
+    align-items:stretch;
+    min-height:0;
+    gap:22px;
+    padding:23px 21px;
+    border-radius:20px;
+  }
+  .arah-home .arah-feature-header-card .arah-feature-action {
+    width:100%;
+    justify-content:flex-end;
+  }
+  .arah-home .arah-feature-header-card .arah-get-started {
+    min-height:48px;
+  }
   .arah-home .arah-feature-grid {
     grid-template-columns:none;
     grid-auto-columns:minmax(240px,min(78vw,320px));
