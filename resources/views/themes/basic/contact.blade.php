@@ -1,4 +1,5 @@
 @extends('themes.basic.layouts.single')
+@section('body_class', 'arah-public arah-contact')
 @section('title', translate('Contact Us', 'pages'))
 @section('content')
     <div class="section section-start">

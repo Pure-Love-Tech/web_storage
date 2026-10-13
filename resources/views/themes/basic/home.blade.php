@@ -49,7 +49,8 @@
             style="background-image: url({{ asset($themeSettings->home_page->section_background_image) }});">
             <div class="container">
                 <div class="arah-feature-layout">
-                    <div class="arah-feature-grid">
+                    <div class="arah-feature-grid" role="region" tabindex="0"
+                        aria-label="{{ translate('Our Features', 'home page') }}">
                         @foreach ($features as $feature)
                             <article class="feature {{ $loop->even ? 'feature-secondary' : '' }}">
                                 <div class="feature-icon">
@@ -61,11 +62,15 @@
                         @endforeach
                     </div>
                     <div class="arah-feature-copy">
-                        <div class="section-header mb-0">
+                        <div class="arah-feature-heading">
                             <h2 class="section-title">{{ translate('Our Features', 'home page') }}</h2>
-                            <p class="section-text text-muted lead">
-                                {{ translate('features description', 'home page') }}
-                            </p>
+                        </div>
+                        <div class="section-header mb-0 arah-feature-header-card">
+                            <div class="arah-feature-header-main">
+                                <p class="section-text text-muted lead">
+                                    {{ translate('features description', 'home page') }}
+                                </p>
+                            </div>
                             @guest
                                 <div class="arah-feature-action">
                                     <a href="{{ route('register') }}" class="btn btn-primary btn-md arah-get-started">

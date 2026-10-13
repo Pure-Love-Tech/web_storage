@@ -1,4 +1,5 @@
 @extends('themes.basic.layouts.single')
+@section('body_class', 'arah-public arah-premium')
 @section('title', translate('Premium membership', 'premium'))
 @section('content')
     <div class="section">

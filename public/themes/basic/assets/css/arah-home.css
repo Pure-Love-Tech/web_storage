@@ -138,59 +138,200 @@
 }
 
 /* Admin-provided feature cards: one responsive grid instead of nested column chunks. */
+/* Our Features: one horizontal data-driven track with white glass cards. */
 .arah-home .arah-features {
-  position:relative; padding:105px 0 110px;
-  background-color:#f4fbff; background-size:cover; background-position:center;
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  padding:clamp(82px,8vw,122px) 0 clamp(86px,8vw,120px);
+  background-color:#eff9ff;
+  background-size:cover;
+  background-position:center;
 }
 .arah-home .arah-features::before {
-  content:""; position:absolute; inset:0; z-index:-1;
-  background:linear-gradient(115deg,rgba(245,251,255,.74),rgba(255,255,255,.70) 62%,rgba(229,246,255,.50)),url("../images/arah-refresh/features-mist.svg") center/cover no-repeat;
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
   pointer-events:none;
+  background:
+    radial-gradient(ellipse 50% 65% at 10% 12%,rgba(255,255,255,.90),transparent 85%),
+    radial-gradient(ellipse 55% 80% at 95% 80%,rgba(167,222,255,.45),transparent 87%),
+    linear-gradient(125deg,rgba(248,253,255,.83),rgba(228,247,255,.64)),
+    url("../images/arah-refresh/features-mist.svg") center / cover no-repeat;
 }
 .arah-home .arah-features::after {
-  content:""; position:absolute; right:0; bottom:0; width:min(390px,33vw); height:310px;
+  content:"";
+  position:absolute;
+  right:0;
+  bottom:0;
+  width:min(325px,27vw);
+  height:280px;
   background:url("../images/arah-refresh/server-cluster.svg") bottom right/contain no-repeat;
-  opacity:.42; z-index:-1; pointer-events:none;
+  opacity:.23;
+  z-index:0;
+  pointer-events:none;
+}
+.arah-home .arah-features > .container {
+  position:relative;
+  z-index:1;
+  width:min(calc(100% - 42px),1430px);
+  max-width:1430px;
 }
 .arah-home .arah-feature-layout {
-  position:relative; display:grid;
-  grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);
-  gap:clamp(40px,6vw,90px); align-items:center;
+  display:flex;
+  flex-direction:column;
+  align-items:stretch;
+  gap:clamp(30px,3.4vw,48px);
+}
+.arah-home .arah-feature-copy {
+  order:-1;
+  min-width:0;
+}
+.arah-home .arah-feature-heading {
+  margin:0 auto 29px;
+  text-align:center;
+}
+.arah-home .arah-feature-copy .section-header {
+  max-width:none;
+  width:100%;
+  margin:0;
+  text-align:left !important;
+}
+.arah-home .arah-feature-copy .arah-feature-header-card {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:clamp(26px,4vw,60px);
+  min-height:146px;
+  padding:clamp(25px,2.7vw,35px) clamp(26px,3.6vw,50px);
+  border:1px solid #d9eaf6;
+  border-radius:25px;
+  background:rgba(255,255,255,.97);
+  box-shadow:0 15px 42px rgba(17,95,163,.09),0 3px 10px rgba(17,95,163,.035),inset 0 1px rgba(255,255,255,1);
+  -webkit-backdrop-filter:blur(14px) saturate(115%);
+  backdrop-filter:blur(14px) saturate(115%);
+}
+.arah-home .arah-feature-header-main {
+  min-width:0;
+  flex:1 1 auto;
+  max-width:920px;
+}
+.arah-home .arah-feature-header-card .arah-feature-action {
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  flex:0 0 auto;
+  margin-left:auto;
+}
+.arah-home .arah-feature-header-card .arah-get-started {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:52px;
+  padding:12px 25px;
+  border-radius:999px;
+  white-space:nowrap;
+  box-shadow:0 9px 20px rgba(10,112,203,.16);
 }
 .arah-home .arah-feature-grid {
-  display:grid; grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:18px; align-items:stretch;
+  display:grid;
+  grid-template-columns:none;
+  grid-auto-flow:column;
+  grid-auto-columns:minmax(215px,1fr);
+  align-items:stretch;
+  gap:clamp(12px,1.3vw,20px);
+  min-width:0;
+  width:100%;
+  margin:0;
+  padding:10px 6px 20px;
+  overflow-x:auto;
+  overflow-y:hidden;
+  overscroll-behavior-x:contain;
+  scroll-snap-type:x proximity;
+  scroll-padding-inline:6px;
+  scrollbar-width:thin;
+  scrollbar-color:rgba(47,151,221,.35) transparent;
+  -webkit-overflow-scrolling:touch;
+}
+.arah-home .arah-feature-grid:focus-visible {
+  outline:3px solid rgba(19,137,223,.65);
+  outline-offset:1px;
+  border-radius:22px;
+}
+.arah-home .arah-feature-grid::-webkit-scrollbar {height:6px;}
+.arah-home .arah-feature-grid::-webkit-scrollbar-track {background:transparent;}
+.arah-home .arah-feature-grid::-webkit-scrollbar-thumb {
+  background:rgba(47,151,221,.34);
+  border-radius:99px;
 }
 .arah-home .arah-feature-grid .feature {
-  position:relative; z-index:0; height:100%; min-width:0; margin:0;
-  padding:25px 24px; background:rgba(255,255,255,.98);
-  border:1px solid rgba(137,193,234,.23); border-radius:19px;
-  box-shadow:var(--arah-shadow);
-  transition:transform .22s ease,box-shadow .22s ease;
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  min-width:0;
+  min-height:294px;
+  height:100%;
+  margin:0;
+  padding:clamp(20px,1.8vw,27px) clamp(18px,1.6vw,25px);
+  border:1px solid #d9eaf6;
+  border-radius:23px;
+  background:#ffffff;
+  box-shadow:
+    0 16px 34px rgba(20,93,161,.10),
+    0 3px 10px rgba(11,91,160,.045);
+  scroll-snap-align:start;
+  transition:transform .24s ease,box-shadow .24s ease,border-color .24s ease;
 }
+.arah-home .arah-feature-grid .feature::before {
+  /* Keep the content surface opaque white even above a blue section background. */
+  content:none;
+}
+.arah-home .arah-feature-grid .feature > * {position:relative;z-index:1;}
 .arah-home .arah-feature-grid .feature:hover {
-  transform:translateY(-4px); box-shadow:0 20px 44px rgba(22,100,165,.14);
+  transform:translateY(-5px);
+  border-color:rgba(116,191,240,.8);
+  box-shadow:0 22px 42px rgba(15,97,177,.17),inset 0 1px #fff;
 }
 .arah-home .arah-feature-grid .feature-icon {
-  display:grid; place-items:center; position:relative;
-  width:52px; height:52px; margin:0 0 14px;
-  border-radius:15px; background:#e9f7ff;
+  display:grid;
+  place-items:center;
+  flex:0 0 auto;
+  width:58px;
+  height:58px;
+  margin:0 0 24px;
+  border:1px solid rgba(165,215,245,.75);
+  border-radius:18px;
+  background:linear-gradient(150deg,rgba(255,255,255,.94),rgba(208,237,255,.79));
+  box-shadow:0 7px 18px rgba(24,122,197,.07),inset 0 1px rgba(255,255,255,.94);
 }
-.arah-home .arah-feature-grid .feature-icon::before { display:none !important; }
+.arah-home .arah-feature-grid .feature-icon::before {display:none !important;}
 .arah-home .arah-feature-grid .feature-icon img {
-  display:block; width:36px; height:36px; margin:0 !important; object-fit:contain;
+  display:block;
+  width:36px;
+  height:36px;
+  margin:0 !important;
+  object-fit:contain;
 }
 .arah-home .arah-feature-grid .feature-title {
-  color:#153e70; font-size:17px; line-height:1.4; font-weight:750; margin:0 0 8px;
-}
-.arah-home .arah-feature-grid .feature-text {
-  margin:0; font-size:14px; line-height:1.7; color:#577591 !important;
+  margin:0 0 12px;
+  color:#174873;
+  font-size:clamp(16px,1.35vw,18px);
+  font-weight:800;
+  line-height:1.4;
   overflow-wrap:anywhere;
 }
-.arah-home .arah-feature-copy { min-width:0; }
-.arah-home .arah-feature-copy .section-header {
-  margin:0; text-align:left;
+.arah-home .arah-feature-grid .feature-text {
+  margin:0;
+  color:#557491 !important;
+  font-size:13.5px;
+  line-height:1.78;
+  overflow-wrap:anywhere;
 }
+
 .arah-home .section .section-title {
   display:inline-flex; flex-direction:column;
   align-items:center; text-align:center;
@@ -203,15 +344,23 @@
   content:""; width:52px; height:4px; margin-top:12px;
   border-radius:99px; background:linear-gradient(90deg,#0875d5,#52c8ff);
 }
-.arah-home .arah-feature-copy .section-title {
-  text-align:left; align-items:flex-start;
+.arah-home .arah-feature-copy .arah-feature-heading .section-title {
+  text-align:center;
+  align-items:center;
+  margin-bottom:0;
 }
 .arah-home .section .section-text {
   color:#587692 !important; font-size:clamp(14px,1.15vw,16px);
   line-height:1.8; overflow-wrap:break-word;
 }
-.arah-home .arah-feature-copy .section-text { max-width:510px; margin:0 0 26px; }
-.arah-home .arah-feature-action { display:flex; justify-content:flex-start; }
+.arah-home .arah-feature-copy .section-text {
+  max-width:840px;
+  margin:0;
+}
+.arah-home .arah-feature-action {
+  display:flex;
+  justify-content:flex-end;
+}
 .arah-home .arah-get-started { min-height:49px; padding-inline:24px; font-size:14px; }
 
 /* How It Works: path from center of badge 1 to center of badge 3. */
@@ -389,15 +538,19 @@
   .arah-home .arah-hero .header-title,.arah-home .arah-hero .header-text { margin-left:auto;margin-right:auto; }
   .arah-home .arah-hero .header-img { max-width:560px;margin:auto; }
   .arah-home .arah-hero .header-img img { width:100%;max-width:600px;max-height:395px; }
-  .arah-home .arah-feature-layout { grid-template-columns:1fr;gap:30px; }
-  .arah-home .arah-feature-copy { order:-1; }
-  .arah-home .arah-feature-copy .section-header { text-align:center !important; }
-  .arah-home .arah-feature-copy .section-title { align-items:center;text-align:center; }
-  .arah-home .arah-feature-copy .section-text { margin:0 auto 25px;max-width:680px; }
-  .arah-home .arah-feature-action { justify-content:center; }
-  .arah-home .arah-features { padding:80px 0 82px; }
-  .arah-home .arah-feature-grid { gap:16px; }
-  .arah-home .arah-feature-grid .feature { padding:23px; }
+  .arah-home .arah-features {padding:80px 0 86px;}
+  .arah-home .arah-feature-layout {gap:30px;}
+  .arah-home .arah-feature-copy .section-text {max-width:760px;}
+  .arah-home .arah-feature-header-card {
+    padding:26px 28px;
+    gap:23px;
+  }
+  .arah-home .arah-feature-grid {
+    gap:15px;
+    grid-template-columns:none;
+    grid-auto-columns:minmax(240px,34vw);
+  }
+  .arah-home .arah-feature-grid .feature {padding:23px;min-height:270px;}
   .arah-home .arah-journey { padding:78px 0 83px; }
   .arah-home .arah-steps-grid { gap:18px; }
   .arah-home .arah-steps-grid .step { padding:0 4px; }
@@ -419,15 +572,38 @@
   }
   .arah-home .arah-hero .header-text { font-size:15px;line-height:1.75;margin-bottom:23px;max-width:410px; }
   .arah-home .arah-hero::after { height:60px; }
-  .arah-home .arah-features { padding:65px 0 72px; }
-  .arah-home .arah-feature-layout { gap:26px; }
-  .arah-home .arah-feature-grid { grid-template-columns:1fr;gap:13px; }
-  .arah-home .arah-feature-grid .feature { padding:20px 21px;border-radius:17px; }
-  .arah-home .arah-feature-grid .feature-icon { width:48px;height:48px;margin-bottom:12px; }
-  .arah-home .arah-feature-grid .feature-icon img { width:33px;height:33px; }
-  .arah-home .arah-feature-grid .feature-title { font-size:17px; }
-  .arah-home .arah-feature-grid .feature-text { font-size:14px; }
-  .arah-home .arah-features::after { opacity:.10;width:260px; }
+  .arah-home .arah-features {padding:66px 0 72px;}
+  .arah-home .arah-features > .container {width:calc(100% - 32px);}
+  .arah-home .arah-feature-layout {gap:25px;}
+  .arah-home .arah-feature-heading {margin-bottom:22px;}
+  .arah-home .arah-feature-copy .arah-feature-header-card {
+    flex-direction:column;
+    align-items:stretch;
+    min-height:0;
+    gap:22px;
+    padding:23px 21px;
+    border-radius:20px;
+  }
+  .arah-home .arah-feature-header-card .arah-feature-action {
+    width:100%;
+    justify-content:flex-end;
+  }
+  .arah-home .arah-feature-header-card .arah-get-started {
+    min-height:48px;
+  }
+  .arah-home .arah-feature-grid {
+    grid-template-columns:none;
+    grid-auto-columns:minmax(240px,min(78vw,320px));
+    gap:13px;
+    padding:9px 5px 18px;
+    scroll-snap-type:x mandatory;
+  }
+  .arah-home .arah-feature-grid .feature {min-height:258px;padding:21px 20px;border-radius:19px;}
+  .arah-home .arah-feature-grid .feature-icon {width:52px;height:52px;margin-bottom:17px;}
+  .arah-home .arah-feature-grid .feature-icon img {width:34px;height:34px;}
+  .arah-home .arah-feature-grid .feature-title {font-size:17px;}
+  .arah-home .arah-feature-grid .feature-text {font-size:14px;}
+  .arah-home .arah-features::after {opacity:.11;width:260px;}
   .arah-home .section .section-title { font-size:29px; }
   .arah-home .section .section-text { font-size:14px; }
   .arah-home .arah-journey { padding:72px 0 82px; }

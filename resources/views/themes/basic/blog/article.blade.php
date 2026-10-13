@@ -1,4 +1,5 @@
 @extends('themes.basic.layouts.single')
+@section('body_class', 'arah-public arah-blog arah-blog-article')
 @section('title', $blogArticle->title)
 @section('description', $blogArticle->short_description)
 @section('og_image', asset($blogArticle->image))

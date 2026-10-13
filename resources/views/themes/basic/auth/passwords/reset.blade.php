@@ -1,4 +1,5 @@
 @extends('themes.basic.layouts.auth')
+@section('body_class', 'arah-public arah-auth arah-auth-recovery')
 @section('title', translate('Reset Password', 'auth'))
 @section('content')
     <div class="row row-cols-1 row-cols-lg-2 align-items-center g-5">

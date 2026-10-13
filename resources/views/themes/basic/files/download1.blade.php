@@ -1,4 +1,5 @@
 @extends('themes.basic.layouts.single')
+@section('body_class', 'arah-public arah-download')
 @section('section', translate('Download', 'download pages'))
 @section('title', $fileEntry->name)
 @section('hide_header', true)
