@@ -1,4 +1,5 @@
 @extends('themes.basic.layouts.single')
+@section('body_class', 'arah-public arah-cms')
 @section('title', $page->title)
 @section('description', $page->short_description)
 @section('content')

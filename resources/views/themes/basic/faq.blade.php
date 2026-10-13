@@ -1,4 +1,5 @@
 @extends('themes.basic.layouts.single')
+@section('body_class', 'arah-public arah-faq')
 @section('title', 'FAQs')
 {{-- @section('description', $faqs->short_description)  --}}
 @section('content')
