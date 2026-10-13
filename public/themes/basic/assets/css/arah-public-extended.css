@@ -1,0 +1,288 @@
+/*
+ * ArahCloud public UI extension
+ * CMS, FAQ, contact, blog, premium, authentication support and shared-file pages.
+ * Scoped by per-page body classes. No content, route, or business logic changes.
+ */
+body:is(.arah-contact,.arah-faq,.arah-cms,.arah-blog,.arah-premium,.arah-system-auth,.arah-auth-recovery,.arah-download) {
+  --public-stroke: #dcecf8;
+  --public-muted: #567692;
+  --public-shadow: 0 15px 42px rgba(14,85,155,.085),0 3px 10px rgba(14,85,155,.04);
+  background: #fff;
+  color: #1a4772;
+}
+body:is(.arah-contact,.arah-faq,.arah-cms,.arah-blog,.arah-premium,.arah-system-auth,.arah-auth-recovery,.arah-download) .card-v {
+  border: 1px solid var(--public-stroke);
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: var(--public-shadow);
+}
+body:is(.arah-contact,.arah-faq,.arah-cms,.arah-blog,.arah-premium,.arah-system-auth,.arah-auth-recovery,.arah-download) .form-control {
+  min-height: 50px;
+  background: #f9fcff;
+  border: 1px solid #d7e8f6;
+  border-radius: 12px;
+  color: #193f67;
+  font-size: 15px;
+}
+body:is(.arah-contact,.arah-faq,.arah-cms,.arah-blog,.arah-premium,.arah-system-auth,.arah-auth-recovery,.arah-download) .form-control:focus {
+  border-color: #58b3ef;
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(31,144,232,.1);
+}
+body:is(.arah-contact,.arah-faq,.arah-cms,.arah-blog,.arah-premium,.arah-system-auth,.arah-auth-recovery,.arah-download) .form-label {
+  color: #204c75;
+  font-size: 14px;
+  font-weight: 700;
+}
+body:is(.arah-contact,.arah-faq,.arah-cms,.arah-blog,.arah-premium,.arah-system-auth,.arah-auth-recovery,.arah-download) .btn-primary {
+  min-height: 47px;
+  padding: 12px 22px;
+  border-radius: 13px;
+  font-weight: 750;
+}
+body:is(.arah-contact,.arah-faq,.arah-cms,.arah-blog,.arah-premium,.arah-system-auth,.arah-auth-recovery,.arah-download) .pagination {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 27px;
+}
+body:is(.arah-contact,.arah-faq,.arah-cms,.arah-blog,.arah-premium,.arah-system-auth,.arah-auth-recovery,.arah-download) .pagination .page-link {
+  border-radius: 10px !important;
+  border: 1px solid #dcebf7;
+  color: #1676bb;
+}
+body:is(.arah-contact,.arah-faq,.arah-cms,.arah-blog,.arah-premium,.arah-system-auth,.arah-auth-recovery,.arah-download) .pagination .active .page-link {
+  color: #fff;
+  background: #1179c9;
+  border-color: #1179c9;
+}
+
+/* Contact */
+.arah-contact .section.section-start {padding: 65px 0 105px;background:linear-gradient(#fff,#f4faff);}
+.arah-contact .section .section-inner {
+  max-width: 1040px;
+  margin-inline: auto;
+  padding: clamp(24px,4vw,48px);
+  background: #fff;
+  border: 1px solid var(--public-stroke);
+  border-radius: 27px;
+  box-shadow: var(--public-shadow);
+}
+.arah-contact .section .section-header {margin: 0 0 28px;text-align: left;}
+.arah-contact .section .section-title {text-align:left;font-size:clamp(27px,3vw,38px);}
+.arah-contact form .row {row-gap: 18px;}
+.arah-contact form .mb-3 {margin-bottom: 23px !important;}
+.arah-contact form textarea.form-control {padding: 15px;min-height: 205px;resize:vertical;}
+
+/* FAQ, including admin-driven accordion content */
+.arah-faq .section.section-start {padding:70px 0 110px;background:linear-gradient(#fff,#f5fbff);}
+.arah-faq .faqs {max-width: 910px;margin-inline:auto;}
+.arah-faq .accordion-custom .accordion {display:grid;gap:14px;}
+.arah-faq .accordion-item {
+  border:1px solid #dcebf7;border-radius:17px !important;
+  overflow:hidden;background:#fff;box-shadow:0 9px 26px rgba(15,90,159,.07);
+}
+.arah-faq .accordion-item .accordion-button {
+  min-height:68px;padding:20px 23px;gap:14px;
+  background:#fff;border:0 !important;
+  color:#173f6d;font-weight:750;font-size:16px;
+  line-height:1.5;box-shadow:none;text-align:left;
+}
+.arah-faq .accordion-item .accordion-button:not(.collapsed) {background:#eaf7ff;color:#086aad;}
+.arah-faq .accordion-item .accordion-button .accordion-button-icon {margin-left:auto;}
+.arah-faq .accordion-item .accordion-body {
+  padding:22px 25px;background:#f6fbff !important;
+  color:#54738d;font-size:15px;line-height:1.85;overflow-wrap:anywhere;
+}
+.arah-faq .accordion-body :last-child {margin-bottom:0;}
+
+/* Legal, About Us, and other dynamic CMS page contents */
+.arah-cms .section.section-start {padding:65px 0 112px !important;background:linear-gradient(#fff,#f4faff);}
+.arah-cms .section .section-inner {max-width:950px;margin-inline:auto;}
+.arah-cms .section .section-body {
+  padding:clamp(25px,4.5vw,58px);
+  background:#fff;border:1px solid #e0edf8;
+  border-radius:25px;box-shadow:var(--public-shadow);
+  color:#496982;font-size:15px;line-height:1.9;overflow-wrap:anywhere;
+}
+.arah-cms .section .section-body :is(h1,h2,h3,h4,h5,h6) {
+  color:#154371;font-weight:750;
+  line-height:1.35;margin:1.5em 0 .55em;
+}
+.arah-cms .section .section-body > :is(h1,h2,h3,h4,h5,h6):first-child {margin-top:0;}
+.arah-cms .section .section-body :is(p,ul,ol) {margin-bottom:1.15em;}
+.arah-cms .section .section-body a {color:#0978c6;text-decoration:underline;text-underline-offset:3px;}
+.arah-cms .section .section-body :is(img,iframe,video) {max-width:100%;height:auto;}
+.arah-cms .section .section-body table {display:block;max-width:100%;overflow-x:auto;border-collapse:collapse;}
+.arah-cms .section .section-body :is(th,td) {border:1px solid #e0edf8;padding:11px 14px;min-width:110px;}
+.arah-cms .section .section-body blockquote {
+  margin:22px 0;padding:17px 22px;
+  background:#eef8ff;border-left:4px solid #45baf9;border-radius:0 13px 13px 0;
+}
+
+/* Blog index, listings, categories, article, search, comments and sidebar */
+.arah-blog .section.section-start {padding:72px 0 110px;background:linear-gradient(#fff,#f4faff);}
+.arah-blog .blog-post {
+  height:100%;overflow:hidden;background:#fff;
+  border:1px solid #e0edf8;border-radius:21px;
+  box-shadow:var(--public-shadow);
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.arah-blog .blog-post:not(.v2):hover {transform:translateY(-4px);box-shadow:0 20px 44px rgba(12,84,155,.14);}
+.arah-blog .blog-post-header {overflow:hidden;}
+.arah-blog .blog-post-header .blog-post-img {display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;}
+.arah-blog .blog-post-body {padding:23px;min-width:0;}
+.arah-blog .blog-post-title {color:#124771;text-decoration:none;}
+.arah-blog .blog-post-title h5 {font-size:19px;line-height:1.42;font-weight:750;overflow-wrap:anywhere;}
+.arah-blog .blog-post-text {color:#607c96;line-height:1.75;font-size:14px;}
+.arah-blog .blog-post-time,.arah-blog .post-meta {color:#738ea6;font-size:12px;}
+.arah-blog .blog-side .card-v {padding:24px;}
+.arah-blog .blog-side-title,.arah-blog .card-v-title {color:#154776;font-weight:750;}
+.arah-blog .categories {display:grid;gap:9px;}
+.arah-blog .category {
+  display:flex;justify-content:space-between;align-items:center;
+  gap:12px;min-height:46px;padding:11px 13px;
+  background:#f6fbff;border:1px solid #e3edf7;
+  border-radius:11px;color:#255e89;overflow-wrap:anywhere;
+}
+.arah-blog .category:hover {background:#e8f5ff;color:#0976bc;}
+.arah-blog .form-search {
+  display:flex;align-items:center;border:1px solid #dcebf8;
+  border-radius:12px;background:#f8fcff;overflow:hidden;
+}
+.arah-blog .form-search .form-control {border:0;background:transparent;box-shadow:none;}
+.arah-blog .form-search .icon {display:grid;place-items:center;min-width:46px;min-height:46px;background:#e8f6ff;color:#0877c4;}
+.arah-blog .posts .post {display:flex;align-items:center;gap:13px;}
+.arah-blog .posts .post-img {width:68px;height:68px;object-fit:cover;border-radius:11px;}
+.arah-blog .posts .post-title {font-size:13px;line-height:1.45;}
+.arah-blog-article .section.section-start {padding-top:108px;}
+.arah-blog-article .blog-post.v2 {padding:clamp(20px,4vw,38px) !important;border-radius:24px;}
+.arah-blog-article .blog-post.v2 .blog-post-img {aspect-ratio:16/8;max-height:410px;border-radius:13px;}
+.arah-blog-article .blog-content {font-size:15px;color:#4b6e89;line-height:1.85;overflow-wrap:anywhere;}
+.arah-blog-article .blog-content :is(img,iframe,video) {max-width:100%;height:auto;}
+.arah-blog-article .blog-content :is(h2,h3,h4) {margin:1.5em 0 .6em;color:#124577;}
+.arah-blog-article .comments {margin-top:25px;}
+.arah-blog-article .comment {border-top:1px solid #e2eef8;padding:19px 0;}
+.arah-blog-categories .section-inner > .row > .col-12 {max-width:790px;margin-inline:auto;}
+
+/* Membership and gateways remain data-driven and fully interactive */
+.arah-premium .section {padding:75px 0 114px;background:linear-gradient(#fff,#f2faff);}
+.arah-premium .section .section-header {text-align:center;}
+.arah-premium .section .section-text {max-width:730px;margin-inline:auto;color:#5c7a94;line-height:1.75;}
+.arah-premium .plans .row {align-items:stretch !important;}
+.arah-premium .plan {
+  height:100%;overflow:hidden;background:#fff;
+  border:1px solid #dfedfa;border-radius:23px;
+  box-shadow:var(--public-shadow);
+  transition:transform .2s ease;
+}
+.arah-premium .plan:hover {transform:translateY(-4px);}
+.arah-premium .plan.premium {border-color:#96d1f8;box-shadow:0 17px 38px rgba(20,119,206,.13);}
+.arah-premium .plan .plan-header {padding:29px 25px 21px;}
+.arah-premium .plan .plan-header-title {font-size:22px;font-weight:800;color:#154b78;}
+.arah-premium .plan .plan-body {padding:24px;}
+.arah-premium .plan .plan-feature {line-height:1.65;}
+.arah-premium .plan .plan-footer {padding:22px 25px 29px;}
+.arah-premium .plan .choose-plan-btn {min-height:48px;border-radius:12px;}
+.arah-premium #choosePlan {scroll-margin-top:110px;}
+.arah-premium .pricing {
+  background:#fff;border:1px solid #deebf7;
+  border-radius:20px;overflow:hidden;box-shadow:var(--public-shadow);
+}
+.arah-premium .pricing .pricing-header,.arah-premium .pricing .pricing-body {padding:23px;}
+.arah-premium .pricing .pricing-btn {min-height:46px;border-radius:12px;}
+
+/* Secondary auth steps: OTP, email verification and OAuth completion. */
+.arah-system-auth .section.section-start {padding:70px 0 115px;background:linear-gradient(#fff,#f2faff);}
+.arah-system-auth .section.section-start .section-inner > .row {max-width:920px;margin-inline:auto;justify-content:center;}
+.arah-system-auth .section.section-start .section-inner > .row > :is(.col-lg-4,.col-lg-6) {
+  width:100%;max-width:660px;
+  padding:clamp(24px,4vw,42px);
+  border:1px solid #dcecf8;border-radius:24px;
+  background:#fff;box-shadow:var(--public-shadow);
+}
+.arah-system-auth .section .section-header {text-align:left;}
+.arah-system-auth .section .section-title {text-align:left;font-size:clamp(26px,3vw,35px);font-weight:800;}
+.arah-system-auth .section .section-body {color:#55738c;line-height:1.7;}
+.arah-system-auth .form-icon {position:relative;}
+.arah-system-auth .form-icon .icon {height:100%;}
+.arah-system-auth .form-icon .form-control {min-height:53px;padding-left:56px;}
+.arah-system-auth .section .section-body form > .btn-primary {margin-top:12px;width:100%;}
+.arah-system-auth .section .section-body svg {max-width:100%;height:auto;}
+.arah-system-auth .modal .modal-content {
+  border-radius:19px;border:1px solid #dceaf7;
+  box-shadow:0 24px 50px rgba(15,74,135,.13);
+}
+.arah-auth-recovery .section.section-start {padding-top:65px;padding-bottom:115px;}
+.arah-auth-recovery .sign-img img {max-height:470px;object-fit:contain;}
+
+/* Password-protected folders and download pages: no functional changes */
+.arah-download .section {
+  padding:103px 0 110px;
+  background:linear-gradient(180deg,#f8fcff,#f2faff);
+}
+.arah-download .section .custom-container {max-width:1000px;margin-inline:auto;}
+.arah-download .file-card {
+  padding:clamp(24px,4vw,46px);overflow-wrap:anywhere;
+  border:1px solid #dcebf8;border-radius:23px;
+  background:#fff;box-shadow:var(--public-shadow);
+}
+.arah-download .file-card + .file-card {margin-top:28px !important;}
+.arah-download .file-title {
+  text-align:center;color:#134979;
+  font-size:clamp(22px,3vw,30px);line-height:1.45;
+  font-weight:750;overflow-wrap:anywhere;
+}
+.arah-download .file-request {color:#657f97;line-height:1.75;overflow-wrap:anywhere;}
+.arah-download .file-card :is(.btn-primary,.btn-secondary,.btn-download) {
+  border-radius:13px;min-height:49px;
+}
+.arah-download .download-file-info {border:1px solid #dceaf8;background:#f6fbff;border-radius:15px;padding:24px;}
+.arah-download .download-meta-item {min-width:0;overflow-wrap:anywhere;}
+.arah-download .file-password {text-align:center;}
+.arah-download .file-password-form {text-align:left;}
+.arah-download .file-password-img svg {width:min(100%,300px);height:auto;max-height:220px;}
+.arah-download .d-folder,.arah-download .d-file {
+  border:1px solid #dfedf8;border-radius:12px;background:#f7fbff;overflow-wrap:anywhere;
+}
+.arah-download .d-folder-btn,.arah-download .d-file {min-height:47px;padding:11px 15px;}
+.arah-download .d-folder:hover,.arah-download .d-file:hover {background:#e9f6ff;}
+.arah-download .download-file-timer {font-weight:800;color:#135d9c;}
+
+/* Mobile and accessible sizing */
+@media (max-width:991.98px) {
+  .arah-blog .section.section-start,.arah-cms .section.section-start,.arah-faq .section.section-start {padding-top:60px;}
+  .arah-premium .section {padding:60px 0 92px;}
+  .arah-system-auth .section.section-start {padding:60px 0 95px;}
+  .arah-download .section {padding:95px 0 90px;}
+}
+@media (max-width:767.98px) {
+  .arah-contact .section.section-start {padding:53px 0 85px;}
+  .arah-contact .section .section-inner {padding:24px 18px;border-radius:20px;}
+  .arah-faq .section.section-start {padding:52px 0 86px;}
+  .arah-faq .accordion-item .accordion-button {padding:17px 16px;font-size:14px;}
+  .arah-faq .accordion-item .accordion-body {padding:17px 16px;font-size:14px;}
+  .arah-cms .section.section-start {padding:48px 0 85px !important;}
+  .arah-cms .section .section-body {padding:23px 19px;border-radius:19px;font-size:14px;}
+  .arah-blog .section.section-start {padding:50px 0 86px;}
+  .arah-blog .blog-post-body {padding:18px;}
+  .arah-blog .blog-side .card-v {padding:19px;}
+  .arah-blog-article .section.section-start {padding-top:98px;}
+  .arah-blog-article .blog-post.v2 {padding:20px !important;}
+  .arah-premium .section {padding:52px 0 90px;}
+  .arah-system-auth .section.section-start {padding:45px 0 84px;}
+  .arah-system-auth .section.section-start .section-inner > .row > :is(.col-lg-4,.col-lg-6) {padding:23px 18px;border-radius:21px;}
+  .arah-auth-recovery .section.section-start {padding-top:40px;}
+  .arah-download .section {padding:92px 0 84px;}
+  .arah-download .file-card {padding:23px 18px;border-radius:19px;}
+  .arah-download .download-file-meta {grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media (max-width:420px) {
+  body:is(.arah-contact,.arah-faq,.arah-cms,.arah-blog,.arah-premium,.arah-system-auth,.arah-auth-recovery,.arah-download) .container {width:calc(100% - 28px);}
+  .arah-download .download-file-meta {grid-template-columns:1fr;}
+  .arah-system-auth .section.section-start .section-inner > .row > :is(.col-lg-4,.col-lg-6) {padding:20px 16px;}
+}
+@media (prefers-reduced-motion:reduce) {
+  .arah-blog .blog-post,.arah-premium .plan,.arah-public .btn {transition:none !important;}
+}
