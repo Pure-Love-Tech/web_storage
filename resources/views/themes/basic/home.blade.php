@@ -62,9 +62,11 @@
                         @endforeach
                     </div>
                     <div class="arah-feature-copy">
+                        <div class="arah-feature-heading">
+                            <h2 class="section-title">{{ translate('Our Features', 'home page') }}</h2>
+                        </div>
                         <div class="section-header mb-0 arah-feature-header-card">
                             <div class="arah-feature-header-main">
-                                <h2 class="section-title">{{ translate('Our Features', 'home page') }}</h2>
                                 <p class="section-text text-muted lead">
                                     {{ translate('features description', 'home page') }}
                                 </p>

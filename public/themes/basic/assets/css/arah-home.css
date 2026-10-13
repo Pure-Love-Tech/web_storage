@@ -188,6 +188,10 @@
   order:-1;
   min-width:0;
 }
+.arah-home .arah-feature-heading {
+  margin:0 auto 29px;
+  text-align:center;
+}
 .arah-home .arah-feature-copy .section-header {
   max-width:none;
   width:100%;
@@ -199,8 +203,8 @@
   align-items:center;
   justify-content:space-between;
   gap:clamp(26px,4vw,60px);
-  min-height:175px;
-  padding:clamp(27px,3.2vw,42px) clamp(26px,3.6vw,50px);
+  min-height:146px;
+  padding:clamp(25px,2.7vw,35px) clamp(26px,3.6vw,50px);
   border:1px solid #d9eaf6;
   border-radius:25px;
   background:rgba(255,255,255,.97);
@@ -340,10 +344,10 @@
   content:""; width:52px; height:4px; margin-top:12px;
   border-radius:99px; background:linear-gradient(90deg,#0875d5,#52c8ff);
 }
-.arah-home .arah-feature-copy .section-title {
-  text-align:left;
-  align-items:flex-start;
-  margin-bottom:14px;
+.arah-home .arah-feature-copy .arah-feature-heading .section-title {
+  text-align:center;
+  align-items:center;
+  margin-bottom:0;
 }
 .arah-home .section .section-text {
   color:#587692 !important; font-size:clamp(14px,1.15vw,16px);
@@ -571,6 +575,7 @@
   .arah-home .arah-features {padding:66px 0 72px;}
   .arah-home .arah-features > .container {width:calc(100% - 32px);}
   .arah-home .arah-feature-layout {gap:25px;}
+  .arah-home .arah-feature-heading {margin-bottom:22px;}
   .arah-home .arah-feature-copy .arah-feature-header-card {
     flex-direction:column;
     align-items:stretch;
