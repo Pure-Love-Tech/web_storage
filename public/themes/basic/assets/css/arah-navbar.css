@@ -454,8 +454,11 @@ body:is(.arah-home,.arah-public) .nav-bar .drop-down-menu .drop-down-item:hover 
     border-color:transparent;
     box-shadow:0 8px 18px rgba(8,93,161,.14);
   }
-  body:is(.arah-home,.arah-public) .nav-bar .nav-bar-menu .nav-bar-actions {
-    margin-left:auto;
+  /* The actions are a sibling of .nav-bar-menu, not its child. */
+  body:is(.arah-home,.arah-public) .nav-bar .nav-bar-actions {
+    margin-left: auto;
+    justify-content: flex-end;
+    flex: 0 0 auto;
   }
 }
 @media (max-width:480px) {
