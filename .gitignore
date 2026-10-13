@@ -1,0 +1,42 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+/storage/*.key
+
+# Dependencies and local tooling
+/vendor/
+/node_modules/
+/.idea/
+/.vscode/
+/.history/
+
+# Laravel runtime files
+/bootstrap/cache/*.php
+/storage/app/chunks/
+/storage/app/temp/
+/storage/framework/cache/
+/storage/framework/sessions/
+/storage/framework/views/
+/storage/logs/
+/public/storage/
+/public/hot
+/public/build/
+
+# Test and build output
+/.phpunit.result.cache
+/coverage/
+/output/
+npm-debug.log*
+yarn-error.log*
+
+# Local development files
+/docker-compose.override.yml
+/Homestead.json
+/Homestead.yaml
+/.playwright-cli/
+/graphify-out/
+
+# OS files
+.DS_Store
+Thumbs.db

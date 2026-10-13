@@ -5,4 +5,5 @@
 @themeColors
 <link rel="stylesheet" href="{{ theme_asset('assets/css/app.css') }}">
 @stack('styles')
+<link rel="stylesheet" href="{{ asset('themes/basic/assets/css/arah-navbar.css') }}?v={{ filemtime(public_path('themes/basic/assets/css/arah-navbar.css')) }}">
 @themeCustomStyle

@@ -1,5 +1,6 @@
 @extends('themes.basic.layouts.single')
 @section('title', translate('Payout Rates', 'payout rates'))
+@section('body_class', 'arah-public arah-rates')
 @section('content')
     <div class="section">
         {{-- <x-ad alias="other_pages_top" @class('ad-728x90 mb-5') /> --}}
@@ -263,5 +264,8 @@
     @endpush
     @push('scripts_libs')
         <script src="{{ asset('vendor/libs/swiper/swiper-bundle.min.js') }}"></script>
+    @endpush
+    @push('styles')
+        <link rel="stylesheet" href="{{ asset('themes/basic/assets/css/arah-public.css') }}?v={{ filemtime(public_path('themes/basic/assets/css/arah-public.css')) }}">
     @endpush
 @endsection

@@ -1,8 +1,9 @@
 @extends('themes.basic.layouts.front')
 @section('title', $seoConfiguration->title ?? '')
+@section('body_class', 'arah-home')
 @section('content')
     @if ($themeSettings->home_page->header_section)
-        <header class="header">
+        <header class="header arah-hero">
             <div class="wrapper">
                 <div class="header-bg"
                     style="background-image: url({{ asset($themeSettings->home_page->header_background) }});">
@@ -10,29 +11,29 @@
                 <div class="container">
                     <div class="wrapper-content">
                         <div class="wrapper-container">
-                            <div class="row row-cols-2 align-items-center g-4">
-                                <div class="col-12 col-lg-5 order-2 order-lg-1">
-                                    <h1 class="header-title" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="row row-cols-2 align-items-center g-4 arah-hero-grid">
+                                <div class="col-12 col-lg-6 order-2 order-lg-1">
+                                    <h1 class="header-title">
                                         {{ translate('Upload Files & Earn Money', 'home page') }}
                                     </h1>
-                                    <p class="header-text lead text-muted" data-aos="fade-right" data-aos-duration="1000">
+                                    <p class="header-text lead text-muted">
                                         {{ translate('hero_description', 'home page') }}
                                     </p>
-                                    <div data-aos="fade-up" data-aos-duration="1000">
+                                    <div>
                                         @if (subscription()->plan->upload_status)
-                                            <button class="btn btn-primary btn-lg" data-upload-btn><i
+                                            <button type="button" class="btn btn-primary btn-lg arah-upload-cta" data-upload-btn aria-haspopup="dialog" aria-controls="arah-upload-dialog" aria-expanded="false"><i
                                                     class="fa-solid fa-arrow-up-from-bracket me-2"></i>{{ translate('Upload Files', 'home page') }}</button>
                                         @else
                                             <a href="{{ auth()->user() ? route('user.settings.subscription') : route('login') }}"
-                                                class="btn btn-primary btn-lg"><i
+                                                class="btn btn-primary btn-lg arah-upload-cta"><i
                                                     class="fa-solid fa-arrow-up-from-bracket me-2"></i>{{ translate('Upload Files', 'home page') }}</a>
                                         @endif
                                     </div>
                                 </div>
-                                <div class="col-12 col-lg-7 order-1 order-lg-2">
-                                    <div class="header-img" data-aos="zoom-in" data-aos-duration="1000">
+                                <div class="col-12 col-lg-6 order-1 order-lg-2">
+                                    <div class="header-img">
                                         <img src="{{ asset($themeSettings->home_page->header_image) }}"
-                                            alt="{{ $settings->general->site_name }}" style="width: 110% !important; max-width: 1000px !important;"/>
+                                            alt="{{ $settings->general->site_name }}" decoding="async" fetchpriority="high"/>
                                     </div>
                                 </div>
                             </div>
@@ -44,81 +45,42 @@
     @endif
     {{-- <x-ad alias="home_page_top" @class('ad-728x90 my-4') /> --}}
     @if ($themeSettings->home_page->features_section && $features->count() > 0)
-        <style>
-            .feature-icon {
-                display: grid;
-                place-items: center;
-            }
-
-            .feature-icon img {
-                display: block;
-                margin-left: 10px !important;
-                object-fit: contain;
-            }
-
-            .feature .feature-icon::before {
-                width: 55px;
-                height: 55px;
-            }
-        </style>
-        <div class="section section-start"
+        <section class="section section-start arah-features"
             style="background-image: url({{ asset($themeSettings->home_page->section_background_image) }});">
             <div class="container">
-                <div class="section-inner">
-                    <div class="row g-5 align-items-center">
-                        <div class="col-12 col-lg-7 col-xxl-6 order-2 order-lg-1" data-aos="fade-right"
-                            data-aos-duration="1000">
-                            <div class="section-body">
-                                <div class="row row-cols-1 row-cols-sm-2 g-4 align-items-center">
-                                    @php
-                                        $featuresCounter = 0;
-                                    @endphp
-                                    @foreach ($features->chunk(3) as $chunk)
-                                        <div class="col">
-                                            <div class="row row-cols-1 g-4">
-                                                @foreach ($chunk as $feature)
-                                                    <div class="col" data-aos="fade-up" data-aos-duration="1000">
-                                                        <div
-                                                            class="feature {{ $featuresCounter % 2 == 1 ? ' feature-secondary' : '' }}">
-                                                            <div class="feature-icon">
-                                                                <img src="{{ asset($feature->image) }}"
-                                                                    alt="{{ $feature->title }}" />
-                                                            </div>
-                                                            <h5 class="feature-title">{{ $feature->title }}</h5>
-                                                            <p class="feature-text text-muted">{{ $feature->body }}</p>
-                                                        </div>
-                                                    </div>
-                                                    @php
-                                                        $featuresCounter++;
-                                                    @endphp
-                                                @endforeach
-                                            </div>
-                                        </div>
-                                    @endforeach
+                <div class="arah-feature-layout">
+                    <div class="arah-feature-grid">
+                        @foreach ($features as $feature)
+                            <article class="feature {{ $loop->even ? 'feature-secondary' : '' }}">
+                                <div class="feature-icon">
+                                    <img src="{{ asset($feature->image) }}" alt="{{ $feature->title }}" loading="lazy" />
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-5 col-xxl-6 order-1 order-lg-2" data-aos="fade-left"
-                            data-aos-duration="1000">
-                            <div class="section-header mb-0">
-                                <h2 class="section-title">{{ translate('Our Features', 'home page') }}</h2>
-                                <p class="section-text text-muted lead">
-                                    {{ translate('features description', 'home page') }}</p>
-                                @guest
-                                    <div class="d-flex justify-content-end">
-                                        <a href="{{ route('register') }}"
-                                            class="btn btn-primary btn-md"><i class="fa-solid fa-chevron-right me-2"></i>{{ translate('Get Started', 'home page') }}</a>
-                                    </div>
-                                @endguest
-                            </div>
+                                <h3 class="feature-title">{{ $feature->title }}</h3>
+                                <p class="feature-text text-muted">{{ $feature->body }}</p>
+                            </article>
+                        @endforeach
+                    </div>
+                    <div class="arah-feature-copy">
+                        <div class="section-header mb-0">
+                            <h2 class="section-title">{{ translate('Our Features', 'home page') }}</h2>
+                            <p class="section-text text-muted lead">
+                                {{ translate('features description', 'home page') }}
+                            </p>
+                            @guest
+                                <div class="arah-feature-action">
+                                    <a href="{{ route('register') }}" class="btn btn-primary btn-md arah-get-started">
+                                        <i class="fa-solid fa-chevron-right me-2"></i>{{ translate('Get Started', 'home page') }}
+                                    </a>
+                                </div>
+                            @endguest
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     @endif
     @if ($themeSettings->home_page->steps_section && $steps->count() > 0)
-        <div class="section">
+        <div class="section arah-journey">
             <div class="container">
                 <div class="section-inner">
                     <div class="section-header">
@@ -127,34 +89,24 @@
                         </p>
                     </div>
                     <div class="section-body">
-                        <div class="steps">
-                            <div class="steps-border">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="1587.904" height="309.319"
-                                    viewBox="0 0 1587.904 309.319">
-                                    <path id="Path_4115" data-name="Path 4115"
-                                        d="M-5287.292-3794.361c49.612,33.755,149.847,128.154,198.448,135.021,25.759,3.64,32.252-19.748,19.811-35.13-10.691-13.22-33.506-12.486-39.092-7.4-11.886,10.83-49.988,78.383,19.282,101.428s150.428-36.252,310.889-8.188,150.087,128.105,330.955,120.445,392.513-151.086,392.513-151.086,169.3-39.945,176.487-84.645-78.219-15.853-49.2,7.919,226.344,114.767,226.344,114.767"
-                                        transform="translate(5288.135 3795.601)" fill="none" class="stroke-color"
-                                        stroke-width="3" stroke-dasharray="10" />
-                                </svg>
-                            </div>
-                            <div class="row row-cols-1 row-cols-lg-3 g-4">
-                                @php
-                                    $stepCounter = 1;
-                                @endphp
-                                @foreach ($steps as $stepKey => $step)
-                                    <div class="col" data-aos="fade-up" data-aos-duration="1000">
-                                        <div
-                                            class="step {{ $stepCounter == 2 ? 'step-primary step-margin' : 'step-secondary' }}">
-                                            <div class="step-number">{{ $stepCounter }}</div>
-                                            <h4 class="step-title">{{ $step->title }}</h4>
+                        <div class="steps arah-steps-grid {{ $steps->count() == 3 ? 'arah-steps-three' : '' }}">
+                            @php
+                                $stepCounter = 1;
+                            @endphp
+                            @foreach ($steps as $stepKey => $step)
+                                <div class="arah-step-item">
+                                    <div class="step {{ $stepCounter == 2 ? 'step-primary' : 'step-secondary' }}">
+                                        <div class="step-number" aria-hidden="true">{{ $stepCounter }}</div>
+                                        <div class="arah-step-copy">
+                                            <h3 class="step-title">{{ $step->title }}</h3>
                                             <p class="step-text">{{ $step->body }}</p>
                                         </div>
                                     </div>
-                                    @php
-                                        $stepCounter++;
-                                    @endphp
-                                @endforeach
-                            </div>
+                                </div>
+                                @php
+                                    $stepCounter++;
+                                @endphp
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -172,7 +124,7 @@
                         <p class="section-text text-muted lead">{{ translate('FAQs Description', 'home page') }}</p>
                     </div>
                     <div class="section-body">
-                        <div class="faq" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="faq">
                             <div class="accordion-custom">
                                 <div class="accordion" id="accordion">
                                     @foreach ($faqs as $faq)
@@ -218,14 +170,14 @@
                     <div class="section-body">
                         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center g-3">
                             @foreach ($blogArticles as $post)
-                                <div class="col" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="col">
                                     @include('themes.basic.partials.blog-post', [
                                         'post' => $post,
                                     ])
                                 </div>
                             @endforeach
                         </div>
-                        <div class="d-flex justify-content-center mt-4" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="d-flex justify-content-center mt-4">
                             <a href="{{ route('blog.index') }}" class="btn btn-secondary btn-icon btn-md">
                                 {{ translate('View All Blog Posts', 'home page') }}
                                 <i class="fa fa-arrow-right ms-2"></i>
@@ -238,14 +190,14 @@
     @endif
     {{-- <x-ad alias="home_page_bottom" @class('ad-728x90 my-4') /> --}}
     @if ($themeSettings->home_page->withdrawal_methods_section)
-        <div class="section">
+        <div class="section arah-withdrawals">
             <div class="container">
                 <div class="section-inner">
                     <div class="section-header">
                         <h2 class="section-title">{{ translate('Withdrawal Methods', 'home page') }}</h2>
                     </div>
                     <div class="section-body">
-                        <div class="swiper-container" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="swiper-container">
                             <div class="swiper swiper-brands">
                                 <div class="swiper-wrapper align-items-center">
                                     @foreach ($withdrawalMethods as $withdrawalMethod)
@@ -269,6 +221,12 @@
         </div>
     @endif
     @include('themes.basic.includes.uploadbox')
+    @push('styles')
+        <link rel="stylesheet" href="{{ asset('themes/basic/assets/css/arah-home.css') }}?v={{ filemtime(public_path('themes/basic/assets/css/arah-home.css')) }}">
+    @endpush
+    @push('scripts')
+        <script src="{{ asset('themes/basic/assets/js/arah-home-ux.js') }}?v={{ filemtime(public_path('themes/basic/assets/js/arah-home-ux.js')) }}" defer></script>
+    @endpush
     @push('styles_libs')
         <link rel="stylesheet" href="{{ asset('vendor/libs/aos/aos.min.css') }}">
         <link rel="stylesheet" href="{{ asset('vendor/libs/swiper/swiper-bundle.min.css') }}">

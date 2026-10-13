@@ -11,7 +11,7 @@
 @include('themes.basic.partials.adblock-full')
 @stack('head_codes')
 
-<body>
+<body class="@yield('body_class')">
     @include('themes.basic.partials.preloader')
     @include('themes.basic.includes.navbar')
     @yield('content')

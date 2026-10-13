@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 480" preserveAspectRatio="xMidYMax slice">
+<defs>
+<linearGradient id="cloud" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#46b6fb"/><stop offset=".5" stop-color="#1678d3"/><stop offset="1" stop-color="#07509e"/></linearGradient>
+<radialGradient id="mist"><stop stop-color="#53baf9" stop-opacity=".85"/><stop offset="1" stop-color="#247dd0" stop-opacity="0"/></radialGradient>
+<filter id="blur"><feGaussianBlur stdDeviation="15"/></filter>
+</defs>
+<ellipse cx="65" cy="420" rx="340" ry="190" fill="url(#mist)" filter="url(#blur)"/>
+<ellipse cx="1540" cy="410" rx="340" ry="200" fill="url(#mist)" filter="url(#blur)"/>
+<g fill="url(#cloud)" opacity=".78">
+ <ellipse cx="10" cy="450" rx="230" ry="138"/><ellipse cx="135" cy="414" rx="155" ry="130"/><ellipse cx="235" cy="462" rx="157" ry="104"/>
+ <ellipse cx="1586" cy="451" rx="246" ry="130"/><ellipse cx="1458" cy="405" rx="172" ry="145"/><ellipse cx="1324" cy="478" rx="145" ry="92"/>
+</g>
+<g fill="#45b8fd" opacity=".32">
+ <ellipse cx="28" cy="386" rx="165" ry="92"/><ellipse cx="1547" cy="357" rx="172" ry="106"/>
+</g>
+</svg>
