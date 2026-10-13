@@ -49,7 +49,8 @@
             style="background-image: url({{ asset($themeSettings->home_page->section_background_image) }});">
             <div class="container">
                 <div class="arah-feature-layout">
-                    <div class="arah-feature-grid">
+                    <div class="arah-feature-grid" role="region" tabindex="0"
+                        aria-label="{{ translate('Our Features', 'home page') }}">
                         @foreach ($features as $feature)
                             <article class="feature {{ $loop->even ? 'feature-secondary' : '' }}">
                                 <div class="feature-icon">
