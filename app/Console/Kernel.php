@@ -66,6 +66,25 @@ class Kernel extends ConsoleKernel
                 ]);
             });
 
+        // Temporary Rp500 payout reduction during peak hours in December 2026.
+        $isDecember2026 = function () {
+            $now = now('Asia/Jakarta');
+
+            return $now->year === 2026 && $now->month === 12;
+        };
+
+        $schedule->command('payout:update-amount daytime-discount')
+            ->dailyAt('11:00')
+            ->timezone('Asia/Jakarta')
+            ->when($isDecember2026)
+            ->withoutOverlapping();
+
+        $schedule->command('payout:update-amount daytime-reset')
+            ->dailyAt('20:00')
+            ->timezone('Asia/Jakarta')
+            ->when($isDecember2026)
+            ->withoutOverlapping();
+
         if (licenseType(2)) {
             $schedule->command('transactions:delete-unpaid')->cron('0 0 * * *');
             if (mailTemplate('subscription_expire_notification')->status && settings('subscription')->expire_notification != 0) {
