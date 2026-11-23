@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Console\Commands;
+namespace App\\Console\\Commands;
 
-use Illuminate\Console\Command;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Log;
+use Illuminate\\Console\\Command;
+use Illuminate\\Support\\Facades\\DB;
+use Illuminate\\Support\\Facades\\Log;
 
 class UpdatePayoutAmount extends Command
 {
-    protected $signature = 'payout:update-amount {mode : discount|reset}';
+    protected $signature = 'payout:update-amount {mode : discount|reset|sync}';
 
     protected $description = 'Update payout amount';
 
@@ -17,7 +17,6 @@ class UpdatePayoutAmount extends Command
         $mode = $this->argument('mode');
 
         $discount = (int) config('services.payout.weekend_discount', 2000);
-
         $now = now('Asia/Jakarta');
 
         Log::info('PAYOUT_SCHEDULE_STARTED', [
@@ -63,16 +62,56 @@ class UpdatePayoutAmount extends Command
                 return self::SUCCESS;
             }
 
+            if ($mode === 'sync') {
+                // Existing weekend discount runs from Friday 00:01 until Monday 00:00 WIB.
+                $isWeekendDiscountPeriod = $now->dayOfWeekIso >= 5;
+
+                // The additional Rp500 discount applies only during December 2026, 11:00-19:59 WIB.
+                $isDecemberDiscountPeriod = $now->year === 2026
+                    && $now->month === 12
+                    && $now->day >= 1
+                    && $now->day <= 31
+                    && $now->hour >= 11
+                    && $now->hour < 20;
+
+                $totalDiscount = $isWeekendDiscountPeriod ? $discount : 0;
+
+                if ($isDecemberDiscountPeriod) {
+                    $decemberDiscountSql = 'CASE WHEN amount_default > 500 THEN 500 ELSE 0 END';
+                } else {
+                    $decemberDiscountSql = '0';
+                }
+
+                $affectedRows = DB::table('payout_rates')->update([
+                    'amount' => DB::raw(
+                        'GREATEST(amount_default - ' . $totalDiscount . ' - ' . $decemberDiscountSql . ', 0)'
+                    ),
+                ]);
+
+                Log::info('PAYOUT_SCHEDULE_SUCCESS', [
+                    'mode' => 'sync',
+                    'datetime' => $now->format('Y-m-d H:i:s'),
+                    'affected_rows' => $affectedRows,
+                    'weekend_discount_applied' => $isWeekendDiscountPeriod,
+                    'december_discount_applied' => $isDecemberDiscountPeriod,
+                    'weekend_discount' => $totalDiscount,
+                    'december_discount' => $isDecemberDiscountPeriod ? 500 : 0,
+                ]);
+
+                $this->info("Payout amounts synchronized. Rows: {$affectedRows}");
+
+                return self::SUCCESS;
+            }
+
             Log::warning('PAYOUT_SCHEDULE_INVALID_MODE', [
                 'mode' => $mode,
                 'datetime' => $now->format('Y-m-d H:i:s'),
             ]);
 
-            $this->error('Invalid mode. Use discount or reset.');
+            $this->error('Invalid mode. Use discount, reset, or sync.');
 
             return self::FAILURE;
-
-        } catch (\Throwable $e) {
+        } catch (\\Throwable $e) {
             Log::error('PAYOUT_SCHEDULE_FAILED', [
                 'mode' => $mode,
                 'datetime' => $now->format('Y-m-d H:i:s'),
