@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Console;
+namespace App\\Console;
 
-use Illuminate\Console\Scheduling\Schedule;
-use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
-use Illuminate\Support\Facades\Log;
+use Illuminate\\Console\\Scheduling\\Schedule;
+use Illuminate\\Foundation\\Console\\Kernel as ConsoleKernel;
+use Illuminate\\Support\\Facades\\Log;
 
 class Kernel extends ConsoleKernel
 {
     /**
      * Define the application's command schedule.
      *
-     * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
+     * @param  \\Illuminate\\Console\\Scheduling\\Schedule  $schedule
      * @return void
      */
     protected function schedule(Schedule $schedule)
@@ -65,6 +65,34 @@ class Kernel extends ConsoleKernel
                     'datetime' => now('Asia/Jakarta')->format('Y-m-d H:i:s'),
                 ]);
             });
+
+        // Recalculate from amount_default so the December discount never stacks on an already-discounted amount.
+        foreach (['11:00', '20:00'] as $time) {
+            $schedule->command('payout:update-amount sync')
+                ->dailyAt($time)
+                ->timezone('Asia/Jakarta')
+                ->before(function () use ($time) {
+                    Log::info('PAYOUT_SCHEDULER_TRIGGERED', [
+                        'mode' => 'sync',
+                        'scheduled_time' => $time,
+                        'datetime' => now('Asia/Jakarta')->format('Y-m-d H:i:s'),
+                    ]);
+                })
+                ->onSuccess(function () use ($time) {
+                    Log::info('PAYOUT_SCHEDULER_SUCCESS', [
+                        'mode' => 'sync',
+                        'scheduled_time' => $time,
+                        'datetime' => now('Asia/Jakarta')->format('Y-m-d H:i:s'),
+                    ]);
+                })
+                ->onFailure(function () use ($time) {
+                    Log::error('PAYOUT_SCHEDULER_FAILED', [
+                        'mode' => 'sync',
+                        'scheduled_time' => $time,
+                        'datetime' => now('Asia/Jakarta')->format('Y-m-d H:i:s'),
+                    ]);
+                });
+        }
 
         if (licenseType(2)) {
             $schedule->command('transactions:delete-unpaid')->cron('0 0 * * *');
