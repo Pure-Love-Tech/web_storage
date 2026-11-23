@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Log;
 
 class UpdatePayoutAmount extends Command
 {
-    protected $signature = 'payout:update-amount {mode : discount|reset|daytime-discount|daytime-reset}';
+    protected $signature = 'payout:update-amount {mode : discount|reset}';
 
     protected $description = 'Update payout amount';
 
@@ -17,7 +17,7 @@ class UpdatePayoutAmount extends Command
         $mode = $this->argument('mode');
 
         $discount = (int) config('services.payout.weekend_discount', 2000);
-        $daytimeDiscount = 500;
+
         $now = now('Asia/Jakarta');
 
         Log::info('PAYOUT_SCHEDULE_STARTED', [
@@ -63,47 +63,12 @@ class UpdatePayoutAmount extends Command
                 return self::SUCCESS;
             }
 
-            if ($mode === 'daytime-discount' || $mode === 'daytime-reset') {
-                // Mirror the existing weekly discount (Friday through Sunday)
-                // and apply an additional Rp500 only during the daytime window.
-                $isWeekendDiscountActive = $now->isFriday()
-                    || $now->isSaturday()
-                    || $now->isSunday();
-
-                $activeWeekendDiscount = $isWeekendDiscountActive ? $discount : 0;
-                $activeDaytimeDiscount = $mode === 'daytime-discount'
-                    ? $daytimeDiscount
-                    : 0;
-                $totalDiscount = $activeWeekendDiscount + $activeDaytimeDiscount;
-
-                $affectedRows = DB::table('payout_rates')->update([
-                    'amount' => DB::raw(
-                        'GREATEST(amount_default - ' . $totalDiscount . ', 0)'
-                    ),
-                ]);
-
-                Log::info('PAYOUT_SCHEDULE_SUCCESS', [
-                    'mode' => $mode,
-                    'datetime' => $now->format('Y-m-d H:i:s'),
-                    'affected_rows' => $affectedRows,
-                    'weekend_discount' => $activeWeekendDiscount,
-                    'daytime_discount' => $activeDaytimeDiscount,
-                    'total_discount' => $totalDiscount,
-                ]);
-
-                $this->info(
-                    "Payout {$mode} applied. Rows: {$affectedRows}; total discount: {$totalDiscount}"
-                );
-
-                return self::SUCCESS;
-            }
-
             Log::warning('PAYOUT_SCHEDULE_INVALID_MODE', [
                 'mode' => $mode,
                 'datetime' => $now->format('Y-m-d H:i:s'),
             ]);
 
-            $this->error('Invalid mode. Use discount, reset, daytime-discount, or daytime-reset.');
+            $this->error('Invalid mode. Use discount or reset.');
 
             return self::FAILURE;
 
